@@ -40,12 +40,9 @@ async function setHeaderFooter() {
     const headerLang = {
                         "search":{"ja": "企画検索", "en": "Search"},
                         "timetable":{"ja": "タイムテーブル", "en": "Timetable"},
-                        "no1":{"ja": "理工展No.1", "en": "Rikoten No.1"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
                         "food":{"ja": "Food in Campus", "en": "Food in Campus"},
-                        "archive":{"ja": "アーカイブ", "en": "Archive"},
                         "about":{"ja": "理工展とは", "en": "About"},
-                        "dialogue":{"ja": "代表対談", "en": "Dialogue"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
                         "covid19":{"ja": "感染症対策", "en": "COVID-19"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
@@ -81,7 +78,6 @@ async function setHeaderFooter() {
             <li>About
                 <ul>
                     <li><a href="/about/about">${headerLang.about[lang]}</a></li>
-                    <li><a href="/about/dialogue">${headerLang.dialogue[lang]}</a></li>
                 </ul>
             </li>
             <li>Info
@@ -109,10 +105,8 @@ async function setHeaderFooter() {
             <ul>
                 <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
                 <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
-                <li><a href="/rikotenno1">${headerLang.no1[lang]}</a></li>
                 <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
                 <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
-                <li><a href="/projects/archive">${headerLang.archive[lang]}</a></li>
             </ul>
             </li>
             <li>
