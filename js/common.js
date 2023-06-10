@@ -74,7 +74,6 @@ async function setHeaderFooter() {
                 <ul>
                     <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
                     <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
-                    <li><a href="/rikotenno1">${headerLang.no1[lang]}</a></li>
                     <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
                     <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
                     <li><a href="/projects/archive">${headerLang.archive[lang]}</a></li>
