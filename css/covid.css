@@ -1,0 +1,184 @@
+#covid {
+    width: calc(100% - 200px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: 590;
+}
+
+#covid h1{
+    padding-left: 40px;
+    line-height: 1;
+    position: relative;
+    color: var(--color-lightpink);
+}
+
+#covid h1::before{
+    content: "";
+    display: inline-block;
+    background-image:url('/img/covid-19/health_and_safety_FILL0_wght400_GRAD0_opsz48.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#covid h2{
+    margin-top: 100px;
+    color: var(--color-lightpink);
+    border-bottom: 1px solid var(--color-lightpink);
+}
+#covid .parent-background ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+
+#covid .parent-background li{
+    list-style: none;    
+    margin: 2% 5%;
+    width:180px;
+    height:180px;
+    background-color: white;
+    background-position: center;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    box-shadow: 2px 2px 10px var(--color-gray);
+}
+
+#covid .parent-background li img{
+    width:60%;
+}
+
+#covid .parent-background li p{
+    color:#ec9424;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    line-height: 1;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* マスク */
+#covid .parent-background:nth-of-type(1) li:nth-of-type(1) {
+    padding-top: 50px;
+}
+/* 消毒 */
+#covid .parent-background:nth-of-type(1) li:nth-of-type(2) {
+    padding-top: 30px;
+}
+/* ソーシャルディスタンス */
+#covid .parent-background:nth-of-type(1) li:nth-of-type(4) {
+    padding-top: 30px;
+}
+/* 食事 */
+#covid .parent-background:nth-of-type(1) li:nth-of-type(5) p {
+    bottom: -2px;
+    font-size: 14px;
+}
+/* 入場制限 */
+#covid .parent-background:nth-of-type(2) li:nth-of-type(1) {
+    padding-top: 30px;
+}
+/* 整理券配布 */
+#covid .parent-background:nth-of-type(2) li:nth-of-type(2) {
+    padding-top: 45px;
+}
+/* 換気 */
+#covid .parent-background:nth-of-type(2) li:nth-of-type(3) {
+    padding-top: 35px;
+    padding-right: 10px;
+}
+/* 消毒 */
+#covid .parent-background:nth-of-type(2) li:nth-of-type(4) {
+    padding-top: 25px;
+    padding-right: 5px;
+}
+/* 検温 */
+#covid .parent-background:nth-of-type(2) li:nth-of-type(5) img{
+    width:50%;
+}
+#covid .parent-background:nth-of-type(2) li:nth-of-type(5) p{
+    font-size: 14px;
+}
+
+
+
+
+#covid p{
+    text-align: center;
+}
+
+#covid > p {
+    margin-top: 70px;
+    text-align: left;
+}
+
+@media screen and (max-width: 980px) {
+    #covid {
+        width: calc(100% - 100px);
+    }
+
+    #covid .parent-background li{
+        margin: 4%;
+        width:170px;
+        height:170px;
+    }
+
+    /* マスク, 整理券配布*/
+    #covid .parent-background:nth-of-type(1) li:nth-of-type(1) p,
+    #covid .parent-background:nth-of-type(2) li:nth-of-type(2) p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #covid {
+        width: calc(100% - 50px);
+    }
+
+    #covid .parent-background li{
+        margin: 3%;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    #covid .parent-background ul{
+        display:inline-block;
+        width: 100%;
+
+    }
+
+    #covid .parent-background li{
+        width:170px;
+        height:170px;
+    }
+
+    #covid .parent-background li:nth-child(even){
+        margin: 0 30px 0 auto;
+    }
+
+    #covid .parent-background li:nth-child(odd){
+        margin: 0 auto 0 30px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #covid .parent-background li:nth-child(even){
+        margin: 0 0 0 auto;
+    }
+
+    #covid .parent-background li:nth-child(odd){
+        margin: 0 auto 0 0;
+    }
+}

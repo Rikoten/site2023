@@ -1,0 +1,1541 @@
+{
+  "firstday": [
+    {
+      "label": {
+        "ja": "ステージ企画",
+        "en": "Stage Performance"
+      },
+      "place": {
+        "ja": "ステージ",
+        "en": "Stage"
+      },
+      "contents": [
+        {
+          "id": "S-11",
+          "eventName": {
+            "ja": "Parfum ~Floraison Stage~",
+            "en": "Parfum ~Floraison Stage~"
+          },
+          "groupName": {
+            "ja": "早稲田大学K-POPカバーダンスParfum",
+            "en": "Waseda university K-pop cover dance Parfum"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 10,
+            "minute": 40
+          },
+          "iconPath": "/img/projects/S-11/S-11_icon.png",
+          "imagePath": "/img/projects/S-11/S-11_thumbnail.jpg",
+          "color": "FF3643",
+          "url": "https://youtu.be/B8BZrF9IzpU"
+        },
+        {
+          "id": "S-06",
+          "eventName": {
+            "ja": "口笛アンサンブル♪",
+            "en": "Whistling Ensemble♪"
+          },
+          "groupName": {
+            "ja": "口笛サークル　ことリップ",
+            "en": "COTOLIP The Whistling Circle of Waseda"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 20
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 10
+          },
+          "iconPath": "/img/projects/S-06/S-06_icon.jpg",
+          "imagePath": "/img/projects/S-06/S-06_thumbnail.jpg",
+          "color": "DE2F5C",
+          "url": "https://youtu.be/nFl65LiQgSk"
+        },
+        {
+          "id": "S-05",
+          "eventName": {
+            "ja": "わせだ男子 Blooming on Stage for You",
+            "en": "Waseda Danshi Blooming on Stage for You"
+          },
+          "groupName": {
+            "ja": "わせだ男子",
+            "en": "Waseda Danshi"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/S-05/S-05_icon.jpg",
+          "imagePath": "/img/projects/S-05/S-05_thumbnail.jpg",
+          "color": "F53F91",
+          "url": "https://youtu.be/ewYj9bEzo8U"
+        },
+        {
+          "id": "S-10",
+          "eventName": {
+            "ja": "SARAHbelly〜Belly Dance Show",
+            "en": "SARAHbelly〜Belly Dance Show"
+          },
+          "groupName": {
+            "ja": "早稲田大学ベリーダンスサークルSARAHbelly",
+            "en": "SARAHbelly"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 10
+          },
+          "iconPath": "/img/projects/S-10/S-10_icon.png",
+          "imagePath": "/img/projects/S-10/S-10_thumbnail.png",
+          "color": "DE2F9F",
+          "url": "https://youtu.be/rEuRgX0GJ9I"
+        },
+        {
+          "id": "S-08",
+          "eventName": {
+            "ja": "WASEDA BALLERS",
+            "en": "WASEDA BALLERS"
+          },
+          "groupName": {
+            "ja": "WASEDA BALLERS",
+            "en": "WASEDA BALLERS"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 55
+          },
+          "iconPath": "/img/projects/S-08/S-08_icon.png",
+          "imagePath": "/img/projects/S-08/S-08_thumbnail.jpg",
+          "color": "FA52DE",
+          "url": "https://youtu.be/uLJLeB6cTTo"
+        },
+        {
+          "id": "S-03",
+          "eventName": {
+            "ja": "infinity main performance",
+            "en": "infinity main performance"
+          },
+          "groupName": {
+            "ja": "早稲田大学ジャグリングサークル~infinity~",
+            "en": "waseda university juggling club infinity"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 20
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-03/S-03_icon.jpeg",
+          "imagePath": "/img/projects/S-03/S-03_thumbnail.jpg",
+          "color": "E04CD1",
+          "url": "https://youtu.be/k0e3nMk5iGs"
+        },
+        {
+          "id": "S-02",
+          "eventName": {
+            "ja": "爆音　2022",
+            "en": "Waseda Bakuon 2022"
+          },
+          "groupName": {
+            "ja": "早稲田大学モーニング娘。研究会",
+            "en": "Waseda University Morning Musume. Study Group"
+          },
+          "startTime": {
+            "hour": 16,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 17,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-02/S-02_icon.PNG",
+          "imagePath": "/img/projects/S-02/S-02_thumbnail.jpg",
+          "color": "E650FA",
+          "url": "https://youtu.be/NfaMmVIJ4hw"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "キャンパスツアー",
+        "en": "Campus Tour"
+      },
+      "place": {
+        "ja": "53-54号館間 地下スペース",
+        "en": "Underground Space between bldg.53-54"
+      },
+      "contents": [
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "5E88B8"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "546A9E"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "505DB3"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "5551C9"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "644BBD"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "5551C9"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "505DB3"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "546A9E"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "5E88B8"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "546A9E"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 40
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "505DB3"
+        },
+        {
+          "id": "B-02",
+          "eventName": {
+            "ja": "西早稲田キャンパスツアー",
+            "en": "Nishiwaseda Campus Tour"
+          },
+          "groupName": {
+            "ja": "西早稲田キャンパスツアーガイド",
+            "en": "Nishiwaseda Campus Tour Guide"
+          },
+          "startTime": {
+            "hour": 16,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/B-02/B-02_icon.jpg",
+          "imagePath": "/img/projects/B-02/B-02_thumbnail.jpg",
+          "color": "5551C9"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "研究室ツアー",
+        "en": "Labo Tour"
+      },
+      "place": {
+        "ja": "53号館 B04教室",
+        "en": "53-B04"
+      },
+      "contents": [
+        {
+          "id": "E-06",
+          "eventName": {
+            "ja": "研究室ツアー",
+            "en": "Laboratory Tour"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 50
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 40
+          },
+          "iconPath": "/img/projects/E-06/E-06_icon.jpg",
+          "imagePath": "/img/projects/E-06/E-06_thumbnail.jpg",
+          "color": "F6721E"
+        },
+        {
+          "id": "E-06",
+          "eventName": {
+            "ja": "研究室ツアー",
+            "en": "Laboratory Tour"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/E-06/E-06_icon.jpg",
+          "imagePath": "/img/projects/E-06/E-06_thumbnail.jpg",
+          "color": "D66626"
+        },
+        {
+          "id": "E-06",
+          "eventName": {
+            "ja": "研究室ツアー",
+            "en": "Laboratory Tour"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/E-06/E-06_icon.jpg",
+          "imagePath": "/img/projects/E-06/E-06_thumbnail.jpg",
+          "color": "EB551A"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "理工展連絡会 実験企画",
+        "en": "Experiment sponsored by Rikoten"
+      },
+      "place": {
+        "ja": "53号館 203教室",
+        "en": "53-203"
+      },
+      "contents": [
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "50BA85"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "439C6F"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "3B8A54"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "469150"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "497D46"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "659651"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "497D46"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "469150"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "3B8A54"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "439C6F"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "理工展連絡会 実研講 教授講演",
+        "en": "Professor Lecture sponsored by Rikoten"
+      },
+      "place": {
+        "ja": "54号館 302教室",
+        "en": "54-302"
+      },
+      "contents": [
+        {
+          "id": "E-08",
+          "eventName": {
+            "ja": "カーボンニュートラルな未来の化学",
+            "en": "Carbon-neutral future chemistry"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-08/E-08_icon.jpg",
+          "imagePath": "",
+          "color": "FC2230"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "ロボットフェスティバル",
+        "en": "Robot Festival"
+      },
+      "place": {
+        "ja": "63号館 1階 エントランスホール",
+        "en": "63-1F"
+      },
+      "contents": [
+        {
+          "id": "B-08",
+          "eventName": {
+            "ja": "ロボットフェスティバル",
+            "en": "Robot Festival"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　企画局　ロボットフェスティバル",
+            "en": "Robot Festival"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/B-08/B-08_icon.jpg",
+          "imagePath": "/img/projects/B-08/B-08_thumbnail.jpg",
+          "color": "ABBF45"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "Mimi Eden",
+        "en": "Mimi Eden"
+      },
+      "place": {
+        "ja": "53号館 403教室",
+        "en": "53-403"
+      },
+      "contents": [
+        {
+          "id": "B-06",
+          "eventName": {
+            "ja": "理系大学生の部屋",
+            "en": "Mimi Eden"
+          },
+          "groupName": {
+            "ja": "理工展連絡会 企画局 MimiEden",
+            "en": "Rikoten executive committee"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/B-06/B-06_icon.jpg",
+          "imagePath": "/img/projects/B-06/B-06_thumbnail.jpg",
+          "color": "C23D94"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "BEYOND 2020 NEXT PROJECT",
+        "en": "BEYOND 2020 NEXT PROJECT"
+      },
+      "place": {
+        "ja": "54号館 304教室",
+        "en": "54-403"
+      },
+      "contents": [
+        {
+          "id": "A-05",
+          "eventName": {
+            "ja": "感じてみようアントレプレナーシップ2022",
+            "en": "Let's feel entrepreneurship"
+          },
+          "groupName": {
+            "ja": "BEYOND 2020 NEXT PROJECT",
+            "en": "BEYOND 2020 NEXT PROJECT"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/A-05/A-05_icon.png",
+          "imagePath": "/img/projects/A-05/A-05_thumbnail.png",
+          "color": "BC47DE"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "ポケモンユナイト",
+        "en": "Pokemon UNITE"
+      },
+      "place": {
+        "ja": "54号館 302, 303教室",
+        "en": "54-302, 303"
+      },
+      "contents": [
+        {
+          "id": "B-13",
+          "eventName": {
+            "ja": "ポケモンユナイト",
+            "en": "Pokémon Unite"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　財務局　ポケモンユナイト",
+            "en": "Rikoten Zaimu (Pokémon Unite)"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/B-13/B-13_icon.png",
+          "imagePath": "/img/projects/B-13/B-13_thumbnail.png",
+          "color": "BC47DE"
+        }
+      ]
+    }
+  ],
+  "secondday": [
+    {
+      "label": {
+        "ja": "ステージ企画",
+        "en": "Stage Performance"
+      },
+      "place": {
+        "ja": "ステージ",
+        "en": "Stage"
+      },
+      "contents": [
+        {
+          "id": "S-04",
+          "eventName": {
+            "ja": "WEEDL＠理工展企画",
+            "en": "WEEDL@Science and Engineering Exhibition Planning"
+          },
+          "groupName": {
+            "ja": "WEEDL",
+            "en": "WEEDL"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-04/S-04_icon.jpg",
+          "imagePath": "/img/projects/S-04/S-04_thumbnail.png",
+          "color": "FF3643",
+          "url": "https://youtu.be/nHWjrd7R1-w"
+        },
+        {
+          "id": "S-07",
+          "eventName": {
+            "ja": "下駄っぱーず理工展ステージ2022",
+            "en": "Getappers'  Nishi-Waseda Campus Stage 2022"
+          },
+          "groupName": {
+            "ja": "下駄っぱーず",
+            "en": "Getappers"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 10
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-07/S-07_icon.jpg",
+          "imagePath": "/img/projects/S-07/S-07_thumbnail.jpg",
+          "color": "DE2F5C",
+          "url": "https://youtu.be/4DtR6uUBRTk"
+        },
+        {
+          "id": "S-14",
+          "eventName": {
+            "ja": "津軽三味線大合奏",
+            "en": "Tsugaru Shamisen Performance"
+          },
+          "groupName": {
+            "ja": "早稲田大学津軽三味線愛好会三津巴",
+            "en": "Tsugaru Shamisen club Mitsudomoe"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 20
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-14/S-14_icon.jpg",
+          "imagePath": "/img/projects/S-14/S-14_thumbnail.jpg",
+          "color": "F53F91",
+          "url": "https://youtu.be/-jqJIz4gmgw"
+        },
+        {
+          "id": "S-01",
+          "eventName": {
+            "ja": "稔",
+            "en": "Minori"
+          },
+          "groupName": {
+            "ja": "早稲田大学”踊り侍”",
+            "en": "Odorisamurai"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 15
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-01/S-01_icon.jpg",
+          "imagePath": "/img/projects/S-01/S-01_thumbnail.jpg",
+          "color": "DE2F9F",
+          "url": "https://youtu.be/epGyaFj58eg"
+        },
+        {
+          "id": "S-13",
+          "eventName": {
+            "ja": "“NO SHOCK,NO LIFE” SHOCKERS 2022",
+            "en": "“NO SHOCK,NO LIFE” SHOCKERS 2022"
+          },
+          "groupName": {
+            "ja": "早稲田大学男子チアリーディングチームSHOCKERS",
+            "en": "Waseda University Boys' cheerleading team SHOCKERS"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 15
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 45
+          },
+          "iconPath": "/img/projects/S-13/S-13_icon.jpg",
+          "imagePath": "/img/projects/S-13/S-13_thumbnail.jpg",
+          "color": "FA52DE",
+          "url": "https://youtu.be/zfRbY76YHaY"
+        },
+        {
+          "id": "S-09",
+          "eventName": {
+            "ja": "東京花火2022",
+            "en": "Tokyo Hanabi 2022"
+          },
+          "groupName": {
+            "ja": "早稲田大学よさこいチーム東京花火",
+            "en": "Waseda University Yosakoi team Tokyo Hanabi"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 50
+          },
+          "iconPath": "/img/projects/S-09/S-09_icon.JPG",
+          "imagePath": "/img/projects/S-09/S-09_thumbnail.jpg",
+          "color": "E04CD1",
+          "url": "https://youtu.be/o29-VK0en1g"
+        },
+        {
+          "id": "O-01",
+          "eventName": {
+            "ja": "理工展No.1",
+            "en": "Rikoten No.1"
+          },
+          "groupName": {
+            "ja": "理工展連絡会",
+            "en": "理工展連絡会"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 55
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 0
+          },
+          "iconPath": "",
+          "imagePath": "",
+          "color": "E650FA"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "ステージ企画（57号館）",
+        "en": "Stage Performance （57 Building）"
+      },
+      "place": {
+        "ja": "57号館 201教室",
+        "en": "57-201"
+      },
+      "contents": [
+        {
+          "id": "S-15",
+          "eventName": {
+            "ja": "LIVE STAND 2022",
+            "en": "LIVE STAND 2022"
+          },
+          "groupName": {
+            "ja": "早稲田大学お笑い工房LUDO",
+            "en": "Wasedadaigaku Owarai-koubou LUDO"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/S-15/S-15_icon.JPG",
+          "imagePath": "/img/projects/S-15/S-15_thumbnail.jpg",
+          "color": "DE9D37"
+        },
+        {
+          "id": "S-15",
+          "eventName": {
+            "ja": "LIVE STAND 2022",
+            "en": "LIVE STAND 2022"
+          },
+          "groupName": {
+            "ja": "早稲田大学お笑い工房LUDO",
+            "en": "Wasedadaigaku Owarai-koubou LUDO"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-15/S-15_icon.JPG",
+          "imagePath": "/img/projects/S-15/S-15_thumbnail.jpg",
+          "color": "D4803F"
+        },
+        {
+          "id": "S-15",
+          "eventName": {
+            "ja": "LIVE STAND 2022",
+            "en": "LIVE STAND 2022"
+          },
+          "groupName": {
+            "ja": "早稲田大学お笑い工房LUDO",
+            "en": "Wasedadaigaku Owarai-koubou LUDO"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 16,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/S-15/S-15_icon.JPG",
+          "imagePath": "/img/projects/S-15/S-15_thumbnail.jpg",
+          "color": "D9704E"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "研究室ツアー",
+        "en": "Labo Tour"
+      },
+      "place": {
+        "ja": "53号館 B04教室",
+        "en": "53-B04"
+      },
+      "contents": [
+        {
+          "id": "E-06",
+          "eventName": {
+            "ja": "研究室ツアー",
+            "en": "Laboratory Tour"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 20
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 10
+          },
+          "iconPath": "/img/projects/E-06/E-06_icon.jpg",
+          "imagePath": "/img/projects/E-06/E-06_thumbnail.jpg",
+          "color": "F6721E"
+        },
+        {
+          "id": "E-06",
+          "eventName": {
+            "ja": "研究室ツアー",
+            "en": "Laboratory Tour"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 20
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 10
+          },
+          "iconPath": "/img/projects/E-06/E-06_icon.jpg",
+          "imagePath": "/img/projects/E-06/E-06_thumbnail.jpg",
+          "color": "D66626"
+        },
+        {
+          "id": "E-06",
+          "eventName": {
+            "ja": "研究室ツアー",
+            "en": "Laboratory Tour"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 20
+          },
+          "iconPath": "/img/projects/E-06/E-06_icon.jpg",
+          "imagePath": "/img/projects/E-06/E-06_thumbnail.jpg",
+          "color": "EB551A"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "理工展連絡会 教授講演",
+        "en": "Professor Lecture sponsored by Rikoten"
+      },
+      "place": {
+        "ja": "63号館 202教室",
+        "en": "63-202"
+      },
+      "contents": [
+        {
+          "id": "E-09",
+          "eventName": {
+            "ja": "シリコンの覚醒 ～IoT/AI時代を拓く半導体エレクトロニクス～",
+            "en": "Awakening of silicon ~Semiconductor electronics that build an IoT/AI era~"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee　general affairs  laboratories"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-09/E-09_icon.jpg",
+          "imagePath": "",
+          "color": "B8AE2B"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "理工展連絡会 実験企画",
+        "en": "Experiment sponsored by Rikoten"
+      },
+      "place": {
+        "ja": "53号館 203教室",
+        "en": "53-203"
+      },
+      "contents": [
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 10,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "50BA85"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 11,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "439C6F"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 11,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "3B8A54"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 12,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 12,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "469150"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 13,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "497D46"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 13,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "659651"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 14,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "497D46"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 30
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "469150"
+        },
+        {
+          "id": "E-07",
+          "eventName": {
+            "ja": "青汁からクロロフィルを分離しよう！",
+            "en": "Let's separate chlorophyll from green juice!"
+          },
+          "groupName": {
+            "ja": "理工展連絡会　総務局　実研講",
+            "en": "Rikoten executive committee general affairs laboratories"
+          },
+          "startTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 30
+          },
+          "iconPath": "/img/projects/E-07/E-07_icon.jpg",
+          "imagePath": "",
+          "color": "3B8A54"
+        }
+      ]
+    },
+    {
+      "label": {
+        "ja": "Mimi Eden",
+        "en": "Mimi Eden"
+      },
+      "place": {
+        "ja": "53号館 403教室",
+        "en": "53-403"
+      },
+      "contents": [
+        {
+          "id": "B-06",
+          "eventName": {
+            "ja": "理系大学生の部屋",
+            "en": "Mimi Eden"
+          },
+          "groupName": {
+            "ja": "理工展連絡会 企画局 MimiEden",
+            "en": "Rikoten executive committee"
+          },
+          "startTime": {
+            "hour": 14,
+            "minute": 0
+          },
+          "endTime": {
+            "hour": 15,
+            "minute": 0
+          },
+          "iconPath": "/img/projects/B-06/B-06_icon.jpg",
+          "imagePath": "/img/projects/B-06/B-06_thumbnail.jpg",
+          "color": "C23D94"
+        }
+      ]
+    }
+  ]
+}

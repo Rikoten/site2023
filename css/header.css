@@ -1,0 +1,119 @@
+header .phone-menu{
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    header .phone-menu{
+        display: none;
+    }
+
+    header .phone-menu.active{
+        display: block;
+        margin: 5px auto 0 auto;
+        width: 100%;
+
+    }
+    
+    header .phone-menu li img{
+        /*transform: translate(-50%,-50%);*/
+        height: 30px;
+        line-height: 30px;
+    }
+
+    
+    
+    header ul{
+        background-color: var(--color-lightpink);
+        width: 100%;
+        padding: 0;
+        color: #fff;
+        float: left;
+        margin: 0 auto;
+      }
+     
+      header ul.active{
+        display: block;
+    }
+      
+    header  li{
+        list-style: none;
+      }
+      
+      header ul ul{
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: .5s;
+        border-top: 1px solid #fff;
+        background-color: #fff;
+        color: var(--color-lightpink);
+        margin:0;
+      }
+      
+      header ul li li{
+        border-bottom: 1px dotted var(--color-lightpink);
+        padding: 10px 0 10px 10px;
+        margin-left:15px;
+      }
+      
+      header ul:nth-of-type(1) li.active li:last-child{
+        border-bottom:1px solid #fff; 
+      }
+      
+      header button{
+        position: relative;
+        border: none;
+        width: 100%;
+        background-color: inherit;
+        color: #fff;
+        cursor: pointer;
+        text-align: left;
+        padding: 15px 0 15px 20px;
+        font-size:1em;
+      }
+      header button:hover{
+        background-color: var(--color-darkpink);
+      }
+      
+      header button::before,
+      header button::after{
+        content:"";
+        position: absolute;
+        top: 20px;
+        width: 1.5px;
+        height: 8px;
+        background-color: #fff;
+        transition: .5s;
+      }
+      
+      button::before{
+        transform: rotate(-45deg);
+        right: 35px;
+      }
+      
+      button::after{
+        transform: rotate(45deg);
+        right: 30px;
+      }
+      
+      li.active button::before{
+        transform: rotate(-135deg);
+        transition:.5s;
+      }
+      
+      li.active button::after{
+        transform: rotate(135deg);
+        transition:.5s;
+      }
+      
+      ul:nth-of-type(2){ background-color: #357D87; }
+      ul:nth-of-type(2) ul{ background-color: #519FA5; border-top: 1px solid #5D9FA8; }
+      ul:nth-of-type(2) button:hover{ background-color: #1C4B56; }
+      ul:nth-of-type(2) li li{ border-bottom: 1px dotted #73BEBF; }
+      ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; }
+      
+      ul.active{ overflow-y: auto; }
+      
+
+
+}

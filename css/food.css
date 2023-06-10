@@ -1,0 +1,413 @@
+main{
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+#food{
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: 590;
+}
+
+#food h1{
+    color: var(--color-lightpink);
+    padding-left: 40px;
+    line-height: 1;
+    position: relative;
+}
+
+#food h1::before{
+    content: "";
+    display: inline-block;
+    background-image:url('/img/food/Icon\ map-food.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#food .title{
+    color: white;
+    background-color: #ff92c5;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+/*map*/
+#food #map{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5%;
+}
+
+#food #map>img{
+    width: 10px;
+}
+/*ピンの配置*/
+
+#food #map a{
+    width: fit-content;
+    position: absolute;
+}
+
+#food #map a#pin_1{
+    top: 10%;
+    left: 35%;
+}
+
+#food #map a#pin_1 img,
+#food #map a#pin_2 img,
+#food #map a#pin_3 img,
+#food #map a#pin_4 img,
+#food #map a#pin_5 img,
+#food #map a#pin_6 img,
+#food #map a#pin_7 img,
+#food #map a#pin_8 img
+{
+    width: 25px;
+}
+
+
+#food #map a#pin_2{
+    top: 35%;
+    left: 35%;
+}
+
+#food #map a#pin_3{
+    top: 50%;
+    left: 40%;
+}
+
+#food #map a#pin_1,
+#food #map a#pin_2,
+#food #map a#pin_3,
+#food #map a#pin_4,
+#food #map a#pin_5,
+#food #map a#pin_6,
+#food #map a#pin_7,
+#food #map a#pin_8 {
+    transition: .2s;
+}
+
+#food #map a#pin_1:hover,
+#food #map a#pin_2:hover,
+#food #map a#pin_3:hover,
+#food #map a#pin_4:hover,
+#food #map a#pin_5:hover,
+#food #map a#pin_6:hover,
+#food #map a#pin_7:hover,
+#food #map a#pin_8:hover{
+    transform: scale(1.1);
+}
+
+#food #K-01.flash,
+#food #K-02.flash,
+#food #M-01.flash,
+#food #M-02.flash,
+#food #M-03.flash,
+#food #M-04.flash,
+#food #M-05.flash,
+#food #M-06.flash{
+    opacity: 1;
+    animation: flash .5s 5 linear;
+}
+
+@keyframes flash{
+    50% {
+        opacity: 0;
+      }
+}
+
+#food #map a#pin_4{
+    top: 50%;
+    left: 50%;
+}
+
+#food #map a#pin_5{
+    top: 50%;
+    left: 60%;
+}
+
+#food #map a#pin_6{
+    top: 50%;
+    left: 70%;
+}
+
+#food #map a#pin_7{
+    top: 50%;
+    left: 80%;
+}
+
+#food #map a#pin_8{
+    top: 20%;
+    left: 73%;
+}
+
+#food #map .map_img{
+    width: 100%;
+}
+
+#food #map .map_img img{
+    display: block;
+    width: 100%;
+}
+
+#food #K-01.flush,
+#food #K-02.flush,
+#food #M-01.flush,
+#food #M-02.flush,
+#food #M-03.flush,
+#food #M-04.flush,
+#food #M-05.flush,
+#food #M-06.flush{
+    opacity: 1;
+    animation: flash .5s infinite linear;
+}
+
+@keyframes flash{
+    50% {
+        opacity: 0.4;
+      }
+}
+
+#food .wrap{
+    display: flex;
+    /*width: 80%;*/
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#food .wrap>.box{
+    --step-grid-number: 4;
+    width: calc((100% - var(--step-grid-number) * 30px) / var(--step-grid-number));
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin:15px 15px 0 15px;
+    position: relative;
+    box-shadow: 2px 2px 10px #0000002d;
+}
+
+#food .wrap>.box>.step{
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    background-color: #d64189;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+#food .wrap>.box>p{
+    padding: 15px 15px;
+}
+
+#food .wrap>.box>p>span.brown{
+    color: #DF8054;
+    font-weight: bold;
+}
+
+#food .wrap>.box>p>span.blue{
+    color: #4C95CD;
+    font-weight: bold;
+}
+
+#food .wrap>.box>p>span.seat-card{
+    color: #FF1400;
+    font-weight: bold;
+}
+
+#food .wrap .box{
+    font-size: 16px;
+}
+
+#food .wrap .box > p > .caution{
+    font-size: 14px;
+}
+
+#food #shops{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*企画ボックス*/
+#food .project {
+    --project-grid-number: 3;
+    width: calc((100% - var(--project-grid-number) * 20px) / var(--project-grid-number));
+    /* width: 300px; */
+    position: relative;
+    border-radius: 15px;
+    margin: 20px 20px 20px 0;
+    box-shadow: 2px 2px 10px #0000002d;
+    background-color: #ffffff;
+    transition: .2s;
+}
+
+#food .project .desc{
+    color: var(--color-brown);
+}
+
+#food .project:hover {
+    box-shadow: 2px 2px 10px #0000005d;
+}
+
+
+/* 整理券 */
+#food .project .ticket {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffffff;
+    font-size: 8px;
+    background-color: #FF1400;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+/* 各企画の画像 */
+#food .project .project-img {
+    height: 120px;
+}
+#food .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 各企画の説明 */
+#food .project .desc .project-name {
+    padding: 8px 0;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+#food .project .desc {
+    background-color: #ffffff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px 20px;
+}
+
+#food .project .desc .detail {
+    font-size: 13px;
+}
+
+/* 各企画のタグ */
+#food .project .desc .project-tag ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+#food .project .desc .project-tag ul li {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px var(--color-gray);
+    border-radius: 30px;
+    padding: 2px 15px;
+    margin: 5px;
+    margin-left: 0;
+    font-size: 10px;
+}
+
+#food .project .desc .group-name {
+    line-height: 1.1;
+}
+
+#food .project .desc .group-name, 
+#food .project .desc .place {
+    position: relative;
+    padding-left: 20px;
+}
+
+#food .project .desc .group-name::before{
+    content: "";
+    display: inline-block;
+    background-image:url('/img/event/Iconmaterial-group.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#food .project .desc .place::before{
+    content: "";
+    display: inline-block;
+    background-image:url('/img/event/pin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 2px;
+    top: 0;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 1050px) {
+    #food .wrap>.box{
+        --step-grid-number: 2;
+        margin:30px 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #food{
+        width: calc(100% - 100px);
+    }
+
+    #food .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #food .project {
+        --project-grid-number: 2;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #food{
+        width: calc(100% - 50px);
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    #food #map{
+        display: none;
+    }
+
+    #food .wrap>.box{
+        --step-grid-number: 1;
+    }
+
+    #food .project {
+        --project-grid-number: 1;
+        max-width: 350px;
+        margin: 10px auto;
+    }
+}
