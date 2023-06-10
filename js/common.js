@@ -76,7 +76,6 @@ async function setHeaderFooter() {
                     <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
                     <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
                     <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
-                    <li><a href="/projects/archive">${headerLang.archive[lang]}</a></li>
                 </ul>
             </li>
             <li>About
@@ -120,7 +119,6 @@ async function setHeaderFooter() {
             <button class="accordionBtn" type="button">About</button>
             <ul>
                 <li><a href="/about/about">${headerLang.about[lang]}</a></li>
-                <li><a href="/about/dialogue">${headerLang.dialogue[lang]}</a></li>
             </ul>
             </li>
             <li>
