@@ -38,16 +38,14 @@ async function setHeaderFooter() {
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
     
     const headerLang = {
-                        "search":{"ja": "企画検索", "en": "Search"},
-                        "timetable":{"ja": "タイムテーブル", "en": "Timetable"},
+                        "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
-                        "food":{"ja": "Food in Campus", "en": "Food in Campus"},
                         "about":{"ja": "理工展とは", "en": "About"},
+                        "theme":{"ja": "今年のテーマ", "en": "Theme"},
+                        "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
-                        "covid19":{"ja": "感染症対策", "en": "COVID-19"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
                         "info":{"ja": "お問い合わせ", "en": "Contact"},
-                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
                         "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
                       }
 
@@ -67,26 +65,23 @@ async function setHeaderFooter() {
     <nav>
         <ul class="pcmenu">
             <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
-            <li>Projects
+            <li class="pulldown">企画情報
                 <ul>
-                    <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-                    <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
+                    <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                     <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                    <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
                 </ul>
             </li>
-            <li>About
+            <li class="pulldown">理工展について
                 <ul>
                     <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                    <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
                 </ul>
             </li>
-            <li>Info
+            <li class="pulldown">お知らせ
                 <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>   
-                <li><a href="/info/covid-19">${headerLang.covid19[lang]}</a></li>
+                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/information">${headerLang.info[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.info[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 </ul>
             </li>
@@ -101,28 +96,25 @@ async function setHeaderFooter() {
     <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
         <ul class="include-accordion scroll-control">
             <li>
-            <button class="accordionBtn" type="button">Projects</button>
+            <button class="accordionBtn" type="button">企画情報</button>
             <ul>
-                <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-                <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
+                <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                 <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">About</button>
+            <button class="accordionBtn" type="button">理工展について</button>
             <ul>
                 <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">Info</button>
+            <button class="accordionBtn" type="button">お知らせ</button>
             <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>   
-                <li><a href="/info/covid-19">${headerLang.covid19[lang]}</a></li>
+                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/information">${headerLang.info[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.info[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
             </ul>
             </li>
