@@ -38,14 +38,16 @@ async function setHeaderFooter() {
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
     
     const headerLang = {
+                        "projects":{"ja": "企画情報", "en": "Projects"},
                         "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
                         "about":{"ja": "理工展とは", "en": "About"},
                         "theme":{"ja": "今年のテーマ", "en": "Theme"},
                         "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
+                        "info":{"ja": "お知らせ", "en": "Info"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
-                        "info":{"ja": "お問い合わせ", "en": "Contact"},
+                        "contact":{"ja": "お問い合わせ", "en": "Contact"},
                         "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
                       }
 
@@ -65,23 +67,24 @@ async function setHeaderFooter() {
     <nav>
         <ul class="pcmenu">
             <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
-            <li class="pulldown">企画情報
+            <li class="pulldown">${headerLang.projects[lang]}
                 <ul>
                     <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                     <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
                 </ul>
             </li>
-            <li class="pulldown">理工展について
+            <li class="pulldown">${headerLang.about[lang]}
                 <ul>
                     <li><a href="/about/about">${headerLang.about[lang]}</a></li>
                     <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
+                    <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
                 </ul>
             </li>
-            <li class="pulldown">お知らせ
+            <li class="pulldown">${headerLang.info[lang]}
                 <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/contact">${headerLang.info[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 </ul>
             </li>
@@ -96,25 +99,26 @@ async function setHeaderFooter() {
     <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
         <ul class="include-accordion scroll-control">
             <li>
-            <button class="accordionBtn" type="button">企画情報</button>
+            <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
                 <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                 <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">理工展について</button>
+            <button class="accordionBtn" type="button">${headerLang.about[lang]}</button>
             <ul>
                 <li><a href="/about/about">${headerLang.about[lang]}</a></li>
                 <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
+                <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">お知らせ</button>
+            <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/contact">${headerLang.info[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
             </ul>
             </li>
