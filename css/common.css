@@ -8,6 +8,7 @@
     --color-walk:#92CF75;
     --color-red: #FF4A4A;
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif; 
+    font-size: 16px
 }
 
 * {
@@ -28,6 +29,7 @@ body{
 main{
     background-color: var(--background-color);
     padding-top: 70px;
+    min-height: calc(100vh - 100px);
 }
 
 @media screen and (max-width: 768px) {
