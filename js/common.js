@@ -177,13 +177,13 @@ const slideDown = (el) => {
         }else{
           slideUp(content); //クラス名にactiveがない（＝開いていた）なら上記で定義した閉じる関数を実行
         }
-        accordionBtns.forEach((accordionBtn, index) => {
+        /*accordionBtns.forEach((accordionBtn, index) => {
           if (activeIndex !== index) {
-            accordionBtn.parentNode.classList.remove('active');
+            //accordionBtn.parentNode.classList.remove('active');
             const openedContent = accordionBtn.nextElementSibling;
-            slideUp(openedContent); //現在開いている他のメニューを閉じる
+            //slideUp(openedContent); //現在開いている他のメニューを閉じる
           }
-        });
+        });*/
         //スクロール制御のために上位階層ulのクラス名を変える
         let container = accordion.closest('.scroll-control'); //sroll-controlnのクラス名である親要素を取得
         if(accordionBtn.parentNode.classList.contains('active') == false && container !== null ){
