@@ -1,12 +1,21 @@
-main {
+/* main {
     --color-faded-orange: #EDD3A1;
     --color-faded-blue: #C1E4E9;
     --color-gray: #F6F6F6;
     background-color: transparent;
     color: #707070;
     width: 100%;
-}
+} */
 
+
+#app {
+    width: calc(100% - 200px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: 590;
+}
 #app .app-header h1{
     padding-left: 40px;
     line-height: 1;
@@ -108,12 +117,8 @@ main {
     height: 6rem;
 }
 
-#app .overview > div.pamph .info {
-    background-color: var(--color-faded-orange);
-}
-
-#app .overview > div.virtual .info {
-    background-color: var(--color-faded-blue);
+.pamph {
+    background-color: var(#FDF87C);
 }
 
 #app .overview > div .info > a {
@@ -233,10 +238,6 @@ main {
 
 #app section.pamph-app h2::before {
     background-color: var(--color-faded-orange);
-}
-
-#app section.virtual-app h2::before {
-    background-color: var(--color-faded-blue);
 }
 
 #app .container {
