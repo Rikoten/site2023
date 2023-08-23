@@ -96,7 +96,7 @@ async function setHeaderFooter() {
         </ul>
     </nav>
     <div class="phone-menu">
-    <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
+    <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
         <ul class="include-accordion scroll-control">
             <li>
             <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>

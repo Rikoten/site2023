@@ -4,12 +4,12 @@
     --color-font:#461100;
     --color-yellow:#FDF87C;
     --color-orange:#FBA518;
+    --color-lightblue:#74C9F2;    
 
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif; 
     font-size: 16px;
 
     /* ↓↓↓ 要らなそうなのはいずれ消します↓↓↓ */
-    --background-color:#FFF1F3;
     --color-darkpink:#D8458C;
     --color-blue:#4AB8FF;
     --color-brown:#461100;
@@ -35,7 +35,7 @@ body{
 }
 
 main{
-    background-color: var(--background-color);
+    background-color: var(--color-background);
     padding-top: 70px;
     min-height: calc(100vh - 100px);
 }
@@ -512,7 +512,6 @@ header .jaen .en.active {
 *******************************/
 footer {
     color: white;
-    background: var(--color-dark-orange);
     font-size: 14px;
     position: relative;
     font-family: "Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif;
@@ -560,7 +559,6 @@ footer {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--color-orange);
     transition: .3s;
     cursor: pointer;
   }
@@ -593,7 +591,6 @@ footer {
   footer ul.social-icon .instagram-icon div {
     position: absolute;
     z-index: 2;
-    background: var(--color-orange);
     width: 60px;
     height: 60px;
     transition: .3s;
