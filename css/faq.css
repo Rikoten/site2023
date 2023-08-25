@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.main-content{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.question{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.answer{
+    border-bottom: 2px dotted   #f39800;
+}
