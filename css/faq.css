@@ -3,6 +3,7 @@
 .main-content{
     margin-top: 20px;
     margin-left: 100px;
+    margin-right: 100px;
 }
 
 .question{
@@ -12,4 +13,9 @@
 
 .answer{
     border-bottom: 2px dotted   #f39800;
+}
+
+.h1{
+    color: #f39800;
+    font-size: 1.35rem;
 }
