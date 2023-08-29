@@ -23,3 +23,31 @@ $('.slider').slick({
     }
   ]
   });
+
+
+
+
+
+  
+
+  const slider = document.querySelector(".slider");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
+
+let slideIndex = 0;
+
+prevButton.addEventListener("click", () => {
+  slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+  updateSliderPosition();
+});
+
+nextButton.addEventListener("click", () => {
+  slideIndex = (slideIndex + 1) % slider.children.length;
+  updateSliderPosition();
+});
+
+function updateSliderPosition() {
+  const slideWidth = slider.children[0].clientWidth;
+  const offset = -slideIndex * slideWidth;
+  slider.style.transform = `translateX(${offset}px)`;
+}

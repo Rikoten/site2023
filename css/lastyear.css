@@ -3,10 +3,29 @@
 /*==================================================
 スライダーのためのcss
 ===================================*/
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-   width:94%;
-    margin:0 auto;
+
+
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
+
+
+
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
 
 .slider img {
     width:100%;/*スライダー内の画像を横幅100%に*/
@@ -33,6 +52,39 @@
     height: 15px;
     width: 15px;
 }
+
+
+
+
+
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
+
+
+
+
+
+
 
 .slick-prev {/*戻る矢印の位置と形状*/
     left: -1.5%;
@@ -96,4 +148,10 @@ a:hover,
 a:active{
   text-decoration: none;
 }
+
+
+
+
+
+
   
