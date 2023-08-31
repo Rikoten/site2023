@@ -1,10 +1,12 @@
 :root{
     --color-background:#FFFDCD;
-    --color-heading:#0316FD;
+    /*--color-heading:#0316FD;*/
     --color-font:#461100;
     --color-yellow:#FDF87C;
     --color-orange:#FBA518;
-    --color-lightblue:#74C9F2;    
+    --color-lightblue:#74C9F2;  
+    
+    --font-headline: vdl-kuromincho, sans-serif;
 
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif; 
     font-size: 16px;
@@ -38,6 +40,12 @@ main{
     background-color: var(--color-background);
     padding-top: 70px;
     min-height: calc(100vh - 100px);
+}
+
+h1{
+  font-family: var(--font-headline);
+  font-style: normal;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
