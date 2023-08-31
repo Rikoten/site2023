@@ -38,16 +38,16 @@ async function setHeaderFooter() {
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
     
     const headerLang = {
-                        "search":{"ja": "企画検索", "en": "Search"},
-                        "timetable":{"ja": "タイムテーブル", "en": "Timetable"},
+                        "projects":{"ja": "企画情報", "en": "Projects"},
+                        "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
-                        "food":{"ja": "Food in Campus", "en": "Food in Campus"},
                         "about":{"ja": "理工展とは", "en": "About"},
+                        "theme":{"ja": "今年のテーマ", "en": "Theme"},
+                        "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
+                        "info":{"ja": "お知らせ", "en": "Info"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
-                        "covid19":{"ja": "感染症対策", "en": "COVID-19"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
-                        "info":{"ja": "お問い合わせ", "en": "Contact"},
-                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
+                        "contact":{"ja": "お問い合わせ", "en": "Contact"},
                         "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
                       }
 
@@ -66,27 +66,25 @@ async function setHeaderFooter() {
     </div>
     <nav>
         <ul class="pcmenu">
-            <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
-            <li>Projects
+            <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
+            <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
-                    <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-                    <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
+                    <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                     <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                    <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
                 </ul>
             </li>
-            <li>About
+            <li class="pulldown" id="header-about">${headerLang.about[lang]}
                 <ul>
                     <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                    <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
+                    <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
                 </ul>
             </li>
-            <li>Info
+            <li class="pulldown" id="header-info">${headerLang.info[lang]}
                 <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>   
-                <li><a href="/info/covid-19">${headerLang.covid19[lang]}</a></li>
+                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/information">${headerLang.info[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 </ul>
             </li>
@@ -98,31 +96,29 @@ async function setHeaderFooter() {
         </ul>
     </nav>
     <div class="phone-menu">
-    <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
+    <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
         <ul class="include-accordion scroll-control">
             <li>
-            <button class="accordionBtn" type="button">Projects</button>
+            <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
-                <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-                <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
+                <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                 <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">About</button>
+            <button class="accordionBtn" type="button">${headerLang.about[lang]}</button>
             <ul>
                 <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
+                <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">Info</button>
+            <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>   
-                <li><a href="/info/covid-19">${headerLang.covid19[lang]}</a></li>
+                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/information">${headerLang.info[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
             </ul>
             </li>
@@ -181,13 +177,13 @@ const slideDown = (el) => {
         }else{
           slideUp(content); //クラス名にactiveがない（＝開いていた）なら上記で定義した閉じる関数を実行
         }
-        accordionBtns.forEach((accordionBtn, index) => {
+        /*accordionBtns.forEach((accordionBtn, index) => {
           if (activeIndex !== index) {
-            accordionBtn.parentNode.classList.remove('active');
+            //accordionBtn.parentNode.classList.remove('active');
             const openedContent = accordionBtn.nextElementSibling;
-            slideUp(openedContent); //現在開いている他のメニューを閉じる
+            //slideUp(openedContent); //現在開いている他のメニューを閉じる
           }
-        });
+        });*/
         //スクロール制御のために上位階層ulのクラス名を変える
         let container = accordion.closest('.scroll-control'); //sroll-controlnのクラス名である親要素を取得
         if(accordionBtn.parentNode.classList.contains('active') == false && container !== null ){

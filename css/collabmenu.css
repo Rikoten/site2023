@@ -6,16 +6,11 @@ html {
 }
 
 body{
-  background-color: var(--background-color);
   width: 100%;
   margin: 0;
   z-index: 0;
 }
 
-
-main {
-  background-color: var(--background-color);
-}
 
 main a{
   text-decoration: none;
@@ -748,7 +743,6 @@ header>.menu_bar , .menu_bar_close{
 }
 
 /* スマホ表示 */
-
 header .phone-menu{
   display: none;
 }

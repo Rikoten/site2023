@@ -1,5 +1,17 @@
 :root{
-    --background-color:#FFFDCD;
+    --color-background:#FFFDCD;
+    /*--color-heading:#0316FD;*/
+    --color-font:#461100;
+    --color-yellow:#FDF87C;
+    --color-orange:#FBA518;
+    --color-lightblue:#74C9F2;  
+    
+    --font-headline: vdl-kuromincho, sans-serif;
+
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif; 
+    font-size: 16px;
+
+    /* ↓↓↓ 要らなそうなのはいずれ消します↓↓↓ */
     --color-darkpink:#D8458C;
     --color-blue:#4AB8FF;
     --color-brown:#461100;
@@ -7,7 +19,6 @@
     --color-lightpink:#DD6BA3;
     --color-walk:#92CF75;
     --color-red: #FF4A4A;
-    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif; 
 }
 
 * {
@@ -26,7 +37,21 @@ body{
 }
 
 main{
-    background-color: var(--background-color);
+    background-color: var(--color-background);
+    padding-top: 70px;
+    min-height: calc(100vh - 100px);
+}
+
+h1{
+  font-family: var(--font-headline);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  main{
+    padding-top: 0;
+  }
 }
 
 li {
@@ -56,7 +81,11 @@ textarea {
   outline: none;
 }
 
-/*headerのCSS*/
+/*******************************
+
+     ヘッダー
+
+*******************************/
 header{
     height: 70px;
     margin: 0;
@@ -82,22 +111,26 @@ header>nav>ul.pcmenu>li{
     margin-right: 0px;
     color: var(--color-darkpink);
     position: relative;
-    width: 140px;
+    width: 150px;
     cursor: pointer;
     font-weight: 590;
 }
 
+header>nav>ul.pcmenu>li.pulldown{
+  text-align: center;
+}
 
 header>nav>ul.pcmenu>li#logo{
-    width: calc( 100% - 200px );
+    width: calc( 100% - 500px );
 }
 
 header>nav>ul.pcmenu>li img{
-    height: 30px;
+    height: 50px;
     position: absolute;
     top: 50%;
     transform: translate(0,-50%);
     margin-right: 50px;
+    margin-left: 5px;
 }
 
 header ul.pcmenu a{
@@ -111,9 +144,10 @@ header ul.pcmenu li ul{
     padding: 0px;
     position: absolute;
     height: 0px;
-    width: 180px;
+    width: 200px;
     text-align: center;
-    left: -70px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
@@ -479,10 +513,13 @@ header .jaen .en.active {
     }*/
 }
 
-/*footer*/
+/*******************************
+
+     フッター
+
+*******************************/
 footer {
     color: white;
-    background: var(--color-dark-orange);
     font-size: 14px;
     position: relative;
     font-family: "Yu Gothic", "游ゴシック", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif;
@@ -530,7 +567,6 @@ footer {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--color-orange);
     transition: .3s;
     cursor: pointer;
   }
@@ -563,7 +599,6 @@ footer {
   footer ul.social-icon .instagram-icon div {
     position: absolute;
     z-index: 2;
-    background: var(--color-orange);
     width: 60px;
     height: 60px;
     transition: .3s;
