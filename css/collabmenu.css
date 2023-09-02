@@ -12,9 +12,6 @@ body{
 }
 
 
-main {
-}
-
 main a{
   text-decoration: none;
   color: var(--color-brown);
