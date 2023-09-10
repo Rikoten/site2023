@@ -4,6 +4,7 @@
     --color-font:#461100;
     --color-yellow:#FDF87C;
     --color-orange:#FBA518;
+    --color-blue:#0316FD;
     --color-lightblue:#74C9F2;  
     
     --font-headline: vdl-kuromincho, sans-serif;
@@ -13,7 +14,6 @@
 
     /* ↓↓↓ 要らなそうなのはいずれ消します↓↓↓ */
     --color-darkpink:#D8458C;
-    --color-blue:#4AB8FF;
     --color-brown:#461100;
     --color-gray:#C7C7C7;
     --color-lightpink:#DD6BA3;
@@ -79,6 +79,10 @@ textarea {
   appearance: none;
   border: none;
   outline: none;
+}
+
+img{
+  max-width: 100%;
 }
 
 /*******************************
