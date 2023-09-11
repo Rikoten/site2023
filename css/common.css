@@ -8,6 +8,7 @@
     --color-lightblue:#74C9F2;  
     
     --font-headline: vdl-kuromincho, sans-serif;
+    --font-serif: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif; 
     font-size: 16px;

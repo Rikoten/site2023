@@ -6,7 +6,8 @@
 /*--- 左右の余白等 ---*/
 #participants,
 #notes,
-#theme{
+#theme,
+#specialguest{
   width: calc(100% - 100px);
   max-width: 1000px;
   margin: auto;
@@ -16,7 +17,8 @@
 @media screen and (max-width: 768px) {
   #participants,
   #notes,
-  #theme{
+  #theme,
+  #specialguest{
     width: calc(100% - 50px);
   }
 }
@@ -24,7 +26,8 @@
 @media screen and (max-width: 480px) {
   #participants,
   #notes,
-  #theme{
+  #theme,
+  #specialguest{
     width: calc(100% - 30px);
   }
 }
@@ -294,7 +297,7 @@ div.button:hover{
   width: 100%;
   color: var(--color-blue);
   font-size: 24px;
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: var(--font-serif);
   background-color: #FFF;
   margin: 0;
   text-align: center;
@@ -391,8 +394,8 @@ div.button:hover{
 
 #theme .text{
   width: 60%;
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-  padding: 50px;
+  font-family: var(--font-serif);
+  padding: 50px 50px 0 0;
   position: relative;
 }
 
@@ -434,7 +437,7 @@ div.button:hover{
 
   #theme .text{
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 
   #theme .text p{
@@ -469,5 +472,76 @@ div.button:hover{
 @media screen and (max-width: 600px) {
   #theme .text h2{
     font-size: 24px;
+  }
+}
+
+/*******************************
+
+     有名人企画
+
+*******************************/
+#specialguest .wrapper{
+  display: flex;
+}
+
+#specialguest .img{
+  width: 40%;
+}
+
+#specialguest .img img{
+  display: block;
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  margin: auto;
+}
+
+#specialguest .text{
+  width: 60%;
+  padding-left: 50px;
+}
+
+#specialguest .text h2{
+  font-size: 20px;
+  color: var(--color-orange);
+  margin: 0;
+}
+
+#specialguest .text .name{
+  font-size: 32px;
+  font-family: var(--font-serif);
+  border-bottom: solid 1px;
+}
+
+#specialguest .text .description{
+  font-size: 20px;
+  font-family: var(--font-serif);
+  margin-top: 10px;
+}
+
+#specialguest .text p{
+  font-family: var(--font-serif);
+}
+
+@media screen and (max-width: 600px) {
+  #specialguest .wrapper{
+    position: relative;
+  }
+
+  #specialguest .img{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #specialguest .text{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #specialguest .text p{
+    margin-top: 350px;
   }
 }
