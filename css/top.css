@@ -7,7 +7,8 @@
 #participants,
 #notes,
 #theme,
-#specialguest{
+#specialguest,
+#access{
   width: calc(100% - 100px);
   max-width: 1000px;
   margin: auto;
@@ -18,7 +19,8 @@
   #participants,
   #notes,
   #theme,
-  #specialguest{
+  #specialguest,
+  #access{
     width: calc(100% - 50px);
   }
 }
@@ -27,7 +29,8 @@
   #participants,
   #notes,
   #theme,
-  #specialguest{
+  #specialguest,
+  #access{
     width: calc(100% - 30px);
   }
 }
@@ -447,12 +450,12 @@ div.button:hover{
   #theme .img{
     width: 200px;
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     right: 20px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .back-benz{
     background-size: 150% auto;
     background-position: bottom 100px right 25px;
@@ -460,7 +463,7 @@ div.button:hover{
 
   #theme .text p{
     margin-right: 0;
-    margin-bottom: 200px;
+    margin-bottom: 220px;
   }
 
   #theme .img{
@@ -543,5 +546,70 @@ div.button:hover{
 
   #specialguest .text p{
     margin-top: 350px;
+  }
+}
+
+/*******************************
+
+     アクセス
+
+*******************************/
+#access .textbox{
+  display: flex;
+}
+
+#access .textbox .text{
+  width: 40%;
+}
+
+#access .textbox .text > div:first-child{
+  padding-bottom: 20px;
+}
+
+#access .textbox .text h2{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#access .textbox .text p{
+  margin: 0;
+}
+
+#access .textbox iframe{
+  width: 60%;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 856px) {
+  #access .textbox .text{
+    width: 50%;
+  }
+
+  #access .textbox iframe{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  #access .textbox{
+    display: block;
+  }
+
+  #access .textbox .text{
+    width: 100%;
+  }
+
+  #access .textbox iframe{
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  #access .textbox .text h2{
+    font-size: 20px;
   }
 }
