@@ -65,8 +65,9 @@ async function setHeaderFooter() {
         <span></span>
     </div>
     <nav>
-        <ul class="pcmenu">
-            <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
+        <div class="pcmenu">
+            <div id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></div>
+            <ul>
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
                     <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
@@ -88,12 +89,13 @@ async function setHeaderFooter() {
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 </ul>
             </li>
+            </ul>
             <div class="jaen">
               <div class="ja ${jaActive}">Ja</div>
               <span>/</span>
               <di class="en ${enActive}">En</di>
             </div>
-        </ul>
+        </div>
     </nav>
     <div class="phone-menu">
     <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
@@ -131,6 +133,31 @@ async function setHeaderFooter() {
     </div>
     `)
     headerelement.insertAdjacentHTML("afterbegin", head);
+
+    const pcmenu = document.querySelector(".pcmenu > ul");
+    const pulldown = [...pcmenu.querySelectorAll("li.pulldown")];
+    console.log(pulldown)
+
+    //console.log("pulldown", pulldown[0]);
+
+    pcmenu.addEventListener("mouseover", () =>{
+      document.addEventListener("mouseover", (e)=>{
+        if (pulldown.includes(e.target)){
+          hpulldown = e.target.querySelector("ul").clientHeight
+          pcmenu.style.height = `calc(50px + ${hpulldown}px)`;        
+        }
+        /*hpulldown = e.target.querySelector("ul").clientHeight
+        pcmenu.style.height = `calc(50px + ${hpulldown}px)`;*/
+      })
+
+    });
+
+    pcmenu.addEventListener("mouseleave", ()=>{
+      pcmenu.style.height = "50px";
+    });
+
+
+
     const menu=document.getElementsByClassName("menu_bar")[0];
     const open=document.getElementsByClassName("phone-menu")[0];
     
