@@ -1,3 +1,9 @@
+/*
+  $(function(){
+    alert('jQuery is ready.')
+  });
+*/
+
 $(function(){
   $(".slideshow-slide li").css({"position":"relative"});
   $(".slideshow-slide li").hide().css({"position":"absolute"});
@@ -12,3 +18,7 @@ $(function(){
     $nextnext.css({"display":"block"});
   },3000);
 });
+
+const a = 10;
+console.log(a);
+

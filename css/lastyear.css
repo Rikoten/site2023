@@ -1,33 +1,128 @@
-.slideshow-slide{
-  position: relative;
-  width: 280px;
-  height: 200px;
-  overflow: hidden;
-  padding: 0;
-  
-  li{
-      list-style: none;
-      width: 100%;
-      height: 100%;
-      transition: 1s;
-      top: 0;
-      left: 0;
-      &.slide{
-        top: 0;
-        left: 100%;
-        z-index: 10;
-      }
-      &:first-of-type{
-        display: block!important;
-      }
-      img{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-      }
+html{
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif;
+}
+
+#lastyear{
+  max-width: 1000px;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  #lastyear{
+    width: calc(100% - 50px);
   }
 }
 
+@media screen and (max-width: 480px) {
+  #lastyear{
+    width: calc(100% - 30px);
+  }
+}
 
-  
+#lastyear h1{
+  font-family: var(--font-headline);
+  font-size: 1.8rem;
+  color: var(--color-font);
+  width: fit-content;
+  padding-top: 30px;
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+#lastyear h1::before{
+  content: "";
+  background-image: url(../img/lastyear/lastyearicon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: calc(50% + 15px);
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#lastyear .kirakira {
+  position: absolute;
+  width: 30%;
+  max-width: 240px;
+  top: 6rem;
+  left: 6rem;
+  z-index: 200;
+}
+
+#lastyear .kirakira {
+  position:absolute;
+  max-width: 320px;
+  width: 40%;
+  top: 10rem;
+  z-index: 1;
+}
+
+#lastyear .pics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px auto 0;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100% ;
+}
+
+#lastyear .pic {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+}
+#lastyear .pics img{
+  height: 250px;
+  transition: transform .6s ease; /* ゆっくり変化させる */
+  transition:1s all;
+}
+#lastyear .pics img:hover{
+  transform: scale(1.1); /* 拡大 */
+  transition:1s all;
+}
+
+#lastyear .pics p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  #lastyear .kirakira {
+      width: 24%;
+  }
+  #lastyear .kirakira {
+      width: 32%;
+  }
+}
+
+@media screen and (max-width: 760px){
+  #lastyear h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #lastyear .kirakira {
+      top: 8rem;
+      left: 4rem;
+  }
+  #lastyear.pic {
+      height: auto;
+  }
+  #lastyear .pics img {
+      width: 100%;
+      height: auto;
+  }
+
+}
+
+
