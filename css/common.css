@@ -614,9 +614,28 @@ footer {
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
-    color: var(--color-lightpink);
+    color: var(--color-font);
+  }
+
+  footer p.copyright{
+    font-size: 16px;
+    height: 30px;
+    background-color: var(--color-orange);
+    line-height: 30px;
   }
   
+  @media screen and (max-width: 768px) {
+    footer p.copyright{
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    footer p.copyright{
+      font-size: 10px;
+    }
+  }
+
   footer a {
     text-decoration: none;
     color: #FFF;
