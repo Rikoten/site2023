@@ -102,86 +102,122 @@ header{
     box-shadow: 10px -2px 5px black;
 }
 
-header>nav>ul.pcmenu{
+header>nav>div.pcmenu{
     margin: 0;
     display: flex;
     padding: 0;
     position: relative;
 }
 
-header>nav>ul.pcmenu>li{
+header>nav>div.pcmenu a{
+  display: block;
+}
+
+header>nav>div.pcmenu>div#logo{
     list-style: none;
     height: 70px;
     line-height: 70px;
     margin-right: 0px;
-    color: var(--color-darkpink);
     position: relative;
     width: 150px;
     cursor: pointer;
     font-weight: 590;
 }
 
-header>nav>ul.pcmenu>li.pulldown{
+header>nav>div.pcmenu>div#logo{
+  width: calc( 100% - 500px );
+}
+
+header>nav>div.pcmenu>div img{
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  margin-right: 50px;
+  margin-left: 5px;
+}
+
+header>nav>div.pcmenu>ul{
+  display: flex;
+  height: 50px;
+  background-color: var(--color-background);
+  border-radius: 25px;
+  padding-left: 0;
+  margin: 10px 0;
+  position: relative;
+}
+
+header>nav>div.pcmenu>ul:hover{
+  box-shadow: 2px 2px 10px #00000042;
+}
+
+header>nav>div.pcmenu>ul>li{
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 0px;
+  width: 150px;
+  cursor: pointer;
+  font-weight: 590;
+}
+
+header>nav>div.pcmenu li.pulldown{
   text-align: center;
 }
 
-header>nav>ul.pcmenu>li#logo{
-    width: calc( 100% - 500px );
+header>nav>div.pcmenu li.pulldown:hover{
+  background-color: var(--color-orange);
 }
 
-header>nav>ul.pcmenu>li img{
-    height: 50px;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    margin-right: 50px;
-    margin-left: 5px;
+header>nav>div.pcmenu li.pulldown:first-child:hover{
+  border-radius: 25px 0 0 0;
 }
 
-header ul.pcmenu a{
-    display: block;
+header>nav>div.pcmenu li.pulldown:last-child:hover{
+  border-radius: 0 25px 0 0;
 }
 
-header ul.pcmenu li ul{
+header div.pcmenu li.pulldown ul{
+  position: absolute;
+  height: 0px;
+  width: 450px;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
     visibility: hidden;
     opacity: 0;
-    margin: 0px;
+    margin-top: 1px;
     padding: 0px;
-    position: absolute;
-    height: 0px;
-    width: 200px;
-    text-align: center;
     left: 50%;
     transform: translateX(-50%);
 }
 
-
-header ul.pcmenu li:hover ul{
-    transition: .3s ease-in-out;
-    display: block;
+header div.pcmenu li.pulldown:hover ul{
+    display: flex;
+    flex-wrap: wrap;
     height: fit-content;
+    background-color: var(--color-orange);
     visibility: visible;
     opacity: 1;
-    box-shadow: 2px 2px 10px #00000042;
+    transition: .3s ease-in-out;
 }
 
-header ul.pcmenu li ul li{
+header div.pcmenu li ul li{
+  display: block;
     list-style: none;
+    width: 150px;
     height: 45px;
     line-height: 45px;
-    font-size: 12px;
-    background-color: var(--color-darkpink);
-    color: var(--background-color);
+    font-size: 14px;
     text-align: center;
     transition: .2s;
 }
 
-header ul.pcmenu li ul li:hover {
-  background-color: #cf2b7b;
+header div.pcmenu li ul li a{
+    color: var(--color-font);
 }
 
-header ul.pcmenu li ul li a{
-    color: #ffffff;
+header div.pcmenu li ul li:hover a{
+  color: var(--color-yellow);
 }
 
 header>.menu_bar , .menu_bar_close{
@@ -193,50 +229,96 @@ header .phone-menu{
 }
 
 /* 多言語切り替えボタン */
+header>nav>div.pcmenu>div.jaen{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  line-height: 70px;
+  cursor: pointer;
+  font-weight: 590;
+  margin: 0 50px;
+}
+
 header .jaen {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  margin-left: 40px;
+}
+
+header .jaen span{
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-orange);
+}
+
+header .jaen .ja,
+header .jaen .en{
+  font-size: 24px;
+  color: #fff;
+  -webkit-text-stroke: 1px var(--color-orange);
 }
 
 header .jaen .ja,
 header .jaen .en {
-  padding: 0 10px;
+  padding: 0;
   cursor: pointer;
 }
 
 header .jaen .ja.active,
 header .jaen .en.active {
   font-weight: bold;
+  color: var(--color-orange);
+  -webkit-text-stroke: 0;
 }
 
-
+@media screen and (max-width: 864px) {
+  header>nav>div.pcmenu>div.jaen{
+    margin: 0 20px;
+  }
+}
 
 @media screen and (max-width: 768px) {
+    header.open{
+      background-color: var(--color-background);
+    }
+
+    header li#logo{
+      height: 50px;
+      background-color: #fff;
+      margin: 0;
+    }
+
     header .phone-menu{
         display: none;
     }
 
     header .phone-menu.active{
         display: block;
-        margin: 5px auto 0 auto;
+        margin: 0 auto;
         width: 100%;
 
     }
     
+    header .phone-menu li#logo{
+      position: relative;
+    }
+
     header .phone-menu li img{
-        /*transform: translate(-50%,-50%);*/
         height: 30px;
         line-height: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     
     
     header ul{
-        background-color: var(--color-lightpink);
+        background-color: var(--color-background);
         width: 100%;
         padding: 0;
-        color: #fff;
+        color: var(--color-font);
         float: left;
         margin: 0 auto;
       }
@@ -247,6 +329,7 @@ header .jaen .en.active {
       
     header  li{
         list-style: none;
+        margin: 0 15px;
       }
       
       header ul ul{
@@ -254,26 +337,26 @@ header .jaen .en.active {
         padding: 0;
         overflow: hidden;
         transition: .5s;
-        border-top: 1px solid #fff;
-        background-color: #fff;
+        border-top: 1px solid var(--color-font);
         color: var(--color-lightpink);
         margin:0;
       }
       
       header ul li li{
-        border-bottom: 1px dotted var(--color-lightpink);
+        border-bottom: 1px solid var(--color-font);
+        background-color: var(--color-yellow);
         padding: 10px 0 10px 10px;
-        margin-left:15px;
-        color: var(--color-lightpink);
+        margin: 0 30px;
+        color: var(--color-font);
       }
 
       header ul li li a{
         text-decoration: none;
-        color: var(--color-lightpink);
+        color: var(--color-font);
       }
       
       header ul:nth-of-type(1) li.active li:last-child{
-        border-bottom:1px solid #fff; 
+        border-bottom:1px solid var(--color-background); 
       }
       
       header button{
@@ -281,14 +364,11 @@ header .jaen .en.active {
         border: none;
         width: 100%;
         background-color: inherit;
-        color: #fff;
+        color: var(--color-font);
         cursor: pointer;
         text-align: left;
         padding: 15px 0 15px 20px;
         font-size:1em;
-      }
-      header button:hover{
-        background-color: var(--color-darkpink);
       }
       
       header button::before,
@@ -298,7 +378,7 @@ header .jaen .en.active {
         top: 20px;
         width: 1.5px;
         height: 8px;
-        background-color: #fff;
+        background-color: var(--color-font);
         transition: .5s;
       }
       
@@ -397,11 +477,11 @@ header .jaen .en.active {
         height: 2px;
         border-radius: 5px;
         width: 45%;
-        background: var(--color-darkpink);
+        background: var(--color-orange);
     }
 
     header>.menu_bar.unactive span{
-        background: var(--color-darkpink);
+        background: var(--color-orange);
     }
 
     
@@ -416,20 +496,20 @@ header .jaen .en.active {
     }
 
     header>.menu_bar.unactive span:nth-of-type(1) {
-        top: 14px;
+        top: 20px;
         left: 18px;
         transform: translateY(6px) rotate(-45deg);
-        width: 30%;
+        width: 50%;
     }
 
     header>.menu_bar.unactive span:nth-of-type(2) {
         opacity: 0;
     }
     header>.menu_bar.unactive span:nth-of-type(3) {
-        top: 26px;
+        top: 32px;
         left: 18px;
         transform: translateY(-6px) rotate(45deg);
-        width: 30%;
+        width: 50%;
     }
 
 
@@ -450,46 +530,46 @@ header .jaen .en.active {
         display: none;
     }
 
-    header>nav>ul.pcmenu{
+    header>nav>div.pcmenu{
         margin: 0;
         display: block;
         padding: 0;
         position: static;
     }
 
-    header>nav>ul.pcmenu>li{
+    header>nav>div.pcmenu>li{
         margin: 0 auto;
         text-align: center;
         height: 50px;
         line-height: 50px;
     }
 
-    header>nav>ul.pcmenu>li.header-events{
+    header>nav>div.pcmenu>li.header-events{
         display: block;
         align-items: center;
     }
 
-    header>nav>ul.pcmenu>li.header-about{
+    header>nav>div.pcmenu>li.header-about{
         margin-top: 100px;
         display: block;
     }
 
-    header>nav>ul.pcmenu>li.header-info{
+    header>nav>div.pcmenu>li.header-info{
         margin-top: 100px;
     }
 
-    header>nav>ul.pcmenu>li img{
+    header>nav>div.pcmenu>li img{
         transform: translate(-50%,-50%);
     }
 
-    header ul.pcmenu li ul{
+    header div.pcmenu li ul{
         display: block;
         text-align: center;
         margin: 0 auto;
         opacity: 1;
     }
 
-    header ul.pcmenu li ul li{
+    header div.pcmenu li ul li{
         height: 40px;
         line-height: 40px;
         font-size: 12px;
@@ -499,7 +579,7 @@ header .jaen .en.active {
         width: 150px;
     }
 
-    header ul.pcmenu li ul li a{
+    header div.pcmenu li ul li a{
         color: var(--color-lightpink);
         margin: 0  auto;
         text-align: center;
@@ -534,9 +614,28 @@ footer {
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
-    color: var(--color-lightpink);
+    color: var(--color-font);
+  }
+
+  footer p.copyright{
+    font-size: 16px;
+    height: 30px;
+    background-color: var(--color-orange);
+    line-height: 30px;
   }
   
+  @media screen and (max-width: 768px) {
+    footer p.copyright{
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    footer p.copyright{
+      font-size: 10px;
+    }
+  }
+
   footer a {
     text-decoration: none;
     color: #FFF;
