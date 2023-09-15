@@ -21,12 +21,13 @@ h1::before {
     transform: translateY(-50%);
 }
 
-#info h1 {
+h1 {
     display: inline-block;
     margin: 0;
     font-size: 32px;
-    font-family: --font-headline;
-
+    font-family: var(--font-headline);
+    font-style: normal;
+    font-weight: 500;
     padding-left: 40px;
     position: relative;
 }
