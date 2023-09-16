@@ -6,6 +6,7 @@ html{
   max-width: 1000px;
   width: calc(100% - 100px);
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -22,10 +23,9 @@ html{
 
 #lastyear h1{
   font-family: var(--font-headline);
-  font-size: 1.8rem;
+  font-size: 32px;
   color: var(--color-font);
   width: fit-content;
-  padding-top: 30px;
   margin: 0;
   padding-left: 40px;
   position: relative;
@@ -39,36 +39,50 @@ html{
   width: 30px;
   height: 30px;
   position: absolute;
-  top: calc(50% + 15px);
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
-#lastyear .kirakira {
-  position: absolute;
-  width: 30%;
-  max-width: 240px;
-  top: 6rem;
-  left: 6rem;
-  z-index: 200;
+#lastyear .pics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px auto 0;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100% ;
+  position: relative;
+}
+
+#lastyear .pics::after{
+  content: "";
+  display: block;
+  width: 300px;
+  height: 0;
+  margin: 10px;
 }
 
 #lastyear .kirakira {
   position:absolute;
   max-width: 320px;
   width: 40%;
-  top: 10rem;
+  top: 170px;
+  left: 50px;
   z-index: 1;
 }
 
-#lastyear .pics {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 100px auto 0;
-  padding-bottom: 50px;
-  text-align: center;
-  width: 100% ;
+@media screen and (max-width: 768px) {
+  #lastyear .kirakira{
+    top: 100px;
+    left: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #lastyear .kirakira{
+    left: 15px;
+  }
 }
 
 #lastyear .pic {
@@ -77,12 +91,13 @@ html{
   overflow: hidden;
   margin: 10px;
 }
-#lastyear .pics img{
+#lastyear .pics .pic img{
   height: 250px;
+  object-fit: cover;
   transition: transform .6s ease; /* ゆっくり変化させる */
   transition:1s all;
 }
-#lastyear .pics img:hover{
+#lastyear .pics .pic img:hover{
   transform: scale(1.1); /* 拡大 */
   transition:1s all;
 }
@@ -104,16 +119,9 @@ html{
   }
 }
 
-@media screen and (max-width: 760px){
-  #lastyear h1{
-    font-size: 1.5rem;
-  }
-}
-
 @media screen and (max-width: 576px) {
-  #lastyear .kirakira {
-      top: 8rem;
-      left: 4rem;
+  #lastyear .pics{
+    margin-top: 50px;
   }
   #lastyear.pic {
       height: auto;
@@ -122,7 +130,4 @@ html{
       width: 100%;
       height: auto;
   }
-
 }
-
-
