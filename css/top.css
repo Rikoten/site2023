@@ -219,12 +219,27 @@ div.button:hover{
     top: 15%;
   }    
 
+  #top .content .schedule{
+    bottom: 15%;
+    max-height: 50%;
+  }
+
   #top .content .schedule > div{
     display: block;
   }
 
   #top .content .schedule .time{
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #top .content .schedule .date{
+    font-size: 48px;
+  }
+
+  #top .content .schedule .time{
+    font-size: 36px;
   }
 }
 
@@ -240,10 +255,6 @@ div.button:hover{
 
   #top .content .schedule .date{
     font-size: 40px;
-  }
-
-  #top .content .schedule .time{
-    font-size: 36px;
   }
 }
 
