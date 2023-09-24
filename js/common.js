@@ -41,6 +41,7 @@ async function setHeaderFooter() {
                         "projects":{"ja": "企画情報", "en": "Projects"},
                         "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
+                        "specialguest":{"ja": "有名人企画", "en": "Special Guest"},
                         "about":{"ja": "理工展とは", "en": "About"},
                         "theme":{"ja": "今年のテーマ", "en": "Theme"},
                         "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
@@ -72,6 +73,7 @@ async function setHeaderFooter() {
                 <ul>
                     <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                     <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
+                    <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
                 </ul>
             </li>
             <li class="pulldown" id="header-about">${headerLang.about[lang]}
@@ -105,6 +107,7 @@ async function setHeaderFooter() {
             <ul>
                 <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                 <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
+                <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
             </ul>
             </li>
             <li>
