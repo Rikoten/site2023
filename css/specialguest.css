@@ -47,8 +47,7 @@
 }
 
 #specialguest .nickname-text {
-  font-family: 'HGP創英角ｺﾞｼｯｸUB';
-  font-weight: 200;
+  font-weight: bold;
   color: var(--color-orange);
   margin-bottom: 0;
 }
