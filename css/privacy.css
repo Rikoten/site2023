@@ -42,6 +42,12 @@
     color: var(--color-orange);
 }
 
+#privacy img.yaguchi{
+  display: block;
+  height: 300px;
+  margin: auto;
+}
+
 #privacy .treat {
     list-style-type: disc;
     text-align: left;
