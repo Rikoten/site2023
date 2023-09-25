@@ -307,6 +307,22 @@ div.button:hover{
   position: relative;
 }
 
+#participants .exhibition .container .inner-box .back-img{
+  background-image: url(../img/top/exhibition.jpg);
+}
+
+#participants .stage .container .inner-box .back-img{
+  background-image: url(../img/top/stage.jpg);
+}
+
+#participants .experiment .container .inner-box .back-img{
+  background-image: url(../img/top/experiment.jpg);
+}
+
+#participants .booth .container .inner-box .back-img{
+  background-image: url(../img/top/booth.jpg);
+}
+
 #participants .container .inner-box .back-img p{
   width: 100%;
   color: var(--color-blue);
