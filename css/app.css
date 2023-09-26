@@ -184,7 +184,6 @@
     margin: 2rem auto 1rem;
 }
 
-
 #app .download-link a,
 #app .download-link span {
     text-align: center;
@@ -251,26 +250,6 @@
 #app section .container>p:last-of-type {
     margin-bottom: 2rem;
 }
-
-
-
-#app .items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#app .items .item {
-    --grid-number: 3;
-    width: calc((100% - var(--grid-number)*20px) / var(--grid-number));
-    max-width: 28rem;
-    margin: 0 10px 3rem;
-}
-
-#app .items .item h3 {
-    margin-bottom: 0;
-}
-
 
 /* ダウンロードはこちらから */
 #app #download {
