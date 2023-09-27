@@ -1,7 +1,3 @@
-html{
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", 'Noto Sans JP', sans-serif;
-}
-
 #lastyear{
   max-width: 1000px;
   width: calc(100% - 100px);
@@ -46,9 +42,9 @@ html{
 
 #lastyear .pics {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 100px auto 0;
+  margin: 50px auto 0;
   padding-bottom: 50px;
   text-align: center;
   width: 100% ;
@@ -60,43 +56,23 @@ html{
   display: block;
   width: 300px;
   height: 0;
-  margin: 10px;
-}
-
-#lastyear .kirakira {
-  position:absolute;
-  max-width: 320px;
-  width: 40%;
-  top: 170px;
-  left: 50px;
-  z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-  #lastyear .kirakira{
-    top: 100px;
-    left: 25px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #lastyear .kirakira{
-    left: 15px;
-  }
+  margin: 10px
 }
 
 #lastyear .pic {
   width: 300px;
   height: 250px;
-  overflow: hidden;
   margin: 10px;
+  overflow: hidden;
 }
+
 #lastyear .pics .pic img{
   height: 250px;
   object-fit: cover;
   transition: transform .6s ease; /* ゆっくり変化させる */
   transition:1s all;
 }
+
 #lastyear .pics .pic img:hover{
   transform: scale(1.1); /* 拡大 */
   transition:1s all;
@@ -108,15 +84,6 @@ html{
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-}
-
-@media screen and (max-width: 1000px) {
-  #lastyear .kirakira {
-      width: 24%;
-  }
-  #lastyear .kirakira {
-      width: 32%;
-  }
 }
 
 @media screen and (max-width: 576px) {
