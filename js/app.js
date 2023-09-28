@@ -1,4 +1,3 @@
-
 // なめらかスクロール
 $(function(){
    $('a[href^=#]').click(function() {
