@@ -238,7 +238,7 @@ const slideDown = (el) => {
       <li class = "line-icon"><a href="https://line.me/R/ti/p/o-ox8Dei12" target="_blank" rel = "noopener"><img src = "/img/common/icon/line.svg"></a></li>
       <li class = "youtube-icon"><a href="https://www.youtube.com/channel/UCdBEdqUB9DvgHShFqzxswdA" target="_blank" rel = "noopener"><img src = "/img/common/icon/youtube.svg"></a></li>
     </ul>
-    <p class="copyright">Copyright © 2002-2022 ${rikoten} All Rights Reserved.</p>
+    <p class="copyright">Copyright © 2002-2023 ${rikoten} All Rights Reserved.</p>
     `)
     footerelement.insertAdjacentHTML("afterbegin", bottom);
 }
