@@ -1,65 +1,79 @@
 @charset "UTF-8";
 
-
-.langCng{   /*中央寄せ*/
-    max-width: 1000px;
-    margin: 0px auto;
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
+.langCng{
+  max-width: 1000px;
+  margin: 0px auto;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #info h1{
-    padding-left: 40px;
-    line-height: 1;
-    position: relative;
-  }
-  
-  #info a {
-    color: var(--color-darkpink);
-  }
-  
-  #info h2,
-  #info p {
-    line-height: 1.6rem;
-    letter-spacing: 0.05rem;
-    /*margin: 0;*/
-  }
-  
-  #info h1::before{
-    content: "";
-    display: inline-block;
-    background-image:url('/img/info/mail_FILL0_wght400_GRAD0_opsz48.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-  
-  #info h2{
-    font-size: 1.2rem;
-    margin-top: 2.8rem;
-  }
+  font-family: 'VDL黒明朝';
+  font-size: 32px;
+  padding-left: 40px;
+  line-height: 1;
+  position: relative;
+}
 
-  #info p{
-    font-size: .8rem;
-  }
+#info a {
+  color: var(--color-darkpink);
+}
   
+#info h2,
+#info p {
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+}
   
+#info h1::before{
+  content: "";
+  display: inline-block;
+  background-image:url('/img/info/mail_FILL0_wght400_GRAD0_opsz48.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
   
-  main h1{
-    color: var(--color-lightpink);
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-  }
+#info h2{
+  font-size: 1.2rem;
+  margin-top: 2.8rem;
+}
 
-  #info .box{
-    border-bottom: .11rem dotted #ff3399;
+#info p{
+  font-size: .8rem;
+}
+  
+main h1{
+  color: var(--color-font);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+#info .box{
+  border-bottom: .11rem dotted #ff3399;
+}
+
+@media screen and (max-width: 480px){
+  .langCng{
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+}
+
+@media screen and (max-width: 768px){
+  .langCng{
+    padding-top: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
