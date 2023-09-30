@@ -1,0 +1,366 @@
+:root {
+    --grid-number: 4;
+    --project-width: calc((100% - var(--grid-number) * 15px) / var(--grid-number));
+}
+
+#search {
+    padding-top: 100px;
+    color: var(--color-lightpink);
+    width: calc(100% - 100px);
+    max-width: 1300px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/************************
+    　   検索box 
+************************/
+
+#search h1{
+    padding-left: 40px;
+    line-height: 1;
+    position: relative;
+}
+
+#search h1::before{
+    content: "";
+    display: inline-block;
+    background-image:url('/img/search/search.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#search .search-section {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 50px 40px 20px 40px;
+}
+
+#search .search-section h2 {
+    margin: 0;
+    padding-left: 35px;
+    line-height: 1;
+    position: relative;
+    font-size: 20px;
+}
+
+#search .search-section h2::before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#search .search-section .keyword h2::before {
+    background-image:url('/img/search/キーボードのフリーアイコン3.svg');
+}
+
+#search .search-section .category h2::before {
+    background-image:url('/img/search/category.svg');
+}
+
+#search .search-section .tag h2::before {
+    background-image:url('/img/search/tag.svg');
+}
+
+#search .keyword .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#search .keyword .input form {
+    border: 1px solid var(--color-lightpink);
+    margin: 20px 0;
+    border-radius: 30px;
+    width: 50%;
+    min-width: 200px;
+    padding: 3px 8px;
+    
+}
+
+#search .keyword .input form > input {
+    width: 100%;
+    position: relative;
+}
+
+#search .keyword .input form > input#search-text {
+    padding-left: 28px;
+ }
+
+#search .keyword .input form > input[type="search"]::-webkit-search-cancel-button {   
+    height: 20px;
+    width: 20px;
+}
+ 
+#search .keyword .input form > input#search-text::-webkit-search-cancel-button {
+   -webkit-appearance: none;
+   cursor:pointer;
+   background-image: url(/img/search/cancel_FILL0_wght400_GRAD0_opsz48.svg);
+   position: absolute;
+   left: 0px;
+   top: 50%;
+   transform: translateY(-50%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ }
+
+
+#search .category ul,
+#search .tag ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+#search .category ul li {
+    border: 2px solid var(--color-lightpink);
+    border-radius: 30px;
+    padding: 3px 15px;
+    margin: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#search .tag ul li {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px var(--color-gray);
+    border-radius: 30px;
+    padding: 2px 15px;
+    margin: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#search .category ul li:hover,
+#search .category ul li.active,
+#search .tag ul li.active {
+    background-color: var(--color-lightpink);
+    color: #ffffff;
+}
+
+#search .tag ul li.inactive {
+    background-color: var(--color-gray);
+    color: #ffffff;
+    cursor: default;
+    box-shadow: none;
+}
+
+
+/************************
+    　  検索結果 
+************************/
+#search .search-result {
+    width: 100%;
+    padding-bottom: 120px;
+}
+
+#search .search-result .projects > div {
+    display: none;
+}
+
+#search .search-result .projects > div.active {
+    display: block;
+}
+
+#search .search-result .projects > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+#search .search-result .project {
+    display: none;
+    width: var(--project-width);
+    position: relative;
+    margin: 15px 15px 15px 0;
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px var(--color-gray);
+    background-color: #ffffff;
+    transition: .3s;
+}
+
+#search .search-result .project:hover {
+    box-shadow: 2px 2px 12px #868686;
+}
+
+#search .search-result .project.active {
+    display: block;
+}
+
+/* 注意書き */
+#search .search-result .project .notes {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+
+/* 整理券 */
+#search .search-result .project .notes .ticket {
+    color: #ffffff;
+    font-size: 8px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin: 0 0 5px auto;
+    width: fit-content;
+}
+
+#search .search-result .project .red {
+    background-color: var(--color-red);
+}
+
+#search .search-result .project .blue {
+    background-color: var(--color-blue);
+}
+
+#search .search-result .project .green {
+    background-color: var(--color-walk);
+}
+
+
+
+/* 各企画の画像 */
+#search .search-result .project .project-img {
+    height: 120px;
+}
+#search .search-result .project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 各企画の説明 */
+#search .search-result .project .desc {
+    background-color: #ffffff;
+    border-radius: 0 0 15px 15px;
+    padding: 10px 20px;
+}
+
+#search .search-result .project .desc .project-name {
+    color: var(--color-brown);
+    padding: 8px 0;
+    line-height: 1.2;
+}
+
+#search .search-result .project .desc .detail {
+    color: var(--color-brown);
+    font-size: 13px;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+
+#search .search-result .project .desc .detail .group-name,
+#search .search-result .project .desc .detail .place{
+    padding-left: 30px;
+    line-height: 1.2;
+    position: relative;
+    margin: 5px 0;
+}
+
+#search .search-result .project .desc .detail .group-name::before,
+#search .search-result .project .desc .detail .place::before{
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#search .search-result .project .desc .detail .group-name::before {
+    background-image:url('/img/top/Icon\ material-group.png');
+}
+
+#search .search-result .project .desc .detail .place::before {
+    background-image:url('/img/top/pin.png');
+    left: 1px;
+}
+
+/* 各企画のタグ */
+#search .search-result .project .desc .project-tag ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+#search .search-result .project .desc .project-tag ul li {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px var(--color-gray);
+    border-radius: 30px;
+    padding: 2px 15px;
+    margin: 5px;
+    margin-left: 0;
+    font-size: 10px;
+    color: var(--color-lightpink);
+}
+
+@media screen and (max-width: 1150px) {
+    :root {
+        --grid-number: 3;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    :root {
+        --grid-number: 2;
+    }
+
+    #search {
+        width: calc(100% - 50px);
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+    
+}
+
+@media screen and (max-width: 550px) {
+    #search {
+        width: calc(100% - 30px);
+    }
+
+    #search .search-section {
+        padding: 40px 20px 10px 20px;
+    }
+
+    #search .search-result {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+    
+    #search .search-result .project {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    #search .search-result .project .desc {
+        min-height: 170px;
+    }
+
+    
+
+}
