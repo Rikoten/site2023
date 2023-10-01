@@ -104,6 +104,7 @@
 
 #specialguest .lecture-title-text {
   position: relative;
+  font-size: 24px;
   font-weight: bolder;
   left: 1em;
 }
@@ -115,6 +116,8 @@
   width: 0.3em;
   height: 1.3em;
   left: -1em;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: var(--color-orange);
   position: absolute;
 }
@@ -187,9 +190,25 @@
   }
 }
 
+@media screen and (max-width: 528px) {
+  #specialguest .lecture-title-text {
+    font-size: 16px;
+  }
+
+  #specialguest .lecture-title-text::before {
+    height: 20px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #specialguest {
     width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #specialguest .lecture-title-text {
+    left: 8px;
   }
 }
 
