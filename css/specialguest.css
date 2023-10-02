@@ -26,6 +26,16 @@
   transform: translateY(-50%);
 }
 
+#specialguest .overview{
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#specialguest .overview p{
+  margin: 0;
+}
+
 #specialguest > p {
   font-size: 18px;
   margin: 20px 0;
@@ -42,12 +52,13 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
 }
 
 #specialguest .nickname-text {
   font-weight: bold;
   color: var(--color-orange);
-  margin: 0;
+  margin: 10px 0 0;
 }
 
 #specialguest .name-text,
@@ -138,26 +149,24 @@
 }
 
 #specialguest .sns-wrapper {
-  background-color: var(--color-red);
-  padding: 0 1.5em;
   margin-top: 40px;
-  display: flex;
   position: relative;
   align-items: center;
   gap: 1em;
   color: white;
-  border-radius: 5px;
 }
 
 #specialguest .sns-wrapper > a {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
+  gap: 10px;
   width: 100%;
   height: 100%;
+  padding: 0 24px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
-#specialguest .sns-wrapper:hover {
+#specialguest .sns-wrapper > a:hover {
   opacity: 0.8;
 }
 
@@ -169,6 +178,14 @@
 
 #specialguest .sns-text {
   color: white;
+}
+
+#specialguest .sns-wrapper a.youtube{
+  background-color: #FF0000;
+}
+
+#specialguest .sns-wrapper a.x{
+  background-color: #0F1419;
 }
 
 /* レスポンシブ対応 */
@@ -204,11 +221,19 @@
   #specialguest {
     width: calc(100% - 30px);
   }
+
+  #specialguest .overview{
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   #specialguest .lecture-title-text {
     left: 8px;
+  }
+
+  #specialguest .overview{
+    font-size: 20px;
   }
 }
 
