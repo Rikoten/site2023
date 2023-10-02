@@ -223,7 +223,7 @@ const slideDown = (el) => {
     bottom.push(`
     <p>official SNS</p>
     <ul class = "social-icon">
-      <li class = "twitter-icon"><a href="https://twitter.com/rikoten_waseda" target="_blank" rel = "noopener"><img src = "/img/common/icon/twitter.svg"></a></li>
+      <li class = "x-icon"><a href="https://twitter.com/rikoten_waseda" target="_blank" rel = "noopener"><img src = "/img/common/icon/x.svg"></a></li>
       <li class = "instagram-icon"><div></div><a href="https://www.instagram.com/waseda_rikoten/" target="_blank" rel = "noopener"><img src = "/img/common/icon/instagram.svg"></a></li>
       <li class = "line-icon"><a href="https://line.me/R/ti/p/o-ox8Dei12" target="_blank" rel = "noopener"><img src = "/img/common/icon/line.svg"></a></li>
       <li class = "youtube-icon"><a href="https://www.youtube.com/channel/UCdBEdqUB9DvgHShFqzxswdA" target="_blank" rel = "noopener"><img src = "/img/common/icon/youtube.svg"></a></li>
