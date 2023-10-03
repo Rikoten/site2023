@@ -19,7 +19,7 @@
 }
 
 #info a {
-  color: var(--color-darkpink);
+  color: var(--color-orange);
 }
   
 #info h2,
@@ -59,7 +59,7 @@ main h1{
 }
 
 #info .box{
-  border-bottom: .11rem dotted #ff3399;
+  border-bottom: .11rem dotted #FBA518;
 }
 
 @media screen and (max-width: 480px){
