@@ -2,20 +2,56 @@
 
 .main-content{
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.7;
+    
 }
 
 .question{
     font-size: 1.25rem;
     font-weight: bold;
+    margin-top: 40px;
 }
 
 .answer{
     border-bottom: 2px dotted   #f39800;
+    font-size: 0.80rem;
 }
 
-.h1{
+h1{
     color: #f39800;
     font-size: 1.35rem;
+}
+
+.sub-content{
+    margin-top: 200px;
+    margin-left: 20%;
+    margin-right: 30%;
+    line-height: 1.7;
+    
+}
+
+h2{
+    color: #f39800;
+    font-size: 1.35rem;
+}
+
+.space{
+    height: 80px;
+}
+
+.sub-content li{
+    list-style-type: circle;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.yellow{
+    color: #f39800;
+    font-weight: bold;
+}
+
+.yellow-fine{
+    color: #f39800;
 }
