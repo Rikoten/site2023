@@ -1,37 +1,22 @@
-@charset "UTF-8";
-
-.langCng{
+#contact{
+  width: calc(100% - 100px);
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 0 auto;
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 30px 0;
 }
 
-#info h1{
-  font-family: 'VDL黒明朝';
+#contact h1{
   font-size: 32px;
   padding-left: 40px;
   line-height: 1;
   position: relative;
 }
-
-#info a {
-  color: var(--color-orange);
-}
   
-#info h2,
-#info p {
-  line-height: 1.6rem;
-  letter-spacing: 0.05rem;
-}
-  
-#info h1::before{
+#contact h1::before{
   content: "";
   display: inline-block;
-  background-image:url('/img/info/mail_FILL0_wght400_GRAD0_opsz48.svg');
+  background-image:url('/img/contact/mail_icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -41,14 +26,20 @@
   left: 0;
   transform: translateY(-50%);
 }
+ 
+#contact a {
+  color: var(--color-orange);
+}
   
-#info h2{
+#contact h2,
+#contact p {
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+ 
+#contact h2{
   font-size: 1.2rem;
   margin-top: 2.8rem;
-}
-
-#info p{
-  font-size: .8rem;
 }
   
 main h1{
@@ -58,22 +49,18 @@ main h1{
   margin: 0 auto;
 }
 
-#info .box{
-  border-bottom: .11rem dotted #FBA518;
-}
-
-@media screen and (max-width: 480px){
-  .langCng{
-    padding-top: 70px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+#contact .box{
+  border-bottom: .11rem dotted var(--color-orange);
 }
 
 @media screen and (max-width: 768px){
-  .langCng{
-    padding-top: 70px;
-    padding-left: 25px;
-    padding-right: 25px;
+  #contact{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px){
+  #contact{
+    width: calc(100% - 30px);
   }
 }
