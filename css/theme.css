@@ -1,6 +1,21 @@
 .container{
   width: min(90%,1000px);
   margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+@media(min-width:768px){
+  .container{
+    flex-direction:row;
+    align-items:center;
+  }
+  .container > .text{
+    flex:5;
+    min-width: 17em;
+  }
+  .container > .img{
+    flex:4;
+  }
 }
 img{
   display:block;
@@ -10,4 +25,18 @@ img{
 h1{
     font-size: 32px;
     font-family: --font-headline,sans-serif;
+}
+h2{
+  font-size: clamp(40px,3.5vw,48px);
+  font-family: "Yu Gothic",sans-serif;
+}
+h3{
+  font-size: clamp(40px,3.5vw,48px);
+  font-family: "ヒラギノ角ゴ Pro W3";
+}
+p{
+  font-size:clamp(30px,3vw,35px);
+  /* background-color: white;
+  padding:60px 27px;
+  border-radius: 40px; */
 }
