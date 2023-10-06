@@ -1,0 +1,13 @@
+.container{
+  width: min(90%,1000px);
+  margin:auto;
+}
+img{
+  display:block;
+  max-width: 100%;
+  height: auto;
+}
+h1{
+    font-size: 32px;
+    font-family: --font-headline,sans-serif;
+}
