@@ -388,6 +388,13 @@ div.button:hover{
   display: none;
 }
 
+#notes img{
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
 @media screen and (max-width: 624px) {
   #notes .textbox p{
     font-size: 16px;
