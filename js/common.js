@@ -126,7 +126,7 @@ async function setHeaderFooter() {
         <div class="jaen">
           <div class="ja ${jaActive}">Ja</div>
           <span>/</span>
-          <di class="en ${enActive}">En</di>
+          <div class="en ${enActive}">En</div>
         </div>
     </div>
     `)
@@ -134,6 +134,7 @@ async function setHeaderFooter() {
     const menu=document.getElementsByClassName("menu_bar")[0];
     const open=document.getElementsByClassName("phone-menu")[0];
     
+
 
     menu.addEventListener("click", ()=>{
         headerelement.classList.toggle("open")
@@ -210,7 +211,10 @@ const slideDown = (el) => {
     </ul>
     <p>Copyright © 2002-2022 ${rikoten} All Rights Reserved.</p>
     `)
-    footerelement.insertAdjacentHTML("afterbegin", bottom);
+    if(footerelement != null ){
+      footerelement.insertAdjacentHTML("afterbegin", bottom);
+    }
+
 }
 
 async function langEvent() {
