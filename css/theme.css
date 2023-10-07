@@ -22,10 +22,7 @@ img{
   max-width: 100%;
   height: auto;
 }
-h1{
-    font-size: 32px;
-    font-family: --font-headline,sans-serif;
-}
+
 h2{
   font-size: clamp(40px,3.5vw,48px);
   font-family: "Yu Gothic",sans-serif;
