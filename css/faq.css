@@ -1,68 +1,88 @@
-@charset "UTF-8";
+/*#faq .main-content {
+  padding: 20px 0 0 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 1.7;
 
-.main-content{
-    padding: 20px 0 0 0;
-    margin-left: 15%;
-    margin-right: 15%;
-    line-height: 1.7;
-    
+}*/
+
+#faq{
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
-.question{
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 40px;
+#faq h1 {
+  font-size: 32px;
+  padding-left: 40px;
+  margin: 0;
+  position: relative;
 }
 
-.answer{
-    border-bottom: 2px dotted   #f39800;
-    font-size: 0.80rem;
+#faq h1::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/faq/questionmark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
-h1{
-    
-    font-size: 1.35rem; 
-    
+#faq .question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 40px;
 }
 
-.sub-content{
-    margin-top: 200px;
-    margin-left: 20%;
-    margin-right: 20%;
-    line-height: 1.7;
-    
+#faq .answer {
+  border-bottom: 2px dotted #f39800;
+  font-weight: 500;
 }
 
-h2{
-    
-    font-size: 1.35rem;
+#faq .sub-content {
+  margin-top: 200px;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 1.7;
+
 }
 
-.space{
-    height: 80px;
+#faq h2 {
+
+  font-size: 1.35rem;
 }
 
-.sub-content li{
-    list-style-type: circle;
-    line-height: 1.7;
-    margin-top: 15px;
+#faq .space {
+  height: 80px;
 }
 
-.yellow{
-    color: #f39800;
-    font-weight: bold;
+#faq .sub-content li {
+  list-style-type: circle;
+  line-height: 1.7;
+  margin-top: 15px;
 }
 
-.yellow-fine{
-    color: #f39800;
+#faq .yellow {
+  color: #f39800;
+  font-weight: bold;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
+#faq .yellow-fine {
+  color: #f39800;
 }
 
-.mark{
-    position: relative;
-    bottom: 2px;
+#faq .flex {
+  display: flex;
+  align-items: center;
+}
+
+#faq .mark {
+  position: relative;
+  bottom: 2px;
 }
