@@ -1,13 +1,20 @@
 .container{
-  width: min(90%,1000px);
+  max-width: 1000px;
+  padding:0 50px;
   margin:auto;
   display: flex;
   flex-direction: column;
 }
+
+h1{
+  padding-top:30px;
+}
+
 @media(min-width:768px){
   .container{
     flex-direction:row;
     align-items:center;
+    padding:0 25px;
   }
   .container > .text{
     flex:5;
@@ -16,20 +23,35 @@
   .container > .img{
     flex:4;
   }
+  h1{
+    padding-top:70px;
+  }
 }
+@media(min-width:480px){
+  .container{
+    padding:0 15px;
+  }
+  h1{
+    padding-top:15px;
+  }
+}
+
 img{
   display:block;
   max-width: 100%;
   height: auto;
 }
 
+
 h2{
   font-size: clamp(40px,3.5vw,48px);
-  font-family: "Yu Gothic",sans-serif;
+  font-family: sans-serif;
+  text-align: center;
 }
 h3{
   font-size: clamp(40px,3.5vw,48px);
   font-family: "ヒラギノ角ゴ Pro W3";
+  text-align: center;
 }
 p{
   font-size:clamp(30px,3vw,35px);
