@@ -84,6 +84,7 @@ async function setHeaderFooter() {
                 <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
             </li>
             </ul>
@@ -115,6 +116,7 @@ async function setHeaderFooter() {
             <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
             </li>
         </ul>
