@@ -1,16 +1,43 @@
 [
   {
     "num": "01",
-    "name":"麵屋こころ 高田馬場店",
-    "adCopy": "あの人気メニューがセットでお得！？" ,
-    "menuComment": "台湾ミンチがのった台湾まぜそばは名古屋発祥のもの。ネギとニラがふんだんに使用されており、酢とまぜていただきます。ミニチャーシュー丼はUber Eatsでの注文率No.1です。",
-    "concept": "麺屋こころ高田馬場店は麺屋こころの2号店で、2019年9月には「マツコの知らない世界」で紹介されました。特に学生さんに愛され、いつも感謝の気持ちで最高なサービスをさせていただいております。学生さんには特殊なサービスをしております。",
+    "name": {
+      "ja": "麵屋こころ 高田馬場店",
+      "en": "Menya Kokoro Takadanobaba"
+    },
+    "adCopy": {
+      "ja": "こころへ、本家台湾まぜそばを食べに行こう！",
+      "en": "Let's go to Kokoro and savor the original Taiwan mazesoba!"
+    },
+    "menuComment": {
+      "ja": "麺屋こころの本家台湾まぜそばに人気のネギチャーシュー丼付き",
+      "en": "Menya Kokoro's original Taiwan mazesoba and the popular roasted pork fillet bowl with green onions"
+    },
+    "concept": {
+      "ja": "専門店麺屋こころは、本家台湾まぜそばをご提供しております。学生限定サービスがあります！",
+      "en": "Specialty shop Menya Kokoro offers authentic Taiwan mazesoba. Special service for students too!"
+    },
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25917.07523573544!2d139.6923874!3d35.7106133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d167114ad%3A0xd09867470e61d2c4!2z6bq65bGL44GT44GT44KN6auY55Sw6aas5aC0!5e0!3m2!1sja!2sjp!4v1662861502093!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～土曜日: 11:00～15:00, 17:30～22:00",
-    "rikoten": "両日営業",
-    "period": "10月1日～",
-    "menuName": "台湾まぜそば＋ネギチャーシュー丼",
-    "menuPrice": "¥930",
+    "time": {
+      "ja": "月曜～土曜（日曜定休日）: 11:00-15:00/17:30-22:30",
+      "en": "Mon~Sat (Sundays Closed): 11:00-15:00, 17:30-22:30"
+    },
+    "rikoten": {
+      "ja": "11/4 11:00-22:30（通し営業）、11/5 11:00-18:00（通し営業）",
+      "en": "11/4 11:00~22:30 (Open at all times), 11/5 11:00~18:00 (Open at all times)"
+    },
+    "period": {
+      "ja": "10月2日(月)～11月10日(金)",
+      "en": "Mon. Oct. 2 ~ Fri. Nov. 10"
+    },
+    "menuName": {
+      "ja": "台湾まぜそば+ネギチャーシュー丼",
+      "en": "Taiwan mazesoba & roasted pork\n fillet bowl with green onions"
+    },
+    "menuPrice": {
+      "ja": "930円",
+      "en": "930 yen"
+    },
     "menuImg": "/img/collabmenu/01-こころ.JPG",
     "Instagram": "https://www.instagram.com/menyakokorohonten/?igshid=YmMyMTA2M2Y%3Dv",
     "Twitter": null,
