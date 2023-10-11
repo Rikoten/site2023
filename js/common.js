@@ -83,6 +83,7 @@ async function setHeaderFooter() {
             <li class="pulldown" id="header-info">${headerLang.info[lang]}
                 <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
@@ -115,6 +116,7 @@ async function setHeaderFooter() {
             <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
