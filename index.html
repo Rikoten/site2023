@@ -1,314 +1,650 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第69回理工展 -BLOOM</title>
-    <link href="/css/common.css?date=20221106" rel="stylesheet">
-    <link href="/css/top.css?date=20221106" rel="stylesheet">
-    <link href="/css/swiper.min.css?date=20221106" rel="stylesheet">
-    <link href="/css/header.css?date=20221106" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第70回理工展 -Spark</title>
+  <link href="/css/common.css?date=20231002" rel="stylesheet">
+  <link href="/css/top.css?date=20231006" rel="stylesheet">
+  <link href="/css/swiper.min.css?date=20231001" rel="stylesheet">
+  <link href="/css/header.css?date=20231001" rel="stylesheet">
 
-    <meta property="og:url" content="https://rikoten.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="理工展連絡会">
-    <meta property="og:description" content="第69回理工展 -BLOOM">
-    <meta property="og:image" content="https://rikoten.com/img/card.PNG">
+  <!--Adobe Fonts-->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'cyl8ihi',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 
-    <!--<script src="/js/top.js?date=20221106"></script>-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117940930-4"></script>
-    <script>
+  <meta property="og:url" content="https://rikoten.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="理工展連絡会">
+  <meta property="og:description" content="第70回理工展 -Spark">
+  <meta property="og:image" content="https://rikoten.com/img/card.PNG">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H43EHV2DHD"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-117940930-4');
-    </script>
+
+    gtag('config', 'G-H43EHV2DHD');
+  </script>
 </head>
+
 <body>
-    <header></header>
-    <main>
-        <section id = "top">
-            <img class="bloom" src="/img/Bloom.png">
-            <img class="date" src="/img/Date.png">
-            <div id="visitors">
-                <p>来場者数：</p>
+  <header></header>
+  <main>
+    <section id="top">
+      <div class="triangle"></div>
+      <div class="box"></div>
+      <div class="content">
+        <img class="icon" src="img/common/logo-icon.png">
+        <img class="spark" src="/img/common/spark.png">
+        <div class="schedule">
+          <div>
+            <p class="date">11/4</p>
+            <p class="time">10:00～17:00</p>
+          </div>
+          <div>
+            <p class="date">11/5</p>
+            <p class="time">10:00～16:00</p>
+          </div>
+        </div>
+      </div>
+
+      <!--<div id="visitors">
+          <p>来場者数：</p>
+        </div>-->
+    </section>
+
+    <div class="back-grad">
+      <!--
+      <section id="participants" class="langCng" lang="ja">
+        <h1>出展団体</h1>
+        <div class="wrapper">
+          <a class="exhibition" href="/projects/participants/#exhibition">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>展示</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </a>
 
-        <section id="all">
-            <div id = "contents">
-                <h1>Events</h1>
-                <a href="/projects/search/"><div class="top-button search langCng" lang="ja">企画検索</div></a>
-                <a href="/projects/search/"><div class="top-button search langCng" lang="en">Search</div></a>
-                <h2 class="langCng" lang="ja">展示企画</h2>
-                <h2 class="langCng" lang="en">Exhibition</h2>
-                <section id="tenji">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper tenji">
-                        <div class="swiper-wrapper">
-                            <div style="display: none;"class="swiper-slide"></div>
-                        </div>        
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="wrapper">
-                        <input type="checkbox" id=switch1 class="on-off"/>
-                        <div class="small-wrapper" id="small-general"></div>
-                        <label for="switch1" class="open-label langCng" lang="ja"></label>
-                        <label for="switch1" class="open-label-en langCng" lang="en"></label>
-                    </div>
-                </section>
-                <div class="swiper-scrollbar"></div>
-                <h2 class="langCng" lang="ja">ステージ企画</h2>
-                <h2 class="langCng" lang="en">Stage</h2>
-                <section id="stage">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper stage">
-                        <div class="swiper-wrapper">
-                            <div style="display: none;"class="swiper-slide"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="wrapper">
-                        <input type="checkbox" id=switch2 class="on-off"/>
-                        <div class="small-wrapper" id="small-stage2"></div>
-                        <label for="switch2" class="open-label langCng" lang="ja"></label>
-                        <label for="switch2" class="open-label-en langCng" lang="en"></label>
-                    </div>
-                </section>
-                <div class="swiper-scrollbar"></div>
-                <a href="/projects/timetable/"><div class="top-button arrow langCng" lang="ja">タイムテーブル</div></a>
-                <a href="/projects/timetable/"><div class="top-button arrow langCng" lang="en">Timetable</div></a>
-                <h2 class="langCng" lang="ja">実験企画</h2>
-                <h2 class="langCng" lang="en">Experiments</h2>
-                <section id="experiment">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper experiment">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-wrapper">
-                                <div style="display: none;"class="swiper-slide"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="wrapper">
-                        <input type="checkbox" id=switch3 class="on-off"/>
-                        <div class="small-wrapper" id="small-experiment"></div>
-                        <label for="switch3" class="open-label langCng" lang="ja"></label>
-                        <label for="switch3" class="open-label-en langCng" lang="en"></label>
-                    </div>
-                </section>
-                <div class="swiper-scrollbar"></div>
-                <h2 class="langCng" lang="ja">模擬店企画</h2>
-                <h2 class="langCng" lang="en">Shops</h2>
-                <section id="food">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper food">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-wrapper">
-                                <div style="display: none;"class="swiper-slide"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="wrapper">
-                        <input type="checkbox" id=switch4 class="on-off"/>
-                        <div class="small-wrapper" id="small-shops"></div>
-                        <label for="switch4" class="open-label langCng" lang="ja"></label>
-                        <label for="switch4" class="open-label-en langCng" lang="en"></label>
-                    </div>
-                </section>
-                <div class="swiper-scrollbar"></div>
-                <a href="/projects/food/"><div class="top-button arrow">Food in Campus</div></a>
-
-                <h1 class="langCng" lang="ja">理工展の楽しみ方</h1>
-                <h1 class="langCng" lang="en">How To Enjoy Rikoten</h1>
-                <div id="container">
-                    <div id="one">
-                        <div class="tile-header">
-                            <div class="num">1.</div>
-                            <div class="wrap">
-                                <div class="title langCng" lang="ja">企画を見る</div>
-                                <div class="title langCng" lang="en">View Project</div>
-                                <div class="text langCng" lang="ja">企画一覧やタグから検索して、気になった企画を見に行きましょう。</div>
-                                <div class="text langCng" lang="en">Let's find out your favorite projects by searching from list and tags.</div>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <img src="/img/top/アセット 1@600x.png" alt="">
-                        </div>
-                    </div>
-                    <div id="two">
-                        <div class="tile-header">
-                            <div class="num">2.</div>
-                            <div class="wrap">
-                                <div class="title langCng" lang="ja">企画に参加する</div>
-                                <div class="title langCng" lang="en">Participate in projects</div>
-                                <div class="text langCng" lang="ja">実験やツアーなどの参加型企画に参加してみましょう。</div>
-                                <div class="text langCng" lang="en">Participate in experiments, tours, and other participatory projects.</div>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <img src="/img/top/アセット 2@600x.png" alt="">
-                        </div>
-                    </div>
-                    <div id="three">
-                        <div class="tile-header">
-                            <div class="num">3.</div>
-                            <div class="wrap">
-                                <div class="title langCng" lang="ja">タイムスケジュールをチェック</div>
-                                <div class="title langCng" lang="en">Check the time schedule</div>
-                                <div class="text langCng" lang="ja">ステージ・実験・ツアー・講演などの時間が決まっている企画もあるので、タイムスケジュールは事前に確認しておきましょう。</div>
-                                <div class="text langCng" lang="en">Some projects have fixed times for stages, experiments, tours, lectures, etc., so please check the time schedule in advance.</div>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <img src="/img/top/Icon awesome-clock.png" alt="">
-                        </div>
-                    </div>
-                    <div id="four">
-                        <div class="tile-header">
-                            <div class="num">4.</div>
-                            <div class="wrap">
-                                <div class="title langCng" lang="ja">模擬店で美味しく</div>
-                                <div class="title langCng" lang="en">Enjoy with delicious food</div>
-                                <div class="text langCng" lang="ja">今年から模擬店が制限付きで復活！利用する際には、飲食店スペースの利用方法にご注意ください。</div>
-                                <div class="text langCng" lang="en">Bake sale is back this year with restrictions! Please pay attention to the use of the food and beverage space when using it.</div>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <img src="/img/top/Icon map-food.png" alt="">
-                        </div>
-                    </div>
-                    <div id="five">
-                        <div class="tile-header">
-                            <div class="num">5.</div>
-                            <div class="title langCng" lang="ja">
-                                <p>アプリコ<span>で</span></p>
-                                <p><span>もっと楽しく</span></p>
-                                <p><span>もっとわかりやすく</span></p>
-                            </div>
-                            <div class="title langCng" lang="en">
-                                <p><span>More fun</span></p>
-                                <p><span>and useful</span></p>
-                                <p><span>with </span>AppRiko</p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="text-icon">
-                                <div class="text langCng" lang="ja">
-                                    理工展公式パンフレットアプリ「アプリコ」は検索機能などの理工展を楽しむための便利な機能はもちろん、
-                                    次のようなアプリコでしか楽しむことのできない企画もございます。
-                                </div>
-                                <div class="text langCng" lang="en">
-                                    The official Rikoten pamphlet application "AppRiko" offers not only convenient functions for enjoying Rikoten,
-                                    such as a search function, but also the following special features that can only be enjoyed by users of AppRiko.
-                                </div>
-                                <div class="app-icon">
-                                    <img src="/img/top/icon.png" alt="">
-                                </div>
-                            </div>
-                            <a href="https://app-2020.rikoten.com/"><div class="download langCng" lang="ja">インストールはこちら</div></a>
-                            <a href="https://app-2020.rikoten.com/"><div class="download langCng" lang="en">Click here to install</div></a>
-                            <div class="rally langCng" lang="ja">
-                                <h3>ウォークラリー</h3>
-                                <div class="text">ウォークラリー対象企画の教室にあるQRコードをアプリで読み取り、スタンプを集めて、景品と交換できる企画です。</div>
-                                <h3>リコテンラリー</h3>
-                                <div class="text">理工展のコラボした地域の飲食店の店舗にあるQRコードを、アプリで読み取って、スタンプを集めて、景品と交換できる企画です。</div>
-                            </div>
-                            <div class="rally langCng" lang="en">
-                                <h3>Walk rally</h3>
-                                <div class="text">This is a project where QR codes in the classrooms of the walk rally target projects can be scanned with the application, and stamps can be collected and redeemed for prizes.</div>
-                                <h3>Rikoten rally</h3>
-                                <div class="text">This project allows visitors to collect stamps and exchange them for prizes by scanning the QR codes in the stores of local restaurants collaborating with Rikoten with the application.</div>
-                            </div>
-                        </div>
-                    </div>
+          <a class="stage" href="/projects/participants/#stage">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>ステージ</p>
                 </div>
-
-                <h1>Access</h1>
-                <div class="map">
-                    <div class="map-flex">
-                        <div class="address langCng" lang="ja">
-                            <p class="train">早稲田大学　西早稲田キャンパス</p>
-                            <p>〒169-8555</p>
-                            <p>東京都新宿区大久保3丁目4-1</p>
-                        </div>
-                        <div class="address langCng" lang="en">
-                            <p class="train">Waseda University, Nishiwaseda Campus</p>
-                            <p>3-4-1, Okubo, Shinjuku city, Tokyo</p>
-                            <p>169-8555</p>
-                        </div>
-                        <div class="access langCng" lang="en">
-                            <div class="train">Transport Access</div>
-                            <p>Yamanote line, Takadanobaba station (15 min walk)</p>
-                            <p>Seibu Shinjuku line, Takadanobaba station (15 min walk)</p>
-                            <p>Fukutoshin line, Nishi-Waseda station (0 min walk)</p>
-                            <p>Tozai line, Waseda station (22 min walk)</p>
-                        </div>
-                        <div class="access langCng" lang="ja">
-                            <div class="train">電車</div>
-                            <p>JR山手線 高田馬場駅から徒歩15分</p>
-                            <p>西武新宿線 高田馬場駅から徒歩15分</p>
-                            <p>副都心線 西早稲田駅に直結</p>
-                            <p>東西線 早稲田駅から徒歩22分</p>
-                        </div>
-                    </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.8206657422115!2d139.7048499148284!3d35.70603048018861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379dc3459%3A0x496e705c997ca8e7!2z44CSMTY5LTg1NTUg5p2x5Lqs6YO95paw5a6_5Yy65aSn5LmF5L-d77yT5LiB55uu77yU4oiS77yU4oiS77yR!5e0!3m2!1sja!2sjp!4v1667191279477!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <h1 class="access langCng" lang="ja">ご協賛</h1>
-                <h1 class="access langCng" lang="en">Sponsor</h1>
-                <div class="sponsor-wrap">
-                    <div class="gold">
-                        <a href="https://www.musashi-engineering.co.jp/recruit/graduates/index.html" onClick="ga('send', 'event', 'link', 'click', '武蔵エンジニアリング', '1');">
-                            <img src="/img/sponsor/社名ロゴ（武蔵エンジニアリング）.png" alt="武蔵エンジニアリング">
-                        </a>
-                        <a href="https://www.gakusei-walker.jp/" onClick="ga('send', 'event', 'link', 'click', '学生ウォーカー', '1');">
-                            <img src="/img/sponsor/学生ウォーカーロゴ.png" alt="学生ウォーカー">
-                        </a>
-                        <a href="https://www.tullys.co.jp/" onClick="ga('send', 'event', 'link', 'click', 'タリーズコーヒージャパン', '1');">
-                            <img src="/img/sponsor/タリーズ.png" alt="タリーズコーヒージャパン">
-                        </a>
-                        <a href="http://www.co-yard.com/" onClick="ga('send', 'event', 'link', 'click', '株式会社カレッジヤード', '1');">
-                            <img src="/img/sponsor/株式会社カレッジヤード.jpg" alt="ガレッジヤード">
-                        </a>
-                        <a href="https://recruit-ky-tec.jp/" onClick="ga('send', 'event', 'link', 'click', '共同カイテック', '1');">
-                            <img src="/img/sponsor/バナー広告Gold_共同カイテック.jpg" alt="共同カイテック">
-                        </a>
-                        <a href="https://www.waseda.jp/pep/" onClick="ga('send', 'event', 'link', 'click', '早稲田大学PEP卓越大学院プログラム事務局', '1');">
-                            <img src="/img/sponsor/PEPバナー.jpg" alt="早稲田大学PEP卓越大学院プログラム事務局">
-                        </a>
-                        <a href="https://www.ccteachers.co.jp/" onClick="ga('send', 'event', 'link', 'click', 'ココカラTチャーズ', '1');">
-                            <img src="/img/sponsor/ココカラTチャーズ.png" alt="ココカラティーチャーズ">
-                        </a>
-                    </div>
-                    <div class="silver">
-                        <a href="https://www.enplas.co.jp/recruit/" onClick="ga('send', 'event', 'link', 'click', 'エンプラス', '1');">
-                            <img src="/img/sponsor/バナー(エンプラス).jpg" alt="エンプラス">
-                        </a>
-                        <a href="https://www.nok.co.jp/" onClick="ga('send', 'event', 'link', 'click', 'NOK', '1');">
-                            <img src="/img/sponsor/NOKロゴ（早稲田大学学園祭）.jpg" alt="NOK">
-                        </a>
-                        <a href="https://noodle-shop-3958.business.site/?utm_source=gmb&utm_medium=referral" onClick="ga('send', 'event', 'link', 'click', '麺屋こころ', '1');">
-                            <img src="/img/sponsor/こころ.jpg" alt="麵屋こころ">
-                        </a>
-                        <a href="https://toshima-ds.com/" onClick="ga('send', 'event', 'link', 'click', '豊島自動車', '1');">
-                            <img src="/img/sponsor/豊島自動車.jpg" alt="豊島自動車練習場">
-                        </a>
-                        <a href="https://www.saginomiya.co.jp/" onClick="ga('send', 'event', 'link', 'click', '鷲宮製作所', '1');">
-                            <img src="/img/sponsor/WEBバナー広告_(株)鷺宮製作所_page-0001.jpg" alt="鷲宮製作所">
-                        </a>
-                        <div class="inactive"></div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </a>
+
+          <a class="experiment" href="/projects/participants/#experiment">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>実験</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="booth" href="/projects/participants/#booth">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>模擬店</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="/projects/participants/">
+          <div class="button">→出展団体ページへ</div>
+        </a>
+      </section>
+
+      <section id="participants" class="langCng" lang="en">
+        <h1>Participants</h1>
+        <div class="wrapper">
+          <a class="exhibition" href="/projects/participants/#exhibition">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>Exhibition</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="stage" href="/projects/participants/#stage">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>Stage</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="experiment" href="/projects/participants/#experiment">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>Experience</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a class="booth" href="/projects/participants/#booth">
+            <div class="container">
+              <div class="inner-box">
+                <div class="back-img">
+                  <p>Booth</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="/projects/participants/">
+          <div class="button">→To Participants</div>
+        </a>
+      </section>
+    -->
+    </div>
+
+    <div class="back-benz">
+      <section id="notes" class="langCng" lang="ja">
+        <div class="textbox">
+          <h2>～ご来場のみなさまへお願い～</h2>
+          <p>西早稲田キャンパス建替工事に伴い、正門は閉鎖しております。各種企画観覧の方は下記の門からのご入場にご協力いただけますよう、よろしくお願いいたします。</p>
+          <ul>
+            <li>ステージ企画<br>→明治門・地下鉄直結口</li>
+            <li>有名人企画<br>→西門</li>
+            <li>模擬店企画<br>→西門</li>
+            <li>その他の企画<br>→明治門・地下鉄直結口・西門</li>
+          </ul>
+          <img src="img/top/nishi-waseda.png" alt="西早稲田キャンパス">
+        </div>
+      </section>
+
+      <section id="notes" class="langCng" lang="en">
+        <div class="textbox">
+          <h2>～Request for Visitors～</h2>
+          <p>
+            Due to reconstruction work on the Nishi-Waseda campus, the Main Gate is closed. Please come through the
+            following gates.</p>
+          <ul>
+            <li>Those viewing Stage<br>→Meiji Gate・Subway Exit directly connecting to Nishi-Waseda Station</li>
+            <li>Those viewing Special Guest<br>→West Gate</li>
+            <li>Those visiting Booth<br>→West Gate</li>
+            <li>Others<br>→Meiji Gate・West Gate・Subway Exit directly connecting to Nishi-Waseda Station</li>
+          </ul>
+          <img src="img/top/nishi-waseda.png" alt="Nishi-Waseda campus">
+        </div>
+      </section>
+
+      <section id="theme" class="langCng" lang="ja">
+        <h1>テーマ</h1>
+        <div class="wrapper">
+          <div class="text">
+            <div class="headding">第70回理工展 テーマ</div>
+            <h2>本年度のテーマは「Spark」です</h2>
+            <p>
+              理工展にかかわるすべての人々が''輝き''、<br>
+              ''活気''あふれる''一瞬の''特別な日となること、<br>
+              理工展が新しい発見やアイデアの<br>
+              ''きっかけ''となることを願ったテーマです
+            </p>
+            <div class="hidden"> <!-- テーマページができるまでボタンを消す -->
+              <a href="/about/theme/">
+                <div class="button">→テーマページへ</div>
+              </a>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/img/common/logo-spark-white.png" alt="Spark">
+            <img src="/img/common/logo-spark-orange.png" alt="Spark">
+          </div>
+        </div>
+      </section>
+
+      <section id="theme" class="langCng" lang="en">
+        <h1>Theme</h1>
+        <div class="wrapper">
+          <div class="text">
+            <div class="headding">70th Rikoten Theme</div>
+            <h2>This year's theme is "Spark".</h2>
+            <p>
+              The theme is hoping that everyone <br>involved in Rikoten <br>
+              will have an "instantaneous" special day <br>
+              filled with "shine" and "vitality", <br>
+              and that Rikoten will be an "opportunity" <br>
+              for new discoveries and ideas.<br>
+              <br>
+              <br>
+            </p>
+            <div class="hidden"> <!-- テーマページができるまでボタンを消す -->
+              <a href="/about/theme/">
+                <div class="button">→To Theme</div>
+              </a>
+            </div>
+          </div>
+          <div class="img">
+            <img src="/img/common/logo-spark-white.png" alt="Spark">
+            <img src="/img/common/logo-spark-orange.png" alt="Spark">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="specialguest" class="langCng" lang="ja">
+      <h1>有名人企画</h1>
+      <div class="wrapper">
+        <div class="img">
+          <img src="/img/specialguest/yobinori.jpg" alt="ヨビノリたくみ氏">
+        </div>
+        <div class="text">
+          <h2>知的好奇心の伏線回収</h2>
+          <div class="name">ヨビノリたくみ</div>
+          <div class="description">教育系YouTuber</div>
+          <p>
+            この講演では、理工学の魅力や奥深さについて、自身の半生を振り返りながらお話します。今思えば、さまざまな出来事が人生において重要な鍵を握っていました。将来に悩んでいたり、勉強のモチベーションをあげたい人はぜひ聞きにきてください！
+          </p>
+        </div>
+      </div>
+      <a href="/projects/specialguest/">
+        <div class="button">→有名人企画ページへ</div>
+      </a>
+    </section>
+
+    <section id="specialguest" class="langCng" lang="en">
+      <h1>Special Guest</h1>
+      <div class="wrapper">
+        <div class="img">
+          <img src="/img/specialguest/yobinori.jpg" alt="YOBINORI-Takumi">
+        </div>
+        <div class="text">
+          <h2>Intellectual Curiosity Makes the Future Better</h2>
+          <div class="name">Yobinori Takumi</div>
+          <div class="description">Educational YouTuber</div>
+          <p>
+            In this lecture, I will talk about the appeal and depth of science and engineering while looking back on my
+            own life. Looking back, various events held important keys in my life. If you are worried about your future
+            or want to be motivated to study, please come and listen!
+          </p>
+        </div>
+      </div>
+      <a href="/projects/specialguest/">
+        <div class="button">→To Special Guest</div>
+      </a>
+    </section>
+
+    <section id="access" class="langCng" lang="ja">
+      <h1>アクセス</h1>
+      <div class="textbox">
+        <div class="text">
+          <div>
+            <h2>会場</h2>
+            <p>早稲田大学　西早稲田キャンパス</p>
+            <p>〒169-8555</p>
+            <p>東京都新宿区大久保3丁目4-1</p>
+          </div>
+          <div>
+            <h2>電車</h2>
+            <p>JR山手線 高田馬場駅から徒歩15分</p>
+            <p>西武新宿線 高田馬場駅から徒歩15分</p>
+            <p>副都心線 西早稲田駅に直結</p>
+            <p>東西線 早稲田駅から徒歩22分</p>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.81753846969!2d139.70449407584655!3d35.706107428607105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2492b7c117%3A0x3b993294bf3846f7!2z5pep56iy55Sw5aSn5a2mIOilv-aXqeeosueUsOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1694520179320!5m2!1sja!2sjp"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="access" class="langCng" lang="en">
+      <h1>Access</h1>
+      <div class="textbox">
+        <div class="text">
+          <div>
+            <h2>Site</h2>
+            <p>Waseda University, Nishi-Waseda Campus</p>
+            <p>〒169-8555</p>
+            <p>3-4-1, Okubo, Shinjuku city, Tokyo</p>
+          </div>
+          <div>
+            <h2>Train</h2>
+            <p>Yamanote line, Takadanobaba station (15 min walk)</p>
+            <p>Seibu Shinjuku line, Takadanobaba station (15 min walk)</p>
+            <p>Fukutoshin line, Nishi-Waseda station (0 min walk)</p>
+            <p>Tozai line, Waseda station (22 min walk)</p>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.81753846969!2d139.70449407584655!3d35.706107428607105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2492b7c117%3A0x3b993294bf3846f7!2z5pep56iy55Sw5aSn5a2mIOilv-aXqeeosueUsOOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1694520179320!5m2!1sja!2sjp"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!--
+    <section id="all">
+      <div id="contents">
+        <h1>Events</h1>
+        <a href="/projects/search/">
+          <div class="top-button search langCng" lang="ja">企画検索</div>
+        </a>
+        <a href="/projects/search/">
+          <div class="top-button search langCng" lang="en">Search</div>
+        </a>
+        <h2 class="langCng" lang="ja">展示企画</h2>
+        <h2 class="langCng" lang="en">Exhibition</h2>
+        <section id="tenji">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper tenji">
+            <div class="swiper-wrapper">
+              <div style="display: none;" class="swiper-slide"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="wrapper">
+            <input type="checkbox" id=switch1 class="on-off" />
+            <div class="small-wrapper" id="small-general"></div>
+            <label for="switch1" class="open-label langCng" lang="ja"></label>
+            <label for="switch1" class="open-label-en langCng" lang="en"></label>
+          </div>
         </section>
-    </main>
-    <footer></footer>
-    <script src="/js/common.js?date=20221106"></script>
-    <script src="/js/swiper-bundle.min.js?date=20221106" defer></script>
-    <script src="/js/visitors.js?date=20221106"></script>
+        <div class="swiper-scrollbar"></div>
+        <h2 class="langCng" lang="ja">ステージ企画</h2>
+        <h2 class="langCng" lang="en">Stage</h2>
+        <section id="stage">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper stage">
+            <div class="swiper-wrapper">
+              <div style="display: none;" class="swiper-slide"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="wrapper">
+            <input type="checkbox" id=switch2 class="on-off" />
+            <div class="small-wrapper" id="small-stage2"></div>
+            <label for="switch2" class="open-label langCng" lang="ja"></label>
+            <label for="switch2" class="open-label-en langCng" lang="en"></label>
+          </div>
+        </section>
+        <div class="swiper-scrollbar"></div>
+        <a href="/projects/timetable/">
+          <div class="top-button arrow langCng" lang="ja">タイムテーブル</div>
+        </a>
+        <a href="/projects/timetable/">
+          <div class="top-button arrow langCng" lang="en">Timetable</div>
+        </a>
+        <h2 class="langCng" lang="ja">実験企画</h2>
+        <h2 class="langCng" lang="en">Experiments</h2>
+        <section id="experiment">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper experiment">
+            <div class="swiper-wrapper">
+              <div class="swiper-wrapper">
+                <div style="display: none;" class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="wrapper">
+            <input type="checkbox" id=switch3 class="on-off" />
+            <div class="small-wrapper" id="small-experiment"></div>
+            <label for="switch3" class="open-label langCng" lang="ja"></label>
+            <label for="switch3" class="open-label-en langCng" lang="en"></label>
+          </div>
+        </section>
+        <div class="swiper-scrollbar"></div>
+        <h2 class="langCng" lang="ja">模擬店企画</h2>
+        <h2 class="langCng" lang="en">Shops</h2>
+        <section id="food">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper food">
+            <div class="swiper-wrapper">
+              <div class="swiper-wrapper">
+                <div style="display: none;" class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="wrapper">
+            <input type="checkbox" id=switch4 class="on-off" />
+            <div class="small-wrapper" id="small-shops"></div>
+            <label for="switch4" class="open-label langCng" lang="ja"></label>
+            <label for="switch4" class="open-label-en langCng" lang="en"></label>
+          </div>
+        </section>
+        <div class="swiper-scrollbar"></div>
+        <a href="/projects/food/">
+          <div class="top-button arrow">Food in Campus</div>
+        </a>
+
+        <h1 class="langCng" lang="ja">理工展の楽しみ方</h1>
+        <h1 class="langCng" lang="en">How To Enjoy Rikoten</h1>
+        <div id="container">
+          <div id="one">
+            <div class="tile-header">
+              <div class="num">1.</div>
+              <div class="wrap">
+                <div class="title langCng" lang="ja">企画を見る</div>
+                <div class="title langCng" lang="en">View Project</div>
+                <div class="text langCng" lang="ja">企画一覧やタグから検索して、気になった企画を見に行きましょう。</div>
+                <div class="text langCng" lang="en">Let's find out your favorite projects by searching from list and
+                  tags.</div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="/img/top/アセット 1@600x.png" alt="">
+            </div>
+          </div>
+          <div id="two">
+            <div class="tile-header">
+              <div class="num">2.</div>
+              <div class="wrap">
+                <div class="title langCng" lang="ja">企画に参加する</div>
+                <div class="title langCng" lang="en">Participate in projects</div>
+                <div class="text langCng" lang="ja">実験やツアーなどの参加型企画に参加してみましょう。</div>
+                <div class="text langCng" lang="en">Participate in experiments, tours, and other participatory projects.
+                </div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="/img/top/アセット 2@600x.png" alt="">
+            </div>
+          </div>
+          <div id="three">
+            <div class="tile-header">
+              <div class="num">3.</div>
+              <div class="wrap">
+                <div class="title langCng" lang="ja">タイムスケジュールをチェック</div>
+                <div class="title langCng" lang="en">Check the time schedule</div>
+                <div class="text langCng" lang="ja">ステージ・実験・ツアー・講演などの時間が決まっている企画もあるので、タイムスケジュールは事前に確認しておきましょう。</div>
+                <div class="text langCng" lang="en">Some projects have fixed times for stages, experiments, tours,
+                  lectures, etc., so please check the time schedule in advance.</div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="/img/top/Icon awesome-clock.png" alt="">
+            </div>
+          </div>
+          <div id="four">
+            <div class="tile-header">
+              <div class="num">4.</div>
+              <div class="wrap">
+                <div class="title langCng" lang="ja">模擬店で美味しく</div>
+                <div class="title langCng" lang="en">Enjoy with delicious food</div>
+                <div class="text langCng" lang="ja">今年から模擬店が制限付きで復活！利用する際には、飲食店スペースの利用方法にご注意ください。</div>
+                <div class="text langCng" lang="en">Bake sale is back this year with restrictions! Please pay attention
+                  to the use of the food and beverage space when using it.</div>
+              </div>
+            </div>
+            <div class="icon">
+              <img src="/img/top/Icon map-food.png" alt="">
+            </div>
+          </div>
+          <div id="five">
+            <div class="tile-header">
+              <div class="num">5.</div>
+              <div class="title langCng" lang="ja">
+                <p>アプリコ<span>で</span></p>
+                <p><span>もっと楽しく</span></p>
+                <p><span>もっとわかりやすく</span></p>
+              </div>
+              <div class="title langCng" lang="en">
+                <p><span>More fun</span></p>
+                <p><span>and useful</span></p>
+                <p><span>with </span>AppRiko</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text-icon">
+                <div class="text langCng" lang="ja">
+                  理工展公式パンフレットアプリ「アプリコ」は検索機能などの理工展を楽しむための便利な機能はもちろん、
+                  次のようなアプリコでしか楽しむことのできない企画もございます。
+                </div>
+                <div class="text langCng" lang="en">
+                  The official Rikoten pamphlet application "AppRiko" offers not only convenient functions for enjoying
+                  Rikoten,
+                  such as a search function, but also the following special features that can only be enjoyed by users
+                  of AppRiko.
+                </div>
+                <div class="app-icon">
+                  <img src="/img/top/icon.png" alt="">
+                </div>
+              </div>
+              <a href="https://app-2020.rikoten.com/">
+                <div class="download langCng" lang="ja">インストールはこちら</div>
+              </a>
+              <a href="https://app-2020.rikoten.com/">
+                <div class="download langCng" lang="en">Click here to install</div>
+              </a>
+              <div class="rally langCng" lang="ja">
+                <h3>ウォークラリー</h3>
+                <div class="text">ウォークラリー対象企画の教室にあるQRコードをアプリで読み取り、スタンプを集めて、景品と交換できる企画です。</div>
+                <h3>リコテンラリー</h3>
+                <div class="text">理工展のコラボした地域の飲食店の店舗にあるQRコードを、アプリで読み取って、スタンプを集めて、景品と交換できる企画です。</div>
+              </div>
+              <div class="rally langCng" lang="en">
+                <h3>Walk rally</h3>
+                <div class="text">This is a project where QR codes in the classrooms of the walk rally target projects
+                  can be scanned with the application, and stamps can be collected and redeemed for prizes.</div>
+                <h3>Rikoten rally</h3>
+                <div class="text">This project allows visitors to collect stamps and exchange them for prizes by
+                  scanning the QR codes in the stores of local restaurants collaborating with Rikoten with the
+                  application.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1>Access</h1>
+        <div class="map">
+          <div class="map-flex">
+            <div class="address langCng" lang="ja">
+              <p class="train">早稲田大学　西早稲田キャンパス</p>
+              <p>〒169-8555</p>
+              <p>東京都新宿区大久保3丁目4-1</p>
+            </div>
+            <div class="address langCng" lang="en">
+              <p class="train">Waseda University, Nishiwaseda Campus</p>
+              <p>3-4-1, Okubo, Shinjuku city, Tokyo</p>
+              <p>169-8555</p>
+            </div>
+            <div class="access langCng" lang="en">
+              <div class="train">Transport Access</div>
+              <p>Yamanote line, Takadanobaba station (15 min walk)</p>
+              <p>Seibu Shinjuku line, Takadanobaba station (15 min walk)</p>
+              <p>Fukutoshin line, Nishi-Waseda station (0 min walk)</p>
+              <p>Tozai line, Waseda station (22 min walk)</p>
+            </div>
+            <div class="access langCng" lang="ja">
+              <div class="train">電車</div>
+              <p>JR山手線 高田馬場駅から徒歩15分</p>
+              <p>西武新宿線 高田馬場駅から徒歩15分</p>
+              <p>副都心線 西早稲田駅に直結</p>
+              <p>東西線 早稲田駅から徒歩22分</p>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.8206657422115!2d139.7048499148284!3d35.70603048018861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379dc3459%3A0x496e705c997ca8e7!2z44CSMTY5LTg1NTUg5p2x5Lqs6YO95paw5a6_5Yy65aSn5LmF5L-d77yT5LiB55uu77yU4oiS77yU4oiS77yR!5e0!3m2!1sja!2sjp!4v1667191279477!5m2!1sja!2sjp"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <h1 class="access langCng" lang="ja">ご協賛</h1>
+        <h1 class="access langCng" lang="en">Sponsor</h1>
+        <div class="sponsor-wrap">
+          <div class="gold">
+            <a href="https://www.musashi-engineering.co.jp/recruit/graduates/index.html"
+              onClick="ga('send', 'event', 'link', 'click', '武蔵エンジニアリング', '1');">
+              <img src="/img/sponsor/社名ロゴ（武蔵エンジニアリング）.png" alt="武蔵エンジニアリング">
+            </a>
+            <a href="https://www.gakusei-walker.jp/" onClick="ga('send', 'event', 'link', 'click', '学生ウォーカー', '1');">
+              <img src="/img/sponsor/学生ウォーカーロゴ.png" alt="学生ウォーカー">
+            </a>
+            <a href="https://www.tullys.co.jp/" onClick="ga('send', 'event', 'link', 'click', 'タリーズコーヒージャパン', '1');">
+              <img src="/img/sponsor/タリーズ.png" alt="タリーズコーヒージャパン">
+            </a>
+            <a href="http://www.co-yard.com/" onClick="ga('send', 'event', 'link', 'click', '株式会社カレッジヤード', '1');">
+              <img src="/img/sponsor/株式会社カレッジヤード.jpg" alt="ガレッジヤード">
+            </a>
+            <a href="https://recruit-ky-tec.jp/" onClick="ga('send', 'event', 'link', 'click', '共同カイテック', '1');">
+              <img src="/img/sponsor/バナー広告Gold_共同カイテック.jpg" alt="共同カイテック">
+            </a>
+            <a href="https://www.waseda.jp/pep/"
+              onClick="ga('send', 'event', 'link', 'click', '早稲田大学PEP卓越大学院プログラム事務局', '1');">
+              <img src="/img/sponsor/PEPバナー.jpg" alt="早稲田大学PEP卓越大学院プログラム事務局">
+            </a>
+            <a href="https://www.ccteachers.co.jp/" onClick="ga('send', 'event', 'link', 'click', 'ココカラTチャーズ', '1');">
+              <img src="/img/sponsor/ココカラTチャーズ.png" alt="ココカラティーチャーズ">
+            </a>
+          </div>
+          <div class="silver">
+            <a href="https://www.enplas.co.jp/recruit/" onClick="ga('send', 'event', 'link', 'click', 'エンプラス', '1');">
+              <img src="/img/sponsor/バナー(エンプラス).jpg" alt="エンプラス">
+            </a>
+            <a href="https://www.nok.co.jp/" onClick="ga('send', 'event', 'link', 'click', 'NOK', '1');">
+              <img src="/img/sponsor/NOKロゴ（早稲田大学学園祭）.jpg" alt="NOK">
+            </a>
+            <a href="https://noodle-shop-3958.business.site/?utm_source=gmb&utm_medium=referral"
+              onClick="ga('send', 'event', 'link', 'click', '麺屋こころ', '1');">
+              <img src="/img/sponsor/こころ.jpg" alt="麵屋こころ">
+            </a>
+            <a href="https://toshima-ds.com/" onClick="ga('send', 'event', 'link', 'click', '豊島自動車', '1');">
+              <img src="/img/sponsor/豊島自動車.jpg" alt="豊島自動車練習場">
+            </a>
+            <a href="https://www.saginomiya.co.jp/" onClick="ga('send', 'event', 'link', 'click', '鷲宮製作所', '1');">
+              <img src="/img/sponsor/WEBバナー広告_(株)鷺宮製作所_page-0001.jpg" alt="鷲宮製作所">
+            </a>
+            <div class="inactive"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+  </main>
+  <footer></footer>
+  <script src="/js/common.js?date=20231007"></script>
+  <!--<script src="/js/swiper-bundle.min.js?date=20231001" defer></script>-->
+  <script src="/js/visitors.js?date=20231001"></script>
+  <script src="/js/top.js?date=20231001"></script>
 </body>
+
 </html>

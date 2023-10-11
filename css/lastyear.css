@@ -1,0 +1,100 @@
+#lastyear{
+  max-width: 1000px;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #lastyear{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #lastyear{
+    width: calc(100% - 30px);
+  }
+}
+
+#lastyear h1{
+  font-family: var(--font-headline);
+  font-size: 32px;
+  color: var(--color-font);
+  width: fit-content;
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+#lastyear h1::before{
+  content: "";
+  background-image: url(../img/lastyear/lastyearicon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#lastyear .pics {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px auto 0;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100% ;
+  position: relative;
+}
+
+#lastyear .pics::after{
+  content: "";
+  display: block;
+  width: 300px;
+  height: 0;
+  margin: 10px
+}
+
+#lastyear .pic {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+#lastyear .pics .pic img{
+  height: 250px;
+  object-fit: cover;
+  transition: transform .6s ease; /* ゆっくり変化させる */
+  transition:1s all;
+}
+
+#lastyear .pics .pic img:hover{
+  transform: scale(1.1); /* 拡大 */
+  transition:1s all;
+}
+
+#lastyear .pics p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  #lastyear .pics{
+    margin-top: 50px;
+  }
+  #lastyear.pic {
+      height: auto;
+  }
+  #lastyear .pics img {
+      width: 100%;
+      height: auto;
+  }
+}
