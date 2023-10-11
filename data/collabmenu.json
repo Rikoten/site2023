@@ -47,20 +47,47 @@
   
   {
     "num": "02",
-    "name":"ふく流らーめん 轍 \n東京高田馬場本店",
-    "adCopy": "インスタ映え！お肉でつくったお花が可愛い！！" ,
-    "menuComment": "ふく流らーめんのスープを分解して新たに組みなおしたふく流らーめんの油そば。テーマのBloomを取り入れ、草と花をイメージした鮮やかなものに。",
-    "concept": "鶏白湯を圧力鍋を使って煮出し、亜酸化窒素で食材をムース状にしたエスプーマをのせた白いラーメン！ラテのように泡だった表面が特徴的です。とにかくこの特徴的なルックスに感嘆。ほんのりと柚子の香りのエスプーマが上品で食欲をそそります。",
+    "name": {
+      "ja": "鶏白湯専門 らーめん我羅奢",
+      "en": "Garasha"
+    },
+    "adCopy": {
+      "ja": "丸鷄、鶏がらをじっくりと炊き上げた極上の鶏白湯らーめん",
+      "en": "The finest chicken paitan ramen made with slowly cooked whole chicken and chicken bones"
+    },
+    "menuComment": {
+      "ja": "業界初？音の出る鶏白湯らーめん！味変「自家製辛味つぶつぶ」で！お口の中はさらにスパーク！",
+      "en": "First in industry? Sound-infused chicken paitan ramen! With flavorful homemade spicy crunches, the 'spark' in your mouth won't stop!"
+    },
+    "concept": {
+      "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
+      "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
+    },
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "11:00～15:00, 17:00～22:30\n※年中無休",
-    "rikoten": "両日営業",
-    "period": "10月10日～11月9日",
-    "menuName": "ふく流早稲田理工展コラボラーメン",
-    "menuPrice": "¥1000",
+    "time": {
+      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
+      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+    },
+    "rikoten": {
+      "ja": "通常営業",
+      "en": "As usual"
+    },
+    "period": {
+      "ja": "10月1日(日)〜11月5日(日)",
+      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+    },
+    "menuName": {
+      "ja": "「パチパチパニック大作戦」",
+      "en": "Pop Pop Panic Mega Mission!"
+    },
+    "menuPrice": {
+      "ja": "1000円",
+      "en": "1000 yen"
+    },
     "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
-    "Instagram": "https://www.instagram.com/ramen.wadachi.tokyo/",
-    "Twitter": "https://twitter.com/wadachi_tokyo",
-    "LINE": "https://page.line.me/?accountId=819kgsns",
+    "Instagram": "https://www.instagram.com/ramen_garasha/",
+    "Twitter": "https://twitter.com/garasha1",
+    "LINE": null,
     "release": true
   },
   
@@ -79,25 +106,6 @@
     "menuImg": "/img/collabmenu/03-がらしゃ.JPG",
     "Instagram": "https://www.instagram.com/ramen_garasha/?igshid=YmMyMTA2M2Y%3D",
     "Twitter": "https://twitter.com/garasha1?s=21&t=d3XY2WNzfAmVHSyH_mmKLQ",
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "04",
-    "name":"ピコピコポン",
-    "adCopy": "見よ！この大きな牛すじを！！" ,
-    "menuComment": "大きくてトロトロな和牛筋がおいしい！隠し味には赤ワインがたくさん使われています！太麺がたっぷりと！おなかいっぱい、食べてください！",
-    "concept": "ボリューム満点！おなかいっぱい！\n次郎系のラーメンが人気のお店です！\n博士課程の人にはトッピングおまけだとか…！\nぜひ足を運んでみてください！！\n(理工展のSNSより抜粋)",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6473744400123!2d139.7095074!3d35.71029419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d18601017%3A0x3718158e7db67496!2z44OU44Kz44OU44Kz44Od44Oz!5e0!3m2!1sja!2sjp!4v1662863882054!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～金曜日: 11:00～15:30 (L.O. 15:20), 17:30～22:30 (L.O. 22:00 ※より早まることあり)\n日曜日: 9:00～15:30 (L.O. 15:00)\n※土曜日定休\n※ピコピコポン公式Twitterを要チェック！Twitterが正しいです！",
-    "rikoten": "11月6日(日)のみ営業",
-    "period": "10月24日～\n※販売日はピコピコポンのTwitterを要チェック！",
-    "menuName": "カレーつけ麺",
-    "menuPrice": "¥1400",
-    "menuImg": "/img/collabmenu/04-ピコピコポン.JPG",
-    "Instagram": null,
-    "Twitter": "https://twitter.com/matunobu0330?s=21&t=d3XY2WNzfAmVHSyH_mmKLQ",
     "LINE": null,
     "release": true
   },
@@ -197,44 +205,6 @@
     "menuImg": "/img/collabmenu/09-めんちん.JPG",
     "Instagram": "https://www.instagram.com/menchintei/?hl=ja",
     "Twitter": "https://twitter.com/menchintei",
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "10",
-    "name":"たけろくらーめん 高田馬場店",
-    "adCopy": "辛めのラーメンが病みつきに！" ,
-    "menuComment": "コラボメニューのこだわりは、自家製の辛味噌です！キレがあり、辛いながらも旨味があります。",
-    "concept": "10月3日より味噌拉麺　蔵屋からたけろくらーめんとしてパワーアップして高田馬場から再起動します！\n看板メニュー: 爆烈牛すじつけ麺、牛塩らーめん",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d202.4743068240814!2d139.7095075!3d35.7117326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d672418be33%3A0x736d412e59ee4560!2z5ZGz5ZmM5ouJ6bq6IOiUteWxiw!5e0!3m2!1sja!2sjp!4v1662863631736!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "全日: 11:00～23:00",
-    "rikoten": "両日営業",
-    "period": "10月24日～11月6日",
-    "menuName": "旨辛スタミナ麺",
-    "menuPrice": "¥900 (税込)",
-    "menuImg": "/img/collabmenu/10-みそくらや.JPG",
-    "Instagram": "https://www.instagram.com/takeroku2019/",
-    "Twitter": "https://mobile.twitter.com/nakanotakeroku",
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "11",
-    "name":"Whistle CAFE",
-    "adCopy": "一から手作りのソースを使用したおしゃれなパスタ！" ,
-    "menuComment": "煮込まれたひき肉、一から手作りのソース",
-    "concept": "サークルコラボメニューが大好評の愛されカフェ！店内はおしゃれ空間、インスタ映えも抜群でおいしいメニューが盛りだくさん！Instagramにはコラボメニューの紹介動画もあります！",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6758056026074!2d139.7141748!3d35.7095947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d184eabc8f5%3A0x585f8a2a6d2c1555!2sWhistle%20CAFE!5e0!3m2!1sja!2sjp!4v1662863763426!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "火～日曜日: 11:00～20:00\n月曜日定休",
-    "rikoten": "両日営業",
-    "period": "10月1日～",
-    "menuName": "ほうれん草のミートソースパスタ",
-    "menuPrice": "¥1100 \n(コーヒーor紅茶付き)",
-    "menuImg": "/img/collabmenu/11-ホイッスル.JPG",
-    "Instagram": "https://www.instagram.com/whistlecafe_official/",
-    "Twitter": "https://twitter.com/whistlecafe",
     "LINE": null,
     "release": true
   }
