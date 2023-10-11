@@ -33,15 +33,18 @@
 <body>
   <header></header> 
   <main>
-    <section id="faq" class="langCng" lang="ja">
-      <div class="main-content">
+    <section id="faq">
+
         <h1>よくある質問</h1>
-        <p class="question">◎入場について</p>
-        <p class="question">Q1 入場チケットは必要ですか？</p>
-        <p class="answer">A1<br>必要ありません！</p>
-        
-        <p class="question">Q2 入場制限はありますか？</p>
-        <p class="answer">A2<br>ありません！</p>
+        <div class="category">
+          <h2>◎入場について</h2>
+          <p class="question">Q1 入場チケットは必要ですか？</p>
+          <p class="answer">A1<br>必要ありません！</p>
+          
+          <p class="question">Q2 入場制限はありますか？</p>
+          <p class="answer">A2<br>ありません！</p>
+        </div>
+
         
         <!--
         <p class="question">◎ポケモンユナイトについて</p>
@@ -56,73 +59,59 @@
         <p class="question">Q その他のよくある質問</p>
         <p class="answer">大会概要等、<a href="https://drive.google.com/file/d/1XDm_Hu16FM2AUCCL39nfvOirdeV1snnb/view"><span class="yellow-fine">こちら</span></a>にございます。<br>併せてご確認ください。</p>
         -->
-        <p class="question">◎整理券について</p>
-        <p class="question">Q3 企画に参加をするうえで予約・整理券は必要ですか？</p>
-        <p class="answer">A3<br>一部の企画では整理券が必要となります。詳細は以下をご覧ください。</p>
-      </div>
 
-      <div class="sub-content">
-        <div class="flex">
-          <img src="../../img/faq/questionmark.svg" width="30" height="30" class="mark">
-          <p>&ensp;</p>
-          <h2>整理券が必要な企画一覧</h2>
+        <div class="category">
+          <h2>◎整理券について</h2>
+          <p class="question">Q3 企画に参加をするうえで予約・整理券は必要ですか？</p>
+          <p class="answer">A3<br>一部の企画では整理券が必要となります。詳細は以下をご覧ください。</p>
         </div>
-        <ul>
-          <li>
-            <h3>未知の惑星からの脱出</h3>
-            <p>理工展当日より前にオンラインにて予約可能</p>
-          </li>
-          <li>
-            <h3>西早稲田キャンパスツアー</h3>
-            <p>11/4(土)・11/5(日) ともに当日10:00より申し込み受付開始</p>
-            <p>お申込みはこちら</p>
-          </li>
-          <li>
-            <h3>【星しの子】〜君は完璧で究極の一等星〜</h3>
-          </li>
-          <li>
-            <h3>研究室ツアー</h3>
-            <p>53-B04にて30分前より配布開始</p>
-          </li>
-          <li>
-            <h3>理工展　芳香剤を作ろう！</h3>
-            <p>56-502にて当日10:00頃より配布開始</p>
-          </li>
-          <li>
-            <h3>人口いくらでスノードームを作ろう！</h3>
-            <p>56-502にて当日10:00頃より配布開始</p>
-          </li>
-          <li>
-            <h3>有名人企画</h3>
-            <p>11/5(日) 10:30より西門にて配布開始</p>
-            <p>先着300名様</p>
-            <p>なくなり次第配布終了</p>
-          </li>
-        </ul>
 
-        <p>1. 理工展<span class="yellow">当日より前</span>にオンラインにて予約可能な企画</p>
-        <ul>
-          <li>未知の惑星からの脱出</li>
-        </ul>
-        <p>2. 理工展<span class="yellow">当日</span>に<span class="yellow">オンライン</span>にて予約可能な企画</p>
-        <ul>
-          <li>西早稲田キャンパスツアー(当日10:00より予約開始)</li>
-        </ul>
-        <p>3. 理工展<span class="yellow">当日</span>に指定の場所にて<span class="yellow">整理券を配布</span>している企画</p>
-        <ul>
-          <li>【星しの子】〜君は完璧で究極の一等星〜</li>
-          <li>研究室ツアー(53-B04にて30分前より整理券配布)</li>
-          <li>理工展　芳香剤を作ろう！(56-502)</li>
-          <li>人口いくらでスノードームを作ろう！(56-502)</li>
-          <li>有名人企画</li>
-        </ul>
+        <div class="textbox">
+          <h2>整理券が必要な企画一覧</h2>
+          <ul>
+            <li><!-- A-20 -->
+              <h3>【星しの子】〜君は完璧で究極の一等星〜</h3>
+              <p class="group">早稲田大学宇宙航空研究会WASA天文プロジェクト</p>
+              <p>11/4(土)・11/5(日)両日とも、当日朝10:00頃より60-202にて配布開始</p>
+            </li>
+            <li><!-- B-03 -->
+              <h3>研究室ツアー</h3>
+              <p class="group">理工展連絡会総務局実研講(研究室ツアー)</p>
+              <p>各ツアー開始30分前より53-B04にて配布開始</p>
+            </li>
+            <li><!-- B-09 -->
+              <h3>西早稲田キャンパスツアー</h3>
+              <p class="group">西早稲田キャンパスツアーガイド</p>
+              <p>11/4(土)・11/5(日) ともに当日朝10:00よりオンラインにて申し込み受付開始</p>
+              <p>お申込みは<a href="https://forms.gle/2FBTh3yrEf28yZHt9" target="blank" rel="noopener noreferrer">こちら</a></p>
+            </li>
+            <li><!-- B-12 -->
+              <h3>未知の惑星からの脱出</h3>
+              <p class="group">Labyrinth Factory</p>
+              <p>事前にオンラインにて予約開始</p>
+              <p>※後日詳細掲載予定</p>
+            </li>
+            <li><!-- E-01 -->
+              <h3>理工展　芳香剤を作ろう！</h3>
+              <p class="group">応用化学学生委員会実験班芳香剤</p>
+              <p>11/4(土)・11/5(日)両日とも、当日朝10:00頃より56-502にて配布開始</p>
+              <p>※なくなり次第配布終了</p>
+            </li>
+            <li><!-- E-03 -->
+              <h3>人工いくらでスノードームを作ろう！</h3>
+              <p class="group">応化会学生委員会学部生部会</p>
+              <p>11/4(土)・11/5(日)両日とも、当日朝10:00頃より56-502にて配布開始</p>
+              <p>※なくなり次第配布終了</p>
+            </li>
+            <li>
+              <h3>有名人企画</h3>
+              <p>11/5(日)朝10:30より西門にて配布開始</p>
+              <p>※先着300名様</p>
+              <p>※なくなり次第配布終了</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <p class="space"> </p>
-
-
-    </section>
-
-    <section class="langCng" lang="en">
 
     </section>
   </main>
