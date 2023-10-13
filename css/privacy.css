@@ -1,23 +1,16 @@
 #privacy {
-    width: calc(100% - 200px);
+    width: calc(100% - 100px);
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 100px;
+    background-color: #FFFDCD;
+    padding-top: 30px;
     padding-bottom: 30px;
-    font-weight: 590;
 }
 
-#privacy h1{
-    color:#DD6BA3;
-    padding-left: 40px;
-    line-height: 1;
-    position: relative;
-}
-  
-#privacy h1::before{
+#privacy h1::before {
     content: "";
     display: inline-block;
-    background-image:url('/img/privacy/lock_FILL0_wght400_GRAD0_opsz48.svg');
+    background-image: url(../img/privacy/key_icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 30px;
@@ -28,31 +21,50 @@
     transform: translateY(-50%);
 }
 
-#privacy .text {
-    padding: 50px auto;
+#privacy h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 32px;
+    font-family: var(--font-headline);
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 40px;
+    position: relative;
 }
 
-#privacy .text p {
-    margin: 50px auto;
+#privacy p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
-#privacy .text p a {
-    color: var(--color-lightpink);
+#privacy a {
+    color: var(--color-orange);
+    text-decoration: underline;
 }
 
-#privacy .text li {
+#privacy img.yaguchi{
+  display: block;
+  height: 300px;
+  margin: auto;
+}
+
+#privacy .treat {
     list-style-type: disc;
-    margin: 30px auto;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
-@media screen and (max-width: 750px){
-    #privacy {
-        width: calc(100% - 100px);
+@media screen and (max-width:768px) {
+  #privacy {
+        width: calc(100% - 50px);
     }
 }
 
-@media screen and (max-width: 550px){
-    #privacy {
-        width: calc(100% - 50px);
+@media screen and (max-width:480px) {
+  #privacy {
+        width: calc(100% - 30px);
     }
 }

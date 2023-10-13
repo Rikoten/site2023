@@ -38,16 +38,17 @@ async function setHeaderFooter() {
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
     
     const headerLang = {
-                        "search":{"ja": "企画検索", "en": "Search"},
-                        "timetable":{"ja": "タイムテーブル", "en": "Timetable"},
+                        "projects":{"ja": "企画情報", "en": "Projects"},
+                        "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
-                        "food":{"ja": "Food in Campus", "en": "Food in Campus"},
+                        "specialguest":{"ja": "有名人企画", "en": "Special Guest"},
                         "about":{"ja": "理工展とは", "en": "About"},
+                        "theme":{"ja": "今年のテーマ", "en": "Theme"},
+                        "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
+                        "info":{"ja": "お知らせ", "en": "Info"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
-                        "covid19":{"ja": "感染症対策", "en": "COVID-19"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
-                        "info":{"ja": "お問い合わせ", "en": "Contact"},
-                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
+                        "contact":{"ja": "お問い合わせ", "en": "Contact"},
                         "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
                       }
 
@@ -65,65 +66,59 @@ async function setHeaderFooter() {
         <span></span>
     </div>
     <nav>
-        <ul class="pcmenu">
-            <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
-            <li>Projects
+        <div class="pcmenu">
+            <div id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></div>
+            <ul>
+            <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
-                    <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-                    <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
-                    <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                    <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
+                    <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
                 </ul>
             </li>
-            <li>About
+            <li class="pulldown" id="header-about">${headerLang.about[lang]}
                 <ul>
                     <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                    <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
                 </ul>
             </li>
-            <li>Info
+            <li class="pulldown" id="header-info">${headerLang.info[lang]}
                 <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>   
-                <li><a href="/info/covid-19">${headerLang.covid19[lang]}</a></li>
-                <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/information">${headerLang.info[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
             </li>
+            </ul>
             <div class="jaen">
               <div class="ja ${jaActive}">Ja</div>
               <span>/</span>
               <di class="en ${enActive}">En</di>
             </div>
-        </ul>
+        </div>
     </nav>
     <div class="phone-menu">
-    <li id="logo"><a href="/"><img src="/img/common/ロゴ.png"></a></li>
+    <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
         <ul class="include-accordion scroll-control">
             <li>
-            <button class="accordionBtn" type="button">Projects</button>
+            <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
-                <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-                <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
-                <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                <li><a href="/projects/food">${headerLang.food[lang]}</a></li>
+                <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">About</button>
+            <button class="accordionBtn" type="button">${headerLang.about[lang]}</button>
             <ul>
                 <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
             </ul>
             </li>
             <li>
-            <button class="accordionBtn" type="button">Info</button>
+            <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>   
-                <li><a href="/info/covid-19">${headerLang.covid19[lang]}</a></li>
-                <li><a href="/info/FAQ">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/information">${headerLang.info[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
+                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
             </li>
         </ul>
@@ -135,6 +130,31 @@ async function setHeaderFooter() {
     </div>
     `)
     headerelement.insertAdjacentHTML("afterbegin", head);
+
+    const pcmenu = document.querySelector(".pcmenu > ul");
+    const pulldown = [...pcmenu.querySelectorAll("li.pulldown")];
+    console.log(pulldown)
+
+    //console.log("pulldown", pulldown[0]);
+
+    pcmenu.addEventListener("mouseover", () =>{
+      document.addEventListener("mouseover", (e)=>{
+        if (pulldown.includes(e.target)){
+          hpulldown = e.target.querySelector("ul").clientHeight
+          pcmenu.style.height = `calc(50px + ${hpulldown}px)`;        
+        }
+        /*hpulldown = e.target.querySelector("ul").clientHeight
+        pcmenu.style.height = `calc(50px + ${hpulldown}px)`;*/
+      })
+
+    });
+
+    pcmenu.addEventListener("mouseleave", ()=>{
+      pcmenu.style.height = "50px";
+    });
+
+
+
     const menu=document.getElementsByClassName("menu_bar")[0];
     const open=document.getElementsByClassName("phone-menu")[0];
     
@@ -181,13 +201,13 @@ const slideDown = (el) => {
         }else{
           slideUp(content); //クラス名にactiveがない（＝開いていた）なら上記で定義した閉じる関数を実行
         }
-        accordionBtns.forEach((accordionBtn, index) => {
+        /*accordionBtns.forEach((accordionBtn, index) => {
           if (activeIndex !== index) {
-            accordionBtn.parentNode.classList.remove('active');
+            //accordionBtn.parentNode.classList.remove('active');
             const openedContent = accordionBtn.nextElementSibling;
-            slideUp(openedContent); //現在開いている他のメニューを閉じる
+            //slideUp(openedContent); //現在開いている他のメニューを閉じる
           }
-        });
+        });*/
         //スクロール制御のために上位階層ulのクラス名を変える
         let container = accordion.closest('.scroll-control'); //sroll-controlnのクラス名である親要素を取得
         if(accordionBtn.parentNode.classList.contains('active') == false && container !== null ){
@@ -207,12 +227,12 @@ const slideDown = (el) => {
     bottom.push(`
     <p>official SNS</p>
     <ul class = "social-icon">
-      <li class = "twitter-icon"><a href="https://twitter.com/rikoten_waseda" target="_blank" rel = "noopener"><img src = "/img/common/icon/twitter.svg"></a></li>
+      <li class = "x-icon"><a href="https://twitter.com/rikoten_waseda" target="_blank" rel = "noopener"><img src = "/img/common/icon/x.svg"></a></li>
       <li class = "instagram-icon"><div></div><a href="https://www.instagram.com/waseda_rikoten/" target="_blank" rel = "noopener"><img src = "/img/common/icon/instagram.svg"></a></li>
       <li class = "line-icon"><a href="https://line.me/R/ti/p/o-ox8Dei12" target="_blank" rel = "noopener"><img src = "/img/common/icon/line.svg"></a></li>
       <li class = "youtube-icon"><a href="https://www.youtube.com/channel/UCdBEdqUB9DvgHShFqzxswdA" target="_blank" rel = "noopener"><img src = "/img/common/icon/youtube.svg"></a></li>
     </ul>
-    <p>Copyright © 2002-2022 ${rikoten} All Rights Reserved.</p>
+    <p class="copyright">Copyright © 2002-2023 ${rikoten} All Rights Reserved.</p>
     `)
     footerelement.insertAdjacentHTML("afterbegin", bottom);
 }

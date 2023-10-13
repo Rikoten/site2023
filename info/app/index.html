@@ -1,403 +1,194 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第70回理工展 -アプリ</title>
-    <link href="/css/common.css?date=20221106" rel="stylesheet">
-    <link href="/css/app.css?date=20221106" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第70回理工展 -アプリ紹介</title>
+  <link href="/css/common.css?date=20231002" rel="stylesheet">
+  <link href="/css/app.css?date=20231001" rel="stylesheet">
 
-    <meta property="og:url" content="https://rikoten.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="理工展連絡会">
-    <meta property="og:description" content="第70回理工展 -BLOOM">
-    <meta property="og:image" content="https://rikoten.com/img/card.PNG">
+  <!--Adobe Fonts-->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'cyl8ihi',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 
-    <!--<script src="/js/top.js?date=20221106"></script>-->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117940930-4"></script>
-    <script>
+  <meta property="og:url" content="https://rikoten.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="理工展連絡会">
+  <meta property="og:description" content="第70回理工展 -Spark">
+  <meta property="og:image" content="https://rikoten.com/img/card.PNG">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H43EHV2DHD"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-117940930-4');
-    </script>
+
+    gtag('config', 'G-H43EHV2DHD');
+  </script>
 </head>
+
 <body>
-    <header></header>
-    <main>
-        <section id="info" class="langCng" lang="ja">
-            <section id="app">
-                <!-- <div class="app-header">
-                    <h1>アプリ</h1>
-                </div> -->
-                <div class="top-img">
-                    <img src="/img/app/virtual-main.png" alt="">
-                </div>
-                <p class="lead">理工展がもっと楽しくなる2つのアプリ</p>
-                <div class="overview">
-                    <div class="pamph">
-                        <div class="app-name">
-                            <h2>パンフレットアプリ</h2>
-                        </div>
-                        <div class="info">
-                            <a href="#pamph-app">
-                                <div class="instruction">
-                                    <p class="catchphrase">理工展をより楽しく、より便利に</p>
-                                    <p>気になるイベントを通知でお知らせ</p>
-                                    <p>たくさんの企画をサクッと検索</p>
-                                    <p>クーポンなどなど...</p>
-                                    <p>理工展の体験をより楽しく、より便利に！</p>
-                                </div>
-                                <div class="download-link">
-                                    <img class="app-icon" src="/img/app/pamph-app-icon.png" alt="">
-                                    <div>
-                                        <a href="https://apps.apple.com/jp/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E7%90%86%E5%B7%A5%E5%B1%95%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id1438321497?itsct=apps_box_link&itscg=30200">
-                                            <span>
-                                                <img src="/img/app/app-store-badge.svg" alt="">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://play.google.com/store/apps/details?id=com.rikoten.AndroidApp2018new&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                            <img src="/img/app/google-play-badge.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="virtual">
-                        <div class="app-name">
-                            <h2>バーチャル理工展アプリ</h2>
-                        </div>
-                        <div class="info">
-                            <a href="#virtual-app">
-                                <div class="instruction">
-                                    <p class="catchphrase">キャンパスに来られなくても</p>
-                                    <p>キャンパスを自由に探索</p>
-                                    <p>オンラインならではの機能も！</p>
-                                </div>
-                                <div class="download-link">
-                                    <img class="app-icon" src="/img/app/virtual-app-icon.jpg" alt="">
-                                    <div>
-                                        <a href="https://apps.apple.com/us/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E7%90%86%E5%B7%A5%E5%B1%95%E3%82%A2%E3%83%97%E3%83%AA/id1536308614?itsct=apps_box_link&itscg=30200">
-                                            <span>
-                                                <img src="/img/app/app-store-badge.svg" alt="">
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="https://play.google.com/store/apps/details?id=com.RikotenRenrakukai.VirtualRikoten&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                            <img src="/img/app/google-play-badge.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <section id="pamph-app" class="pamph-app">
-                    <h2>パンフレットアプリ</h2>
-                    <div class="container">
-                        <p>理工展公式のパンフレットアプリ</p>
-                        <p>イベント一覧やタイムテーブルなど、パンフレットがあなたのスマホに！</p>
-                        <p>さらに、企画検索や通知など、アプリならではの機能が盛りだくさん！</p>
-                        <div class="items">
-                            <div class="item">
-                                <div class="img-wrapper">
-                                    <img src="/img/app/pamph-home.jpg" alt="">
-                                </div>
-                                <h3>理工展のパンフレットアプリ！</h3>
-                                <span>-</span>
-                                <p>理工展のパンフレットアプリ！ウォークラリーなど、理工展をより楽しめる機能がいっぱいです！</p>
-                            </div>
-                            <div class="item">
-                                <div class="img-wrapper">
-                                    <img src="/img/app/pamph-coupon.jpg" alt="">
-                                </div>
-                                <h3>ワセメシをお得に楽しもう！</h3>
-                                <span>-</span>
-                                <p>ワイルドラーメン、ふく流ラーメン、麺珍亭、我羅奢など、代表的なワセメシのクーポンが登場！この機会にお得にワセメシを楽しもう！</p>
-                            </div>
-                            <div class="item">
-                                <div class="img-wrapper">
-                                    <img src="/img/app/pamph-project.jpg" alt="">
-                                </div>
-                                <h3>より便利に理工展を楽しもう！</h3>
-                                <span>-</span>
-                                <p>企画検索やブックマーク、イベントの通知機能など、アプリならではの機能がいっぱい！</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="virtual-app" class="virtual-app">
-                    <h2>バーチャル理工展アプリ</h2>
-                    <div class="container">
-                        <p>バーチャルならではの機能も盛り沢山！</p>
-                        <p>気球に乗って空からキャンパスを探索したり、屋台でアイテムを買ったり、</p>
-                        <p>キャンパスのガイドで西早稲田キャンパスを学ぶことができます！</p>
-                        <div class="items">
-                            <div class="item">
-                                <div class="img-wrapper">
-                                    <img src="/img/app/virtual-balloon.jpg" alt="">
-                                </div>
-                                <h3>オンラインならではの機能！</h3>
-                                <span>-</span>
-                                <p>気球に乗ったり、キャラクターと会話したり、ガチャで景品を当てたり…。実地の理工展にはない、アプリならではの機能も盛りだくさん！</p>
-                            </div>
-                            <div class="item">
-                                <div class="img-wrapper">
-                                    <img src="/img/app/virtual-coin.jpg" alt="">
-                                </div>
-                                <h3>コインを集めてアイテムを購入！</h3>
-                                <span>-</span>
-                                <p>キャンパスに散らばっているコインを集めると、ショップやガチャでアイテムと交換できます！たくさん集めて君だけのバーチャル理工展を楽しもう！</p>
-                            </div>
-                            <div class="item">
-                                <div class="img-wrapper">
-                                    <img src="/img/app/virtual-yaguchi.jpg" alt="">
-                                </div>
-                                <h3>キャンパスを自由に探検！</h3>
-                                <span>-</span>
-                                <p>例年理工展が開催される西早稲田キャンパスをアプリで再現。自分でキャラクターを操作してまるでキャンパスを訪れたように探検できるよ！</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="download">
-                    <h2>ダウンロードはこちらから</h2>
-                    <div class="download-link">
-                        <div class="text">アプリだからこそできる、通知や企画検索など</div>
-                        <div>
-                            <img class="app-icon" src="/img/app/pamph-app-icon.png" alt="">
-                            <div>
-                                <a href="https://apps.apple.com/jp/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E7%90%86%E5%B7%A5%E5%B1%95%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id1438321497?itsct=apps_box_link&itscg=30200">
-                                    <span>
-                                        <img src="/img/app/app-store-badge.svg" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://play.google.com/store/apps/details?id=com.rikoten.AndroidApp2018new&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                    <img src="/img/app/google-play-badge.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="download-link">
-                        <div class="text">キャンパスに行くことができない方にも、オンラインで3Dのバーチャルキャンパスを楽しむことができる</div>
-                        <img class="app-icon" src="/img/app/virtual-app-icon.jpg" alt="">
-                        <div>
-                            <a href="https://apps.apple.com/us/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E7%90%86%E5%B7%A5%E5%B1%95%E3%82%A2%E3%83%97%E3%83%AA/id1536308614?itsct=apps_box_link&itscg=30200">
-                                <span>
-                                    <img src="/img/app/app-store-badge.svg" alt="">
-                                </span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://play.google.com/store/apps/details?id=com.RikotenRenrakukai.VirtualRikoten&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                <img src="/img/app/google-play-badge.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </section>
-        </section>
+  <header></header>
+  <main>
+    <section id="app" class="langCng" lang="ja">
+      <h1>アプリ紹介</h1>
+      <p>理工展がもっと楽しくなる2つのアプリ</p>
+      <div class="overview">
+        <div class="pamph">
+          <div class="app-name">
+            <h2>パンフレットアプリ</h2>
+          </div>
+          <div class="download-link">
+            <img class="app-icon" src="/img/app/pamph-app-icon.png" alt="">
+          </div>
+          <div class="info">
+            <div class="instruction">
+              <p class="catchphrase">理工展をより楽しく、より便利に</p>
+              <p>気になるイベントを通知でお知らせ</p>
+              <p>たくさんの企画をサクッと検索</p>
+              <p>クーポンなどなど...</p>
+              <p>理工展の体験をより楽しく、より便利に！</p>
+            </div>
+            <div class="download-link">
+              <div>
+                <a
+                  href="https://apps.apple.com/jp/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E7%90%86%E5%B7%A5%E5%B1%95%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id1438321497?itsct=apps_box_link&itscg=30200" target= blank rel = "noopener noreferrer">
+                  <span>
+                    <img src="/img/app/app-store-badge.svg" alt="">
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.rikoten.AndroidApp2018new&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target= blank rel = "noopener noreferrer">
+                  <img src="/img/app/google-play-badge.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="virtual">
+          <div class="app-name">
+            <h2>バーチャル理工展アプリ</h2>
+          </div>
+          <div class="download-link">
+            <img class="app-icon" src="/img/app/virtual-app-icon.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="instruction">
+              <p class="catchphrase">キャンパスに来られなくても</p>
+              <p>キャンパスを自由に探索</p>
+              <p>オンラインならではの機能も！</p>
+            </div>
+            <div class="download-link">
+
+              <div>
+                <a
+                  href="https://apps.apple.com/us/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E7%90%86%E5%B7%A5%E5%B1%95%E3%82%A2%E3%83%97%E3%83%AA/id1536308614?itsct=apps_box_link&itscg=30200" target= blank rel = "noopener noreferrer">
+                  <span>
+                    <img src="/img/app/app-store-badge.svg" alt="">
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.RikotenRenrakukai.VirtualRikoten&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target= blank rel = "noopener noreferrer">
+                  <img src="/img/app/google-play-badge.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section id="app" class="langCng" lang="en">
+      <h1>App</h1>
+      <p>Two apps that make Rikoten more fun</p>
+      <div class="overview">
+        <div class="pamph">
+          <div class="app-name">
+            <h2>Pamphlet App</h2>
+          </div>
+          <div class="download-link">
+            <img class="app-icon" src="/img/app/pamph-app-icon.png" alt="">
+          </div>
+          <div class="info">
+            <div class="instruction">
+              <p class="catchphrase">Making Rikoten more enjoyable and convenient</p>
+              <p>Notify you of events you care about</p>
+              <p>Search for many projects quickly</p>
+              <p>Coupons and more...</p>
+              <p>Make Rikoten experience more enjoyable and convenient! </p>
+            </div>
+            <div class="download-link">
+              <div>
+                <a
+                  href="https://apps.apple.com/jp/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E7%90%86%E5%B7%A5%E5%B1%95%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id1438321497?itsct=apps_box_link&itscg=30200" target= blank rel = "noopener noreferrer">
+                  <span>
+                    <img src="/img/app/app-store-badge-en.svg" alt="">
+                  </span>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.rikoten.AndroidApp2018new&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target= blank rel = "noopener noreferrer">
+                  <img src="/img/app/google-play-badge-en.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <section id="info" class="langCng" lang="en">
-
-                <section id="app">
-                    <!-- <div class="app-header">
-                        <h1>App</h1>
-                    </div> -->
-                    <div class="top-img">
-                        <img src="/img/app/virtual-main.png" alt="">
-                    </div>
-                    <p class="lead">Two apps that make Rikoten more fun</p>
-                    <div class="overview">
-                        <div class="pamph">
-                            <div class="app-name">
-                                <h2>Pamphlet App</h2>
-                            </div>
-                            <div class="info">
-                                <a href="#pamph-app">
-                                    <div class="instruction">
-                                        <p class="catchphrase">Making Rikoten more enjoyable and convenient</p>
-                                        <p>Notify you of events you care about</p>
-                                        <p>Search for many projects quickly</p>
-                                        <p>Coupons and more...</p>
-                                        <p>Make Rikoten experience more enjoyable and convenient! </p>
-                                    </div>
-                                    <div class="download-link">
-                                        <img class="app-icon" src="/img/app/pamph-app-icon.png" alt="">
-                                        <div>
-                                            <a href="https://apps.apple.com/jp/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E7%90%86%E5%B7%A5%E5%B1%95%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id1438321497?itsct=apps_box_link&itscg=30200">
-                                                <span>
-                                                    <img src="/img/app/app-store-badge.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            <a href="https://play.google.com/store/apps/details?id=com.rikoten.AndroidApp2018new&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                                <img src="/img/app/google-play-badge.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-    
-                        <div class="virtual">
-                            <div class="app-name">
-                                <h2>Virtual Rikoten App</h2>
-                            </div>
-                            <div class="info">
-                                <a href="#virtual-app">
-                                    <div class="instruction">
-                                        <p class="catchphrase">Even if you can't come to campus</p>
-                                        <p>Explore the campus freely</p>
-                                        <p>Functions unique to online! </p>
-                                    </div>
-                                    <div class="download-link">
-                                        <img class="app-icon" src="/img/app/virtual-app-icon.jpg" alt="">
-                                        <div>
-                                            <a href="https://apps.apple.com/us/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E7%90%86%E5%B7%A5%E5%B1%95%E3%82%A2%E3%83%97%E3%83%AA/id1536308614?itsct=apps_box_link&itscg=30200">
-                                                <span>
-                                                    <img src="/img/app/app-store-badge.svg" alt="">
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div>
-                                            <a href="https://play.google.com/store/apps/details?id=com.RikotenRenrakukai.VirtualRikoten&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                                <img src="/img/app/google-play-badge.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-    
-                    <section id="pamph-app" class="pamph-app">
-                        <h2>Pamphlet App</h2>
-                        <div class="container">
-                            <p>Rikoten official pamphlet app</p>
-                            <p>Event lists, timetables, and other pamphlets on your smartphone! </p>
-                            In addition, there are 
-                            <p>many functions unique to the app, such as project search and notifications! </p>
-                            <div class="items">
-                                <div class="item">
-                                    <div class="img-wrapper">
-                                        <img src="/img/app/pamph-home.jpg" alt="">
-                                    </div>
-                                    <h3>Rikoten Pamphlet App!</h3>
-                                    <span>-</span>
-                                    <p>Rikoten Pamphlet App! There are many functions such as a walk rally that make Rikoten more enjoyable!</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img-wrapper">
-                                        <img src="/img/app/pamph-coupon.jpg" alt="">
-                                    </div>
-                                    <h3>Let's enjoy Wasemeshi at a great price!</h3>
-                                    <span>-</span>
-                                    <p>Wild ramen, Fukuryu ramen, Noodle Jintei, Gara Luxury, etc., typical Wasemeshi coupons appeared! Let's take this opportunity to enjoy Wasemeshi at a great price!</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img-wrapper">
-                                        <img src="/img/app/pamph-project.jpg" alt="">
-                                    </div>
-                                    <h3>Let's enjoy Rikoten more conveniently!</h3>
-                                    <span>-</span>
-                                    <p>There are many functions unique to the app, such as planned search, bookmarks, and event notification functions!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section id="virtual-app" class="virtual-app">
-                        <h2>Virtual Rikoten App</h2>
-                        <div class="container">
-                            <p>There are many functions unique to virtual! </p>
-                            <p>Explore the campus from the air in a balloon ride, shop for items at food stalls,</p>
-                            You 
-                            <p>can learn about the Nishi-Waseda campus with a campus guide! </p>
-                            <div class="items">
-                                <div class="item">
-                                    <div class="img-wrapper">
-                                        <img src="/img/app/virtual-balloon.jpg" alt="">
-                                    </div>
-                                    <h3>Unique online features!</h3>
-                                    <span>-</span>
-                                    <p>Take a balloon ride, talk to the characters, win prizes in the gacha... There are many functions unique to the app that are not found in the actual Rikoten! </p>
-                                </div>
-                                <div class="item">
-                                    <div class="img-wrapper">
-                                        <img src="/img/app/virtual-coin.jpg" alt="">
-                                    </div>
-                                    <h3>Collect coins and buy items!</h3>
-                                    <span>-</span>
-                                    <p>If you collect coins scattered around campus, you can exchange them for items in shops and gachas! Collect a lot and enjoy your own virtual Rikoten</p>
-                                </div>
-                                <div class="item">
-                                    <div class="img-wrapper">
-                                        <img src="/img/app/virtual-yaguchi.jpg" alt="">
-                                    </div>
-                                    <h3>Explore the campus freely!</h3>
-                                    <span>-</span>
-                                    <p>The Nishi-Waseda Campus, where Rikoten is held every year, is reproduced with the app. You can control your character and explore as if you were visiting the campus! </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section id="download">
-                        <h2>Download it here</h2>
-                        <div class="download-link">
-                            <div class="text">Because it is an app, you can do notifications, planned searches, etc</div>.
-                            <div>
-                                <img class="app-icon" src="/img/app/pamph-app-icon.png" alt="">
-                                <div>
-                                    <a href="https://apps.apple.com/jp/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E7%90%86%E5%B7%A5%E5%B1%95%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id1438321497?itsct=apps_box_link&itscg=30200">
-                                        <span>
-                                            <img src="/img/app/app-store-badge.svg" alt="">
-                                        </span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="https://play.google.com/store/apps/details?id=com.rikoten.AndroidApp2018new&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                        <img src="/img/app/google-play-badge.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="download-link">
-                            <div class="text">Even those who can't go to campus can enjoy a 3D virtual campus online</div>.
-                            <img class="app-icon" src="/img/app/virtual-app-icon.jpg" alt="">
-                            <div>
-                                <a href="https://apps.apple.com/us/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E7%90%86%E5%B7%A5%E5%B1%95%E3%82%A2%E3%83%97%E3%83%AA/id1536308614?itsct=apps_box_link&itscg=30200">
-                                    <span>
-                                        <img src="/img/app/app-store-badge.svg" alt="">
-                                    </span>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="https://play.google.com/store/apps/details?id=com.RikotenRenrakukai.VirtualRikoten&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                                    <img src="/img/app/google-play-badge.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-
-            </section>
-    
-        
-    </main>
-    <footer></footer>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-    <script src="/js/common.js?date=20221106"></script>
-    <script src="/js/app.js?date=20221106"></script>
+        <div class="virtual">
+          <div class="app-name">
+            <h2>Virtual Rikoten App</h2>
+          </div>
+          <div class="download-link">
+            <img class="app-icon" src="/img/app/virtual-app-icon.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="info">
+              <div class="instruction">
+                <p class="catchphrase">Even if you can't come to campus</p>
+                <p>Explore the campus freely</p>
+                <p>Functions unique to online! </p>
+              </div>
+              <div class="download-link">
+                <div>
+                  <a
+                    href="https://apps.apple.com/us/app/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E7%90%86%E5%B7%A5%E5%B1%95%E3%82%A2%E3%83%97%E3%83%AA/id1536308614?itsct=apps_box_link&itscg=30200" target= blank rel = "noopener noreferrer">
+                    <span>
+                      <img src="/img/app/app-store-badge-en.svg" alt="">
+                    </span>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.RikotenRenrakukai.VirtualRikoten&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target= blank rel = "noopener noreferrer">
+                    <img src="/img/app/google-play-badge-en.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="/js/common.js?date=20231011"></script>
 </body>
+
 </html>
