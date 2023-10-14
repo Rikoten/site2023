@@ -1,75 +1,91 @@
-.container{
+#theme{
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #theme{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #theme{
+    width: calc(100% - 30px);
+  }
+}
+
+#theme .container{
   max-width: 1000px;
   margin:auto;
   display: flex;
   flex-direction: column;
-  padding:0 15px;
 }
 
-h1{
+#theme h1{
   font-size: 32px;
-  padding:70px 0 0;
   margin:0;
   color: --color-font;
 }
-h3{
-  min-width:8em;
-  max-width: 8em;
+
+#theme h3{
+  /*min-width:8em;
+  max-width: 8em;*/
   margin:0 auto;
 }
-.text{
+
+#theme .text{
   padding:30px 0;
 }
 
+#theme .img img{
+  margin: 10px 0;
+} 
+
 /* 480px以上の時の設定 */
 @media(min-width:480px){
-  .container{
-    padding:0 25px;
-  }
-  h3{
-    max-width: 14px;
+  #theme h3{
+    /*max-width: 14px;*/
     margin-bottom: 30px;
   }
 }
 /* 768px以上の時の設定 */
 @media(min-width:768px){
-  h1{
-    padding:30px 0 0;
-  }
-  h3{
+  #theme h3{
     min-width: 14em;
   }
-  .container{
+  #theme .container{
     flex-direction:row;
     align-items:center;
-    padding:0 50px;
   }
-  .container > .text{
+  #theme .container > .text{
     flex:3;
     min-width: 17em;
   }
-  .container > .img{
+  #theme .container > .img{
     flex:2;
   }
-  .text{
-    padding:0;
+  #theme .text{
+    padding-right:40px;
   }
-  p{
+  #theme p{
     padding-bottom: 50px;
   }
 }
 
 
-img{
+#theme img{
   display:block;
   max-width: 100%;
   height: auto;
 }
-h1{
+#theme h1{
   font-size: 32px;
 }
 
-h2{
+#theme h2{
   font-size: clamp(20px,2vw,24px);
   font-family:  "游ゴシック",sans-serif;
   text-align: center;
@@ -77,19 +93,20 @@ h2{
   margin:-20px 0 10px;
   font-weight: 200;
 }
-h3{
+#theme h3{
   font-size: clamp(30px,3vw,36px);
   text-align: center;
   font-family:"Hiragino Mincho ProN",sans-serif ;
   margin-top:0;
   font-weight: bold;
 }
-p{
+#theme p{
+  text-align: center;
   font-size:clamp(16px,2vw,20px);
   font-family:"Hiragino Mincho ProN",sans-serif;
   font-weight: 100;
-  min-width: 17em;
-  max-width: 23em;
+  /*min-width: 17em;
+  max-width: 23em;*/
   margin:auto;
 }
 
@@ -99,7 +116,7 @@ p{
   border-radius: 40px;  
 } */
 
-h1::before{
+#theme h1::before{
   content:"";
   display:inline-block;
   background-image: url(../../img/about/theme_icon.svg);
