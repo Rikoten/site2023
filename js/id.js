@@ -13,7 +13,7 @@
                         "Computers", "Architecture", "For children", "Quiz", "Chemistry", "Performance",
                         "Games", "Biology", "Business", "Space", "Manufacturing"];
 
-    const json = await fetch('/data/data.json').then(res => res.json());
+    const json = await fetch('/data/1011_project_data.json').then(res => res.json());
     const maintag = document.getElementsByTagName("main")[0]; 
     var urlSearch = location.search.substring(1);
     
@@ -29,6 +29,7 @@
             if(`${json[`${contents[j]}`][i].id}`==idnum[1]){
                 category = `${contents[j]}`;
                 number = i;
+                break
             }
         }
     }
@@ -54,7 +55,7 @@
                 </div>
                 <div class="tag"></div>
                 <ul>
-                    <li>${data.projectDesc[lang]}</li>
+                    <li>${data.projectDetail[lang]}</li>
                 </ul>
 
                 <div class="ticket-narabi">
@@ -80,7 +81,7 @@
             <div class="container">
                 <div class="event-info">
                     <h1>${data.groupName[lang]}</h1>
-                    <p>${data.groupDesc[lang]}</p>
+                    <p>${data.groupDetail[lang]}</p>
                 <div class="upper">
                 </div>
                 <div class="lower">
@@ -113,7 +114,7 @@
                 </div>
                 <div class="tag"></div>
                 <ul>
-                    <li>${data.projectDesc[lang]}</li>
+                    <li>${data.projectDetail[lang]}</li>
                 </ul>
 
             </div>
