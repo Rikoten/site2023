@@ -5,7 +5,7 @@
   
   /* JSONデータ取得 ---------
   --------------------------*/
-  const json = await fetch('/data/timetabele_data_web.json').then(res => res.json());
+  const json = await fetch('/data/timetable_data_web.json').then(res => res.json());
   console.log("json:", json); 
 
   /* DOM取得 ---------------
@@ -16,6 +16,8 @@
   const hScrollLeft = document.querySelector(".h-scroll.left");
   const hScrollRight= document.querySelector(".h-scroll.right");
 
+
+  
 
   /* 日付ボタン横の線の長さ --
   --------------------------*/
@@ -130,31 +132,7 @@
 
   /* CSS 企画ボックスの色 ---
   --------------------------*/
-  const styleSheet = document.styleSheets[1];
-  console.log("styleSheet", styleSheet);
-  for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
-    for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
-      const nowPlayings = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block.now .now-playing`);
-      for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-        const red = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(0, 2), 16);
-        const green = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(2, 4), 16);
-        const blue = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(4, 6), 16);
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}::after { border-color: rgba(${red}, ${green}, ${blue}, 0.7); background-color: rgba(${red}, ${green}, ${blue}, 0.7)} 
-          `, styleSheet.cssRules.length
-        );
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now::after { border-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );  
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now .now-playing { background-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );                       
-      }    
-    } /* 
-    */
-  }  
+ 
   
 
   /* [E-09]シリコンの覚醒 ---
@@ -199,6 +177,8 @@
     firstDayButton.classList.remove("active");
     secondDayButton.classList.add("active");
   });
+
+
 
   /* 企画終了 / 現在公演中 -- 
   --------------------------*/
