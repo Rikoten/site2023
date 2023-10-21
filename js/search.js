@@ -32,11 +32,9 @@ const allTagList = ["サークル", "研究室", "インカレ", "理工展連�
     "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ",
     "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
-const allTagListEn = ["Environmental Resources", "Bake Sale", "Rikoten Organizer", "Online", "Circles", "Lab",
-    "Production", "Experiments", "Education", "Student life", "Talk show", "Participatory", "Exhibition",
-    "Family", "Robot", "Sports", "Exams", "Global",
-    "Computers", "Architecture", "For children", "Quiz", "Chemistry", "Performance",
-    "Games", "Biology", "Business", "Space", "Manufacturing"];
+const allTagListEn = ["Circle", "Laboratory", "Intercollegiate", "Rikoten", "Production", "Design", "Disaster Prevention",
+    "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
+    "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
 const categoryNames = ["all", "general", "experiment", "stage", "shops"];
 
@@ -146,18 +144,18 @@ async function getProjectHtml(data, name) {
 
         /* 場所 */
         let placeText = "";
-        if (data[name][i].placeFirstDay.ja == data[name][i].placeSecondDay.ja) {
-            placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].placeSecondDay[lang]}`;
-        }
-        else if ((data[name][i].placeFirstDay.ja != null && data[name][i].placeSecondDay.ja == null) || (data[name][i].placeFirstDay.ja == null && data[name][i].placeSecondDay.ja != null)) {
-            if (data[name][i].placeFirstDay.ja != null) {
-                placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}`;
-            } else {
-                placeText = `11/6 : ${data[name][i].placeSecondDay[lang]}`;
-            }
-        } else {
-            placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}<br>11/6 : ${data[name][i].placeSecondDay[lang]}`;
-        }
+        // if (data[name][i].placeFirstDay.ja == data[name][i].placeSecondDay.ja) {
+        //     placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].placeSecondDay[lang]}`;
+        // }
+        // else if ((data[name][i].placeFirstDay.ja != null && data[name][i].placeSecondDay.ja == null) || (data[name][i].placeFirstDay.ja == null && data[name][i].placeSecondDay.ja != null)) {
+        //     if (data[name][i].placeFirstDay.ja != null) {
+        //         placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}`;
+        //     } else {
+        //         placeText = `11/6 : ${data[name][i].placeSecondDay[lang]}`;
+        //     }
+        // } else {
+        //     placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}<br>11/6 : ${data[name][i].placeSecondDay[lang]}`;
+        // }
 
         /* 企画構築 */
         let project = `<div class="project active ${data[name][i].id}">
