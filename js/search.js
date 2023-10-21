@@ -1,14 +1,15 @@
 (async () => {
-	const data = await fetch('/data/data.json').then(res => res.json());
+	const data = await fetch('/data/1011_project_data.json').then(res => res.json());
+    console.log(data);
 	// すべての企画のHTMLを作成
     await addSearchSection();
-	await addList(data);
+	// await addList(data);
 	// タグボタン生成
-	await addTagButton();
+	// await addTagButton();
     
-    categoryEvent(data);
-	updateProjectsByTag(data)
-    keywordEvent(data);
+    // categoryEvent(data);
+	// updateProjectsByTag(data)
+    // keywordEvent(data);
 	
 })();
 
