@@ -48,6 +48,7 @@ async function setHeaderFooter() {
                         "info":{"ja": "お知らせ", "en": "Info"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
+                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
                         "contact":{"ja": "お問い合わせ", "en": "Contact"},
                         "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
                       }
@@ -85,6 +86,7 @@ async function setHeaderFooter() {
                 <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
+                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
@@ -119,6 +121,7 @@ async function setHeaderFooter() {
             <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
                 <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
+                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
