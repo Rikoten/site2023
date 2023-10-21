@@ -42,7 +42,12 @@
 
 #sponsor h2{
   text-align: center;
+  font-size: 22px;
+}
+
+#sponsor h2 span{
   font-size: 28px;
+  color: var(--color-orange);
 }
 
 #sponsor div.gold,
