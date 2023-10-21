@@ -49,7 +49,8 @@ async function setHeaderFooter() {
                         "app":{"ja": "アプリ紹介", "en": "App"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
                         "contact":{"ja": "お問い合わせ", "en": "Contact"},
-                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
+                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"},
+                        "timetable":{"ja":"タイムテーブル","en":"Timetable"}
                       }
 
 
@@ -72,6 +73,7 @@ async function setHeaderFooter() {
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
                     <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
+                    <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
                 </ul>
             </li>
             <li class="pulldown" id="header-about">${headerLang.about[lang]}

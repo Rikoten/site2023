@@ -148,7 +148,7 @@ main{
 
 #timetable .project-block{
   position: relative;
-  color: #FFFFFF;
+  color: #000;
   width: 450px;
   height: 120px;
   border-radius: 10px;
