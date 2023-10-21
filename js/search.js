@@ -144,18 +144,18 @@ async function getProjectHtml(data, name) {
 
         /* 場所 */
         let placeText = "";
-        // if (data[name][i].placeFirstDay.ja == data[name][i].placeSecondDay.ja) {
-        //     placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].placeSecondDay[lang]}`;
-        // }
-        // else if ((data[name][i].placeFirstDay.ja != null && data[name][i].placeSecondDay.ja == null) || (data[name][i].placeFirstDay.ja == null && data[name][i].placeSecondDay.ja != null)) {
-        //     if (data[name][i].placeFirstDay.ja != null) {
-        //         placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}`;
-        //     } else {
-        //         placeText = `11/6 : ${data[name][i].placeSecondDay[lang]}`;
-        //     }
-        // } else {
-        //     placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}<br>11/6 : ${data[name][i].placeSecondDay[lang]}`;
-        // }
+        if (data[name][i].firstDayPlace.ja == data[name][i].secondDayPlace.ja) {
+            placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].secondDayPlace[lang]}`;
+        }
+        else if ((data[name][i].firstDayPlace.ja != null && data[name][i].secondDayPlace.ja == null) || (data[name][i].firstDayPlace.ja == null && data[name][i].secondDayPlace.ja != null)) {
+            if (data[name][i].firstDayPlace.ja != null) {
+                placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}`;
+            } else {
+                placeText = `11/6 : ${data[name][i].secondDayPlace[lang]}`;
+            }
+        } else {
+            placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}<br>11/6 : ${data[name][i].secondDayPlace[lang]}`;
+        }
 
         /* 企画構築 */
         let project = `<div class="project active ${data[name][i].id}">
@@ -166,7 +166,7 @@ async function getProjectHtml(data, name) {
                                     ${walkRallyHtml}
                                 </div>
                                 <div class="project-img">
-                                    <img src=${data[name][i].thumbnailPath} alt="">
+                                    <img src=${data[name][i].thumbnailPath.web} alt="">
                                 </div>
                                 <div class="desc">
                                     <div class="project-name">${data[name][i].projectName[lang]}</div>

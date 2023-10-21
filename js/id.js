@@ -39,7 +39,7 @@
         `<section id = "event">
             <div class="event-main">
                 <div class="upup">
-                    <img class="photo" src=${data.iconPath}>
+                    <img class="photo" src=${data.thumbnailPath.web}>
 
                     <div class="rightside">
                         <h1>${data.projectName[lang]}</h1>
@@ -61,7 +61,9 @@
                 </div>
             </div>
 
-
+            <a class="get-onlineticket" href="${data.ticketLink}" target="_blank">
+            <p>オンラインチケット取得ページ</p>
+        </a>
             <div class="side">
                 <p>目次</p>
                 <ol>
@@ -93,7 +95,7 @@
         `<section id = "event">
             <div class="event-main">
                 <div class="upup">
-                    <img class="photo" src=${data.iconPath}>
+                    <img class="photo" src=${data.thumbnailPath.web}>
 
                     <div class="rightside">
                         <h1>${data.projectName[lang]}</h1>
@@ -135,72 +137,72 @@
 
 
 
-    if (data.groupTwitterUrl != null) {
+    if (data.url.twitter != null) {
         const tw1 = [];
         tw1.push(`
-            <a href="${data.groupTwitterUrl}"><img class="twitter" src="/img/event/グループ 66.png"></a>
+            <a href="${data.url.twitter}"><img class="twitter" src="/img/event/Twitter_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw1)
     } else {
         const tw2 = [];
         tw2.push(`
-            <a><img class="twitter gray" src="/img/event/グループ 66.png"></a>
+            <a><img class="twitter gray" src="/img/event/Twitter_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw2)
     }
 
-    if (data.groupHpUrl != null) {
+    if (data.url.hp != null) {
         const hp1 = [];
         hp1.push(`
-            <a href="${data.groupHpUrl}"><img class="hp" src="/img/event/グループ 65.png"></a>
+            <a href="${data.url.hp}"><img class="hp" src="/img/event/HP_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp1)
     } else {
         const hp2 = [];
         hp2.push(`
-            <a><img class="hp gray" src="/img/event/グループ 65.png"></a>
+            <a><img class="hp gray" src="/img/event/HP_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp2)
     }
 
-    if (data.groupInstagramUrl != null) {
+    if (data.url.instagram != null) {
         const insta1 = [];
         insta1.push(`
-            <a href="${data.groupInstagramUrl}"><img class="instagram" src="/img/event/グループ 68.png"></a>
+            <a href="${data.url.instagram}"><img class="instagram" src="/img/event/Instagram_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta1)
     } else {
         const insta2 = [];
         insta2.push(`
-            <a><img class="instagram gray" src="/img/event/グループ 68.png"></a>
+            <a><img class="instagram gray" src="/img/event/Instagram_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta2)
     }
 
-    if (data.groupFacebookUrl != null) {
+    if (data.url.facebook != null) {
         const face1 = [];
         face1.push(`
-            <a href="${data.groupFacebookUrl}"><img class="facebook" src="/img/event/グループ 67.png"></a>
+            <a href="${data.url.facebook}"><img class="facebook" src="/img/event/facebook_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face1)
     } else {
         const face2 = [];
         face2.push(`
-            <a><img class="facebook gray" src="/img/event/グループ 67.png"></a>
+            <a><img class="facebook gray" src="/img/event/facebook_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face2)
     }
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
     const place = [];
-    if (data.placeFirstDay.ja == data.placeSecondDay.ja) {
+    if (data.firstDayPlace.ja == data.placeSecondDay.ja) {
         data.isOnline ? place.push(`オンライン`) :
             place.push(`${data.placeSecondDay[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
-    else if ((data.placeFirstDay.ja != null && data.placeSecondDay.ja == null) || (data.placeFirstDay.ja == null && data.placeSecondDay.ja != null)) {
-        if (data.placeFirstDay.ja != null) {
-            place.push(`11/5 : ${data.placeFirstDay[lang]}`);
+    else if ((data.firstDayPlace.ja != null && data.placeSecondDay.ja == null) || (data.firstDayPlace.ja == null && data.placeSecondDay.ja != null)) {
+        if (data.firstDayPlace.ja != null) {
+            place.push(`11/5 : ${data.firstDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         } else {
             place.push(`11/6 : ${data.placeSecondDay[lang]}`);
@@ -208,7 +210,7 @@
         }
 
     } else {
-        place.push(`11/5 : ${data.placeFirstDay[lang]}<br>11/6 : ${data.placeSecondDay[lang]}`);
+        place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.placeSecondDay[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
 

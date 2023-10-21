@@ -292,7 +292,7 @@
 }
 
 #search .search-result .project .desc .detail .group-name::before {
-    background-image:url('/img/top/Icon\ material-group.png');
+    background-image:url('/img/search/group.svg');
 }
 
 #search .search-result .project .desc .detail .place::before {
@@ -315,7 +315,7 @@
     margin: 5px;
     margin-left: 0;
     font-size: 10px;
-    color: var(--color-lightpink);
+    color: var(--color-brown);
 }
 
 @media screen and (max-width: 1150px) {
