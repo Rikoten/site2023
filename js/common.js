@@ -40,6 +40,7 @@ async function setHeaderFooter() {
     const headerLang = {
                         "projects":{"ja": "企画情報", "en": "Projects"},
                         "participants":{"ja": "出展団体", "en": "Participants"},
+                        "timetable":{"ja":"タイムテーブル","en":"Timetable"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
                         "specialguest":{"ja": "有名人企画", "en": "Special Guest"},
                         "about":{"ja": "理工展とは", "en": "About"},
@@ -47,10 +48,10 @@ async function setHeaderFooter() {
                         "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
                         "info":{"ja": "お知らせ", "en": "Info"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
+                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
                         "contact":{"ja": "お問い合わせ", "en": "Contact"},
-                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"},
-                        "timetable":{"ja":"タイムテーブル","en":"Timetable"}
+                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
                       }
 
 
@@ -73,7 +74,6 @@ async function setHeaderFooter() {
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
                     <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
-                    <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
                 </ul>
             </li>
             <li class="pulldown" id="header-about">${headerLang.about[lang]}
@@ -85,6 +85,7 @@ async function setHeaderFooter() {
             <li class="pulldown" id="header-info">${headerLang.info[lang]}
                 <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
@@ -117,6 +118,7 @@ async function setHeaderFooter() {
             <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
