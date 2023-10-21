@@ -29,6 +29,7 @@
 #sponsor h1::before {
   content: "";
   display: inline-block;
+  background-image: url('/img/sponsor/handshake_icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -39,7 +40,7 @@
   transform: translateY(-50%);
 }
 
-#sponsor h1:nth-of-type(1)::before {
+#sponsor .advertising-wrap h1:nth-of-type(1)::before {
   background-image: url('/img/sponsor/handshake_icon.svg');
 }
 
@@ -51,17 +52,13 @@
   background-image: url('/img/sponsor/people_icon.svg');
 }
 
-
-#sponsor h2 {
-  color: var(--color-brown);
+#sponsor h2{
   text-align: center;
-  border-bottom: 1px solid var(--color-brown);
-  width: 70px;
-  margin: 20px auto;
+  font-size: 28px;
 }
 
-#sponsor>div.gold,
-#sponsor>div.silver {
+#sponsor div.gold,
+#sponsor div.silver {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -91,7 +88,7 @@
 
 
 @media screen and (max-width:600px) {
-  #sponsor>div.gold {
+  #sponsor div.gold {
     margin-bottom: 20px;
   }
 
