@@ -89,6 +89,7 @@ main .menu-wrapper h2{
   margin: 0;
   position: absolute;
   transform: translate(.75rem, calc(-100% + .75rem));
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.4));
 }
 
 main .menu{
@@ -147,13 +148,13 @@ main .collabmenu-top .scroll{
 }
 
 main .collabmenu-top .scroll p{
-  font-size: 15px;
+  font-size: 45px;
   line-height: 1;
   margin: 12px 0 2px;
 }
 
 main .collabmenu-top .scroll img{
-  width: 10px;
+  width: 30px;
   line-height: 0;
   vertical-align: middle;
   animation: scrolldown 1.5s ease-out infinite;

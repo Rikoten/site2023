@@ -248,8 +248,11 @@
       /* ---表示切り替え--- */
       if (scroll_position > 100){
         collabmenuTop.classList.remove("show"); //トップメニュー非表示
+        
         Lefts[0].classList.add("show"); //左コンテンツ表示
-        for (let i=0; i<json.length; i++){
+        
+        //ここのlengthの値を変更した
+        for (let i=0; i<json.length-1; i++){
           Rights[i].classList.add("show"); //右コンテンツ表示
         }
       }else{
@@ -260,11 +263,12 @@
         }
       }
   
-      for (let i=0; i<json.length; i++){
+      for (let i=0; i<json.length-1; i++){
         if (scroll_position > contentY[i+1] - windowH * 1/2){
           Lefts[i].classList.remove("show"); //1つ前の左コンテンツ非表示
 
-          if (i !== json.length -1){
+          //ここのlengthの値を変更した
+          if (i !== json.length -2){
             Lefts[i+1].classList.add("show"); //次の左コンテンツ表示
           }       
         }else if(i !== json.length -1){
