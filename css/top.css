@@ -370,9 +370,16 @@ div.button:hover{
   text-align: center; 
 }
 
+#notes .textbox h3{
+  font-size: 20px;
+  text-align: center;
+  margin: 40px 0 10px;
+}
+
 #notes .textbox p{
   font-size: 20px;
   font-weight: 500;
+  margin-top: 0;
 }
 
 #notes .textbox ul{
