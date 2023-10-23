@@ -45,6 +45,7 @@ main{
 }
 
 #event .event-main h1{
+    font-family: var(--font-family);
     color: var(--color-brown);
     text-align: left;
     display: block;
@@ -322,6 +323,7 @@ main{
 }
 
 #event .event-info h1{
+    font-family: var(--font-family);
     font-size: 24px;
     position: relative;
     padding-left: 40px;
