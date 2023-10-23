@@ -196,22 +196,22 @@
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
     const place = [];
-    if (data.firstDayPlace.ja == data.placeSecondDay.ja) {
+    if (data.firstDayPlace.ja == data.secondDayPlace.ja) {
         data.isOnline ? place.push(`オンライン`) :
-            place.push(`${data.placeSecondDay[lang]}`);
+            place.push(`${data.secondDayPlace[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
-    else if ((data.firstDayPlace.ja != null && data.placeSecondDay.ja == null) || (data.firstDayPlace.ja == null && data.placeSecondDay.ja != null)) {
-        if (data.firstDayPlace.ja != null) {
+    else if ((data.firstDayPlace.ja != "-" && data.secondDayPlace.ja == "-") || (data.firstDayPlace.ja == "-" && data.secondDayPlace.ja != "-")) {
+        if (data.firstDayPlace.ja != "-") {
             place.push(`11/5 : ${data.firstDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         } else {
-            place.push(`11/6 : ${data.placeSecondDay[lang]}`);
+            place.push(`11/6 : ${data.secondDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         }
 
     } else {
-        place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.placeSecondDay[lang]}`);
+        place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.secondDayPlace[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
 
