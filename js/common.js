@@ -40,7 +40,6 @@ async function setHeaderFooter() {
   const headerLang = {
     "projects": { "ja": "企画情報", "en": "Projects" },
     "search": { "ja": "企画検索", "en": "Search" },
-    "participants": { "ja": "出展団体", "en": "Participants" },
     "collab": { "ja": "飲食店コラボ", "en": "Collab" },
     "specialguest": { "ja": "有名人企画", "en": "Special Guest" },
     "about": { "ja": "理工展とは", "en": "About" },
@@ -72,7 +71,6 @@ async function setHeaderFooter() {
             <ul>
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
-                  <li><a href="/projects/project">${headerLang.participants[lang]}</a></li>
                   <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
                   <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
                 </ul>
@@ -106,6 +104,7 @@ async function setHeaderFooter() {
             <li>
             <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
+                <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
                 <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
             </ul>
             </li>

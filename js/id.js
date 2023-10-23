@@ -31,6 +31,7 @@
     }
 
     const data = json[`${category}`][number];
+    console.log(data);
 
     const insert = [];
     const day_off = []
