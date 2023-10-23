@@ -103,7 +103,7 @@ main{
 #event .tag{
     margin: 30px 0;
     margin-left: 0;
-    color: var(--color-lightpink);
+    color: var(--color-brown);
 }
 
 #event .event-main span{
@@ -111,7 +111,7 @@ main{
     display: inline-block;
     border-radius: 25px;
     box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
-    color: var(--color-lightpink);
+    color: var(--color-brown);
     margin-left: 15px;
     margin-bottom: 15px;
     padding: 5px 15px;
