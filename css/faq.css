@@ -57,6 +57,13 @@
   font-weight: 500;
 }
 
+#faq img{
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
 /*--- テキストボックス ---*/
 div.textbox{
   width: 100%;
