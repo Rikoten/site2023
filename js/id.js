@@ -254,7 +254,7 @@
             <ol class="child_ol"></ol>
         `)
     li1_tag.insertAdjacentHTML("beforeend", menu_list);
-    var ol_tag = document.getElementsByClassName("child_ol")[i];
+    var ol_tag = document.querySelector(".child_ol");
 
     for (let j = 0; j < data.mainArticle.articles.length; j++) {
         const mokuji_list = []
@@ -268,13 +268,13 @@
     /*****本文*****/
     const article_wrapper = document.getElementsByClassName("article_wrapper")[0];
 
-    for (let i = 0; i < data.detailContents.length; i++) {
+    
         article_wrapper.insertAdjacentHTML("beforeend", `<div class="introduce"></div>`)
         const article_tag = document.getElementsByClassName("introduce")[i];
         const article = []
         article.push(`
         <div>
-            <h2 class="bighead">${data.detailContents[i].bigHeadline[lang]}</h2>
+            <h2 class="bighead">${data.mainArticle.bigHeadline[lang]}</h2>
             <ul class="article_sentence"></ul>
         </div>
 
@@ -349,7 +349,7 @@
             } else { }
         }
 
-    }
+    
 
     /* pdf */
     // if (data.id == "A-02" || data.id == "B-07") {
