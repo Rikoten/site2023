@@ -147,8 +147,8 @@ async function getProjectHtml(data, name) {
         if (data[name][i].firstDayPlace.ja == data[name][i].secondDayPlace.ja) {
             placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].secondDayPlace[lang]}`;
         }
-        else if ((data[name][i].firstDayPlace.ja != null && data[name][i].secondDayPlace.ja == null) || (data[name][i].firstDayPlace.ja == null && data[name][i].secondDayPlace.ja != null)) {
-            if (data[name][i].firstDayPlace.ja != null) {
+        else if ((data[name][i].firstDayPlace.ja != "-" && data[name][i].secondDayPlace.ja == "-") || (data[name][i].firstDayPlace.ja == "-" && data[name][i].secondDayPlace.ja != "-")) {
+            if (data[name][i].firstDayPlace.ja != "-") {
                 placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}`;
             } else {
                 placeText = `11/6 : ${data[name][i].secondDayPlace[lang]}`;
