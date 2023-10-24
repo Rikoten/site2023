@@ -10,6 +10,7 @@
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
     const json = await fetch('/data/1014_project_data.json').then(res => res.json());
+    
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
 
@@ -247,24 +248,22 @@
 
     /***目次***/
     const li1_tag = document.getElementsByClassName("menu_name")[0];
-
-    for (let i = 0; i < data.detailContents.length; i++) {
-        var menu_list = [];
-        menu_list.push(`
-            <li>${data.detailContents[i].bigHeadline[lang]}</li>
+    var menu_list = [];
+    menu_list.push(`
+            <li>${data.mainArticle.bigHeadline[lang]}</li>
             <ol class="child_ol"></ol>
         `)
-        li1_tag.insertAdjacentHTML("beforeend", menu_list);
-        var ol_tag = document.getElementsByClassName("child_ol")[i];
+    li1_tag.insertAdjacentHTML("beforeend", menu_list);
+    var ol_tag = document.getElementsByClassName("child_ol")[i];
 
-        for (let j = 0; j < data.detailContents[i].articles.length; j++) {
-            const mokuji_list = []
-            mokuji_list.push(`
-                <li>${data.detailContents[i].articles[j].headline[lang]}</li>
+    for (let j = 0; j < data.mainArticle.articles.length; j++) {
+        const mokuji_list = []
+        mokuji_list.push(`
+                <li>${data.mainArticle.articles[j].headline[lang]}</li>
             `)
-            ol_tag.insertAdjacentHTML("beforeend", mokuji_list);
-        }
+        ol_tag.insertAdjacentHTML("beforeend", mokuji_list);
     }
+
 
     /*****本文*****/
     const article_wrapper = document.getElementsByClassName("article_wrapper")[0];
