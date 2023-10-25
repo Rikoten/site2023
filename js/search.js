@@ -51,7 +51,7 @@ async function addSearchSection() {
             "exhibition": { "ja": "展示企画", "en": "Exhibition" },
             "experiment": { "ja": "実験企画", "en": "Experiment" },
             "stage": { "ja": "ステージ企画", "en": "Stage" },
-            "booth": { "ja": "模擬店企画", "en": "Booth" }
+            "booth": { "ja": "模擬店企画", "en": "Booth" },
         },
         "tag": {
             "h2": { "ja": "タグで絞り込む", "en": "By Tag" }

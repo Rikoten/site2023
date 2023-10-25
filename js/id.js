@@ -325,7 +325,7 @@
                 for (let k = 0; k < data.mainArticle.articles[j].images.length; k++) {
                     sm_img.push(`
                     <div class="disp-img">
-                        <img src="${data.mainArticle.articles[j].images[k]}">
+                        <img src="${data.mainArticle.articles[j].images[k].imagePath}">
                     </div>   
                     `)
                 }
