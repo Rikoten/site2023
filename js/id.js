@@ -16,7 +16,7 @@
 
     var idnum = urlSearch.split("=");//id番号の代入
 
-    const contents = ["general", "stage", "experiment", "shops"]
+    const contents = ["general", "stage", "experiment", "shops", "online"]
 
     var category = "";
     var number = "";

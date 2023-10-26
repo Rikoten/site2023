@@ -36,7 +36,7 @@ const allTagListEn = ["Circle", "Laboratory", "Intercollegiate", "Rikoten", "Pro
     "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
     "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-const categoryNames = ["all", "general", "experiment", "stage", "shops"];
+const categoryNames = ["all", "general", "experiment", "stage", "shops", "online"];
 
 async function addSearchSection() {
     const searchSection = document.getElementsByClassName("search-section")[0];
@@ -52,6 +52,7 @@ async function addSearchSection() {
             "experiment": { "ja": "実験企画", "en": "Experiment" },
             "stage": { "ja": "ステージ企画", "en": "Stage" },
             "booth": { "ja": "模擬店企画", "en": "Booth" },
+            "online": { "ja": "オンライン企画", "en": "Online" },
         },
         "tag": {
             "h2": { "ja": "タグで絞り込む", "en": "By Tag" }
@@ -74,6 +75,7 @@ async function addSearchSection() {
                             <li>${searchSectionLang.category.experiment[lang]}</li>
                             <li>${searchSectionLang.category.stage[lang]}</li>
                             <li>${searchSectionLang.category.booth[lang]}</li>
+                            <li>${searchSectionLang.category.online[lang]}</li>
                         </ul>
                     </div>
                     <div class="tag">
