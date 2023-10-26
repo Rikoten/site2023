@@ -4,11 +4,11 @@
 }
 
 #search {
-    padding-top: 100px;
     width: calc(100% - 100px);
-    max-width: 1300px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: auto;
     font-weight: bold;
+    padding: 30px 0 50px;
 }
 
 /************************
@@ -17,8 +17,9 @@
 
 #search h1{
     padding-left: 40px;
-    line-height: 1;
     position: relative;
+    font-size: 32px;
+    margin: 0;
 }
 
 #search h1::before{
@@ -37,7 +38,7 @@
 
 #search .search-section {
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     background-color: #ffffff;
     border-radius: 30px;
     padding: 50px 40px 20px 40px;
