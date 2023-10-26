@@ -2,7 +2,7 @@
   /* 多言語切り替え */
   const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";  
 
-  const json = await fetch('/data/1014_project_data.json').then(res => res.json());
+  const json = await fetch('/data/1025_project_data.json').then(res => res.json());
 
   for (let i=0; i<Object.keys(json).length; i++){ // カテゴリをループ
     const categoryWrapper = document.querySelector(`#${Object.keys(json)[i]} > div > div`); // DOM取得
@@ -49,63 +49,26 @@
   const hScrollRight = document.querySelector(`#${Object.keys(json)[i]} .h-scroll.right`);
 
     scrollWrapper.addEventListener('scroll', function(){
-      console.log("scroll")
       const hscroll_position = scrollWrapper.scrollLeft;
-      console.log("hscroll_position", hscroll_position);    
       if (hscroll_position > 0){
         hScrollLeft.classList.add("active");
       }else{
         hScrollLeft.classList.remove("active");
       }
   
-      //console.log(`document.querySelector(".content-wrapper.active").clientWidth`, document.querySelector(".content-wrapper.active").clientWidth);
-      //console.log(`document.querySelector(".content-wrapper.active").clientWidth - scrollWrapper.clientWidth`, document.querySelector(".content-wrapper.active").clientWidth - scrollWrapper.clientWidth);
-      
       if (hscroll_position < categoryWrapper.clientWidth - scrollWrapper.clientWidth){
         hScrollRight.classList.add("active");
       }else{
         hScrollRight.classList.remove("active");
       }    
     }); 
-/*  scrollWrapper.addEventListener('scroll', function(){
-    const hscroll_position = scrollWrapper.scrollLeft;
-    //console.log("hscroll_position", hscroll_position);    
-    if (hscroll_position > 0){
-      hScrollLeft.classList.add("active");
-    }else{
-      hScrollLeft.classList.remove("active");
-    }
-
-    //console.log(`document.querySelector(".content-wrapper.active").clientWidth`, document.querySelector(".content-wrapper.active").clientWidth);
-    //console.log(`document.querySelector(".content-wrapper.active").clientWidth - scrollWrapper.clientWidth`, document.querySelector(".content-wrapper.active").clientWidth - scrollWrapper.clientWidth);
-    
-    if (hscroll_position < document.querySelector(".content-wrapper.active").clientWidth - scrollWrapper.clientWidth - 20){
-      hScrollRight.classList.add("active");
-    }else{
-      hScrollRight.classList.remove("active");
-    }    
-  }); */
 
   hScrollLeft.addEventListener('click', function(){
     scrollWrapper.scrollBy(-265, 0);
-    document.querySelector(`#${Object.keys(json)[i]} > div`)
-    console.log("click")
   }); 
 
   hScrollRight.addEventListener('click', function(){
     scrollWrapper.scrollBy(265, 0);
   });    
-
-/*window.addEventListener('scroll', function(){
-  const vscroll_position = window.pageYOffset;
-  console.log("vscroll_position", vscroll_position);
-  contentWrapperY = document.querySelector(".content-wrapper.active").getBoundingClientRect().top + window.pageYOffset;
-  console.log("contentWrapperY", contentWrapperY);
-  projectBlocksTopY = contentWrapperY + document.querySelector("#timetable .label").offsetHeight - 60;
-  console.log("projecetBlocksTopY", projectBlocksTopY);
-  projectBlocksBottomY = contentWrapperY + document.querySelector(".content-wrapper.active").offsetHeight - document.documentElement.clientHeight;
-  console.log("projecetBlocksBottomY", projectBlocksBottomY);
-});*/
-
   }
 })()
