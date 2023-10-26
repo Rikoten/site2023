@@ -27,7 +27,6 @@
 #about h1 {
   font-family: var(--font-headline);
   display: block;
-  font-weight: bold;
   font-size: 32px;
   margin-top: 0px;
   position: relative;
