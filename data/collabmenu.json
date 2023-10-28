@@ -44,7 +44,6 @@
     "LINE": null,
     "release": true
   },
-  
   {
     "num": "02",
     "name": {
@@ -90,7 +89,6 @@
     "LINE": null,
     "release": true
   },
-  
   {
     "num": "03",
     "name": {
@@ -136,9 +134,53 @@
     "LINE": null,
     "release": true
   },
-
   {
     "num": "04",
+    "name": {
+      "ja": "つけ麺屋やすべえ 高田馬場店",
+      "en": "Tsukemen Yasubee Takadanobaba"
+    },
+    "adCopy": {
+      "ja": "こだわりの麺を、多彩な食べ方で。",
+      "en": "Savor special noodles in a variety of ways."
+    },
+    "menuComment": {
+      "ja": "",
+      "en": ""
+    },
+    "concept": {
+      "ja": "こだわりの麺を、多彩な食べ方で。並、中、大盛り同一価格。無料のトッピング有",
+      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
+    },
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.634569961312!2d139.70186527525192!3d35.71060922836045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3bc823629f%3A0x6bd9fa016214f71!2z44Gk44GR6bq65bGL44KE44GZ44G544GIIOmrmOeUsOmmrOWgtOW6lw!5e0!3m2!1sja!2sjp!4v1698489131849!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "time": {
+      "ja": "全日: 11:00〜23:00",
+      "en": "Every day: 11:00~23:00"
+    },
+    "rikoten": {
+      "ja": "通常営業",
+      "en": "As usual"
+    },
+    "period": {
+      "ja": "月曜～日曜（※麺、スープが無くなり次第終了）",
+      "en": "Mon~Sun (※Ends when noodles and soup run out)"
+    },
+    "menuName": {
+      "ja": "",
+      "en": ""
+    },
+    "menuPrice": {
+      "ja": "",
+      "en": ""
+    },
+    "menuImg": "/img/collabmenu/04-やすべえ.JPG",
+    "Instagram": "https://www.instagram.com/yasubee_official/",
+    "Twitter": null,
+    "LINE": null,
+    "release": true
+  },
+  {
+    "num": "05",
     "name": {
       "ja": "タリーズコーヒー早大理工店",
       "en": "Tully's Coffee So-dai Rikou"
@@ -176,15 +218,14 @@
       "ja": "Tallサイズ: ￥470/\nGrandeサイズ: ￥525（店内価格）",
       "en": "Tall size: 470 yen, Grande size: 525 yen (Eat-in prices)"
     },
-    "menuImg": "/img/collabmenu/04-タリーズ.JPG",
+    "menuImg": "/img/collabmenu/05-タリーズ.JPG",
     "Instagram": null,
     "Twitter": null,
     "LINE": null,
     "release": true
   },
-
   {
-    "num": "05",
+    "num": "06",
     "name": {
       "ja": "東京麺珍亭本舗 高田馬場店",
       "en": "Tokyo Menchintei-honpo Takadanobaba"
@@ -222,148 +263,11 @@
       "ja": "通常メニューに+300円",
       "en": "Ordinary menu + 300 yen"
     },
-    "menuImg": "/img/collabmenu/05-めんちん.JPG",
+    "menuImg": "/img/collabmenu/06-めんちん.JPG",
     "Instagram": "https://www.instagram.com/menchintei/",
     "Twitter": "https://twitter.com/menchintei",
     "LINE": null,
     "release": true
-  },
-
-  {
-    "num": "",
-    "name": {
-      "ja": "",
-      "en": ""
-    },
-    "adCopy": {
-      "ja": "",
-      "en": ""
-    },
-    "menuComment": {
-      "ja": "",
-      "en": ""
-    },
-    "concept": {
-      "ja": "",
-      "en": ""
-    },
-    "map": "",
-    "time": {
-      "ja": "",
-      "en": ""
-    },
-    "rikoten": {
-      "ja": "",
-      "en": ""
-    },
-    "period": {
-      "ja": "",
-      "en": ""
-    },
-    "menuName": {
-      "ja": "",
-      "en": ""
-    },
-    "menuPrice": {
-      "ja": "",
-      "en": ""
-    },
-    "menuImg": "",
-    "Instagram": "",
-    "Twitter": null,
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "",
-    "name": {
-      "ja": "",
-      "en": ""
-    },
-    "adCopy": {
-      "ja": "",
-      "en": ""
-    },
-    "menuComment": {
-      "ja": "",
-      "en": ""
-    },
-    "concept": {
-      "ja": "",
-      "en": ""
-    },
-    "map": "",
-    "time": {
-      "ja": "",
-      "en": ""
-    },
-    "rikoten": {
-      "ja": "",
-      "en": ""
-    },
-    "period": {
-      "ja": "",
-      "en": ""
-    },
-    "menuName": {
-      "ja": "",
-      "en": ""
-    },
-    "menuPrice": {
-      "ja": "",
-      "en": ""
-    },
-    "menuImg": "",
-    "Instagram": "",
-    "Twitter": null,
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "",
-    "name": {
-      "ja": "",
-      "en": ""
-    },
-    "adCopy": {
-      "ja": "",
-      "en": ""
-    },
-    "menuComment": {
-      "ja": "",
-      "en": ""
-    },
-    "concept": {
-      "ja": "",
-      "en": ""
-    },
-    "map": "",
-    "time": {
-      "ja": "",
-      "en": ""
-    },
-    "rikoten": {
-      "ja": "",
-      "en": ""
-    },
-    "period": {
-      "ja": "",
-      "en": ""
-    },
-    "menuName": {
-      "ja": "",
-      "en": ""
-    },
-    "menuPrice": {
-      "ja": "",
-      "en": ""
-    },
-    "menuImg": "",
-    "Instagram": "",
-    "Twitter": null,
-    "LINE": null,
-    "release": true
   }
+  
 ]
