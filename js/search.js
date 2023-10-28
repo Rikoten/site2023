@@ -197,20 +197,12 @@ async function addTagButton() {
 
 async function getProjectTagsHtml(tags) {
 
-    sW = window.innerWidth;
     let tagsHtml = "";
-    if (sW < 550) {
-        for (let i = 0; i < tags.length; i++) {
-            const opacity = 1 - 5 * i / tags.length;
-            // 透明度を使用してタグのスタイルを設定し、タグを非表示にする
-            const tagHtml = `<li style="opacity: ${opacity};"># ${tags[i]}</li>`;
-            tagsHtml += tagHtml;
-        }
-    } else {
-        for (let i = 0; i < tags.length; i++) {
-            tagsHtml = tagsHtml.concat(`<li># ${tags[i]}</li>`);
-        }
+
+    for (let i = 0; i < tags.length; i++) {
+        tagsHtml = tagsHtml.concat(`<li># ${tags[i]}</li>`);
     }
+
     return tagsHtml;
 }
 
