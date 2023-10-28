@@ -48,22 +48,22 @@ main .collabmenu-top.show{
 }
 
 main .main-title {
-  width: calc(100% - 200px);
+  width: calc(100% - 100px);
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 main h1{
-  color:#DD6BA3;
   padding-left: 40px;
   line-height: 1;
   position: relative;
-
+  margin-top: 0;
 }
 
 main h1::before{
   content: "";
   display: inline-block;
-  background-image:url('/img/collabmenu/restaurant_menu_FILL0_wght400_GRAD0_opsz48.svg');
+  background-image:url('/img/collabmenu/restaurant_menu.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -75,13 +75,26 @@ main h1::before{
 }
 
 main .collabmenu-top .menu-wrapper{
-  width: calc(100% - 200px);
+  width: calc(100% - 100px);
   height: calc(100vh - 14.8rem);
   max-width: 1000px;
   margin: 4rem auto 5rem;
   position: relative;
 }
 
+@media screen and (max-width: 768px){
+  main .main-title,
+  main .collabmenu-top .menu-wrapper{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px){
+  main .main-title,
+  main .collabmenu-top .menu-wrapper{
+    width: calc(100% - 30px);
+  }
+}
 main .menu-wrapper h2{
   font-size: 4rem;
   color: #ffffff;
@@ -453,7 +466,7 @@ main .content-right.preparation p:first-child{
   }
 
   main .collabmenu-top .menu-wrapper{
-    width: calc(100% - 12rem);
+    /*width: calc(100% - 12rem);*/
     height: auto;
     margin: 6rem auto 0;
   }
@@ -563,7 +576,7 @@ main .content-right.preparation p:first-child{
   }
 
   main .collabmenu-top .menu-wrapper{
-    width: calc(100% - 4rem);
+    /*width: calc(100% - 4rem);*/
     height: auto;
     margin-top: 6.5rem;
   }
