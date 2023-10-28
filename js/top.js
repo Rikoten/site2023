@@ -1,3 +1,8 @@
+/*******************************
+
+     背景グラデーション
+
+ *******************************/
 // 出展団体部分背景のグラデーションを設定する関数
 const setBackGrad = () => {
   const w = document.documentElement.clientWidth; //ウィンドウ幅  
@@ -24,3 +29,23 @@ const windowResize = () => {
 
 setBackGrad(); // 読み込み時に設定
 window.addEventListener("resize", windowResize); // ウインドウサイズ変更時に再設定
+
+/*******************************
+
+     企画検索ボタン
+
+ *******************************/
+const search = document.querySelector("#search");
+window.addEventListener("scroll", () =>{
+  const scroll_position = window.scrollY
+  console.log(scroll_position)
+  if (scroll_position > 0){
+    search.classList.add("active");
+  } else {
+    search.style = "opacity: 0";
+    setTimeout((e) => { //  0.5秒後にクラスactiveを削除
+      search.classList.remove("active");
+      search.style = "opacity: 1";
+    }, 500);
+  }
+})
