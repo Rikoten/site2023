@@ -380,6 +380,10 @@ div.button:hover{
      お願い
 
 *******************************/
+#notes{
+  padding-top: 40px;
+}
+
 #notes .textbox > div:not(:last-child){
   margin-bottom: 70px;
 }
