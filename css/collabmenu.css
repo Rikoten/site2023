@@ -233,6 +233,12 @@ main .content-left-inner{
   padding-top: 70px;
 }
 
+@media screen and (max-width: 1000px){
+  main .content-left-inner{
+    padding-top: 0;
+  }
+}
+
 main .content-left-inner.transition{
   opacity: 0;
 }

@@ -231,7 +231,7 @@
         Lefts[0].classList.add("show"); //左コンテンツ表示
         
         //ここのlengthの値を変更した
-        for (let i=0; i<json.length-3; i++){
+        for (let i=0; i<json.length; i++){
           Rights[i].classList.add("show"); //右コンテンツ表示
         }
       }else{
@@ -242,15 +242,15 @@
         }
       }
   
-      for (let i=0; i<json.length-3; i++){
+      for (let i=0; i<json.length; i++){
         if (scroll_position > contentY[i+1] - windowH * 1/2){
           Lefts[i].classList.remove("show"); //1つ前の左コンテンツ非表示
 
           //ここのlengthの値を変更した
-          if (i !== json.length -4){
+          if (i !== json.length - 1){
             Lefts[i+1].classList.add("show"); //次の左コンテンツ表示
           }       
-        }else if(i !== json.length -3){
+        }else if(i !== json.length - 1){
           Lefts[i+1].classList.remove("show"); //それ以外の時左コンテンツ非表示
         }
       }
