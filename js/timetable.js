@@ -5,7 +5,7 @@
   
   /* JSONデータ取得 ---------
   --------------------------*/
-  const json = await fetch('/data/timetabele_data_web.json').then(res => res.json());
+  const json = await fetch('/data/timetable_data_web.json').then(res => res.json());
   console.log("json:", json); 
 
   /* DOM取得 ---------------
@@ -16,12 +16,10 @@
   const hScrollLeft = document.querySelector(".h-scroll.left");
   const hScrollRight= document.querySelector(".h-scroll.right");
 
-
   /* 日付ボタン横の線の長さ --
   --------------------------*/
   window.addEventListener("load", lineWidth); //ロードされたら設定
-  window.addEventListener('resize', lineWidth); //ウィンドウ幅が変わったら調整
-  
+  window.addEventListener('resize', lineWidth); //ウィンドウ幅が変わったら調整  
 
   function lineWidth(){
     const navWidth = Math.floor(document.querySelector("#timetable .nav").getBoundingClientRect().width); //navの幅は切り捨て
@@ -31,14 +29,8 @@
     if (window.innerWidth > 576){ //ウィンドウ幅が広いときは 左:右 = 1:4
       const navLineLeftWidth = String((navWidth - dateButtonWidth)*1/5) + "px";
       const navLineRightWidth = String((navWidth - dateButtonWidth)*4/5) + "px";
-      //console.log("navLineLeftWidth", navLineLeftWidth);
-      //console.log("navLineRightWidth", navLineRightWidth);
       document.querySelector(".nav-line.left").style.width = navLineLeftWidth;
       document.querySelector(".nav-line.right").style.width = navLineRightWidth;
-      //console.log(".nav-line.left", document.querySelector(".nav-line.left"));
-      //console.log(".nav-line.right", document.querySelector(".nav-line.right"));
-      //console.log("nav-line left", document.querySelector(".nav-line.left").clientWidth);
-      //console.log("nav-line right", document.querySelector(".nav-line.right").clientWidth);
     } else{ //ウィンドウ幅が狭い時は 左:右 = 1:1
       let navLineLeftWidth = String((navWidth - dateButtonWidth)*1/2) + "px";
       let navLineRightWidth = String((navWidth - dateButtonWidth)*1/2) + "px";
@@ -46,29 +38,22 @@
         navLineLeftWidth = "0px";
         navLineRightWidth = "0px";
       }
-      //console.log("navLineLeftWidth", navLineLeftWidth);
-      //console.log("navLineRightWidth", navLineRightWidth);
       document.querySelector(".nav-line.left").style.width = navLineLeftWidth;
-      document.querySelector(".nav-line.right").style.width = navLineRightWidth;
-      //console.log(".nav-line.left", document.querySelector(".nav-line.left"));
-      //console.log(".nav-line.right", document.querySelector(".nav-line.right"));
-      //console.log("nav-line left", document.querySelector(".nav-line.left").clientWidth);
-      //console.log("nav-line right", document.querySelector(".nav-line.right").clientWidth);      
+      document.querySelector(".nav-line.right").style.width = navLineRightWidth;  
     }
 
   }
 
+  
+
   /* HTML要素追加 -----------
   --------------------------*/ 
   const contents = []; //配列を用意
-  //console.log("json.length", Object.keys(json).length);
+
   for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
     contents.push(`
       <div class="content-wrapper ${Object.keys(json)[i]}">
     `)
-    //console.log("Object.keys(json)[0]", Object.keys(json)[0]);
-    //console.log("json[Object.keys(json)[i]]", json[Object.keys(json)[i]]);
-    //console.log("json[Object.keys(json)[i]].length", json[Object.keys(json)[i]].length);
     
     for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
 
@@ -80,36 +65,19 @@
           <div class="label"><div>${json[Object.keys(json)[i]][j].label[lang]}</div><div>${json[Object.keys(json)[i]][j].place[lang]}</div></div>
       `)
 
-      // 以下旧コード
-      /*
-      contents.push(`
-        <div class="project-type ${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}">
-          <div class="label"><div>${json[Object.keys(json)[i]][j].label[lang]}</div><div>${json[Object.keys(json)[i]][j].place[lang]}</div></div>
-      `)
-      */
-      // ここまで
-
-      //console.log("json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')", json[Object.keys(json)[i]][j].label.en.replace(/ /g, ''))
-      //console.log("json[Object.keys(json)[i]][j].label[lang]", json[Object.keys(json)[i]][j].label[lang]);
-      //console.log("json[Object.keys(json)[i]][j].place[lang]", json[Object.keys(json)[i]][j].place[lang]);      
-      
-      //console.log("json[Object.keys(json)[i]][j].contents[0]", json[Object.keys(json)[i]][j].contents[0]);
       for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-        //console.log("json[Object.keys(json)[i]][j].contents[k]", json[Object.keys(json)[i]][j].contents[k]);
-        //console.log("json[Object.keys(json)[i]][j].contents[k].eventName[lang]", json[Object.keys(json)[i]][j].contents[k].eventName[lang]);
-        //console.log("json[Object.keys(json)[i]][j].contents[k].imagePath", json[Object.keys(json)[i]][j].contents[k].imagePath);
         const startTimeMinute = json[Object.keys(json)[i]][j].contents[k].startTime.minute==0?"00":`${json[Object.keys(json)[i]][j].contents[k].startTime.minute}`;
         const endTimeMinute = json[Object.keys(json)[i]][j].contents[k].endTime.minute==0?"00":`${json[Object.keys(json)[i]][j].contents[k].endTime.minute}`;
         const nowLabel = lang=="ja"?"現在公演中":"LIVE";
         const detailLabel = lang=="ja"?"詳細を見る":"Detail";
         contents.push(`
-          <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}" style="background-image: url(${json[Object.keys(json)[i]][j].contents[k].imagePath});">
-            <div class="now-playing">${nowLabel}</div>
-            <div class="time">${json[Object.keys(json)[i]][j].contents[k].startTime.hour}:${startTimeMinute}-${json[Object.keys(json)[i]][j].contents[k].endTime.hour}:${endTimeMinute}</div>
-            <div class="projectName">${json[Object.keys(json)[i]][j].contents[k].eventName[lang]}</div>
-            <div class="groupName">${json[Object.keys(json)[i]][j].contents[k].groupName[lang]}</div>
-            <div class="detail"><a href="/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}">${detailLabel}</a></div>
-          </div>        
+        <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}"  onclick="window.location.href='/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}';">
+        <div class="now-playing">${nowLabel}</div>
+        <div class="time">${json[Object.keys(json)[i]][j].contents[k].startTime.hour}:${startTimeMinute}-${json[Object.keys(json)[i]][j].contents[k].endTime.hour}:${endTimeMinute}</div>
+        <div class="projectName">${json[Object.keys(json)[i]][j].contents[k].eventName[lang]}</div>
+        <div class="groupName">${json[Object.keys(json)[i]][j].contents[k].groupName[lang]}</div>
+        </div>
+            
         `)
       }
       
@@ -126,40 +94,27 @@
   const contentsJoin = contents.join(""); //配列の要素を連結して文字列とする
   contentsWrapper.insertAdjacentHTML("afterbegin", contentsJoin);
 
-  document.querySelector(".secondday").classList.add("active"); //はじめは2日目がactive
+  document.querySelector(".firstday").classList.add("active"); //はじめは1日目がactive
 
-  /* CSS 企画ボックスの色 ---
-  --------------------------*/
-  const styleSheet = document.styleSheets[1];
-  console.log("styleSheet", styleSheet);
-  for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
-    for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
-      const nowPlayings = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block.now .now-playing`);
-      for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-        const red = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(0, 2), 16);
-        const green = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(2, 4), 16);
-        const blue = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(4, 6), 16);
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}::after { border-color: rgba(${red}, ${green}, ${blue}, 0.7); background-color: rgba(${red}, ${green}, ${blue}, 0.7)} 
-          `, styleSheet.cssRules.length
-        );
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now::after { border-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );  
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now .now-playing { background-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );                       
-      }    
-    } /* 
-    */
-  }  
   
-
+  /* 日付切り替え -----------
+  --------------------------*/   
+  firstDayButton.addEventListener('click', function(){ //1日目のボタンが押されたら
+    document.querySelector(".firstday").classList.add("active"); //1日目を表示
+    document.querySelector(".secondday").classList.remove("active"); //2日目を非表示
+    firstDayButton.classList.add("active");
+    secondDayButton.classList.remove("active");
+  });
+  secondDayButton.addEventListener('click', function(){ //2日目のボタンが押されたら
+    document.querySelector(".firstday").classList.remove("active"); //1日目を非表示
+    document.querySelector(".secondday").classList.add("active"); //2日目を表示
+    firstDayButton.classList.remove("active");
+    secondDayButton.classList.add("active");
+  });
+  
   /* [E-09]シリコンの覚醒 ---
   --------------------------*/
-  if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
+  /*if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
     document.querySelector(".E-09 .projectName").style.fontSize = "16px"; //企画名のfont-sizeを小さく 
   }
 
@@ -172,57 +127,39 @@
     resizeBefore = resizeAfter;
     resizeAfter = window.innerWidth - 576;
     //console.log("resizeBefore: ", resizeBefore, "resizeAfter: ", resizeAfter);
-    if (resizeBefore * resizeAfter <= 0){
+  /*  if (resizeBefore * resizeAfter <= 0){
       if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
         document.querySelector(".E-09 .projectName").style.fontSize = "16px"; //企画名のfont-sizeを小さく 
       } else{
         document.querySelector(".E-09 .projectName").style.fontSize = "1.25rem"; //ウィンドウ幅が狭いときは他と同じ
       }
-    }
+    }*/
   });  
 
   
-   
-
-  /* 日付切り替え -----------
-  --------------------------*/   
-  firstDayButton.addEventListener('click', function(){ //1日目のボタンが押されたら
-    document.querySelector(".firstday").classList.add("active"); //1日目を表示
-    document.querySelector(".secondday").classList.remove("active"); //2日目を非表示
-    firstDayButton.classList.add("active");
-    secondDayButton.classList.remove("active");
-  });
-
-  secondDayButton.addEventListener('click', function(){ //2日目のボタンが押されたら
-    document.querySelector(".firstday").classList.remove("active"); //1日目を非表示
-    document.querySelector(".secondday").classList.add("active"); //2日目を表示
-    firstDayButton.classList.remove("active");
-    secondDayButton.classList.add("active");
-  });
-
+  
   /* 企画終了 / 現在公演中 -- 
   --------------------------*/
   window.addEventListener("load", AddClassFinishedNow); //ロードされたら時間を確認してクラス付与/削除
-  setInterval(AddClassFinishedNow, 1000); //1秒ごとに時間を確認してクラス付与/削除
+  //setInterval(AddClassFinishedNow, 1000); //1秒ごとに時間を確認してクラス付与/削除
 
   function AddClassFinishedNow(){
     for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
       for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
         const projectBlocks = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block`);
-        //console.log(i, "projectBlocks", projectBlocks);
         for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-          if (i === 0){ //1日目は2022/11/5
-            if (TimeCompare(2022, 11, 5, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === -1){  
+          if (i === 0){ //1日目は2023/11/4
+            if (TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === -1){  
               projectBlocks[k].classList.remove("now");
               projectBlocks[k].classList.add("finished");  
-            } else if(TimeCompare(2022, 11, 5, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === 0){
+            } else if(TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === 0){
               projectBlocks[k].classList.add("now");
             } 
-          } else if (i === 1){ //2日目は2022/11/6
-            if (TimeCompare(2022, 11, 6, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === -1){  
+          } else if (i === 1){ //2日目は2023/11/5
+            if (TimeCompare(2023, 11, 5, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === -1){  
               projectBlocks[k].classList.remove("now");
               projectBlocks[k].classList.add("finished");  
-            } else if(TimeCompare(2022, 11, 6, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === 0){
+            } else if(TimeCompare(2023, 11, 5, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === 0){
               projectBlocks[k].classList.add("now");
             }
           }
@@ -230,26 +167,15 @@
       }
     }    
   }
-
-
-  //const a = TimeCompare(2022, 10, 22, 19, 25, 20, 0);
-  //console.log("a", a);
-
   function TimeCompare(year, month, date, startHour, startMinute, endHour, endMinute){
     /* 現在時刻取得 */
     const currentTime = new Date();
-    //console.log("currentTime", currentTime);
-    //console.log("currentTime.getTime()", currentTime.getTime());
 
     /* 開始時刻取得 */
     const startTime = new Date(year, month-1, date, startHour, startMinute);
-    //console.log("startTime", startTime);
-    //console.log("startTime.getTime()", startTime.getTime());
 
     /* 終了時刻取得 */
     const endTime = new Date(year, month-1, date, endHour, endMinute);
-    //console.log("endTime", endTime);
-    //console.log("endTime.getTime()", endTime.getTime()); 
     
     /* 時間判定 */
     if (currentTime.getTime() < startTime.getTime()){
@@ -262,70 +188,6 @@
       return null;
     }
   }
-
-  /* 横スクロールボタン ------ 
-  --------------------------*/
-  if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
-    contentsWrapper.addEventListener('scroll', function(){
-      const hscroll_position = contentsWrapper.scrollLeft;
-      //console.log("hscroll_position", hscroll_position);    
-      if (hscroll_position > 0){
-        hScrollLeft.classList.add("active");
-      }else{
-        hScrollLeft.classList.remove("active");
-      }
-  
-      //console.log(`document.querySelector(".content-wrapper.active").clientWidth`, document.querySelector(".content-wrapper.active").clientWidth);
-      //console.log(`document.querySelector(".content-wrapper.active").clientWidth - contentsWrapper.clientWidth`, document.querySelector(".content-wrapper.active").clientWidth - contentsWrapper.clientWidth);
-      
-      if (hscroll_position < document.querySelector(".content-wrapper.active").clientWidth - contentsWrapper.clientWidth - 20){
-        hScrollRight.classList.add("active");
-      }else{
-        hScrollRight.classList.remove("active");
-      }    
-    });  
-  } else{
-    hScrollLeft.classList.remove("active");
-    hScrollRight.classList.remove("active");
-  }
-/*  contentsWrapper.addEventListener('scroll', function(){
-    const hscroll_position = contentsWrapper.scrollLeft;
-    //console.log("hscroll_position", hscroll_position);    
-    if (hscroll_position > 0){
-      hScrollLeft.classList.add("active");
-    }else{
-      hScrollLeft.classList.remove("active");
-    }
-
-    //console.log(`document.querySelector(".content-wrapper.active").clientWidth`, document.querySelector(".content-wrapper.active").clientWidth);
-    //console.log(`document.querySelector(".content-wrapper.active").clientWidth - contentsWrapper.clientWidth`, document.querySelector(".content-wrapper.active").clientWidth - contentsWrapper.clientWidth);
-    
-    if (hscroll_position < document.querySelector(".content-wrapper.active").clientWidth - contentsWrapper.clientWidth - 20){
-      hScrollRight.classList.add("active");
-    }else{
-      hScrollRight.classList.remove("active");
-    }    
-  }); */
-
-
-  hScrollLeft.addEventListener('click', function(){
-    contentsWrapper.scrollBy(-470, 0);
-  }); 
-
-  hScrollRight.addEventListener('click', function(){
-    contentsWrapper.scrollBy(470, 0);
-  });    
-
-/*window.addEventListener('scroll', function(){
-  const vscroll_position = window.pageYOffset;
-  console.log("vscroll_position", vscroll_position);
-  contentWrapperY = document.querySelector(".content-wrapper.active").getBoundingClientRect().top + window.pageYOffset;
-  console.log("contentWrapperY", contentWrapperY);
-  projectBlocksTopY = contentWrapperY + document.querySelector("#timetable .label").offsetHeight - 60;
-  console.log("projecetBlocksTopY", projectBlocksTopY);
-  projectBlocksBottomY = contentWrapperY + document.querySelector(".content-wrapper.active").offsetHeight - document.documentElement.clientHeight;
-  console.log("projecetBlocksBottomY", projectBlocksBottomY);
-});*/  
 
   /* レスポンシブ対応 ------- 
   --------------------------*/
@@ -345,15 +207,10 @@
           <div class="button ${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button ${activeOrNot}">${json[Object.keys(json)[i]][j].label[lang]}</div>          
       `)
 
-      // 以下旧コード
-      /*projectTypeButton.push(`
-          <div class="button ${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button">${json[Object.keys(json)[i]][j].label[lang]}</div>          
-      `)*/
     }
     projectTypeButton.push(`
       </div>
     `)
-    console.log("prohectTypeButton", projectTypeButton);
     const projectTypeButtonJoin = projectTypeButton.join(""); //配列の要素を連結して文字列とする
     document.querySelector(`.content-wrapper.${Object.keys(json)[i]}`).insertAdjacentHTML("afterbegin", projectTypeButtonJoin);      
   }
@@ -368,7 +225,7 @@
   function projectTypeButtonDisplay(){
     if (window.innerWidth <= 576){
       for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
-        //console.log(`document.querySelector(".content-wrapper.active .project-type-button")`, document.querySelector(".content-wrapper.active .project-type-button"));
+     
         document.querySelector(".content-wrapper.active .project-type-button").classList.add("active");
       }
     } else {
@@ -398,41 +255,24 @@
   for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
     const projectTypeButtonActive = [];
     for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
-      //console.log(i, 'document.querySelector(`.${Object.keys(json)[i]}`).classList.contains("active")', document.querySelector(`.${Object.keys(json)[i]}`).classList.contains("active"));
+     
       projectTypeButtonActive.push(document.querySelector(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button`));
-      //console.log(i,j, "document.querySelector(`.${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button`)", document.querySelector(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button`));
-      //console.log(i,j, "projectTypeButtonActive", projectTypeButtonActive);
       projectTypeButtonActive[j].addEventListener('click', function(){ //企画タイプのボタンが押されたら
-        //console.log(i, j, "document.querySelector(`${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}`)", document.querySelector(`${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}`));
+     
         document.querySelector(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}`).classList.add("active"); //ボタンクリックされた企画タイプを表示
         document.querySelector(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button`).classList.add("active"); //クリックされた企画タイプボタンをactive
-        //console.log(i, j, "active", `document.querySelector(".${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}")`, document.querySelector(`.${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}`));
-        //console.log(i, j, `document.querySelector(".${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button")`, document.querySelector(`.${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')}-button`));
+       
         for(let jj=0; jj<json[Object.keys(json)[i]].length; jj++){ //企画タイプをループ
           if (jj !== j){
             document.querySelector(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][jj].label.en.replace(/ /g, '')}`).classList.remove("active"); //それ以外の企画タイプを非表示
             document.querySelector(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][jj].label.en.replace(/ /g, '')}-button`).classList.remove("active"); //それ以外の企画タイプボタンを非active
-            //console.log(i, j, "non-active", `document.querySelector(".${json[Object.keys(json)[i]][jj].label.en.replace(/ /g, '')}")`, document.querySelector(`.${json[Object.keys(json)[i]][jj].label.en.replace(/ /g, '')}`));
-            //console.log(i, j, `document.querySelector(".${json[Object.keys(json)[i]][jj].label.en.replace(/ /g, '')}-button")`, document.querySelector(`.${json[Object.keys(json)[i]][jj].label.en.replace(/ /g, '')}-button`));
           }
         }     
       });
     }
   }
-  /*for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
-    document.querySelector(`.content-wrapper.active .${json[Object.keys(json)[i]][0].label.en.replace(/ /g, '')}`).classList.add("active"); //はじめは1個目の企画タイプ(ステージ)がactive
-    document.querySelector(`.content-wrapper.active .${json[Object.keys(json)[i]][0].label.en.replace(/ /g, '')}-button`).classList.add("active"); //はじめは1個目の企画タイプ(ステージ)がactive
-  }*/
-
-  /*if (sessionStorage.getItem('timetableAccess') !== "true"){
-    location.reload();
-    sessionStorage.setItem("timetableAccess", "true");
-    //console.log("timetableAccess: true");
-  }*/
-  
 
   window.addEventListener("onload", function(){
     location.reload();
-  });
-  
+  });  
 })();

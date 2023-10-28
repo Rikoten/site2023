@@ -51,7 +51,8 @@ async function setHeaderFooter() {
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
                         "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
                         "contact":{"ja": "お問い合わせ", "en": "Contact"},
-                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
+                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"},
+                        "timetable":{"ja":"タイムテーブル","en":"Timetable"}
                       }
 
 
@@ -73,8 +74,10 @@ async function setHeaderFooter() {
             <ul>
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
-                  <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
-                  <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
+                    <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
+                    <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
+                    <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
+                    <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
                 </ul>
             </li>
             <li class="pulldown" id="header-about">${headerLang.about[lang]}
@@ -109,6 +112,8 @@ async function setHeaderFooter() {
             <ul>
             <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                 <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
+                <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
+                <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
             </ul>
             </li>
             <li>
@@ -133,7 +138,7 @@ async function setHeaderFooter() {
         <div class="jaen">
           <div class="ja ${jaActive}">Ja</div>
           <span>/</span>
-          <di class="en ${enActive}">En</di>
+          <div class="en ${enActive}">En</div>
         </div>
     </div>
     `)
@@ -242,7 +247,9 @@ async function setHeaderFooter() {
     </ul>
     <p class="copyright">Copyright © 2002-2023 ${rikoten} All Rights Reserved.</p>
     `)
-  footerelement.insertAdjacentHTML("afterbegin", bottom);
+    if(footerelement != null ){
+      footerelement.insertAdjacentHTML("afterbegin", bottom);
+    }
 }
 
 async function langEvent() {

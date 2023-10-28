@@ -1,8 +1,22 @@
 /* 全体 ------------------- 
 --------------------------*/
-main{
-  padding: 100px 20px 50px;
-  /*width: min-content;*/
+#timetable{
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #timetable{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #timetable{
+    width: calc(100% - 30px);
+  }
 }
 
 /*#timetable .page-header{
@@ -10,17 +24,18 @@ main{
 }*/
 
 #timetable h1{
-  color:#DD6BA3;
+  font-size: 32px;
   padding-left: 40px;
-  line-height: 1;
   position: relative;
+  margin-top: 0;
 }
 
 #timetable .title::before{
   content: "";
   display: inline-block;
-  background-image:url('../img/timetable/time.png');
+  background-image:url('../img/timetable/time.svg');
   background-size: contain;
+  background-color: --color-font;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -39,7 +54,7 @@ main{
 #timetable .nav .nav-line{
   display: inline-block;
   height: 2px;
-  background-color: #DD6BA3;
+  background-color: #0316FD;
 }
 
 #timetable .date-button{
@@ -56,10 +71,10 @@ main{
 }
 
 #timetable .button{
-  color: #DD6BA3;
+  color: #0316FD;
   background-color: #FFFFFF;
   border-style: solid;
-  border-color: #DD6BA3;
+  border-color: #0316FD;
   border-width: 2px;
   padding: 8px 30px;
   line-height: 1;
@@ -73,12 +88,13 @@ main{
 
 #timetable .button:hover{
   color: #FFFFFF;
-  background-color: #DD6BA3;
+  background-color: #0316FD;
+  transform: scale(110%);
 }
 
 #timetable .button.active{
   color: #FFFFFF;
-  background-color: #DD6BA3;
+  background-color: #0316FD;
 }
 
 #timetable .button:last-child{
@@ -148,10 +164,9 @@ main{
 
 #timetable .project-block{
   position: relative;
-  color: #FFFFFF;
-  width: 450px;
-  height: 120px;
-  border-radius: 10px;
+  color: #000;
+  width: 300px;
+  height: 80px;
   margin-bottom: 10px;
   padding: 10px;
   background-size: cover;
@@ -192,7 +207,7 @@ main{
 }
 
 #timetable .project-block .projectName{
-  font-size: 20px;
+  font-size: 9px;
   font-weight: bold;
   padding-left: 5px;
   line-height: 1.2;
@@ -204,35 +219,15 @@ main{
 }
 
 #timetable .project-block .groupName{
-  font-size: 12px;
+  font-size: 10px;
+  padding: 8px 5px;
   font-weight: bold;
-  padding: 10px 15px;
   z-index: 5;
 }
 
-#timetable .project-block .detail{
-  position: absolute;
-  bottom: 15px;
-  right: 10px;
-  z-index: 5;
-}
-
-#timetable .project-block .detail a {
-  font-size: 12px;
-  border-radius: 15px;
-  line-height: 1;
-  padding: 7px 35px;
-  background-color: #FFFFFF;
-  opacity: 0.8;
-  color: #1D97FF;
-  font-weight: bold;
-  transition: .2s;
-}
-
-#timetable .project-block .detail a:hover {
-  background-color: #1D97FF;
-  opacity: 1;
-  color: #ffffff;
+#timetable .project-block:hover{
+ transition: transform 0.2s;
+ transform: scale(110%); 
 }
 
 

@@ -1,214 +1,273 @@
 [
   {
     "num": "01",
-    "name":"麵屋こころ 高田馬場店",
-    "adCopy": "あの人気メニューがセットでお得！？" ,
-    "menuComment": "台湾ミンチがのった台湾まぜそばは名古屋発祥のもの。ネギとニラがふんだんに使用されており、酢とまぜていただきます。ミニチャーシュー丼はUber Eatsでの注文率No.1です。",
-    "concept": "麺屋こころ高田馬場店は麺屋こころの2号店で、2019年9月には「マツコの知らない世界」で紹介されました。特に学生さんに愛され、いつも感謝の気持ちで最高なサービスをさせていただいております。学生さんには特殊なサービスをしております。",
+    "name": {
+      "ja": "麵屋こころ 高田馬場店",
+      "en": "Menya Kokoro Takadanobaba"
+    },
+    "adCopy": {
+      "ja": "こころへ、本家台湾まぜそばを食べに行こう！",
+      "en": "Let's go to Kokoro and savor the original Taiwan mazesoba!"
+    },
+    "menuComment": {
+      "ja": "麺屋こころの本家台湾まぜそばに人気のネギチャーシュー丼付き",
+      "en": "Menya Kokoro's original Taiwan mazesoba and the popular roasted pork fillet bowl with green onions"
+    },
+    "concept": {
+      "ja": "専門店麺屋こころは、本家台湾まぜそばをご提供しております。学生限定サービスがあります！",
+      "en": "Specialty shop Menya Kokoro offers authentic Taiwan mazesoba. Special service for students too!"
+    },
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25917.07523573544!2d139.6923874!3d35.7106133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d167114ad%3A0xd09867470e61d2c4!2z6bq65bGL44GT44GT44KN6auY55Sw6aas5aC0!5e0!3m2!1sja!2sjp!4v1662861502093!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～土曜日: 11:00～15:00, 17:30～22:00",
-    "rikoten": "両日営業",
-    "period": "10月1日～",
-    "menuName": "台湾まぜそば＋ネギチャーシュー丼",
-    "menuPrice": "¥930",
+    "time": {
+      "ja": "月曜～土曜（日曜定休日）: 11:00-15:00/17:30-22:30",
+      "en": "Mon~Sat (Sundays Closed): 11:00-15:00, 17:30-22:30"
+    },
+    "rikoten": {
+      "ja": "11/4 11:00-22:30（通し営業）、11/5 11:00-18:00（通し営業）",
+      "en": "11/4 11:00~22:30 (Open at all times), 11/5 11:00~18:00 (Open at all times)"
+    },
+    "period": {
+      "ja": "10月2日(月)～11月10日(金)",
+      "en": "Mon. Oct. 2 ~ Fri. Nov. 10"
+    },
+    "menuName": {
+      "ja": "台湾まぜそば+ネギチャーシュー丼",
+      "en": "Taiwan mazesoba & roasted pork\n fillet bowl with green onions"
+    },
+    "menuPrice": {
+      "ja": "￥930",
+      "en": "￥930"
+    },
     "menuImg": "/img/collabmenu/01-こころ.JPG",
-    "Instagram": "https://www.instagram.com/menyakokorohonten/?igshid=YmMyMTA2M2Y%3Dv",
+    "Instagram": null,
     "Twitter": null,
     "LINE": null,
     "release": true
   },
-  
   {
     "num": "02",
-    "name":"ふく流らーめん 轍 \n東京高田馬場本店",
-    "adCopy": "インスタ映え！お肉でつくったお花が可愛い！！" ,
-    "menuComment": "ふく流らーめんのスープを分解して新たに組みなおしたふく流らーめんの油そば。テーマのBloomを取り入れ、草と花をイメージした鮮やかなものに。",
-    "concept": "鶏白湯を圧力鍋を使って煮出し、亜酸化窒素で食材をムース状にしたエスプーマをのせた白いラーメン！ラテのように泡だった表面が特徴的です。とにかくこの特徴的なルックスに感嘆。ほんのりと柚子の香りのエスプーマが上品で食欲をそそります。",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "11:00～15:00, 17:00～22:30\n※年中無休",
-    "rikoten": "両日営業",
-    "period": "10月10日～11月9日",
-    "menuName": "ふく流早稲田理工展コラボラーメン",
-    "menuPrice": "¥1000",
-    "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
-    "Instagram": "https://www.instagram.com/ramen.wadachi.tokyo/",
-    "Twitter": "https://twitter.com/wadachi_tokyo",
-    "LINE": "https://page.line.me/?accountId=819kgsns",
+    "name": {
+      "ja": "鶏白湯専門 らーめん我羅奢",
+      "en": "Garasha"
+    },
+    "adCopy": {
+      "ja": "丸鷄、鶏がらをじっくりと炊き上げた極上の鶏白湯らーめん",
+      "en": "The finest chicken paitan ramen made with slowly cooked whole chicken and chicken bones"
+    },
+    "menuComment": {
+      "ja": "業界初？音の出る鶏白湯らーめん！味変「自家製辛味つぶつぶ」で！お口の中はさらにスパーク！",
+      "en": "First in industry? Sound-infused chicken paitan ramen! With flavorful homemade spicy crunches, the 'spark' in your mouth won't stop!"
+    },
+    "concept": {
+      "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
+      "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
+    },
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6374192177827!2d139.7073606761551!3d35.71053912836289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d16127611%3A0x67a875edcd57e6f9!2z44CSMTY5LTAwNTEg5p2x5Lqs6YO95paw5a6_5Yy66KW_5pep56iy55Sw77yS5LiB55uu77yS77yR4oiS77yWIOaIkee-heWlog!5e0!3m2!1sja!2sjp!4v1698470535304!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "time": {
+      "ja": "月曜～土曜: 10:30~21:00 / 日曜: 10:30~15:00",
+      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+    },
+    "rikoten": {
+      "ja": "通常営業",
+      "en": "As usual"
+    },
+    "period": {
+      "ja": "10月1日(日)〜11月5日(日)",
+      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+    },
+    "menuName": {
+      "ja": "パチパチパニック大作戦",
+      "en": "Pop Pop Panic Mega Mission!"
+    },
+    "menuPrice": {
+      "ja": "￥1000",
+      "en": "￥1000"
+    },
+    "menuImg": "/img/collabmenu/02-がらしゃ.JPG",
+    "Instagram": "https://www.instagram.com/ramen_garasha/",
+    "Twitter": "https://twitter.com/garasha1",
+    "LINE": null,
     "release": true
   },
-  
   {
     "num": "03",
-    "name":"鷄白湯専門 らーめん我羅奢",
-    "adCopy": "お花のかたちをした卵がかわいい！！" ,
-    "menuComment": "我羅奢と理工展のコラボメニューの「麻辣まぜそば」です！花型のたまごや、花椒という香辛料を使った味噌味のまぜそばとなっています。食欲をそそる辛さと痺れと、寒い時期に食べる味噌まぜそばは格別です！",
-    "concept": "西早稲田キャンパスからは徒歩6分。店名は細川ガラシャと鶏ガラに由来しています。細川ガラシャのように、和洋折衷したラーメンを目指しているそうです！なかでもおすすめは鶏白湯醤油ラーメン！一部のメニューはテイクアウトのほか、予約をすればお店の味を家で楽しめるキットも購入することができます！おうち時間が増えた今の時代にピッタリですね！！\n(理工展のSNSより抜粋)",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.636123776566!2d139.70989699999998!3d35.710571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d16107287%3A0x4ec61ef6e18aa4a1!2z6beE55m95rmv5bCC6ZaAIOOCieODvOOCgeOCk-aIkee-heWlog!5e0!3m2!1sja!2sjp!4v1662862904182!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～土曜日: 10:30~21:30 (L.O. 21:20)\n日曜日: 10:30~16:00 (L.O. 15:50)",
-    "rikoten": "11月5日(土): 10:30~21:30 (L.O. 21:20)\n11月6日(日): 10:30~16:00 (L.O. 15:50)",
-    "period": "10月1日～",
-    "menuName": "麻辣まぜそば",
-    "menuPrice": "¥900 (大盛り無料)",
-    "menuImg": "/img/collabmenu/03-がらしゃ.JPG",
-    "Instagram": "https://www.instagram.com/ramen_garasha/?igshid=YmMyMTA2M2Y%3D",
-    "Twitter": "https://twitter.com/garasha1?s=21&t=d3XY2WNzfAmVHSyH_mmKLQ",
+    "name": {
+      "ja": "近江熟成醤油ラーメン 十二分屋 早稲田店",
+      "en": "Ramen Junibun-ya Waseda"
+    },
+    "adCopy": {
+      "ja": "地元滋賀県の醤油を引っさげて関東上陸したラーメン屋「十二分屋」です。",
+      "en": "Proudly landing in Kanto with our locally-sourced soy sauce from Shiga Prefecture, we are Ramen Junibun-ya."
+    },
+    "menuComment": {
+      "ja": "sparkにかけて、spicyなカレーまぜそばを開発しました。当店自慢の塩ダレと、食欲をそそるカレーのコラボレーションが実現しました。温泉玉子のまろやかさと、フライドオニオンの甘さが、カレーのスパイシーさとマッチした一杯です。",
+      "en": "In tribute to 'spark', we've developed a spicy curry mixed noodles. The collaboration between our signature salt sauce and the enticing curry has become a reality. The creaminess of the hot spring egg and the sweetness of fried onions perfectly complement the spiciness of the curry in this bowl."
+    },
+    "concept": {
+      "ja": "選りすぐりの近江醤油を使ったメニューを豊富にご用意して、多くの方々に普段遣いいただけるラーメン屋を目指しています。",
+      "en": "We have a wide selection of dishes made with carefully selected Omi soy sauce, aiming to be a ramen shop that everyone can enjoy on a regular basis."
+    },
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.667281246812!2d139.71097287615518!3d35.70980442840322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd8e6589be3%3A0xd3200b011f07c37e!2z6L-R5rGf54af5oiQ6Yak5rK544Op44O844Oh44OzIOWNgeS6jOWIhuWxiyDml6nnqLLnlLDlupc!5e0!3m2!1sja!2sjp!4v1698470831271!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "time": {
+      "ja": "定休日なし(臨時休業はInstagramにてお知らせします): 11:00〜15:00, 17:00〜21:00",
+      "en": "No regular holidays (Temporary holidays will be notified through Instagram): 11:00~15:00, 17:00~21:00"
+    },
+    "rikoten": {
+      "ja": "両日とも営業",
+      "en": "Open for both days"
+    },
+    "period": {
+      "ja": "10月1日(日)〜11月5日(日)",
+      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+    },
+    "menuName": {
+      "ja": "痺れる!spicyカレーまぜそば",
+      "en": "Tingle your tounge! Spicy curry mazesoba"
+    },
+    "menuPrice": {
+      "ja": "￥980",
+      "en": "￥980"
+    },
+    "menuImg": "/img/collabmenu/03-十二分屋.JPG",
+    "Instagram": "https://www.instagram.com/junibun_ya.waseda/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
-
   {
     "num": "04",
-    "name":"ピコピコポン",
-    "adCopy": "見よ！この大きな牛すじを！！" ,
-    "menuComment": "大きくてトロトロな和牛筋がおいしい！隠し味には赤ワインがたくさん使われています！太麺がたっぷりと！おなかいっぱい、食べてください！",
-    "concept": "ボリューム満点！おなかいっぱい！\n次郎系のラーメンが人気のお店です！\n博士課程の人にはトッピングおまけだとか…！\nぜひ足を運んでみてください！！\n(理工展のSNSより抜粋)",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6473744400123!2d139.7095074!3d35.71029419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d18601017%3A0x3718158e7db67496!2z44OU44Kz44OU44Kz44Od44Oz!5e0!3m2!1sja!2sjp!4v1662863882054!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～金曜日: 11:00～15:30 (L.O. 15:20), 17:30～22:30 (L.O. 22:00 ※より早まることあり)\n日曜日: 9:00～15:30 (L.O. 15:00)\n※土曜日定休\n※ピコピコポン公式Twitterを要チェック！Twitterが正しいです！",
-    "rikoten": "11月6日(日)のみ営業",
-    "period": "10月24日～\n※販売日はピコピコポンのTwitterを要チェック！",
-    "menuName": "カレーつけ麺",
-    "menuPrice": "¥1400",
-    "menuImg": "/img/collabmenu/04-ピコピコポン.JPG",
-    "Instagram": null,
-    "Twitter": "https://twitter.com/matunobu0330?s=21&t=d3XY2WNzfAmVHSyH_mmKLQ",
+    "name": {
+      "ja": "つけ麺屋やすべえ 高田馬場店",
+      "en": "Tsukemen Yasubee Takadanobaba"
+    },
+    "adCopy": {
+      "ja": "こだわりの麺を、多彩な食べ方で。",
+      "en": "Savor special noodles in a variety of ways."
+    },
+    "menuComment": {
+      "ja": "",
+      "en": ""
+    },
+    "concept": {
+      "ja": "こだわりの麺を、多彩な食べ方で。並、中、大盛り同一価格。無料のトッピング有",
+      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
+    },
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.634569961312!2d139.70186527525192!3d35.71060922836045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3bc823629f%3A0x6bd9fa016214f71!2z44Gk44GR6bq65bGL44KE44GZ44G544GIIOmrmOeUsOmmrOWgtOW6lw!5e0!3m2!1sja!2sjp!4v1698489131849!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "time": {
+      "ja": "全日: 11:00〜23:00",
+      "en": "Every day: 11:00~23:00"
+    },
+    "rikoten": {
+      "ja": "通常営業",
+      "en": "As usual"
+    },
+    "period": {
+      "ja": "月曜～日曜（※麺、スープが無くなり次第終了）",
+      "en": "Mon~Sun (※Ends when noodles and soup run out)"
+    },
+    "menuName": {
+      "ja": "",
+      "en": ""
+    },
+    "menuPrice": {
+      "ja": "",
+      "en": ""
+    },
+    "menuImg": "/img/collabmenu/04-やすべえ.JPG",
+    "Instagram": "https://www.instagram.com/yasubee_official/",
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
-
   {
     "num": "05",
-    "name":"ワイルドラーメン",
-    "adCopy": "食べ応え抜群のチャーシューをお楽しみください！！" ,
-    "menuComment": "とろろを隠し味に使用しています！",
-    "concept": "【西早稲田駅5分】\nド迫力の“厚切チャーシュー”をドカッと投入！至極の一杯をご堪能あれ◎\n2020，11•16リニューアル！！インパクト抜群！自家製の厚切チャーシューが大胆に乗った、こだわりのラーメンが味わえる【WILDラーメン】。お味は、豚骨醤油・味噌・辛味噌・イルドあぶらーめん・ワイルド二郎の5種類から。またお肉の量や、麺の量も自由にカスタムが出来ます。毎日6時間かけて作る絶品チャーシューはボリューム満点◎",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6337663302797!2d139.711971!3d35.710629000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d17fb127d29%3A0xc58d44d37bb418ff!2z44Ks44OE55ub44KK44OB44Oj44O844K344Ol44O86bq65bCC6ZaA5bqXIOODr-OCpOODq-ODieODqeODvOODoeODsw!5e0!3m2!1sja!2sjp!4v1662863175001!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月曜～土曜日: 11:30～22:00 (15:00～17:00休憩)\n※日曜日定休・祝祭日営業",
-    "rikoten": "土曜日営業\n※日曜日特別休業",
-    "period": "10月1日～",
-    "menuName": "旨辛まぜそば",
-    "menuPrice": "¥980",
-    "menuImg": "/img/collabmenu/05-ワイルドラーメン.JPG",
+    "name": {
+      "ja": "タリーズコーヒー早大理工店",
+      "en": "Tully's Coffee So-dai Rikou"
+    },
+    "adCopy": {
+      "ja": "大学内にある開放的なテラス席が心地よいカフェです\n学生の方だけでなく、一般のお客様も大歓迎です!",
+      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
+    },
+    "menuComment": {
+      "ja": "タリーズ自慢のカフェラテにフェロー（スタッフ）がチョコソースで矢口君のアートを描かせていただきます♪",
+      "en": "Fellows (staff) would draw Yaguchi-kun's art with chocolate sauce on Tully's cafe latte that we are proud of!"
+    },
+    "concept": {
+      "ja": "大学内にある開放的なテラス席が心地よいのカフェです。学生の方だけでなく、一般のお客様も大歓迎です！",
+      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
+    },
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.820021644569!2d139.70598177615494!3d35.70604632860983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0xbe5798fedb2eea72!2z44K_44Oq44O844K644Kz44O844OS44O8IOaXqeWkp-eQhuW3peW6lw!5e0!3m2!1sja!2sjp!4v1698471330154!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "time": {
+      "ja": "平日:8:00～20:00（LO 19:30）/ 土曜:9:00～18:00（LO 17:30）",
+      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+    },
+    "rikoten": {
+      "ja": "2日間とも営業（日曜臨時営業）",
+      "en": "Weekdays:8:00~20:00 (LO 19:30), Sat:9:00~18:00 (LO 17:30)"
+    },
+    "period": {
+      "ja": "10月9日(月)～11月5日(日)",
+      "en": "Mon. Oct. 9 ~ Sun. Nov. 5"
+    },
+    "menuName": {
+      "ja": "カフェラテ \n矢口君ver",
+      "en": "Cafe Latte Yaguchi-kun ver."
+    },
+    "menuPrice": {
+      "ja": "Tall：￥470\nGrande：￥525",
+      "en": "Tall：￥470\nGrande：￥525"
+    },
+    "menuImg": "/img/collabmenu/05-タリーズ.JPG",
     "Instagram": null,
-    "Twitter": "https://twitter.com/newwildramen?s=21&t=3JAZTvqc-ZGKamGWl8MzLg",
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
-
   {
     "num": "06",
-    "name":"山西亭",
-    "adCopy": "本場中国の味！山西省の黒酢を使用！！" ,
-    "menuComment": "山西省の黒酢を使用した料理",
-    "concept": "中国山西省の郷土料理がメインの中華料理店です。東京ではここでしか味わえない郷土料理も多々、特に中国「麺のふるさと」山西省の麺職人が作る本場の「刀削麺」は職人技が光る自慢の逸品。麻辣、坦々など多くの味を取り揃えております。是非お越しください。",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.9969730672974!2d139.70793089999998!3d35.701692099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1eae35cf41%3A0xa8a9a8e7c75025cb!2z5bGx6KW_5Lqt!5e0!3m2!1sja!2sjp!4v1662863266983!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～土曜日: 11:00～15:00, 17:30～23:30",
-    "rikoten": "11月5日(土)のみ営業",
-    "period": "10月1日～",
-    "menuName": "糖醋丸子",
-    "menuPrice": "¥1280 (税抜)",
-    "menuImg": "/img/collabmenu/06-山西亭.JPG",
-    "Instagram": null,
-    "Twitter": null,
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "07",
-    "name":"Crispy's Burger",
-    "adCopy": "マグロと同じく、食べる手が止まらない！？" ,
-    "menuComment": "DHAたっぷりのマグロをそのままカツにしてバーガーを作りました。タルタルチリソースで癖になること、間違いなし！",
-    "concept": "パン屋が作った自家製バンズのハンバーガー屋です！\nビーフはもちろん、チキン、フィッシュ、エビと、いろんなバーガーが楽しめます！",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.714889025953!2d139.7047792!3d35.7086331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5bce920839%3A0xea0838388b2ba239!2z44Kv44Oq44K544OU44O844K644OQ44O844Ks44O8!5e0!3m2!1sja!2sjp!4v1662863327933!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "11:00～20:00\n※第二月曜日定休",
-    "rikoten": "両日営業",
-    "period": "10月3日～",
-    "menuName": "頭良くなる\nマグロカツバーガー",
-    "menuPrice": "¥650 \n(セットは¥1000)",
-    "menuImg": "/img/collabmenu/07-クリスピー.JPG",
-    "Instagram": "https://www.instagram.com/crispysburger/",
-    "Twitter": "https://twitter.com/CrispysBurger",
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "08",
-    "name":"タリーズコーヒー 早大理工店",
-    "adCopy": "「理工展スペシャル」でご注文を！" ,
-    "menuComment": "当店では、毎月フェロー(従業員)のオススメのカスタマイズを提案しています。今回は、過去オススメした中でも、秋に人気だったミルクティーのカスタマイズを理工展のスペシャルカスタマイズ(チャイミルクティー＆ホイップ＆シナモン)としてご提案させていただきました。",
-    "menuComment2": "カフェラテに無料のトッピングとしてチョコソースで矢口君を描くサービスをさせていただきます。作成に少しお時間をいただきますが、ぜひお声をかけてください！",
-    "concept": "当店は早稲田大学西早稲田キャンパスの中にあり、学内の皆様はもちろん近隣のお客様もご利用いただける店舗です。店内はカウンター中心の席とテラス席があり、オープンカフェのような雰囲気で、勉強や読書など静かに過ごすにもピッタリです！",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d809.9517371260438!2d139.7077707!3d35.706368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0xbe5798fedb2eea72!2z44K_44Oq44O844K644Kz44O844OS44O8IOaXqeWkp-eQhuW3peW6lw!5e0!3m2!1sja!2sjp!4v1662863374827!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "月～金曜日: 8:00～20:00\n土曜日: 9:00～18:00\n※月曜祝日の場合は9:00～18:00\n※日曜・祝日定休",
-    "rikoten": "両日営業\n※日曜日特別営業",
-    "period": "10月1日～11月6日",
-    "menuName": "理工展スペシャル",
-    "menuName2": "カフェラテ 矢口君ver",
-    "menuPrice": "S:¥526 T:￥581 G:￥636",
-    "menuPrice2": "T:¥455 G:¥510",
-    "menuImg": "/img/collabmenu/08-タリーズ.JPG",
-    "menuImg2": "/img/collabmenu/08-タリーズ2.JPG",
-    "Instagram": null,
-    "Twitter": null,
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "09",
-    "name":"元祖油そば専門店 東京麺珍亭本舗",
-    "adCopy": "煮干しがアクセントの華やかな油そば！！" ,
-    "menuComment": "魚介系の塩タレと煮干し粉で磯感強め、パンチの効いた油そばです！",
-    "concept": "油そばの原型とも言えるシンプルで飽きのこない油そばを提供しております。\n又、卓上調味料や期間限定の油そばでさらに色々な味を楽しめるのも麺珍亭の特徴です！",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d404.9646441097065!2d139.7079063!3d35.7085774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd63a9d3035%3A0xc84da91cb678ff72!2z5p2x5Lqs6bq654-N5Lqt5pys6IiXIOmrmOeUsOmmrOWgtOW6lw!5e0!3m2!1sja!2sjp!4v1662863512467!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "(鶴巻町本店)\n　平日と土曜日: 11:00〜翌3:00\n　日曜日・祝日: 11:00〜24:00\n(西早稲田店・高田馬場店)\n　11:00〜23:00\n※定休日はいずれの店舗も設けておりません。",
-    "rikoten": "両日営業",
-    "period": "10月3日～",
-    "menuName": "ニボシオ",
-    "menuPrice": "(通常の油そば)+¥200\n(ニボシオ油そば(並・大)¥880～での販売)",
-    "menuImg": "/img/collabmenu/09-めんちん.JPG",
-    "Instagram": "https://www.instagram.com/menchintei/?hl=ja",
+    "name": {
+      "ja": "東京麺珍亭本舗 高田馬場店",
+      "en": "Tokyo Menchintei-honpo Takadanobaba"
+    },
+    "adCopy": {
+      "ja": "毎日食べても飽きない油そば",
+      "en": "An aburasoba that you'll never get sick of"
+    },
+    "menuComment": {
+      "ja": "韓国で大人気のブルダックソースを、麺珍亭のタレと絶妙な配合でブレンドして、鶏の旨みを存分に凝縮した旨辛油そばを是非ご堪能ください！",
+      "en": "Experience the rich and spicy aburasoba that fully capture the essence of chicken by blending the popular pulduk sauce with Menchintei's sauce!"
+    },
+    "concept": {
+      "ja": "油そばで世界を救う、油そばでみんなを笑顔にしたい",
+      "en": "Our goals are to save the world, and make everyone smile with aburasoba"
+    },
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7364939110203!2d139.71468487615508!3d35.70810152849688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1bfa0f7e4b%3A0xc0e7aa7cdfc2d0de!2z5p2x5Lqs6bq654-N5Lqt5pys6IiXIOilv-aXqeeosueUsOW6lw!5e0!3m2!1sja!2sjp!4v1698471508196!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "time": {
+      "ja": "全日: 11:00〜23:00",
+      "en": "Every day: 11:00~23:00"
+    },
+    "rikoten": {
+      "ja": "通常営業",
+      "en": "As usual"
+    },
+    "period": {
+      "ja": "10月4日(水)〜",
+      "en": "Wed. Oct. 4 ~"
+    },
+    "menuName": {
+      "ja": "ブルダック風油そば",
+      "en": "Hot Chicken-like Aburasoba"
+    },
+    "menuPrice": {
+      "ja": "(通常メニュー)\n + ￥300",
+      "en": "(Ordinary menu)\n + ￥300"
+    },
+    "menuImg": "/img/collabmenu/06-めんちん.JPG",
+    "Instagram": "https://www.instagram.com/menchintei/",
     "Twitter": "https://twitter.com/menchintei",
     "LINE": null,
     "release": true
-  },
-
-  {
-    "num": "10",
-    "name":"たけろくらーめん 高田馬場店",
-    "adCopy": "辛めのラーメンが病みつきに！" ,
-    "menuComment": "コラボメニューのこだわりは、自家製の辛味噌です！キレがあり、辛いながらも旨味があります。",
-    "concept": "10月3日より味噌拉麺　蔵屋からたけろくらーめんとしてパワーアップして高田馬場から再起動します！\n看板メニュー: 爆烈牛すじつけ麺、牛塩らーめん",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d202.4743068240814!2d139.7095075!3d35.7117326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d672418be33%3A0x736d412e59ee4560!2z5ZGz5ZmM5ouJ6bq6IOiUteWxiw!5e0!3m2!1sja!2sjp!4v1662863631736!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "全日: 11:00～23:00",
-    "rikoten": "両日営業",
-    "period": "10月24日～11月6日",
-    "menuName": "旨辛スタミナ麺",
-    "menuPrice": "¥900 (税込)",
-    "menuImg": "/img/collabmenu/10-みそくらや.JPG",
-    "Instagram": "https://www.instagram.com/takeroku2019/",
-    "Twitter": "https://mobile.twitter.com/nakanotakeroku",
-    "LINE": null,
-    "release": true
-  },
-
-  {
-    "num": "11",
-    "name":"Whistle CAFE",
-    "adCopy": "一から手作りのソースを使用したおしゃれなパスタ！" ,
-    "menuComment": "煮込まれたひき肉、一から手作りのソース",
-    "concept": "サークルコラボメニューが大好評の愛されカフェ！店内はおしゃれ空間、インスタ映えも抜群でおいしいメニューが盛りだくさん！Instagramにはコラボメニューの紹介動画もあります！",
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6758056026074!2d139.7141748!3d35.7095947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d184eabc8f5%3A0x585f8a2a6d2c1555!2sWhistle%20CAFE!5e0!3m2!1sja!2sjp!4v1662863763426!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": "火～日曜日: 11:00～20:00\n月曜日定休",
-    "rikoten": "両日営業",
-    "period": "10月1日～",
-    "menuName": "ほうれん草のミートソースパスタ",
-    "menuPrice": "¥1100 \n(コーヒーor紅茶付き)",
-    "menuImg": "/img/collabmenu/11-ホイッスル.JPG",
-    "Instagram": "https://www.instagram.com/whistlecafe_official/",
-    "Twitter": "https://twitter.com/whistlecafe",
-    "LINE": null,
-    "release": true
   }
+  
 ]

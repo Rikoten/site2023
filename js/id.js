@@ -1,16 +1,16 @@
 (async () => {
     /* 多言語対応 */
+
+    console.log("rasubosu");
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
-    const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー",
-        "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ",
-        "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
-    const allTagListEn = ["Circle", "Laboratory", "Intercollegiate", "Rikoten", "Production", "Design", "Disaster Prevention",
-        "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
-        "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
+    const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー", "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ", "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
-    const json = await fetch('/data/1014_project_data.json').then(res => res.json());
-    const maintag = document.getElementsByTagName("main")[0];
+    const allTagListEn = ["Circles", "Lab", "Intercollegiate", "Rikoten Contact", "Production", "Design", "Disaster Prevention", "Experiments", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Mystery Solving", "Rocket", "Anime", "Screening", "Robot", "Astronomical Observation", "Sports", "For Examinees", "Global", "Presentation", "Computer", "Smartphone", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Game", "eSports", "Math", "Research", "Graduate School", "Biology", "SDGs", "Food and Drink", "Food", "Drink", "Sweets", "Dance"];
+
+    const json = await fetch('/data/data.json').then(res => res.json());
+    const maintag = document.getElementsByTagName("main")[0]; 
+
     var urlSearch = location.search.substring(1);
 
     var idnum = urlSearch.split("=");//id番号の代入
@@ -39,7 +39,7 @@
         `<section id = "event">
             <div class="event-main">
                 <div class="upup">
-                    <img class="photo" src=${data.iconPath}>
+                    <img class="photo" src=${data.thumbnailPath["web"]}>
 
                     <div class="rightside">
                         <h1>${data.projectName[lang]}</h1>
@@ -54,20 +54,8 @@
                     <li>${data.projectDetail[lang]}</li>
                 </ul>
 
-                <div class="ticket-narabi">
-                    <div class="ticket"></div>
-                    <div class="walk"></div>
-                    <div class="onlineticket"></div>
-                </div>
             </div>
 
-
-            <div class="side">
-                <p>目次</p>
-                <ol>
-                    <li class="menu_name">${data.groupName[lang]}</li>
-                </ol>
-            </div>
             <div class="container">
                 <div class="event-info">
                     <h1>${data.groupName[lang]}</h1>
@@ -135,10 +123,10 @@
 
 
 
-    if (data.groupTwitterUrl != null) {
+    if(data.url["twitter"]!=null){
         const tw1 = [];
         tw1.push(`
-            <a href="${data.groupTwitterUrl}"><img class="twitter" src="/img/event/グループ 66.png"></a>
+            <a href="${data.url["twitter"]}"><img class="twitter" src="/img/event/グループ 66.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw1)
     } else {
@@ -149,10 +137,10 @@
         upper_class.insertAdjacentHTML("afterbegin", tw2)
     }
 
-    if (data.groupHpUrl != null) {
+    if(data.url["hp"]!=null){
         const hp1 = [];
         hp1.push(`
-            <a href="${data.groupHpUrl}"><img class="hp" src="/img/event/グループ 65.png"></a>
+            <a href="${data.url["hp"]}"><img class="hp" src="/img/event/グループ 65.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp1)
     } else {
@@ -163,10 +151,10 @@
         upper_class.insertAdjacentHTML("afterbegin", hp2)
     }
 
-    if (data.groupInstagramUrl != null) {
+    if(data.url["instagram"]!=null){
         const insta1 = [];
         insta1.push(`
-            <a href="${data.groupInstagramUrl}"><img class="instagram" src="/img/event/グループ 68.png"></a>
+            <a href="${data.url["instagram"]}"><img class="instagram" src="/img/event/グループ 68.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta1)
     } else {
@@ -180,7 +168,7 @@
     if (data.groupFacebookUrl != null) {
         const face1 = [];
         face1.push(`
-            <a href="${data.groupFacebookUrl}"><img class="facebook" src="/img/event/グループ 67.png"></a>
+            <a href="${data.url["facebook"]}"><img class="facebook" src="/img/event/グループ 67.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face1)
     } else {
@@ -192,23 +180,25 @@
     }
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
-    const place = [];
-    if (data.placeFirstDay.ja == data.placeSecondDay.ja) {
-        data.isOnline ? place.push(`オンライン`) :
-            place.push(`${data.placeSecondDay[lang]}`);
-        place_tag.insertAdjacentHTML("beforeend", place);
+    const place =[];
+    if (data.firstDayPlace.ja == data.secondDayPlace.ja){
+        data.isOnline ? place.push(`オンライン`) : 
+        place.push(`${data.secondDayPlace[lang]}`);
+        place_tag.insertAdjacentHTML("beforeend", place);        
     }
-    else if ((data.placeFirstDay.ja != null && data.placeSecondDay.ja == null) || (data.placeFirstDay.ja == null && data.placeSecondDay.ja != null)) {
-        if (data.placeFirstDay.ja != null) {
-            place.push(`11/5 : ${data.placeFirstDay[lang]}`);
-            place_tag.insertAdjacentHTML("beforeend", place);
-        } else {
-            place.push(`11/6 : ${data.placeSecondDay[lang]}`);
+    else if((data.firstDayPlace.ja != null && data.secondDayPlace.ja == null) || (data.firstDayPlace.ja == null && data.secondDayPlace.ja != null))
+    {
+        if(data.firstDayPlace.ja != null){
+            place.push(`11/4 : ${data.firstDayPlace[lang]}`);
+            place_tag.insertAdjacentHTML("beforeend", place);    
+        }else{
+            place.push(`11/5 : ${data.secondDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         }
 
-    } else {
-        place.push(`11/5 : ${data.placeFirstDay[lang]}<br>11/6 : ${data.placeSecondDay[lang]}`);
+    }else{
+        place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.secondDayPlace[lang]}`);
+
         place_tag.insertAdjacentHTML("beforeend", place);
     }
 
@@ -225,129 +215,7 @@
         let tag1 = `<span># ${tagLang}</span>`
         tag_tag.insertAdjacentHTML("beforeend", tag1);
     }
-    /****チケットの判別****/
-    const ticket_tag = document.getElementsByClassName("ticket")[0];
-    const walk_tag = document.getElementsByClassName("walk")[0];
-    const onlineticket_tag = document.getElementsByClassName("onlineticket")[0];
-    data.hasOfflineTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p>整理券が必要です</p>`) : ticket_tag.classList.add("inactive")
-    data.isWalkRally ? walk_tag.insertAdjacentHTML("beforeend", `<p>ウォークラリー<br>対象企画</p>`) : walk_tag.classList.add("inactive")
-    data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend", '<p>オンラインチケット<br>が必要です</p>') : onlineticket_tag.classList.add("inactive")
 
-
-    /*****オンラインチケットゲットへのリンク *****/
-    const ticketlink_tag = document.getElementsByClassName("get-onlineticket")[0];
-    if (data.ticketLink == null) {
-        ticketlink_tag.classList.add("inactive")
-    } else {
-
-    }
-
-    /***目次***/
-    const li1_tag = document.getElementsByClassName("menu_name")[0];
-
-    for (let i = 0; i < data.detailContents.length; i++) {
-        var menu_list = [];
-        menu_list.push(`
-            <li>${data.detailContents[i].bigHeadline[lang]}</li>
-            <ol class="child_ol"></ol>
-        `)
-        li1_tag.insertAdjacentHTML("beforeend", menu_list);
-        var ol_tag = document.getElementsByClassName("child_ol")[i];
-
-        for (let j = 0; j < data.detailContents[i].articles.length; j++) {
-            const mokuji_list = []
-            mokuji_list.push(`
-                <li>${data.detailContents[i].articles[j].headline[lang]}</li>
-            `)
-            ol_tag.insertAdjacentHTML("beforeend", mokuji_list);
-        }
-    }
-
-    /*****本文*****/
-    const article_wrapper = document.getElementsByClassName("article_wrapper")[0];
-
-    for (let i = 0; i < data.detailContents.length; i++) {
-        article_wrapper.insertAdjacentHTML("beforeend", `<div class="introduce"></div>`)
-        const article_tag = document.getElementsByClassName("introduce")[i];
-        const article = []
-        article.push(`
-        <div>
-            <h2 class="bighead">${data.detailContents[i].bigHeadline[lang]}</h2>
-            <ul class="article_sentence"></ul>
-        </div>
-
-        `)
-        article_tag.insertAdjacentHTML("beforeend", article);
-
-        /******画像の分岐 ******/
-        const h2_bighead = document.getElementsByClassName("bighead")[i];
-        if (data.detailContents[i].bigHeadlineImages != "") {
-            for (let j = 0; j < data.detailContents[i].bigHeadlineImages.length; j++) {
-                const big_img = [];
-                big_img.push(`
-                <div class="disp-img">
-                    <img src="${data.detailContents[i].bigHeadlineImages[j].imagePath}">
-                </div>   
-                `)
-                h2_bighead.insertAdjacentHTML("beforeend", big_img);
-            }
-
-        } else { }
-        if (data.detailContents[i].bigHeadlineMovieLinks != "") {
-            for (let j = 0; j < data.detailContents[i].bigHeadlineMovieLinks.length; j++) {
-                const link = data.detailContents[i].bigHeadlineMovieLinks[j].split("/");
-                const big_mov = [];
-                big_mov.push(`
-                <div class="disp-video">
-                <iframe src="https://www.youtube.com/embed/${link[3]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>   
-                `)
-                h2_bighead.insertAdjacentHTML("afterend", big_mov);
-            }
-
-        } else { }
-
-
-        const ul_tag = document.getElementsByClassName("article_sentence")[i];
-        for (let j = 0; j < data.detailContents[i].articles.length; j++) {
-            const ul_li = [];
-            ul_li.push(`
-                <li>${data.detailContents[i].articles[j].headline[lang]}</li>
-                <p class="li_p_${i}">${data.detailContents[i].articles[j].body[lang]}</p>
-            `)
-            ul_tag.insertAdjacentHTML("beforeend", ul_li);
-
-            /*****pの下の画像たち *****/
-            if (data.detailContents[i].articles[j].headlineImages != "") {
-                const sm_img = [];
-                const li_p = document.getElementsByClassName(`li_p_${i}`)[j];
-                for (let k = 0; k < data.detailContents[i].articles[j].headlineImages.length; k++) {
-                    sm_img.push(`
-                    <div class="disp-img">
-                        <img src="${data.detailContents[i].articles[j].headlineImages[k].imagePath}">
-                    </div>   
-                    `)
-                }
-                li_p.insertAdjacentHTML("afterend", sm_img);
-
-            } else { }
-            if (data.detailContents[i].articles[j].headlineMovieUrls != "") {
-                const sm_mov = [];
-                const li_p = document.getElementsByClassName(`li_p_${i}`)[j];
-                for (let k = 0; k < data.detailContents[i].articles[j].headlineMovieUrls.length; k++) {
-                    const link = data.detailContents[i].articles[j].headlineMovieUrls[k].split("/");
-                    sm_mov.push(`
-                    <div class="disp-video">
-                    <iframe src="https://www.youtube.com/embed/${link[3]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>   
-                    `)
-                }
-                li_p.insertAdjacentHTML("afterend", sm_mov);
-
-            } else { }
-        }
-
-    }
 
     /* pdf */
     // if (data.id == "A-02" || data.id == "B-07") {

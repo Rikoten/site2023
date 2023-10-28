@@ -1,4 +1,7 @@
 (async () => {
+  /* 多言語切り替え */
+  const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";  
+  
   /* DOM取得 (Part 1) --------
   -------------------*/
   const menu = document.querySelector(".menu"); //MENUリスト
@@ -17,7 +20,7 @@
       <li>
         <a class="menu-link" href="#content${json[i].num}">
           <span class="num">${json[i].num}</span>
-          <span class="name">${json[i].name}</span>
+          <span class="name">${json[i].name[lang]}</span>
         </a>
       </li>
     `);
@@ -37,30 +40,30 @@
             <div class="content-left-inner">
               <h3>
                 <span class="num">${json[i].num}</span>
-                <span class="name">${json[i].name}</span>
+                <span class="name">${json[i].name[lang]}</span>
               </h3>
               
               <div class="menu-img-wrapper">
                 <div class="menu-img-inner"><img class="menu-img" src="${json[i].menuImg}" alt="${json[i].menuName}"></div>
               </div>
-              <span class="menu-name">${json[i].menuName}</span>
-              <span class="menu-price">${json[i].menuPrice}</span>  
+              <span class="menu-name">${json[i].menuName[lang]}</span>
+              <span class="menu-price">${json[i].menuPrice[lang]}</span>  
             </div>        
           </div>
 
 
           <div class="content-right">
-            <div class="ad-copy"><h4>${json[i].adCopy}</h4></div>
+            <div class="ad-copy"><h4>${json[i].adCopy[lang]}</h4></div>
 
             <div class="details">
-              <div class="menu-comment-wrapper"><p class="comment menu-comment">${json[i].menuComment}</p></div>
-              <div class="shop-info"><div class="info-title">お店のコンセプト</div>${json[i].concept}</div>
+              <div class="menu-comment-wrapper"><p class="comment menu-comment">${json[i].menuComment[lang]}</p></div>
+              <div class="shop-info"><div class="info-title">お店のコンセプト</div>${json[i].concept[lang]}</div>
               <!--<div>${json[i].address}</div>
               <div>TEL: ${json[i].tel}</div>
               <div>${json[i].access}</div>-->
-              <div class="shop-info"><div class="info-title">営業時間</div>${json[i].time}</div>
-              <div class="shop-info"><div class="info-title">理工展当日営業</div>${json[i].rikoten}</div>
-              <div class="shop-info"><div class="info-title">コラボ期間</div>${json[i].period}</div>
+              <div class="shop-info"><div class="info-title">営業時間</div>${json[i].time[lang]}</div>
+              <div class="shop-info"><div class="info-title">理工展当日営業</div>${json[i].rikoten[lang]}</div>
+              <div class="shop-info"><div class="info-title">コラボ期間</div>${json[i].period[lang]}</div>
               <div class="sns-wrapper"></div>
             </div>
 
@@ -76,7 +79,7 @@
             <div class="content-left-inner">
               <h3>
                 <span class="num">${json[i].num}</span>
-                <span class="name">${json[i].name}</span>
+                <span class="name">${json[i].name[lang]}</span>
               </h3>
 
               <p>準備中<p>
@@ -133,35 +136,14 @@
   const menuCommentWrapper = document.querySelectorAll(".menu-comment-wrapper"); //メニュー名
   const snsWrapper = document.querySelectorAll(".sns-wrapper"); //SNSリンク
 
-  /* タリーズコラボメニュー2個目説明文追加
-  -------------------*/
-  const menu2 = `
-    <div class="content-left-inner transition" style="background-image: url(${json[7].menuImg2});">
-      <h3>
-        <span class="num">${json[7].num}</span>
-        <span class="name">${json[7].name}</span>
-      </h3>
-    
-      <div class="menu-img-wrapper">
-        <div class="menu-img-inner"><img class="menu-img" src="${json[7].menuImg2}" alt="${json[7].menuName2}"></div>
-      </div> 
-      <span class="menu-name">${json[7].menuName2}</span>
-      <span class="menu-price">${json[7].menuPrice2}</span>  
-    </div>  
-  `;
-
-  Lefts[7].insertAdjacentHTML("beforeend", menu2);
-  
-  const menuComment2 = `<p class="comment menu-comment">${json[7].menuComment2}</p>`;
-  menuCommentWrapper[7].insertAdjacentHTML("beforeend", menuComment2); //タリーズコラボメニュー2個目説明文をHTMLに追加
-
+/*
   setInterval(() => {
     const a = document.querySelector('#content08 .content-left-inner.transition');
     const b = document.querySelector('#content08 .content-left-inner:not(.transition)');
     a.classList.remove('transition');
     b.classList.add('transition');
   }, 3500);
-
+*/
 
   /* SNSリンク-------
   -------------------*/
@@ -245,7 +227,10 @@
       /* ---表示切り替え--- */
       if (scroll_position > 100){
         collabmenuTop.classList.remove("show"); //トップメニュー非表示
+        
         Lefts[0].classList.add("show"); //左コンテンツ表示
+        
+        //ここのlengthの値を変更した
         for (let i=0; i<json.length; i++){
           Rights[i].classList.add("show"); //右コンテンツ表示
         }
@@ -261,10 +246,11 @@
         if (scroll_position > contentY[i+1] - windowH * 1/2){
           Lefts[i].classList.remove("show"); //1つ前の左コンテンツ非表示
 
-          if (i !== json.length -1){
+          //ここのlengthの値を変更した
+          if (i !== json.length - 1){
             Lefts[i+1].classList.add("show"); //次の左コンテンツ表示
           }       
-        }else if(i !== json.length -1){
+        }else if(i !== json.length - 1){
           Lefts[i+1].classList.remove("show"); //それ以外の時左コンテンツ非表示
         }
       }
