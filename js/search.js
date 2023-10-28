@@ -440,12 +440,12 @@ async function keywordEvent(data) {
     $searchText.addEventListener('input', (event) => {
         notSelectedProjectListByKW = [];
         for (const $sd of $searchData) {
-            if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
-                notSelectedProjectListByKW.push($sd.id)
-            }
-            // if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+            // if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
             //     notSelectedProjectListByKW.push($sd.id)
             // }
+            if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+                notSelectedProjectListByKW.push($sd.id)
+            }
         }
         updateProjectsByTag(data);
     });
