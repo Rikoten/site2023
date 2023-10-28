@@ -25,18 +25,20 @@
       }
   
       contents.push(`
-        <div class="project">
-          <div class="project-img">
-            <img src="/img/projects/${json[Object.keys(json)[i]][j].id}/${json[Object.keys(json)[i]][j].id}_web_thumbnail.jpg" alt="">
-          </div>
-          <div class="desc">
-            <div class="project-name">${json[Object.keys(json)[i]][j].projectName[lang]}</div>
-            <div class="detail">
-              <div class="group-name">${json[Object.keys(json)[i]][j].groupName[lang]}</div>
-              <div class="place">${placeText}</div>
+        <!--<a href="/projects/project/?id="${json[Object.keys(json)[i]][j].id}">-->
+          <div class="project">
+            <div class="project-img">
+              <img src="/img/projects/${json[Object.keys(json)[i]][j].id}/${json[Object.keys(json)[i]][j].id}_web_thumbnail.jpg" alt="">
             </div>
-          </div>
-        </div>    
+            <div class="desc">
+              <div class="project-name">${json[Object.keys(json)[i]][j].projectName[lang]}</div>
+              <div class="detail">
+                <div class="group-name">${json[Object.keys(json)[i]][j].groupName[lang]}</div>
+                <div class="place">${placeText}</div>
+              </div>
+            </div>
+          </div>    
+        <!--</a>-->
       `)
     }
     const contentsJoin = contents.join(""); // 配列の要素を連結して文字列とする  
