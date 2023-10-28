@@ -114,11 +114,27 @@ div.textbox{
     font-size: 16px;
     padding-left: 20px;
   }
+
+  #faq .textbox h3{
+    font-size: 16px;
+  }
+
+  #faq .textbox p.group{
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 456px) {
   #faq .textbox h2{
     font-size: 20px;
+  }
+
+  #faq .textbox h3{
+    font-size: 14px;
+  }
+
+  #faq .textbox p.group{
+    font-size: 12px;
   }
 }
 

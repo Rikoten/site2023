@@ -38,6 +38,7 @@ async function setHeaderFooter() {
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
     
     const headerLang = {
+                        "projects": { "ja": "企画情報", "en": "Projects" },
                         "search": { "ja": "企画検索", "en": "Search" },
                         "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
