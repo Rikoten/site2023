@@ -1,35 +1,38 @@
-(async () =>{
+(async () => {
     /* 多言語対応 */
 
     console.log("rasubosu");
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
+
     const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー", "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ", "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
     const allTagListEn = ["Circles", "Lab", "Intercollegiate", "Rikoten Contact", "Production", "Design", "Disaster Prevention", "Experiments", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Mystery Solving", "Rocket", "Anime", "Screening", "Robot", "Astronomical Observation", "Sports", "For Examinees", "Global", "Presentation", "Computer", "Smartphone", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Game", "eSports", "Math", "Research", "Graduate School", "Biology", "SDGs", "Food and Drink", "Food", "Drink", "Sweets", "Dance"];
 
     const json = await fetch('/data/data.json').then(res => res.json());
     const maintag = document.getElementsByTagName("main")[0]; 
+
     var urlSearch = location.search.substring(1);
-    
+
     var idnum = urlSearch.split("=");//id番号の代入
-    
-    const contents = ["general", "stage", "experiment","shops"]
+
+    const contents = ["general", "stage", "experiment", "shops"]
 
     var category = "";
     var number = "";
 
-    for (let j=0; j<contents.length; j++){
-        for (let i=0; i<json[`${contents[j]}`].length; i++){
-            if(`${json[`${contents[j]}`][i].id}`==idnum[1]){
+    for (let j = 0; j < contents.length; j++) {
+        for (let i = 0; i < json[`${contents[j]}`].length; i++) {
+            if (`${json[`${contents[j]}`][i].id}` == idnum[1]) {
                 category = `${contents[j]}`;
                 number = i;
+                break
             }
         }
     }
 
     const data = json[`${category}`][number];
-    
-    const insert=[];
+
+    const insert = [];
     const day_off = []
 
     insert.push(
@@ -53,8 +56,6 @@
 
             </div>
 
-
-
             <div class="container">
                 <div class="event-info">
                     <h1>${data.groupName[lang]}</h1>
@@ -75,7 +76,7 @@
         </div>
     </section>`
     )
-    
+
     day_off.push(
         `<section id = "event">
             <div class="event-main">
@@ -103,13 +104,13 @@
                     <img src="../../img/event/bloom矢口.png">
                 </div>
             </div>`)
-        
-            const bool = true;
-            if(bool){
-                maintag.insertAdjacentHTML("afterbegin", insert);
-            }else{
-                maintag.insertAdjacentHTML("afterbegin", day_off);
-            }
+
+    const bool = true;
+    if (bool) {
+        maintag.insertAdjacentHTML("afterbegin", insert);
+    } else {
+        maintag.insertAdjacentHTML("afterbegin", day_off);
+    }
 
     //*********SNSリンク**********//
     const hp_tag = document.getElementsByClassName("hp")[0];
@@ -128,7 +129,7 @@
             <a href="${data.url["twitter"]}"><img class="twitter" src="/img/event/グループ 66.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw1)
-    }else{
+    } else {
         const tw2 = [];
         tw2.push(`
             <a><img class="twitter gray" src="/img/event/グループ 66.png"></a>
@@ -142,7 +143,7 @@
             <a href="${data.url["hp"]}"><img class="hp" src="/img/event/グループ 65.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp1)
-    }else{
+    } else {
         const hp2 = [];
         hp2.push(`
             <a><img class="hp gray" src="/img/event/グループ 65.png"></a>
@@ -156,7 +157,7 @@
             <a href="${data.url["instagram"]}"><img class="instagram" src="/img/event/グループ 68.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta1)
-    }else{
+    } else {
         const insta2 = [];
         insta2.push(`
             <a><img class="instagram gray" src="/img/event/グループ 68.png"></a>
@@ -164,13 +165,13 @@
         lower_class.insertAdjacentHTML("afterbegin", insta2)
     }
 
-    if(data.groupFacebookUrl!=null){
+    if (data.groupFacebookUrl != null) {
         const face1 = [];
         face1.push(`
             <a href="${data.url["facebook"]}"><img class="facebook" src="/img/event/グループ 67.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face1)
-    }else{
+    } else {
         const face2 = [];
         face2.push(`
             <a><img class="facebook gray" src="/img/event/グループ 67.png"></a>
@@ -188,23 +189,24 @@
     else if((data.firstDayPlace.ja != null && data.secondDayPlace.ja == null) || (data.firstDayPlace.ja == null && data.secondDayPlace.ja != null))
     {
         if(data.firstDayPlace.ja != null){
-            place.push(`11/5 : ${data.firstDayPlace[lang]}`);
+            place.push(`11/4 : ${data.firstDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);    
         }else{
-            place.push(`11/6 : ${data.secondDayPlace[lang]}`);
+            place.push(`11/5 : ${data.secondDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         }
 
     }else{
         place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.secondDayPlace[lang]}`);
+
         place_tag.insertAdjacentHTML("beforeend", place);
     }
 
     /****タグの追加 ****/
     const tag_tag = document.getElementsByClassName("tag")[0]
-    for(const tag of data.tags){
+    for (const tag of data.tags) {
         let tagLang = "";
-        if(lang == "ja"){
+        if (lang == "ja") {
             tagLang = tag;
         }
         else {
@@ -214,15 +216,16 @@
         tag_tag.insertAdjacentHTML("beforeend", tag1);
     }
 
+
     /* pdf */
-    if(data.id == "A-02" || data.id == "B-07"){
-        const pdf_wrapper = document.getElementsByClassName("pdf_wrapper")[0];
-        pdf_wrapper.insertAdjacentHTML("beforeend", `
-                                    <div class="pdf-content">
-                                        <div class="pdf-desc">${data.pdfContents[0].desc[lang]}</div>
-                                        <a href=${data.pdfContents[0].link}>
-                                            <div class="pdf-button">PDF</div>
-                                        </a>
-                                    </div>`)
-    }
+    // if (data.id == "A-02" || data.id == "B-07") {
+    //     const pdf_wrapper = document.getElementsByClassName("pdf_wrapper")[0];
+    //     pdf_wrapper.insertAdjacentHTML("beforeend", `
+    //                                 <div class="pdf-content">
+    //                                     <div class="pdf-desc">${data.pdfContents[0].desc[lang]}</div>
+    //                                     <a href=${data.pdfContents[0].link}>
+    //                                         <div class="pdf-button">PDF</div>
+    //                                     </a>
+    //                                 </div>`)
+    // }
 })()

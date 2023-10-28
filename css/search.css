@@ -5,7 +5,6 @@
 
 #search {
     padding-top: 100px;
-    color: var(--color-lightpink);
     width: calc(100% - 100px);
     max-width: 1300px;
     margin: 0 auto;
@@ -67,6 +66,7 @@
 
 #search .search-section .keyword h2::before {
     background-image:url('/img/search/キーボードのフリーアイコン3.svg');
+    margin-top: 4px;
 }
 
 #search .search-section .category h2::before {
@@ -84,7 +84,7 @@
 }
 
 #search .keyword .input form {
-    border: 1px solid var(--color-lightpink);
+    border: 1px solid var(--color-brown);
     margin: 20px 0;
     border-radius: 30px;
     width: 50%;
@@ -117,7 +117,8 @@
    transform: translateY(-50%);
    background-repeat: no-repeat;
    background-size: cover;
-   
+   width: 16px;
+   height: 16px;
  }
 
 
@@ -130,7 +131,7 @@
 }
 
 #search .category ul li {
-    border: 2px solid var(--color-lightpink);
+    border: 2px solid var(--color-brown);
     border-radius: 30px;
     padding: 3px 15px;
     margin: 4px;
@@ -151,7 +152,7 @@
 #search .category ul li:hover,
 #search .category ul li.active,
 #search .tag ul li.active {
-    background-color: var(--color-lightpink);
+    background-color: var(--color-brown);
     color: #ffffff;
 }
 

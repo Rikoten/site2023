@@ -1,4 +1,4 @@
-(async () =>{
+(async () => {
   const sessionKey = "accesed";
   const sessionValue = "true";
   //初回アクセス時のみ
@@ -12,8 +12,8 @@
 })();
 
 async function setLang() {
-  if(window.localStorage) {
-    const lang = (window.navigator.userLanguage || window.navigator.language || window.navigator.browserLanguage).substr(0,2) == "ja" ? "ja" : "en";
+  if (window.localStorage) {
+    const lang = (window.navigator.userLanguage || window.navigator.language || window.navigator.browserLanguage).substr(0, 2) == "ja" ? "ja" : "en";
     localStorage.setItem("lang", lang);
   }
 }
@@ -23,10 +23,10 @@ function changeLang() {
 
   const $langElms = document.getElementsByClassName("langCng");
   for (const $elm of $langElms) {
-    if($elm.getAttribute("lang") == lang){
+    if ($elm.getAttribute("lang") == lang) {
       $elm.style.display = '';
     }
-    else{
+    else {
       $elm.style.display = 'none';
     }
   }
@@ -38,7 +38,8 @@ async function setHeaderFooter() {
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
     
     const headerLang = {
-                        "projects":{"ja": "企画情報", "en": "Projects"},
+                        "projects": { "ja": "企画情報", "en": "Projects" },
+                        "search": { "ja": "企画検索", "en": "Search" },
                         "participants":{"ja": "出展団体", "en": "Participants"},
                         "collab":{"ja": "飲食店コラボ", "en": "Collab"},
                         "specialguest":{"ja": "有名人企画", "en": "Special Guest"},
@@ -48,19 +49,20 @@ async function setHeaderFooter() {
                         "info":{"ja": "お知らせ", "en": "Info"},
                         "app":{"ja": "アプリ紹介", "en": "App"},
                         "faq":{"ja": "よくある質問", "en": "FAQ"},
+                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
                         "contact":{"ja": "お問い合わせ", "en": "Contact"},
                         "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"},
                         "timetable":{"ja":"タイムテーブル","en":"Timetable"}
                       }
 
 
-    const head=[];
-    const headerelement = document.getElementsByTagName("header")[0];//getElementsByTagNameは配列
+  const head = [];
+  const headerelement = document.getElementsByTagName("header")[0];//getElementsByTagNameは配列
 
-    const jaActive = lang == "ja" ? "active" : "";
-    const enActive = lang == "en" ? "active" : "";
+  const jaActive = lang == "ja" ? "active" : "";
+  const enActive = lang == "en" ? "active" : "";
 
-    head.push(`
+  head.push(`
     <div class="menu_bar">
         <span></span>
         <span></span>
@@ -80,12 +82,15 @@ async function setHeaderFooter() {
             <li class="pulldown" id="header-about">${headerLang.about[lang]}
                 <ul>
                     <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                    <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
                     <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
                 </ul>
             </li>
             <li class="pulldown" id="header-info">${headerLang.info[lang]}
                 <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
+                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
@@ -104,6 +109,7 @@ async function setHeaderFooter() {
             <li>
             <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
+            <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                 <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
                 <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
                 <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
@@ -113,6 +119,7 @@ async function setHeaderFooter() {
             <button class="accordionBtn" type="button">${headerLang.about[lang]}</button>
             <ul>
                 <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+                <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
                 <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
             </ul>
             </li>
@@ -120,6 +127,8 @@ async function setHeaderFooter() {
             <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
                 <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
+                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
                 <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
                 <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
@@ -132,45 +141,44 @@ async function setHeaderFooter() {
         </div>
     </div>
     `)
-    headerelement.insertAdjacentHTML("afterbegin", head);
+  headerelement.insertAdjacentHTML("afterbegin", head);
 
-    const pcmenu = document.querySelector(".pcmenu > ul");
-    const pulldown = [...pcmenu.querySelectorAll("li.pulldown")];
-    console.log(pulldown)
+  const pcmenu = document.querySelector(".pcmenu > ul");
+  const pulldown = [...pcmenu.querySelectorAll("li.pulldown")];
+  console.log(pulldown)
 
-    //console.log("pulldown", pulldown[0]);
+  //console.log("pulldown", pulldown[0]);
 
-    pcmenu.addEventListener("mouseover", () =>{
-      document.addEventListener("mouseover", (e)=>{
-        if (pulldown.includes(e.target)){
-          hpulldown = e.target.querySelector("ul").clientHeight
-          pcmenu.style.height = `calc(50px + ${hpulldown}px)`;        
-        }
-        /*hpulldown = e.target.querySelector("ul").clientHeight
-        pcmenu.style.height = `calc(50px + ${hpulldown}px)`;*/
-      })
-
-    });
-
-    pcmenu.addEventListener("mouseleave", ()=>{
-      pcmenu.style.height = "50px";
-    });
-
-
-
-    const menu=document.getElementsByClassName("menu_bar")[0];
-    const open=document.getElementsByClassName("phone-menu")[0];
-    
-
-
-    menu.addEventListener("click", ()=>{
-        headerelement.classList.toggle("open")
-        open.classList.toggle("active")
-        menu.classList.toggle("unactive")
+  pcmenu.addEventListener("mouseover", () => {
+    document.addEventListener("mouseover", (e) => {
+      if (pulldown.includes(e.target)) {
+        hpulldown = e.target.querySelector("ul").clientHeight
+        pcmenu.style.height = `calc(50px + ${hpulldown}px)`;
+      }
+      /*hpulldown = e.target.querySelector("ul").clientHeight
+      pcmenu.style.height = `calc(50px + ${hpulldown}px)`;*/
     })
 
-    // メニューを開く関数
-const slideDown = (el) => {
+  });
+
+  pcmenu.addEventListener("mouseleave", () => {
+    pcmenu.style.height = "50px";
+  });
+
+
+
+  const menu = document.getElementsByClassName("menu_bar")[0];
+  const open = document.getElementsByClassName("phone-menu")[0];
+
+
+  menu.addEventListener("click", () => {
+    headerelement.classList.toggle("open")
+    open.classList.toggle("active")
+    menu.classList.toggle("unactive")
+  })
+
+  // メニューを開く関数
+  const slideDown = (el) => {
     el.style.height = 'auto'; //いったんautoに
     let h = el.offsetHeight; //autoにした要素から高さを取得
     el.style.height = h + 'px';
@@ -179,20 +187,20 @@ const slideDown = (el) => {
       { height: h + 'px' }
     ], {
       duration: 300, //アニメーションの時間（ms）
-     });
+    });
   };
-  
+
   // メニューを閉じる関数
   const slideUp = (el) => {
     el.style.height = 0;
   };
-  
+
   let activeIndex = null; //開いているアコーディオンのindex
-  
+
   //アコーディオンコンテナ全てで実行
   const accordions = document.querySelectorAll('ul.include-accordion');
   accordions.forEach((accordion) => {
-  
+
     //アコーディオンボタン全てで実行
     const accordionBtns = accordion.querySelectorAll('.accordionBtn');
     accordionBtns.forEach((accordionBtn, index) => {
@@ -200,9 +208,9 @@ const slideDown = (el) => {
         activeIndex = index; //クリックされたボタンを把握
         e.target.parentNode.classList.toggle('active'); //ボタンの親要素（=ul>li)にクラスを付与／削除
         const content = accordionBtn.nextElementSibling; //ボタンの次の要素（=ul>ul）
-        if(e.target.parentNode.classList.contains('active')){
+        if (e.target.parentNode.classList.contains('active')) {
           slideDown(content); //クラス名がactive（＝閉じていた）なら上記で定義した開く関数を実行
-        }else{
+        } else {
           slideUp(content); //クラス名にactiveがない（＝開いていた）なら上記で定義した閉じる関数を実行
         }
         /*accordionBtns.forEach((accordionBtn, index) => {
@@ -214,9 +222,9 @@ const slideDown = (el) => {
         });*/
         //スクロール制御のために上位階層ulのクラス名を変える
         let container = accordion.closest('.scroll-control'); //sroll-controlnのクラス名である親要素を取得
-        if(accordionBtn.parentNode.classList.contains('active') == false && container !== null ){
+        if (accordionBtn.parentNode.classList.contains('active') == false && container !== null) {
           container.classList.remove('active')
-        }else if (container !== null){
+        } else if (container !== null) {
           container.classList.add('active')
         }
       });
@@ -224,11 +232,11 @@ const slideDown = (el) => {
   });
 
 
-    //footer
-    const bottom=[];
-    const footerelement = document.getElementsByTagName("footer")[0];//getElementsByTagNameは配列
-    const rikoten = lang == "ja" ? "理工展連絡会": "Rikoten";
-    bottom.push(`
+  //footer
+  const bottom = [];
+  const footerelement = document.getElementsByTagName("footer")[0];//getElementsByTagNameは配列
+  const rikoten = lang == "ja" ? "理工展連絡会" : "Rikoten";
+  bottom.push(`
     <p>official SNS</p>
     <ul class = "social-icon">
       <li class = "x-icon"><a href="https://twitter.com/rikoten_waseda" target="_blank" rel = "noopener"><img src = "/img/common/icon/x.svg"></a></li>
@@ -241,16 +249,15 @@ const slideDown = (el) => {
     if(footerelement != null ){
       footerelement.insertAdjacentHTML("afterbegin", bottom);
     }
-
 }
 
 async function langEvent() {
   const $ja = document.getElementsByClassName("ja");
   const $en = document.getElementsByClassName("en");
 
-  for(let i = 0 ; i < $ja.length ; i++){
+  for (let i = 0; i < $ja.length; i++) {
     $ja[i].addEventListener("click", () => {
-      if(!$ja[i].classList.contains("active")){
+      if (!$ja[i].classList.contains("active")) {
         localStorage.setItem("lang", "ja");
         $en[i].classList.remove("active");
         $ja[i].classList.add("active");
@@ -258,7 +265,7 @@ async function langEvent() {
       location.reload();
     })
     $en[i].addEventListener("click", () => {
-      if(!$en[i].classList.contains("active")){
+      if (!$en[i].classList.contains("active")) {
         localStorage.setItem("lang", "en");
         $ja[i].classList.remove("active");
         $en[i].classList.add("active");

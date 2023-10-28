@@ -1,0 +1,144 @@
+#faq{
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #faq{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #faq{
+    width: calc(100% - 30px);
+  }
+}
+
+#faq h1 {
+  font-size: 32px;
+  padding-left: 40px;
+  margin: 0;
+  position: relative;
+}
+
+#faq h1::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/faq/questionmark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#faq > div.category{
+  margin: 40px 0;
+}
+
+#faq > div.category h2{
+  margin: 0;
+}
+
+#faq .question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+#faq .answer {
+  border-bottom: 2px dotted #f39800;
+  font-weight: 500;
+}
+
+#faq img{
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+/*--- テキストボックス ---*/
+div.textbox{
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  div.textbox{
+    padding: 25px;
+  }
+}
+
+#faq .textbox h2{
+  text-align: center; 
+}
+
+#faq .textbox h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px 0 10px;
+}
+
+#faq .textbox ul li{
+  list-style-type: square;
+}
+
+#faq .textbox p{
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#faq .textbox p.group{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 624px) {
+  #faq .textbox p{
+    font-size: 16px;
+  }
+
+  #faq .textbox ul{
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  #faq .textbox h3{
+    font-size: 16px;
+  }
+
+  #faq .textbox p.group{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  #faq .textbox h2{
+    font-size: 20px;
+  }
+
+  #faq .textbox h3{
+    font-size: 14px;
+  }
+
+  #faq .textbox p.group{
+    font-size: 12px;
+  }
+}
+
+#faq a{
+  text-decoration: underline;
+  color: var(--color-orange);
+}

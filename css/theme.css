@@ -1,0 +1,180 @@
+/*--- 背景ベンツ ---*/
+main{
+  height: 100%;
+  background-image: url(../img/theme/background_benz.svg);
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  background-position: top -120px left -100px;
+}
+
+@media screen and (max-width: 1024px) {
+  main{
+    background-position: top 0px left -100px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  main{
+    background-size: 90% auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main{
+    background-size: auto 120%;
+    background-position: top -200px left -300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main{
+    background-position: top -150px left -350px;
+  }
+}
+
+#theme{
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #theme{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #theme{
+    width: calc(100% - 30px);
+  }
+}
+
+#theme .container{
+  max-width: 1000px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#theme h1{
+  font-size: 32px;
+  margin:0;
+  color: --color-font;
+}
+
+#theme h3{
+  /*min-width:8em;
+  max-width: 8em;*/
+  margin:0 auto;
+}
+
+#theme .text{
+  padding:30px 0;
+}
+
+#theme img{
+  display:block;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+#theme .img img{
+  margin: 10px auto;
+} 
+
+#theme h1{
+  font-size: 32px;
+}
+
+#theme h2{
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+#theme h3{
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--font-serif);
+  margin-top:0;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#theme p{
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--font-serif);
+  font-weight: 100;
+  /*min-width: 17em;
+  max-width: 23em;*/
+  margin:auto;
+}
+
+#theme h1::before{
+  content:"";
+  display:inline-block;
+  background-image: url(../../img/theme/theme_icon.svg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width:480px){
+  #theme h3{
+    font-size: 20px;
+  }
+
+  #theme p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:320px){
+  #theme h3{
+    font-size: 18px;
+  }
+
+  #theme p{
+    font-size: 14px;
+  }
+}
+
+/* 480px以上の時の設定 */
+@media screen and (min-width:480px){
+  #theme img{
+    max-width: 400px;
+  }
+}
+/* 768px以上の時の設定 */
+@media screen and (min-width:768px){
+  #theme .container{
+    flex-direction:row;
+    align-items:center;
+  }
+  #theme .container > .text{
+    flex:3;
+    min-width: 17em;
+  }
+  #theme .container > .img{
+    flex:2;
+  }
+
+  #theme img{
+    max-width: 100%;
+  }
+
+  #theme .text{
+    padding-right:40px;
+  }
+  #theme p{
+    padding-bottom: 50px;
+  }
+}

@@ -272,10 +272,20 @@ div.button:hover{
  *******************************/
 #participants .wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, 160px);
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 20px;
 }
-
+/*
+#participants .wrapper::after{
+  content: "";
+  width: 130px;
+  height: 0;
+  padding: 10px;
+  margin: 5px;
+}
+*/
 #participants .wrapper a{
   display: inherit;
 }
@@ -314,7 +324,7 @@ div.button:hover{
   position: relative;
 }
 
-#participants .exhibition .container .inner-box .back-img{
+#participants .general .container .inner-box .back-img{
   background-image: url(../img/top/exhibition.jpg);
 }
 
@@ -326,15 +336,19 @@ div.button:hover{
   background-image: url(../img/top/experiment.jpg);
 }
 
-#participants .booth .container .inner-box .back-img{
+#participants .shops .container .inner-box .back-img{
   background-image: url(../img/top/booth.jpg);
+}
+
+#participants .online .container .inner-box .back-img{
+  background-image: url(../img/top/online.png);
 }
 
 #participants .container .inner-box .back-img p{
   width: 100%;
-  color: var(--color-blue);
+  color: var(--color-font);
   font-size: 24px;
-  font-family: var(--font-serif);
+  font-weight: 500;
   background-color: #FFF;
   margin: 0;
   text-align: center;
@@ -366,13 +380,29 @@ div.button:hover{
      お願い
 
 *******************************/
+#notes .textbox > div:not(:last-child){
+  margin-bottom: 70px;
+}
+
 #notes .textbox h2{
   text-align: center; 
+}
+
+#notes .textbox h3{
+  font-size: 22px;
+  text-align: center;
+  margin: 40px 0 10px;
+}
+
+#notes .textbox h3 span{
+  font-size: 28px;
+  color: var(--color-orange);
 }
 
 #notes .textbox p{
   font-size: 20px;
   font-weight: 500;
+  margin-top: 0;
 }
 
 #notes .textbox ul{
