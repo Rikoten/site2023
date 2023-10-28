@@ -1,41 +1,38 @@
-(async () =>{
+(async () => {
     /* 多言語対応 */
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
-    const allTagList = ["環境資源",	"模擬店", "理工展主催", "オンライン", "サークル", "研究室",
-                        "制作", "実験", "教育", "学生生活", "トークショー", "参加型", "展示",
-                        "ファミリー向け", "ロボット", "スポーツ", "受験生向け", "グローバル",
-                        "コンピュータ", "建築", "子供向け", "クイズ", "化学", "パフォーマンス",
-                        "ゲーム", "生物", "ビジネス", "宇宙", "ものづくり"];
+    const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー",
+        "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ",
+        "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
-    const allTagListEn = ["Environmental Resources", "Bake Sale", "Rikoten Organizer", "Online", "Circles", "Lab",
-                        "production", "experiments", "education", "student life", "talk show", "participatory", "exhibition",
-                        "Family", "Robot", "Sports", "Exams", "Global",
-                        "Computers", "Architecture", "For children", "Quiz", "Chemistry", "Performance",
-                        "Games", "Biology", "Business", "Space", "Manufacturing"];
+    const allTagListEn = ["Circle", "Laboratory", "Intercollegiate", "Rikoten", "Production", "Design", "Disaster Prevention",
+        "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
+        "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/data.json').then(res => res.json());
-    const maintag = document.getElementsByTagName("main")[0]; 
+    const json = await fetch('/data/1014_project_data.json').then(res => res.json());
+    const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
-    
+
     var idnum = urlSearch.split("=");//id番号の代入
-    
-    const contents = ["general", "stage", "experiment","shops"]
+
+    const contents = ["general", "stage", "experiment", "shops"]
 
     var category = "";
     var number = "";
 
-    for (let j=0; j<contents.length; j++){
-        for (let i=0; i<json[`${contents[j]}`].length; i++){
-            if(`${json[`${contents[j]}`][i].id}`==idnum[1]){
+    for (let j = 0; j < contents.length; j++) {
+        for (let i = 0; i < json[`${contents[j]}`].length; i++) {
+            if (`${json[`${contents[j]}`][i].id}` == idnum[1]) {
                 category = `${contents[j]}`;
                 number = i;
+                break
             }
         }
     }
 
     const data = json[`${category}`][number];
-    
-    const insert=[];
+
+    const insert = [];
     const day_off = []
 
     insert.push(
@@ -54,7 +51,7 @@
                 </div>
                 <div class="tag"></div>
                 <ul>
-                    <li>${data.projectDesc[lang]}</li>
+                    <li>${data.projectDetail[lang]}</li>
                 </ul>
 
                 <div class="ticket-narabi">
@@ -63,12 +60,6 @@
                     <div class="onlineticket"></div>
                 </div>
             </div>
-
-
-
-        <a class="get-onlineticket" href="${data.ticketLink}" target="_blank">
-            <p>オンラインチケット取得ページ</p>
-        </a>
 
 
             <div class="side">
@@ -80,7 +71,7 @@
             <div class="container">
                 <div class="event-info">
                     <h1>${data.groupName[lang]}</h1>
-                    <p>${data.groupDesc[lang]}</p>
+                    <p>${data.groupDetail[lang]}</p>
                 <div class="upper">
                 </div>
                 <div class="lower">
@@ -97,7 +88,7 @@
         </div>
     </section>`
     )
-    
+
     day_off.push(
         `<section id = "event">
             <div class="event-main">
@@ -113,7 +104,7 @@
                 </div>
                 <div class="tag"></div>
                 <ul>
-                    <li>${data.projectDesc[lang]}</li>
+                    <li>${data.projectDetail[lang]}</li>
                 </ul>
 
             </div>
@@ -125,13 +116,13 @@
                     <img src="../../img/event/bloom矢口.png">
                 </div>
             </div>`)
-        
-            const bool = true;
-            if(bool){
-                maintag.insertAdjacentHTML("afterbegin", insert);
-            }else{
-                maintag.insertAdjacentHTML("afterbegin", day_off);
-            }
+
+    const bool = true;
+    if (bool) {
+        maintag.insertAdjacentHTML("afterbegin", insert);
+    } else {
+        maintag.insertAdjacentHTML("afterbegin", day_off);
+    }
 
     //*********SNSリンク**********//
     const hp_tag = document.getElementsByClassName("hp")[0];
@@ -144,13 +135,13 @@
 
 
 
-    if(data.groupTwitterUrl!=null){
+    if (data.groupTwitterUrl != null) {
         const tw1 = [];
         tw1.push(`
             <a href="${data.groupTwitterUrl}"><img class="twitter" src="/img/event/グループ 66.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw1)
-    }else{
+    } else {
         const tw2 = [];
         tw2.push(`
             <a><img class="twitter gray" src="/img/event/グループ 66.png"></a>
@@ -158,13 +149,13 @@
         upper_class.insertAdjacentHTML("afterbegin", tw2)
     }
 
-    if(data.groupHpUrl!=null){
+    if (data.groupHpUrl != null) {
         const hp1 = [];
         hp1.push(`
             <a href="${data.groupHpUrl}"><img class="hp" src="/img/event/グループ 65.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp1)
-    }else{
+    } else {
         const hp2 = [];
         hp2.push(`
             <a><img class="hp gray" src="/img/event/グループ 65.png"></a>
@@ -172,13 +163,13 @@
         upper_class.insertAdjacentHTML("afterbegin", hp2)
     }
 
-    if(data.groupInstagramUrl!=null){
+    if (data.groupInstagramUrl != null) {
         const insta1 = [];
         insta1.push(`
             <a href="${data.groupInstagramUrl}"><img class="instagram" src="/img/event/グループ 68.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta1)
-    }else{
+    } else {
         const insta2 = [];
         insta2.push(`
             <a><img class="instagram gray" src="/img/event/グループ 68.png"></a>
@@ -186,13 +177,13 @@
         lower_class.insertAdjacentHTML("afterbegin", insta2)
     }
 
-    if(data.groupFacebookUrl!=null){
+    if (data.groupFacebookUrl != null) {
         const face1 = [];
         face1.push(`
             <a href="${data.groupFacebookUrl}"><img class="facebook" src="/img/event/グループ 67.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face1)
-    }else{
+    } else {
         const face2 = [];
         face2.push(`
             <a><img class="facebook gray" src="/img/event/グループ 67.png"></a>
@@ -201,32 +192,31 @@
     }
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
-    const place =[];
-    if (data.placeFirstDay.ja == data.placeSecondDay.ja){
-        data.isOnline ? place.push(`オンライン`) : 
-        place.push(`${data.placeSecondDay[lang]}`);
-        place_tag.insertAdjacentHTML("beforeend", place);        
+    const place = [];
+    if (data.placeFirstDay.ja == data.placeSecondDay.ja) {
+        data.isOnline ? place.push(`オンライン`) :
+            place.push(`${data.placeSecondDay[lang]}`);
+        place_tag.insertAdjacentHTML("beforeend", place);
     }
-    else if((data.placeFirstDay.ja != null && data.placeSecondDay.ja == null) || (data.placeFirstDay.ja == null && data.placeSecondDay.ja != null))
-    {
-        if(data.placeFirstDay.ja != null){
+    else if ((data.placeFirstDay.ja != null && data.placeSecondDay.ja == null) || (data.placeFirstDay.ja == null && data.placeSecondDay.ja != null)) {
+        if (data.placeFirstDay.ja != null) {
             place.push(`11/5 : ${data.placeFirstDay[lang]}`);
-            place_tag.insertAdjacentHTML("beforeend", place);    
-        }else{
+            place_tag.insertAdjacentHTML("beforeend", place);
+        } else {
             place.push(`11/6 : ${data.placeSecondDay[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         }
 
-    }else{
+    } else {
         place.push(`11/5 : ${data.placeFirstDay[lang]}<br>11/6 : ${data.placeSecondDay[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
 
     /****タグの追加 ****/
     const tag_tag = document.getElementsByClassName("tag")[0]
-    for(const tag of data.tags){
+    for (const tag of data.tags) {
         let tagLang = "";
-        if(lang == "ja"){
+        if (lang == "ja") {
             tagLang = tag;
         }
         else {
@@ -239,33 +229,33 @@
     const ticket_tag = document.getElementsByClassName("ticket")[0];
     const walk_tag = document.getElementsByClassName("walk")[0];
     const onlineticket_tag = document.getElementsByClassName("onlineticket")[0];
-    data.hasOfflineTicket ? ticket_tag.insertAdjacentHTML("beforeend" ,`<p>整理券が必要です</p>`) :ticket_tag.classList.add("inactive") 
-    data.isWalkRally ? walk_tag.insertAdjacentHTML("beforeend" ,`<p>ウォークラリー<br>対象企画</p>`) :walk_tag.classList.add("inactive") 
-    data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend" ,'<p>オンラインチケット<br>が必要です</p>') :onlineticket_tag.classList.add("inactive") 
+    data.hasOfflineTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p>整理券が必要です</p>`) : ticket_tag.classList.add("inactive")
+    data.isWalkRally ? walk_tag.insertAdjacentHTML("beforeend", `<p>ウォークラリー<br>対象企画</p>`) : walk_tag.classList.add("inactive")
+    data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend", '<p>オンラインチケット<br>が必要です</p>') : onlineticket_tag.classList.add("inactive")
 
-    
+
     /*****オンラインチケットゲットへのリンク *****/
     const ticketlink_tag = document.getElementsByClassName("get-onlineticket")[0];
-    if(data.ticketLink == null){
+    if (data.ticketLink == null) {
         ticketlink_tag.classList.add("inactive")
-    }else{
+    } else {
 
     }
 
     /***目次***/
     const li1_tag = document.getElementsByClassName("menu_name")[0];
-    
-    for(let i=0; i<data.detailContents.length; i++){
-        var menu_list=[];
+
+    for (let i = 0; i < data.detailContents.length; i++) {
+        var menu_list = [];
         menu_list.push(`
             <li>${data.detailContents[i].bigHeadline[lang]}</li>
             <ol class="child_ol"></ol>
         `)
         li1_tag.insertAdjacentHTML("beforeend", menu_list);
         var ol_tag = document.getElementsByClassName("child_ol")[i];
-        
-        for(let j=0; j<data.detailContents[i].articles.length;j++){
-            const mokuji_list =[]
+
+        for (let j = 0; j < data.detailContents[i].articles.length; j++) {
+            const mokuji_list = []
             mokuji_list.push(`
                 <li>${data.detailContents[i].articles[j].headline[lang]}</li>
             `)
@@ -276,10 +266,10 @@
     /*****本文*****/
     const article_wrapper = document.getElementsByClassName("article_wrapper")[0];
 
-    for(let i=0; i<data.detailContents.length; i++){
+    for (let i = 0; i < data.detailContents.length; i++) {
         article_wrapper.insertAdjacentHTML("beforeend", `<div class="introduce"></div>`)
         const article_tag = document.getElementsByClassName("introduce")[i];
-        const article=[]
+        const article = []
         article.push(`
         <div>
             <h2 class="bighead">${data.detailContents[i].bigHeadline[lang]}</h2>
@@ -288,12 +278,12 @@
 
         `)
         article_tag.insertAdjacentHTML("beforeend", article);
-       
+
         /******画像の分岐 ******/
         const h2_bighead = document.getElementsByClassName("bighead")[i];
-        if(data.detailContents[i].bigHeadlineImages!=""){
-            for(let j=0; j<data.detailContents[i].bigHeadlineImages.length; j++){
-                const big_img=[];
+        if (data.detailContents[i].bigHeadlineImages != "") {
+            for (let j = 0; j < data.detailContents[i].bigHeadlineImages.length; j++) {
+                const big_img = [];
                 big_img.push(`
                 <div class="disp-img">
                     <img src="${data.detailContents[i].bigHeadlineImages[j].imagePath}">
@@ -302,11 +292,11 @@
                 h2_bighead.insertAdjacentHTML("beforeend", big_img);
             }
 
-        }else{}
-        if(data.detailContents[i].bigHeadlineMovieLinks!=""){
-            for(let j=0; j<data.detailContents[i].bigHeadlineMovieLinks.length; j++){            
+        } else { }
+        if (data.detailContents[i].bigHeadlineMovieLinks != "") {
+            for (let j = 0; j < data.detailContents[i].bigHeadlineMovieLinks.length; j++) {
                 const link = data.detailContents[i].bigHeadlineMovieLinks[j].split("/");
-                const big_mov=[];
+                const big_mov = [];
                 big_mov.push(`
                 <div class="disp-video">
                 <iframe src="https://www.youtube.com/embed/${link[3]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -315,23 +305,23 @@
                 h2_bighead.insertAdjacentHTML("afterend", big_mov);
             }
 
-        }else{}
-        
+        } else { }
 
-        const ul_tag= document.getElementsByClassName("article_sentence")[i];
-        for(let j=0; j<data.detailContents[i].articles.length; j++){
-            const ul_li =[];
+
+        const ul_tag = document.getElementsByClassName("article_sentence")[i];
+        for (let j = 0; j < data.detailContents[i].articles.length; j++) {
+            const ul_li = [];
             ul_li.push(`
                 <li>${data.detailContents[i].articles[j].headline[lang]}</li>
                 <p class="li_p_${i}">${data.detailContents[i].articles[j].body[lang]}</p>
             `)
             ul_tag.insertAdjacentHTML("beforeend", ul_li);
-        
+
             /*****pの下の画像たち *****/
-            if(data.detailContents[i].articles[j].headlineImages!=""){
-                const sm_img=[];
+            if (data.detailContents[i].articles[j].headlineImages != "") {
+                const sm_img = [];
                 const li_p = document.getElementsByClassName(`li_p_${i}`)[j];
-                for(let k=0; k<data.detailContents[i].articles[j].headlineImages.length; k++){
+                for (let k = 0; k < data.detailContents[i].articles[j].headlineImages.length; k++) {
                     sm_img.push(`
                     <div class="disp-img">
                         <img src="${data.detailContents[i].articles[j].headlineImages[k].imagePath}">
@@ -340,11 +330,11 @@
                 }
                 li_p.insertAdjacentHTML("afterend", sm_img);
 
-            }else{}
-            if(data.detailContents[i].articles[j].headlineMovieUrls!=""){
-                const sm_mov=[];
+            } else { }
+            if (data.detailContents[i].articles[j].headlineMovieUrls != "") {
+                const sm_mov = [];
                 const li_p = document.getElementsByClassName(`li_p_${i}`)[j];
-                for(let k=0; k<data.detailContents[i].articles[j].headlineMovieUrls.length; k++){
+                for (let k = 0; k < data.detailContents[i].articles[j].headlineMovieUrls.length; k++) {
                     const link = data.detailContents[i].articles[j].headlineMovieUrls[k].split("/");
                     sm_mov.push(`
                     <div class="disp-video">
@@ -354,20 +344,20 @@
                 }
                 li_p.insertAdjacentHTML("afterend", sm_mov);
 
-            }else{}
+            } else { }
         }
 
     }
 
     /* pdf */
-    if(data.id == "A-02" || data.id == "B-07"){
-        const pdf_wrapper = document.getElementsByClassName("pdf_wrapper")[0];
-        pdf_wrapper.insertAdjacentHTML("beforeend", `
-                                    <div class="pdf-content">
-                                        <div class="pdf-desc">${data.pdfContents[0].desc[lang]}</div>
-                                        <a href=${data.pdfContents[0].link}>
-                                            <div class="pdf-button">PDF</div>
-                                        </a>
-                                    </div>`)
-    }
+    // if (data.id == "A-02" || data.id == "B-07") {
+    //     const pdf_wrapper = document.getElementsByClassName("pdf_wrapper")[0];
+    //     pdf_wrapper.insertAdjacentHTML("beforeend", `
+    //                                 <div class="pdf-content">
+    //                                     <div class="pdf-desc">${data.pdfContents[0].desc[lang]}</div>
+    //                                     <a href=${data.pdfContents[0].link}>
+    //                                         <div class="pdf-button">PDF</div>
+    //                                     </a>
+    //                                 </div>`)
+    // }
 })()
