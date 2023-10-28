@@ -435,7 +435,7 @@ function deleteAllActiveTags() {
 
 async function keywordEvent(data) {
 
-    const $searchData = await fetch('/data/dataForSearch.json').then(res => res.json());
+    const $searchData = await fetch('/data/dataForSearch_1028.json').then(res => res.json());
     const $searchText = document.getElementById("search-text");
     $searchText.addEventListener('input', (event) => {
         notSelectedProjectListByKW = [];
@@ -443,6 +443,9 @@ async function keywordEvent(data) {
             if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
                 notSelectedProjectListByKW.push($sd.id)
             }
+            // if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+            //     notSelectedProjectListByKW.push($sd.id)
+            // }
         }
         updateProjectsByTag(data);
     });
