@@ -16,28 +16,10 @@
   const hScrollLeft = document.querySelector(".h-scroll.left");
   const hScrollRight= document.querySelector(".h-scroll.right");
 
-  
-  /* 日付切り替え -----------
-  --------------------------*/   
-  firstDayButton.addEventListener('click', function(){ //1日目のボタンが押されたら
-    document.querySelector(".firstday").classList.add("active"); //1日目を表示
-    document.querySelector(".secondday").classList.remove("active"); //2日目を非表示
-    firstDayButton.classList.add("active");
-    secondDayButton.classList.remove("active");
-  });
-  secondDayButton.addEventListener('click', function(){ //2日目のボタンが押されたら
-    document.querySelector(".firstday").classList.remove("active"); //1日目を非表示
-    document.querySelector(".secondday").classList.add("active"); //2日目を表示
-    firstDayButton.classList.remove("active");
-    secondDayButton.classList.add("active");
-  });
-
-
   /* 日付ボタン横の線の長さ --
   --------------------------*/
   window.addEventListener("load", lineWidth); //ロードされたら設定
-  window.addEventListener('resize', lineWidth); //ウィンドウ幅が変わったら調整
-  
+  window.addEventListener('resize', lineWidth); //ウィンドウ幅が変わったら調整  
 
   function lineWidth(){
     const navWidth = Math.floor(document.querySelector("#timetable .nav").getBoundingClientRect().width); //navの幅は切り捨て
@@ -61,6 +43,8 @@
     }
 
   }
+
+  
 
   /* HTML要素追加 -----------
   --------------------------*/ 
@@ -112,33 +96,22 @@
 
   document.querySelector(".secondday").classList.add("active"); //はじめは2日目がactive
 
-  /* CSS 企画ボックスの色 ---
-  --------------------------*/
-  const styleSheet = document.styleSheets[1];
-  console.log("styleSheet", styleSheet);
-  for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
-    for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
-      const nowPlayings = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block.now .now-playing`);
-      for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}::after { border-color: rgba(${red}, ${green}, ${blue}, 0.7); background-color: rgba(${red}, ${green}, ${blue}, 0.7)} 
-          `, styleSheet.cssRules.length
-        );
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now::after { border-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );  
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now .now-playing { background-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );                       
-      }    
-    } /* 
-    */
-  }  
   
-
+  /* 日付切り替え -----------
+  --------------------------*/   
+  firstDayButton.addEventListener('click', function(){ //1日目のボタンが押されたら
+    document.querySelector(".firstday").classList.add("active"); //1日目を表示
+    document.querySelector(".secondday").classList.remove("active"); //2日目を非表示
+    firstDayButton.classList.add("active");
+    secondDayButton.classList.remove("active");
+  });
+  secondDayButton.addEventListener('click', function(){ //2日目のボタンが押されたら
+    document.querySelector(".firstday").classList.remove("active"); //1日目を非表示
+    document.querySelector(".secondday").classList.add("active"); //2日目を表示
+    firstDayButton.classList.remove("active");
+    secondDayButton.classList.add("active");
+  });
+  
   /* [E-09]シリコンの覚醒 ---
   --------------------------*/
   if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
@@ -303,6 +276,5 @@
 
   window.addEventListener("onload", function(){
     location.reload();
-  });
-  
+  });  
 })();
