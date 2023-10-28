@@ -71,7 +71,7 @@
         const nowLabel = lang=="ja"?"現在公演中":"LIVE";
         const detailLabel = lang=="ja"?"詳細を見る":"Detail";
         contents.push(`
-        <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}" style="background-image: url(${json[Object.keys(json)[i]][j].contents[k].imagePath}.jpg);" onclick="window.location.href='/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}';">
+        <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}"  onclick="window.location.href='/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}';">
         <div class="now-playing">${nowLabel}</div>
         <div class="time">${json[Object.keys(json)[i]][j].contents[k].startTime.hour}:${startTimeMinute}-${json[Object.keys(json)[i]][j].contents[k].endTime.hour}:${endTimeMinute}</div>
         <div class="projectName">${json[Object.keys(json)[i]][j].contents[k].eventName[lang]}</div>
