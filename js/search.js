@@ -437,6 +437,13 @@ async function keywordEvent(data) {
 
     const $searchData = await fetch('/data/dataForSearch_1028.json').then(res => res.json());
     const $searchText = document.getElementById("search-text");
+    // ページ読み込み時にLocalStorageからキーワードを取得
+    const storedKeyword = localStorage.getItem("searchKeyword");
+    if (storedKeyword) {
+        $searchText.value = storedKeyword;
+        // フィルターを適用するために input イベントをトリガーします
+        $searchText.dispatchEvent(new Event('input'));
+    }
     $searchText.addEventListener('input', (event) => {
         notSelectedProjectListByKW = [];
         for (const $sd of $searchData) {
@@ -447,6 +454,16 @@ async function keywordEvent(data) {
                 notSelectedProjectListByKW.push($sd.id)
             }
         }
+        localStorage.setItem("searchKeyword", event.currentTarget.value);
         updateProjectsByTag(data);
+    });
+
+    window.addEventListener('load', () => {
+        const storedKeyword = localStorage.getItem("searchKeyword");
+        if (storedKeyword) {
+            $searchText.value = storedKeyword;
+            // フィルターを適用するために input イベントをトリガーします
+            $searchText.dispatchEvent(new Event('input'));
+        }
     });
 }
