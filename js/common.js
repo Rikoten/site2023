@@ -43,7 +43,7 @@ async function setHeaderFooter() {
     "participants": { "ja": "出展団体", "en": "Participants" },
     "specialguest": { "ja": "有名人企画", "en": "Special Guest" },
     "collab": { "ja": "飲食店コラボ", "en": "Collab" },
-    "timetable":{"ja":"タイムテーブル","en":"Timetable"}
+    "timetable":{"ja":"タイムテーブル","en":"Timetable"},
     "about": { "ja": "理工展とは", "en": "About" },
     "theme": { "ja": "今年のテーマ", "en": "Theme" },
     "lastyear": { "ja": "昨年度の様子", "en": "Last Year's Rikoten" },

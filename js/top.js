@@ -38,7 +38,6 @@ window.addEventListener("resize", windowResize); // ウインドウサイズ変�
 const search = document.querySelector("#search");
 window.addEventListener("scroll", () =>{
   const scroll_position = window.scrollY
-  console.log(scroll_position)
   if (scroll_position > 0){
     search.classList.add("active");
   } else {
