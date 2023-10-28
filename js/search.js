@@ -198,11 +198,10 @@ async function addTagButton() {
 async function getProjectTagsHtml(tags) {
 
     sW = window.innerWidth;
-    console.log(sW);
     let tagsHtml = "";
-    if (sW < 500) {
+    if (sW < 550) {
         for (let i = 0; i < tags.length; i++) {
-            const opacity = 1 - 2 * i / tags.length;
+            const opacity = 1 - 5 * i / tags.length;
             // 透明度を使用してタグのスタイルを設定し、タグを非表示にする
             const tagHtml = `<li style="opacity: ${opacity};"># ${tags[i]}</li>`;
             tagsHtml += tagHtml;

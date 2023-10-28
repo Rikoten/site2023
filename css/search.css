@@ -343,7 +343,10 @@
     #search {
         width: calc(100% - 30px);
     }
-
+    #search .tag ul{
+        max-height: 100px;
+        overflow: hidden;
+    }
     #search .search-section {
         padding: 40px 20px 10px 20px;
     }
