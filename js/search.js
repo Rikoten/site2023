@@ -197,10 +197,12 @@ async function addTagButton() {
 
 async function getProjectTagsHtml(tags) {
 
-    let tagsHtml = ""
+    let tagsHtml = "";
+
     for (let i = 0; i < tags.length; i++) {
         tagsHtml = tagsHtml.concat(`<li># ${tags[i]}</li>`);
     }
+
     return tagsHtml;
 }
 
