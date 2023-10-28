@@ -26,9 +26,9 @@ main img{
 main .collabmenu-top{
   display: none; /* 基本非表示 */
   width: 100%;
-  padding-top: 4rem;
   position: fixed;
-  top: 0;
+  top: 70px;
+  background-color: var(--color-background);
   z-index: 2;
 }
 
@@ -54,8 +54,8 @@ main .main-title {
 }
 
 main h1{
+  font-size: 32px;
   padding-left: 40px;
-  line-height: 1;
   position: relative;
   margin-top: 0;
 }
@@ -230,6 +230,7 @@ main .content-left-inner{
   overflow: hidden;
   transition: opacity .7s;
   z-index: 0;
+  padding-top: 70px;
 }
 
 main .content-left-inner.transition{
@@ -327,6 +328,8 @@ main .content-left .menu-img{
 }
 
 main .content-left .menu-name{
+  display: inline-block;
+  max-width: calc(50% - 6.25vw);
   font-size: 1.5rem;
   position: absolute; /* .content-left-innerに対して */
   bottom: 0;
@@ -337,6 +340,8 @@ main .content-left .menu-name{
 }
 
 main .content-left .menu-price{
+  display: inline-block;
+  max-width: calc(50% - 6.25vw);
   font-size: 1.5rem;
   position: absolute; /* .content-leftに対して */
   bottom: 0;
@@ -569,10 +574,6 @@ main .content-right.preparation p:first-child{
     display: block;
     height: auto;
     position: static;
-  }
-
-  main h1{
-    font-size: 1.5rem;
   }
 
   main .collabmenu-top .menu-wrapper{

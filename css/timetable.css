@@ -10,7 +10,6 @@ main{
 }*/
 
 #timetable h1{
-  color: --color-font;
   padding-left: 40px;
   line-height: 1;
   position: relative;
@@ -19,7 +18,7 @@ main{
 #timetable .title::before{
   content: "";
   display: inline-block;
-  background-image:url('../img/timetable/time.png');
+  background-image:url('../img/timetable/time.svg');
   background-size: contain;
   background-color: --color-font;
   background-repeat: no-repeat;

@@ -136,14 +136,14 @@
   const menuCommentWrapper = document.querySelectorAll(".menu-comment-wrapper"); //メニュー名
   const snsWrapper = document.querySelectorAll(".sns-wrapper"); //SNSリンク
 
-
+/*
   setInterval(() => {
     const a = document.querySelector('#content08 .content-left-inner.transition');
     const b = document.querySelector('#content08 .content-left-inner:not(.transition)');
     a.classList.remove('transition');
     b.classList.add('transition');
   }, 3500);
-
+*/
 
   /* SNSリンク-------
   -------------------*/
