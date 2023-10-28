@@ -136,27 +136,6 @@
   const menuCommentWrapper = document.querySelectorAll(".menu-comment-wrapper"); //メニュー名
   const snsWrapper = document.querySelectorAll(".sns-wrapper"); //SNSリンク
 
-  /* タリーズコラボメニュー2個目説明文追加
-  -------------------*/
-  const menu2 = `
-    <div class="content-left-inner transition" style="background-image: url(${json[7].menuImg2});">
-      <h3>
-        <span class="num">${json[7].num}</span>
-        <span class="name">${json[7].name}</span>
-      </h3>
-    
-      <div class="menu-img-wrapper">
-        <div class="menu-img-inner"><img class="menu-img" src="${json[7].menuImg2}" alt="${json[7].menuName2}"></div>
-      </div> 
-      <span class="menu-name">${json[7].menuName2}</span>
-      <span class="menu-price">${json[7].menuPrice2}</span>  
-    </div>  
-  `;
-
-  Lefts[7].insertAdjacentHTML("beforeend", menu2);
-  
-  const menuComment2 = `<p class="comment menu-comment">${json[7].menuComment2}</p>`;
-  menuCommentWrapper[7].insertAdjacentHTML("beforeend", menuComment2); //タリーズコラボメニュー2個目説明文をHTMLに追加
 
   setInterval(() => {
     const a = document.querySelector('#content08 .content-left-inner.transition');
@@ -252,7 +231,7 @@
         Lefts[0].classList.add("show"); //左コンテンツ表示
         
         //ここのlengthの値を変更した
-        for (let i=0; i<json.length-1; i++){
+        for (let i=0; i<json.length-3; i++){
           Rights[i].classList.add("show"); //右コンテンツ表示
         }
       }else{
@@ -263,15 +242,15 @@
         }
       }
   
-      for (let i=0; i<json.length-1; i++){
+      for (let i=0; i<json.length-3; i++){
         if (scroll_position > contentY[i+1] - windowH * 1/2){
           Lefts[i].classList.remove("show"); //1つ前の左コンテンツ非表示
 
           //ここのlengthの値を変更した
-          if (i !== json.length -2){
+          if (i !== json.length -4){
             Lefts[i+1].classList.add("show"); //次の左コンテンツ表示
           }       
-        }else if(i !== json.length -1){
+        }else if(i !== json.length -3){
           Lefts[i+1].classList.remove("show"); //それ以外の時左コンテンツ非表示
         }
       }

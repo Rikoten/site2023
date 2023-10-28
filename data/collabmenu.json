@@ -39,7 +39,7 @@
       "en": "930 yen"
     },
     "menuImg": "/img/collabmenu/01-こころ.JPG",
-    "Instagram": "https://www.instagram.com/menyakokorohonten/?igshid=YmMyMTA2M2Y%3Dv",
+    "Instagram": null,
     "Twitter": null,
     "LINE": null,
     "release": true
@@ -63,9 +63,9 @@
       "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
       "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6374192177827!2d139.7073606761551!3d35.71053912836289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d16127611%3A0x67a875edcd57e6f9!2z44CSMTY5LTAwNTEg5p2x5Lqs6YO95paw5a6_5Yy66KW_5pep56iy55Sw77yS5LiB55uu77yS77yR4oiS77yWIOaIkee-heWlog!5e0!3m2!1sja!2sjp!4v1698470535304!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
-      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
+      "ja": "月曜～土曜: 10:30~21:00 / 日曜: 10:30~15:00",
       "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
     },
     "rikoten": {
@@ -84,7 +84,7 @@
       "ja": "1000円",
       "en": "1000 yen"
     },
-    "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
+    "menuImg": "/img/collabmenu/02-がらしゃ.JPG",
     "Instagram": "https://www.instagram.com/ramen_garasha/",
     "Twitter": "https://twitter.com/garasha1",
     "LINE": null,
@@ -106,17 +106,17 @@
       "en": "In tribute to 'spark', we've developed a spicy curry mixed noodles. The collaboration between our signature salt sauce and the enticing curry has become a reality. The creaminess of the hot spring egg and the sweetness of fried onions perfectly complement the spiciness of the curry in this bowl."
     },
     "concept": {
-      "ja": "専門店麺屋こころは、本家台湾まぜそばをご提供しております。学生限定サービスがあります！",
-      "en": "Specialty shop Menya Kokoro offers authentic Taiwan mazesoba. Special service for students too!"
+      "ja": "選りすぐりの近江醤油を使ったメニューを豊富にご用意して、多くの方々に普段遣いいただけるラーメン屋を目指しています。",
+      "en": "We have a wide selection of dishes made with carefully selected Omi soy sauce, aiming to be a ramen shop that everyone can enjoy on a regular basis."
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.636123776566!2d139.70989699999998!3d35.710571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3d16107287%3A0x4ec61ef6e18aa4a1!2z6beE55m95rmv5bCC6ZaAIOOCieODvOOCgeOCk-aIkee-heWlog!5e0!3m2!1sja!2sjp!4v1662862904182!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.667281246812!2d139.71097287615518!3d35.70980442840322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd8e6589be3%3A0xd3200b011f07c37e!2z6L-R5rGf54af5oiQ6Yak5rK544Op44O844Oh44OzIOWNgeS6jOWIhuWxiyDml6nnqLLnlLDlupc!5e0!3m2!1sja!2sjp!4v1698470831271!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
-      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
-      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+      "ja": "定休日なし(臨時休業はInstagramにてお知らせします): 11:00〜15:00, 17:00〜21:00",
+      "en": "No regular holidays (Temporary holidays will be notified through Instagram): 11:00~15:00, 17:00~21:00"
     },
     "rikoten": {
-      "ja": "通常営業",
-      "en": "As usual"
+      "ja": "両日とも営業",
+      "en": "Open for both days"
     },
     "period": {
       "ja": "10月1日(日)〜11月5日(日)",
@@ -127,12 +127,12 @@
       "en": "Tingle your tounge! Spicy curry mazesoba"
     },
     "menuPrice": {
-      "ja": "1000円",
-      "en": "1000 yen"
+      "ja": "980円",
+      "en": "980 yen"
     },
-    "menuImg": "/img/collabmenu/03-がらしゃ.JPG",
-    "Instagram": "https://www.instagram.com/ramen_garasha/?igshid=YmMyMTA2M2Y%3D",
-    "Twitter": "https://twitter.com/garasha1?s=21&t=d3XY2WNzfAmVHSyH_mmKLQ",
+    "menuImg": "/img/collabmenu/03-十二分屋.JPG",
+    "Instagram": "https://www.instagram.com/junibun_ya.waseda/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
@@ -140,45 +140,45 @@
   {
     "num": "04",
     "name": {
-      "ja": "つけ麺屋やすべえ 高田馬場店",
-      "en": "Tsukemen Yasubee Takadanobaba"
+      "ja": "タリーズコーヒー早大理工店",
+      "en": "Tully's Coffee So-dai Rikou"
     },
     "adCopy": {
-      "ja": "こだわりの麺を、多彩な食べ方で。",
-      "en": "Savor special noodles in a variety of ways."
+      "ja": "大学内にある開放的なテラス席が心地よいカフェです\n学生の方だけでなく、一般のお客様も大歓迎です!",
+      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
     },
     "menuComment": {
-      "ja": "業界初？音の出る鶏白湯らーめん！味変「自家製辛味つぶつぶ」で！お口の中はさらにスパーク！",
-      "en": "First in industry? Sound-infused chicken paitan ramen! With flavorful homemade spicy crunches, the 'spark' in your mouth won't stop!"
+      "ja": "タリーズ自慢のカフェラテにフェロー（スタッフ）がチョコソースで矢口君のアートを描かせていただきます♪",
+      "en": "Fellows (staff) would draw Yaguchi-kun's art with chocolate sauce on Tully's cafe latte that we are proud of!"
     },
     "concept": {
-      "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
-      "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
+      "ja": "大学内にある開放的なテラス席が心地よいのカフェです。学生の方だけでなく、一般のお客様も大歓迎です！",
+      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.820021644569!2d139.70598177615494!3d35.70604632860983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0xbe5798fedb2eea72!2z44K_44Oq44O844K644Kz44O844OS44O8IOaXqeWkp-eQhuW3peW6lw!5e0!3m2!1sja!2sjp!4v1698471330154!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
-      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
+      "ja": "平日:8:00～20:00（LO 19:30）/ 土曜:9:00～18:00（LO 17:30）",
       "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
     },
     "rikoten": {
-      "ja": "通常営業",
-      "en": "As usual"
+      "ja": "2日間とも営業（日曜臨時営業）",
+      "en": "Weekdays:8:00~20:00 (LO 19:30), Sat:9:00~18:00 (LO 17:30)"
     },
     "period": {
-      "ja": "10月1日(日)〜11月5日(日)",
-      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+      "ja": "10月9日(月)～11月5日(日)",
+      "en": "Mon. Oct. 9 ~ Sun. Nov. 5"
     },
     "menuName": {
-      "ja": "「パチパチパニック大作戦」",
-      "en": "Pop Pop Panic Mega Mission!"
+      "ja": "「カフェラテ \n矢口君ver」",
+      "en": "Cafe Latte Yaguchi-kun ver."
     },
     "menuPrice": {
-      "ja": "1000円",
-      "en": "1000 yen"
+      "ja": "Tallサイズ: ￥470/\nGrandeサイズ: ￥525（店内価格）",
+      "en": "Tall size: 470 yen, Grande size: 525 yen (Eat-in prices)"
     },
-    "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
-    "Instagram": "https://www.instagram.com/ramen_garasha/",
-    "Twitter": "https://twitter.com/garasha1",
+    "menuImg": "/img/collabmenu/04-タリーズ.JPG",
+    "Instagram": null,
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
@@ -186,137 +186,137 @@
   {
     "num": "05",
     "name": {
-      "ja": "鶏白湯専門 らーめん我羅奢",
-      "en": "Garasha"
+      "ja": "東京麺珍亭本舗 高田馬場店",
+      "en": "Tokyo Menchintei-honpo Takadanobaba"
     },
     "adCopy": {
-      "ja": "丸鷄、鶏がらをじっくりと炊き上げた極上の鶏白湯らーめん",
-      "en": "The finest chicken paitan ramen made with slowly cooked whole chicken and chicken bones"
+      "ja": "毎日食べても飽きない油そば",
+      "en": "An aburasoba that you'll never get sick of"
     },
     "menuComment": {
-      "ja": "業界初？音の出る鶏白湯らーめん！味変「自家製辛味つぶつぶ」で！お口の中はさらにスパーク！",
-      "en": "First in industry? Sound-infused chicken paitan ramen! With flavorful homemade spicy crunches, the 'spark' in your mouth won't stop!"
+      "ja": "韓国で大人気のブルダックソースを、麺珍亭のタレと絶妙な配合でブレンドして、鶏の旨みを存分に凝縮した旨辛油そばを是非ご堪能ください！",
+      "en": "Experience the rich and spicy aburasoba that fully capture the essence of chicken by blending the popular pulduk sauce with Menchintei's sauce!"
     },
     "concept": {
-      "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
-      "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
+      "ja": "油そばで世界を救う、油そばでみんなを笑顔にしたい",
+      "en": "Our goals are to save the world, and make everyone smile with aburasoba"
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7364939110203!2d139.71468487615508!3d35.70810152849688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1bfa0f7e4b%3A0xc0e7aa7cdfc2d0de!2z5p2x5Lqs6bq654-N5Lqt5pys6IiXIOilv-aXqeeosueUsOW6lw!5e0!3m2!1sja!2sjp!4v1698471508196!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
-      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
-      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+      "ja": "全日: 11:00〜23:00",
+      "en": "Every day: 11:00~23:00"
     },
     "rikoten": {
       "ja": "通常営業",
       "en": "As usual"
     },
     "period": {
-      "ja": "10月1日(日)〜11月5日(日)",
-      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+      "ja": "10月4日(水)〜",
+      "en": "Wed. Oct. 4 ~"
     },
     "menuName": {
-      "ja": "「パチパチパニック大作戦」",
-      "en": "Pop Pop Panic Mega Mission!"
+      "ja": "「ブルダック風油そば」",
+      "en": "Hot Chicken-like Aburasoba"
     },
     "menuPrice": {
-      "ja": "1000円",
-      "en": "1000 yen"
+      "ja": "通常メニューに+300円",
+      "en": "Ordinary menu + 300 yen"
     },
-    "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
-    "Instagram": "https://www.instagram.com/ramen_garasha/",
-    "Twitter": "https://twitter.com/garasha1",
+    "menuImg": "/img/collabmenu/05-めんちん.JPG",
+    "Instagram": "https://www.instagram.com/menchintei/",
+    "Twitter": "https://twitter.com/menchintei",
     "LINE": null,
     "release": true
   },
 
   {
-    "num": "06",
+    "num": "",
     "name": {
-      "ja": "鶏白湯専門 らーめん我羅奢",
-      "en": "Garasha"
+      "ja": "",
+      "en": ""
     },
     "adCopy": {
-      "ja": "丸鷄、鶏がらをじっくりと炊き上げた極上の鶏白湯らーめん",
-      "en": "The finest chicken paitan ramen made with slowly cooked whole chicken and chicken bones"
+      "ja": "",
+      "en": ""
     },
     "menuComment": {
-      "ja": "業界初？音の出る鶏白湯らーめん！味変「自家製辛味つぶつぶ」で！お口の中はさらにスパーク！",
-      "en": "First in industry? Sound-infused chicken paitan ramen! With flavorful homemade spicy crunches, the 'spark' in your mouth won't stop!"
+      "ja": "",
+      "en": ""
     },
     "concept": {
-      "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
-      "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
+      "ja": "",
+      "en": ""
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "",
     "time": {
-      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
-      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+      "ja": "",
+      "en": ""
     },
     "rikoten": {
-      "ja": "通常営業",
-      "en": "As usual"
+      "ja": "",
+      "en": ""
     },
     "period": {
-      "ja": "10月1日(日)〜11月5日(日)",
-      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+      "ja": "",
+      "en": ""
     },
     "menuName": {
-      "ja": "「パチパチパニック大作戦」",
-      "en": "Pop Pop Panic Mega Mission!"
+      "ja": "",
+      "en": ""
     },
     "menuPrice": {
-      "ja": "1000円",
-      "en": "1000 yen"
+      "ja": "",
+      "en": ""
     },
-    "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
-    "Instagram": "https://www.instagram.com/ramen_garasha/",
-    "Twitter": "https://twitter.com/garasha1",
+    "menuImg": "",
+    "Instagram": "",
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
 
   {
-    "num": "07",
+    "num": "",
     "name": {
-      "ja": "鶏白湯専門 らーめん我羅奢",
-      "en": "Garasha"
+      "ja": "",
+      "en": ""
     },
     "adCopy": {
-      "ja": "丸鷄、鶏がらをじっくりと炊き上げた極上の鶏白湯らーめん",
-      "en": "The finest chicken paitan ramen made with slowly cooked whole chicken and chicken bones"
+      "ja": "",
+      "en": ""
     },
     "menuComment": {
-      "ja": "業界初？音の出る鶏白湯らーめん！味変「自家製辛味つぶつぶ」で！お口の中はさらにスパーク！",
-      "en": "First in industry? Sound-infused chicken paitan ramen! With flavorful homemade spicy crunches, the 'spark' in your mouth won't stop!"
+      "ja": "",
+      "en": ""
     },
     "concept": {
-      "ja": "濃厚さよりも、鶏の旨みを追求し、思い出すと食べたくなるらーめんをお腹いっぱい食べていただけるように「大盛り」無料で提供してます！",
-      "en": "Rather than focusing on richness, we pursue the deliciousness of chicken, crafting ramen that you'll crave after remembering it. Enjoy our 'large serving' for free, so you can have your fill!"
+      "ja": "",
+      "en": ""
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5558427330766!2d139.7069224!3d35.7125461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd5d56068bb%3A0x62036f6964c6c8d5!2z44G144GP5rWB44KJ44O844KB44KTIOi9jSDmnbHkuqzpq5jnlLDppqzloLTmnKzlupc!5e0!3m2!1sja!2sjp!4v1662862662092!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "",
     "time": {
-      "ja": "月曜～土曜: 10:30~21:00/日曜: 10:30~15:00",
-      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+      "ja": "",
+      "en": ""
     },
     "rikoten": {
-      "ja": "通常営業",
-      "en": "As usual"
+      "ja": "",
+      "en": ""
     },
     "period": {
-      "ja": "10月1日(日)〜11月5日(日)",
-      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
+      "ja": "",
+      "en": ""
     },
     "menuName": {
-      "ja": "「パチパチパニック大作戦」",
-      "en": "Pop Pop Panic Mega Mission!"
+      "ja": "",
+      "en": ""
     },
     "menuPrice": {
-      "ja": "1000円",
-      "en": "1000 yen"
+      "ja": "",
+      "en": ""
     },
-    "menuImg": "/img/collabmenu/02-ふくりゅう.JPG",
-    "Instagram": "https://www.instagram.com/ramen_garasha/",
-    "Twitter": "https://twitter.com/garasha1",
+    "menuImg": "",
+    "Instagram": "",
+    "Twitter": null,
     "LINE": null,
     "release": true
   },
