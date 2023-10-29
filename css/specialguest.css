@@ -1,0 +1,291 @@
+#specialguest {
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0 50px;
+}
+
+#specialguest .title-text {
+  font-size: 32px;
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+#specialguest .title-text::before {
+  content: '';
+  display: block;
+  background-image: url(../img/specialguest/presentor-icon.png);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#specialguest .overview{
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#specialguest .overview p{
+  margin: 0;
+}
+
+#specialguest > p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+#specialguest > p a{
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+
+#specialguest .profile-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#specialguest .nickname-text {
+  font-weight: bold;
+  color: var(--color-orange);
+  margin: 10px 0 0;
+}
+
+#specialguest .name-text,
+#specialguest .job-text {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+#specialguest .name-text {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  letter-spacing: 0.2em;
+  font-size: 2em;
+  border-bottom: solid 1px;
+}
+
+#specialguest .name-text ::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-gray);
+}
+
+#specialguest .job-text {
+  margin-top: 0.3em;
+}
+
+#specialguest .profile-text {
+  margin-top: 40px;
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+}
+
+#specialguest .autograph-inner {
+  width: 35%;
+  max-width: 350px;
+}
+
+#specialguest .autograph-inner > img {
+  border-radius: 20px;
+}
+
+#specialguest .description-inner {
+  width: 50%;
+}
+
+#specialguest .lecture-title-wrapper {
+  padding: 50px;
+  margin: 50px 0;
+  background-color: white;
+  border: 1px solid var(--color-gray);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#specialguest .lecture-title-text {
+  position: relative;
+  font-size: 24px;
+  font-weight: bolder;
+  left: 1em;
+  margin: 0;
+}
+
+#specialguest .lecture-title-text::before {
+  content: '';
+  display: inline-block;
+  margin-right: 0.5em;
+  width: 0.3em;
+  height: 1.3em;
+  left: -1em;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-orange);
+  position: absolute;
+}
+
+#specialguest .lecture-title-text::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: -1em;
+  background-color: var(--color-gray);
+}
+
+#specialguest .lecture-content-text {
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+}
+
+#specialguest .lecture-title-wrapper iframe{
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+}
+
+#specialguest .sns-wrapper {
+  margin-top: 40px;
+  position: relative;
+  align-items: center;
+  gap: 1em;
+  color: white;
+}
+
+#specialguest .sns-wrapper > a {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+#specialguest .sns-wrapper > a:hover {
+  opacity: 0.8;
+}
+
+#specialguest .sns-icon {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+#specialguest .sns-text {
+  color: white;
+}
+
+#specialguest .sns-wrapper a.youtube{
+  background-color: #FF0000;
+}
+
+#specialguest .sns-wrapper a.x{
+  background-color: #0F1419;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  #specialguest {
+    width: calc(100% - 50px);
+  }
+
+  #specialguest .profile-wrapper {
+    flex-direction: column;
+  }
+
+  #specialguest .description-inner {
+    width: 100%;
+  }
+
+  #specialguest .autograph-inner {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  #specialguest .lecture-title-text {
+    font-size: 16px;
+  }
+
+  #specialguest .lecture-title-text::before {
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #specialguest {
+    width: calc(100% - 30px);
+  }
+
+  #specialguest .overview{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #specialguest .lecture-title-text {
+    left: 8px;
+  }
+
+  #specialguest .overview{
+    font-size: 20px;
+  }
+}
+
+/*******************************
+
+     お願い
+
+*******************************/
+/*--- テキストボックス ---*/
+#specialguest .textbox{
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 50px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  #specialguest .textbox{
+    padding: 25px;
+  }
+}
+
+#specialguest .textbox h2{
+  text-align: center; 
+}
+
+#specialguest .textbox p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#specialguest .textbox p b.important{
+  color: var(--color-orange);
+}
+
+@media screen and (max-width: 624px) {
+  #specialguest .textbox p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  #specialguest .textbox h2{
+    font-size: 20px;
+  }
+}

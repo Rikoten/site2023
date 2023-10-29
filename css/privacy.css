@@ -1,5 +1,5 @@
-section {
-    width: calc(100%-100px);
+#privacy {
+    width: calc(100% - 100px);
     max-width: 1000px;
     margin: 0 auto;
     background-color: #FFFDCD;
@@ -7,10 +7,10 @@ section {
     padding-bottom: 30px;
 }
 
-h1::before {
+#privacy h1::before {
     content: "";
     display: inline-block;
-    background-image: url(../img/privacy/lock_FILL0_wght400_GRAD0_opsz48.svg);
+    background-image: url(../img/privacy/key_icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 30px;
@@ -21,7 +21,7 @@ h1::before {
     transform: translateY(-50%);
 }
 
-h1 {
+#privacy h1 {
     display: inline-block;
     margin: 0;
     font-size: 32px;
@@ -32,17 +32,24 @@ h1 {
     position: relative;
 }
 
-p {
-    margin-top: 50px;
-    margin-bottom: 50px;
+#privacy p {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-weight: 500;
 }
 
-a {
-    color: #DD6BA3;
+#privacy a {
+    color: var(--color-orange);
+    text-decoration: underline;
 }
 
-.treat {
+#privacy img.yaguchi{
+  display: block;
+  height: 300px;
+  margin: auto;
+}
+
+#privacy .treat {
     list-style-type: disc;
     text-align: left;
     margin-top: 30px;
@@ -50,20 +57,14 @@ a {
     font-weight: 500;
 }
 
-@media screen and (max-width:500px) {
-    section {
-        max-width: calc(100%-30px);
-        margin-left:15px;
-        margin-right: 15px;
-        padding-top: 70px;
+@media screen and (max-width:768px) {
+  #privacy {
+        width: calc(100% - 50px);
     }
 }
 
-@media screen and (min-width: 500px) and (max-width:768px) {
-    section{
-        max-width: calc(100%-50px);
-        margin-left: 25px;
-        margin-right: 25px;
-        padding-top: 70px;
+@media screen and (max-width:480px) {
+  #privacy {
+        width: calc(100% - 30px);
     }
 }
