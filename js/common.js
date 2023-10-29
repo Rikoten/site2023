@@ -66,7 +66,7 @@ async function setHeaderFooter() {
     </div>
     <nav>
         <ul class="pcmenu">
-            <li id="logo"><a href="/"><img src="/img/common/logo-spark.png"></a></li>
+            <li id="logo"><a href="/"><img src="../../img/common/logo-spark.png"></a></li>
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
                     <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
