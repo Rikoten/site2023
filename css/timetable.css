@@ -54,7 +54,7 @@
 #timetable .nav .nav-line{
   display: inline-block;
   height: 2px;
-  background-color: #0316FD;
+  background-color: var(--color-font);
 }
 
 #timetable .date-button{
@@ -71,10 +71,10 @@
 }
 
 #timetable .button{
-  color: #0316FD;
+  color: var(--color-font);
   background-color: #FFFFFF;
   border-style: solid;
-  border-color: #0316FD;
+  border-color: var(--color-font);
   border-width: 2px;
   padding: 8px 30px;
   line-height: 1;
@@ -88,13 +88,13 @@
 
 #timetable .button:hover{
   color: #FFFFFF;
-  background-color: #0316FD;
+  background-color: var(--color-font);
   transform: scale(110%);
 }
 
 #timetable .button.active{
   color: #FFFFFF;
-  background-color: #0316FD;
+  background-color: var(--color-font);
 }
 
 #timetable .button:last-child{
