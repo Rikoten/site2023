@@ -1,12 +1,13 @@
 (async () => {
     /* 多言語対応 */
-
-    console.log("rasubosu");
     const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
+    const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー",
+        "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ",
+        "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
-    const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー", "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ", "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
-
-    const allTagListEn = ["Circles", "Lab", "Intercollegiate", "Rikoten Contact", "Production", "Design", "Disaster Prevention", "Experiments", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Mystery Solving", "Rocket", "Anime", "Screening", "Robot", "Astronomical Observation", "Sports", "For Examinees", "Global", "Presentation", "Computer", "Smartphone", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Game", "eSports", "Math", "Research", "Graduate School", "Biology", "SDGs", "Food and Drink", "Food", "Drink", "Sweets", "Dance"];
+    const allTagListEn = ["Circle", "Laboratory", "Intercollegiate", "Rikoten", "Production", "Design", "Disaster Prevention",
+        "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
+        "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
     const json = await fetch('/data/1025_project_data.json').then(res => res.json());
     
@@ -55,6 +56,11 @@
                     <li>${data.projectDetail[lang]}</li>
                 </ul>
 
+                <div class="ticket-narabi">
+                    <div class="ticket"></div>
+                    <div class="walk"></div>
+                    <div class="onlineticket"></div>
+                </div>
             </div>
 
             <a class="get-onlineticket" href="${data.ticketLink}" target="_blank">
