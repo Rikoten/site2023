@@ -519,7 +519,12 @@ main{
     transform: translateX(-10px);
     opacity: 1;
 }
-
+.caption {
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    margin-top: 5px;
+}
 #event .pdf-content .pdf-button a {
     color: var(--color-lightpink);
     width: 100%;

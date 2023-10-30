@@ -316,22 +316,17 @@
                 <li>${data.mainArticle.articles[j].headline[lang]}</li>
                 <p class="li_p">${data.mainArticle.articles[j].body[lang]}</p>
             `)
-            ul_tag.insertAdjacentHTML("beforeend", ul_li);
-
-            /*****pの下の画像たち *****/
-            if (data.mainArticle.articles[j].images != "") {
-                const sm_img = [];
-                const li_p = document.querySelector(`.li_p`);
+            if(data.mainArticle.articles[j].images != "") {
                 for (let k = 0; k < data.mainArticle.articles[j].images.length; k++) {
-                    sm_img.push(`
-                    <div class="disp-img">
+                    ul_li.push(`
+                        <div class="disp-img">
                         <img src="${data.mainArticle.articles[j].images[k].imagePath}">
-                    </div>   
-                    `)
+                        <div class="caption"> ${data.mainArticle.articles[j].images[k].caption[lang]}</div>
+                        </div>   
+                        `)
                 }
-                li_p.insertAdjacentHTML("afterend", sm_img);
-
-            } else { }
+            } else {}
+            ul_tag.insertAdjacentHTML("beforeend", ul_li.join(''));
             // if (data.mainArticle.articles[j].movies != "") {
             //     const sm_mov = [];
             //     const li_p = document.querySelector(`.li_p`);
@@ -345,7 +340,7 @@
             //     }
             //     li_p.insertAdjacentHTML("afterend", sm_mov);
 
-            // } else { }
+            // } else { }  
         }
 
     
