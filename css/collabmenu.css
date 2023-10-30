@@ -280,9 +280,9 @@ main .content-left .num{
   position: absolute; /* .content-left h3に対して */
   transform: translate(-100%, 0);
 }
+
 main .content-left .name{
   font-size: 2.2rem;
-  white-space: pre-wrap;
 }
 
 
@@ -676,6 +676,10 @@ main .content-right.preparation p:first-child{
 
 @media screen and (max-width: 576px){
   main .menu li .name{
+    white-space: pre-wrap;
+  }
+
+  main .content-left h3 .name{
     white-space: pre-wrap;
   }
 }
