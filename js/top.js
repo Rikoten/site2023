@@ -1,9 +1,11 @@
+const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
+
 // 出展団体部分背景のグラデーションを設定する関数
 const setBackGrad = () => {
   const w = document.documentElement.clientWidth; //ウィンドウ幅  
-  const htop = document.getElementById("top").clientHeight; //トップ部分高さ  
-  const hpart = document.getElementById("participants").clientHeight; // 出展団体部分高さ
-  
+  const htop = document.getElementById("top").clientHeight; //トップ部分高さ
+  const hpart = document.querySelector(`#participants[lang="${lang}"]`).clientHeight; // 出展団体部分高さ
+
   const backGrad = document.querySelector(".back-grad");
   backGradPct = ((w*0.7 - htop*0.3) / (w + hpart)) * 100; // グラデーション境目の位置を計算
   backGrad.style.background = `linear-gradient(135deg, rgb(255, 253, 205) ${backGradPct}%, rgba(0, 255, 255, 0.2) ${backGradPct}%)`; // CSSグラデーション設定

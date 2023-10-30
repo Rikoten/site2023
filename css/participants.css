@@ -42,7 +42,6 @@
 
 #participants h2{
   display: flex;
-  font-family: var(--font-serif);
   align-items: center;
 }
 

@@ -4,6 +4,11 @@
 
   const json = await fetch('/data/1025_project_data.json').then(res => res.json());
 
+  const placeTextOnline = {
+    ja: "オンライン",
+    en: "Online"
+  }
+
   for (let i=0; i<Object.keys(json).length; i++){ // カテゴリをループ
     const categoryWrapper = document.querySelector(`#${Object.keys(json)[i]} > div > div`); // DOM取得
 
@@ -12,7 +17,7 @@
       /* 場所 */
       let placeText = "";
       if (json[Object.keys(json)[i]][j].firstDayPlace.ja == json[Object.keys(json)[i]][j].secondDayPlace.ja) {
-          placeText = json[Object.keys(json)[i]][j].isOnline ? "オンライン" : `${json[Object.keys(json)[i]][j].secondDayPlace[lang]}`;
+          placeText = json[Object.keys(json)[i]][j].isOnline ? `${placeTextOnline[lang]}` : `${json[Object.keys(json)[i]][j].secondDayPlace[lang]}`;
       }
       else if ((json[Object.keys(json)[i]][j].firstDayPlace.ja != "-" && json[Object.keys(json)[i]][j].secondDayPlace.ja == "-") || (json[Object.keys(json)[i]][j].firstDayPlace.ja == "-" && json[Object.keys(json)[i]][j].secondDayPlace.ja != "-")) {
           if (json[Object.keys(json)[i]][j].firstDayPlace.ja != "-") {
