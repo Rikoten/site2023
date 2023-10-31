@@ -273,7 +273,9 @@ main .content-left h3{
   padding: 1.5rem 1rem  1.5rem 3rem;
   position: relative;
   z-index: 5;
+  line-height: 1.2;
 }
+
 main .content-left .num{
   font-size: 2rem;
   padding-right: .5rem;
@@ -338,8 +340,9 @@ main .content-left .menu-name{
   max-width: calc(50% - 6.25vw);
   font-size: 20px;
   position: absolute; /* .content-left-innerに対して */
-  bottom: 0;
-  transform: translate(6.25vw, calc(-6vw + 100%));
+  left: 6.25vw;
+  bottom: 24px;
+  /*transform: translate(6.25vw, calc(-6vw + 100%));*/
   white-space: pre-wrap; /* 改行 */
   line-height: 1.4;
   transition: opacity .7s;
@@ -350,9 +353,9 @@ main .content-left .menu-price{
   max-width: calc(50% - 6.25vw);
   font-size: 20px;
   position: absolute; /* .content-leftに対して */
-  bottom: 0;
-  right: 0;
-  transform: translate(-6.25vw, calc(-6vw + 100%));
+  bottom: 24px;
+  right: 6.25vw;
+  /*transform: translate(-6.25vw, calc(-6vw + 100%));*/
   text-align: right; /* 右揃え */
   white-space: pre-wrap; /* 改行 */
   line-height: 1.4;
@@ -515,14 +518,15 @@ main .content-right.preparation p:first-child{
 
   main .content-left .menu-name{
     font-size: 2rem;
-    bottom: 0;
-    transform: translate(15vw, calc(-12vw + 100%));
+    left: 15vw;
+    /*bottom: 0;
+    transform: translate(15vw, calc(-12vw + 100%));*/
   }
   main .content-left .menu-price{
     font-size: 2rem;
-    bottom: 0;
-    right: 0;
-    transform: translate(-15vw, calc(-12vw + 100%));
+    /*bottom: 0;*/
+    right: 15vw;
+    /*transform: translate(-15vw, calc(-12vw + 100%));*/
   }
 
   /* ---右(下)--- */
@@ -636,19 +640,20 @@ main .content-right.preparation p:first-child{
   }
 
   main .content-left .menu-name{
-    font-size: 1.2rem;
-    bottom: 0;
-    transform: translate(20vw, -10vw);
+    font-size: 1.5rem;
+    bottom: 56px;
+    left: 20vw;
+    /*transform: translateY(-10vw);*/
     white-space: nowrap;
   }
 
   main .content-left .menu-price{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: left;
-    bottom: 0;
+    bottom: 24px;
     right: auto;
-    left: 0;
-    transform: translate(20vw, calc(-10vw + 100%));
+    left: 20vw;
+    /*transform: translate(20vw, calc(-10vw + 100%));*/
     white-space: nowrap;
   }
 
@@ -681,6 +686,24 @@ main .content-right.preparation p:first-child{
 
   main .content-left h3 .name{
     white-space: pre-wrap;
+  }
+
+  main .content-left .menu-name{
+    font-size: 1.2rem;
+    bottom: 32px;
+    left: 20vw;
+    /*transform: translateY(-10vw);*/
+    white-space: nowrap;
+  }
+
+  main .content-left .menu-price{
+    font-size: 1.2rem;
+    text-align: left;
+    bottom: 12px;
+    right: auto;
+    left: 20vw;
+    /*transform: translate(20vw, calc(-10vw + 100%));*/
+    white-space: nowrap;
   }
 }
 
