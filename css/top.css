@@ -12,6 +12,7 @@
 *******************************/
 /*--- 左右の余白等 ---*/
 #participants,
+#movie,
 #notes,
 #theme,
 #specialguest,
@@ -25,6 +26,7 @@
 
 @media screen and (max-width: 768px) {
   #participants,
+  #movie,
   #notes,
   #theme,
   #specialguest,
@@ -36,6 +38,7 @@
 
 @media screen and (max-width: 480px) {
   #participants,
+  #movie,
   #notes,
   #theme,
   #specialguest,
@@ -300,7 +303,6 @@ div.button:hover{
   align-self: center;
   background-color: #FFF;
   padding: 10px;
-  margin: 5px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   transition: .3s;
 }
@@ -389,13 +391,26 @@ div.button:hover{
 
 /*******************************
 
-     お願い
+     出展団体
 
-*******************************/
-#notes{
+ *******************************/
+#movie{
   padding-top: 40px;
 }
 
+#movie iframe{
+  display: block;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/*******************************
+
+     お願い
+
+*******************************/
 #notes .textbox > div:not(:last-child){
   margin-bottom: 70px;
 }
