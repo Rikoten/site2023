@@ -326,6 +326,17 @@
                         `)
                 }
             } else {}
+            if(data.mainArticle.articles[j].movies != "") {
+                for (let k = 0; k < data.mainArticle.articles[j].movies.length; k++) {
+                    const link = data.mainArticle.articles[j].movies[k].moviePath.split("/");
+                    console.log(link[3]);
+                    ul_li.push(`
+                        <div class="disp-video">
+                        <iframe src="https://www.youtube.com/embed/${link[3]}?si=iIQ7upbMzS5PySMi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>   
+                        `)
+                }
+            } else {}
             ul_tag.insertAdjacentHTML("beforeend", ul_li.join(''));
             // if (data.mainArticle.articles[j].movies != "") {
             //     const sm_mov = [];
