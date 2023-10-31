@@ -57,13 +57,13 @@
 
             <div class="details">
               <div class="menu-comment-wrapper"><p class="comment menu-comment">${json[i].menuComment[lang]}</p></div>
-              <div class="shop-info"><div class="info-title">お店のコンセプト</div>${json[i].concept[lang]}</div>
+              <div class="shop-info"><div class="info-title">${lang === "ja" ? "お店のコンセプト" : "Shop concept"}</div>${json[i].concept[lang]}</div>
               <!--<div>${json[i].address}</div>
               <div>TEL: ${json[i].tel}</div>
               <div>${json[i].access}</div>-->
-              <div class="shop-info"><div class="info-title">営業時間</div>${json[i].time[lang]}</div>
-              <div class="shop-info"><div class="info-title">理工展当日営業</div>${json[i].rikoten[lang]}</div>
-              <div class="shop-info"><div class="info-title">コラボ期間</div>${json[i].period[lang]}</div>
+              <div class="shop-info"><div class="info-title">${lang === "ja" ? "営業時間" : "Business hours"}</div>${json[i].time[lang]}</div>
+              <div class="shop-info"><div class="info-title">${lang === "ja" ? "理工展当日営業" : "Rikoten day operating hours"}</div>${json[i].rikoten[lang]}</div>
+              <div class="shop-info"><div class="info-title">${lang === "ja" ? "コラボ期間" : "Collabration period"}</div>${json[i].period[lang]}</div>
               <div class="sns-wrapper"></div>
             </div>
 
@@ -147,6 +147,19 @@
 
   /* SNSリンク-------
   -------------------*/
+  /* HP */
+  for (i=0; i<json.length; i++){
+    if (json[i].HP !== null && json[i].release === true){
+      const hp = `
+      <div class="sns">
+        <span class="sns-title">HP: </span>
+        <a class="sns-url" href="${json[i].HP}" target="_blank" rel="noopener noreferrer">${json[i].HP}</a>
+      </div>
+      `;
+      snsWrapper[i].insertAdjacentHTML("beforeend", hp); //コンテンツをHTMLに追加
+    }
+  }
+
   /* Instagram */
   for (i=0; i<json.length; i++){
     if (json[i].Instagram !== null && json[i].release === true){
@@ -160,16 +173,16 @@
     }
   } 
   
-  /* Twitter */
+  /* X(旧Twitter) */
   for (i=0; i<json.length; i++){
-    if (json[i].Twitter !== null){
-      const twitter = `
+    if (json[i].X !== null){
+      const x = `
       <div class="sns">
-        <span class="sns-title">Twitter: </span>
-        <a class="sns-url" href="${json[i].Twitter}" target="_blank" rel="noopener noreferrer">${json[i].Twitter}</a>
+        <span class="sns-title">X(旧Twitter): </span>
+        <a class="sns-url" href="${json[i].X}" target="_blank" rel="noopener noreferrer">${json[i].X}</a>
       </div>
       `;
-      snsWrapper[i].insertAdjacentHTML("beforeend", twitter); //コンテンツをHTMLに追加
+      snsWrapper[i].insertAdjacentHTML("beforeend", x); //コンテンツをHTMLに追加
     }
   }   
 

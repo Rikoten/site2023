@@ -39,8 +39,9 @@
       "en": "￥930"
     },
     "menuImg": "/img/collabmenu/01-こころ.JPG",
+    "HP": null,
     "Instagram": null,
-    "Twitter": null,
+    "X": null,
     "LINE": null,
     "release": true
   },
@@ -84,8 +85,9 @@
       "en": "￥1000"
     },
     "menuImg": "/img/collabmenu/02-がらしゃ.JPG",
+    "HP": "https://www.ramen-garasha.com/",
     "Instagram": "https://www.instagram.com/ramen_garasha/",
-    "Twitter": "https://twitter.com/garasha1",
+    "X": "https://twitter.com/garasha1",
     "LINE": null,
     "release": true
   },
@@ -129,8 +131,9 @@
       "en": "￥980"
     },
     "menuImg": "/img/collabmenu/03-十二分屋.JPG",
-    "Instagram": "https://www.instagram.com/junibun_ya.waseda/?igshid=OGQ5ZDc2ODk2ZA%3D%3D",
-    "Twitter": null,
+    "HP": null,
+    "Instagram": "https://instagram.com/junibun_ya.waseda?igshid=OGQ5ZDc2ODk2ZA==",
+    "X": null,
     "LINE": null,
     "release": true
   },
@@ -154,16 +157,16 @@
     },
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.634569961312!2d139.70186527525192!3d35.71060922836045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3bc823629f%3A0x6bd9fa016214f71!2z44Gk44GR6bq65bGL44KE44GZ44G544GIIOmrmOeUsOmmrOWgtOW6lw!5e0!3m2!1sja!2sjp!4v1698489131849!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
-      "ja": "全日: 11:00〜23:00",
-      "en": "Every day: 11:00~23:00"
+      "ja": "月曜～土曜: 11:00〜22:00 / 日曜: 11:00〜21:00 （※麺、スープが無くなり次第終了）",
+      "en": "Mon~Sat: 11:00〜22:00 / Sun: 11:00〜21:00 (※Ends when noodles and soup run out)"
     },
     "rikoten": {
       "ja": "通常営業",
       "en": "As usual"
     },
     "period": {
-      "ja": "月曜～日曜（※麺、スープが無くなり次第終了）",
-      "en": "Mon~Sun (※Ends when noodles and soup run out)"
+      "ja": "準備でき次第～11月5日(日)",
+      "en": "When ready ~ Sun. Nov. 5"
     },
     "menuName": {
       "ja": "",
@@ -174,8 +177,9 @@
       "en": ""
     },
     "menuImg": "/img/collabmenu/04-やすべえ.JPG",
+    "HP": null,
     "Instagram": "https://www.instagram.com/yasubee_official/",
-    "Twitter": null,
+    "X": null,
     "LINE": null,
     "release": true
   },
@@ -199,8 +203,8 @@
     },
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.820021644569!2d139.70598177615494!3d35.70604632860983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0xbe5798fedb2eea72!2z44K_44Oq44O844K644Kz44O844OS44O8IOaXqeWkp-eQhuW3peW6lw!5e0!3m2!1sja!2sjp!4v1698471330154!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
-      "ja": "平日:8:00～20:00（LO 19:30）/ 土曜:9:00～18:00（LO 17:30）",
-      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00"
+      "ja": "平日:8:00～20:00（LO 19:30）/ 土曜:9:00～18:00（LO 17:30） ※日曜・祝日休業",
+      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00 ※Closed on Sundays and holidays"
     },
     "rikoten": {
       "ja": "2日間とも営業（日曜臨時営業）",
@@ -212,15 +216,16 @@
     },
     "menuName": {
       "ja": "カフェラテ \n矢口君ver",
-      "en": "Cafe Latte Yaguchi-kun ver."
+      "en": "Cafe Latte \nYaguchi-kun ver."
     },
     "menuPrice": {
       "ja": "Tall：￥470\nGrande：￥525",
       "en": "Tall：￥470\nGrande：￥525"
     },
     "menuImg": "/img/collabmenu/05-タリーズ.JPG",
+    "HP": null,
     "Instagram": null,
-    "Twitter": null,
+    "X": null,
     "LINE": null,
     "release": true
   },
@@ -242,7 +247,7 @@
       "ja": "油そばで世界を救う、油そばでみんなを笑顔にしたい",
       "en": "Our goals are to save the world, and make everyone smile with aburasoba"
     },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7364939110203!2d139.71468487615508!3d35.70810152849688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d1bfa0f7e4b%3A0xc0e7aa7cdfc2d0de!2z5p2x5Lqs6bq654-N5Lqt5pys6IiXIOilv-aXqeeosueUsOW6lw!5e0!3m2!1sja!2sjp!4v1698471508196!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.7170216608683!2d139.70572427584662!3d35.70858062847099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd63a9d3035%3A0xc84da91cb678ff72!2z5p2x5Lqs6bq654-N5Lqt5pys6IiXIOmrmOeUsOmmrOWgtOW6lw!5e0!3m2!1sja!2sjp!4v1698767690662!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
       "ja": "全日: 11:00〜23:00",
       "en": "Every day: 11:00~23:00"
@@ -264,8 +269,9 @@
       "en": "(Ordinary menu)\n + ￥300"
     },
     "menuImg": "/img/collabmenu/06-めんちん.JPG",
+    "HP": null,
     "Instagram": "https://www.instagram.com/menchintei/",
-    "Twitter": "https://twitter.com/menchintei",
+    "X": "https://twitter.com/menchintei",
     "LINE": null,
     "release": true
   }
