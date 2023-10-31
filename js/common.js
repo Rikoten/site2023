@@ -35,24 +35,25 @@ function changeLang() {
 
 async function setHeaderFooter() {
 
-    const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
-    
-    const headerLang = {
-                        "projects": { "ja": "企画情報", "en": "Projects" },
-                        "search": { "ja": "企画検索", "en": "Search" },
-                        "participants":{"ja": "出展団体", "en": "Participants"},
-                        "collab":{"ja": "飲食店コラボ", "en": "Collab"},
-                        "specialguest":{"ja": "有名人企画", "en": "Special Guest"},
-                        "about":{"ja": "理工展とは", "en": "About"},
-                        "theme":{"ja": "今年のテーマ", "en": "Theme"},
-                        "lastyear":{"ja": "昨年度の様子", "en": "Last Year's Rikoten"},
-                        "info":{"ja": "お知らせ", "en": "Info"},
-                        "app":{"ja": "アプリ紹介", "en": "App"},
-                        "faq":{"ja": "よくある質問", "en": "FAQ"},
-                        "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
-                        "contact":{"ja": "お問い合わせ", "en": "Contact"},
-                        "privacy":{"ja": "プライバシーポリシー", "en": "Privacy Policy"}
-                      }
+  const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
+
+  const headerLang = {
+    "projects": { "ja": "企画情報", "en": "Projects" },
+    "search": { "ja": "企画検索", "en": "Search" },
+    "participants": { "ja": "出展団体", "en": "Participants" },
+    "specialguest": { "ja": "有名人企画", "en": "Special Guest" },
+    "collab": { "ja": "飲食店コラボ", "en": "Collab" },
+    "timetable":{"ja":"タイムテーブル","en":"Timetable"},
+    "about": { "ja": "理工展とは", "en": "About" },
+    "theme": { "ja": "今年のテーマ", "en": "Theme" },
+    "lastyear": { "ja": "昨年度の様子", "en": "Last Year's Rikoten" },
+    "info": { "ja": "お知らせ", "en": "Info" },
+    "app": { "ja": "アプリ紹介", "en": "App" },
+    "faq": { "ja": "よくある質問", "en": "FAQ" },
+    "sponsor":{"ja": "ご協賛", "en": "Sponsor"},
+    "contact": { "ja": "お問い合わせ", "en": "Contact" },
+    "privacy": { "ja": "プライバシーポリシー", "en": "Privacy Policy" }
+  }
 
 
   const head = [];
@@ -74,6 +75,7 @@ async function setHeaderFooter() {
             <li class="pulldown" id="header-projects">${headerLang.projects[lang]}
                 <ul>
                   <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
+                  <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
                   <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
                   <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
                 </ul>
@@ -108,9 +110,10 @@ async function setHeaderFooter() {
             <li>
             <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
-                <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
-                <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
-                <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
+            <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
+            <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
+            <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
+            <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
             </ul>
             </li>
             <li>
@@ -135,7 +138,7 @@ async function setHeaderFooter() {
         <div class="jaen">
           <div class="ja ${jaActive}">Ja</div>
           <span>/</span>
-          <di class="en ${enActive}">En</di>
+          <div class="en ${enActive}">En</div>
         </div>
     </div>
     `)
@@ -244,7 +247,9 @@ async function setHeaderFooter() {
     </ul>
     <p class="copyright">Copyright © 2002-2023 ${rikoten} All Rights Reserved.</p>
     `)
-  footerelement.insertAdjacentHTML("afterbegin", bottom);
+    if(footerelement != null ){
+      footerelement.insertAdjacentHTML("afterbegin", bottom);
+    }
 }
 
 async function langEvent() {
