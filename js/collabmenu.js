@@ -10,7 +10,7 @@
 
   /* JSONデータ取得 --
   -------------------*/
-  const json = await fetch('/data/collabmenu.json?date=20231030').then(res => res.json());
+  const json = await fetch('/data/collabmenu.json?date=20231101').then(res => res.json());
 
   /* MENUリスト作成 --
   -------------------*/ 
