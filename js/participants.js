@@ -22,12 +22,12 @@
       }
       else if ((json[Object.keys(json)[i]][j].firstDayPlace.ja != "-" && json[Object.keys(json)[i]][j].secondDayPlace.ja == "-") || (json[Object.keys(json)[i]][j].firstDayPlace.ja == "-" && json[Object.keys(json)[i]][j].secondDayPlace.ja != "-")) {
           if (json[Object.keys(json)[i]][j].firstDayPlace.ja != "-") {
-              placeText = `11/5 : ${json[Object.keys(json)[i]][j].firstDayPlace[lang]}`;
+              placeText = `11/4 : ${json[Object.keys(json)[i]][j].firstDayPlace[lang]}`;
           } else {
-              placeText = `11/6 : ${json[Object.keys(json)[i]][j].secondDayPlace[lang]}`;
+              placeText = `11/5 : ${json[Object.keys(json)[i]][j].secondDayPlace[lang]}`;
           }
       } else {
-          placeText = `11/5 : ${json[Object.keys(json)[i]][j].firstDayPlace[lang]}<br>11/6 : ${json[Object.keys(json)[i]][j].secondDayPlace[lang]}`;
+          placeText = `11/4 : ${json[Object.keys(json)[i]][j].firstDayPlace[lang]}<br>11/5 : ${json[Object.keys(json)[i]][j].secondDayPlace[lang]}`;
       }
 
       /* 動画 */
