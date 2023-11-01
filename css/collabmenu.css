@@ -26,9 +26,9 @@ main img{
 main .collabmenu-top{
   display: none; /* 基本非表示 */
   width: 100%;
-  padding-top: 4rem;
   position: fixed;
-  top: 0;
+  top: 70px;
+  background-color: var(--color-background);
   z-index: 2;
 }
 
@@ -48,22 +48,22 @@ main .collabmenu-top.show{
 }
 
 main .main-title {
-  width: calc(100% - 200px);
+  width: calc(100% - 100px);
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 main h1{
-  color:#DD6BA3;
+  font-size: 32px;
   padding-left: 40px;
-  line-height: 1;
   position: relative;
-
+  margin-top: 0;
 }
 
 main h1::before{
   content: "";
   display: inline-block;
-  background-image:url('/img/collabmenu/restaurant_menu_FILL0_wght400_GRAD0_opsz48.svg');
+  background-image:url('/img/collabmenu/restaurant_menu.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -75,13 +75,26 @@ main h1::before{
 }
 
 main .collabmenu-top .menu-wrapper{
-  width: calc(100% - 200px);
+  width: calc(100% - 100px);
   height: calc(100vh - 14.8rem);
   max-width: 1000px;
-  margin: 4rem auto 5rem;
+  margin: 5rem auto;
   position: relative;
 }
 
+@media screen and (max-width: 768px){
+  main .main-title,
+  main .collabmenu-top .menu-wrapper{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px){
+  main .main-title,
+  main .collabmenu-top .menu-wrapper{
+    width: calc(100% - 30px);
+  }
+}
 main .menu-wrapper h2{
   font-size: 4rem;
   color: #ffffff;
@@ -89,12 +102,13 @@ main .menu-wrapper h2{
   margin: 0;
   position: absolute;
   transform: translate(.75rem, calc(-100% + .75rem));
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.4));
 }
 
 main .menu{
   width: 100%;
   margin: auto;
-  padding: 1rem 0 1rem;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -123,13 +137,13 @@ main .menu li .menu-link {
 }
 
 main .menu li .menu-link:hover{
-  color: var(--color-darkpink);
+  color: var(--color-orange);
 }
 
 main .menu li .num{
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 0 1rem 0;
+  padding-right: 1rem;
 }
 
 main .menu li .name{
@@ -142,18 +156,18 @@ main .collabmenu-top .scroll{
   text-align: center;
   position: absolute;
   right: 25vw;
-  bottom: 30px;
+  bottom: 140px;
   transform: translate(50%, 0);
 }
 
 main .collabmenu-top .scroll p{
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1;
   margin: 12px 0 2px;
 }
 
 main .collabmenu-top .scroll img{
-  width: 10px;
+  width: 20px;
   line-height: 0;
   vertical-align: middle;
   animation: scrolldown 1.5s ease-out infinite;
@@ -216,6 +230,13 @@ main .content-left-inner{
   overflow: hidden;
   transition: opacity .7s;
   z-index: 0;
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 1000px){
+  main .content-left-inner{
+    padding-top: 0;
+  }
 }
 
 main .content-left-inner.transition{
@@ -252,16 +273,18 @@ main .content-left h3{
   padding: 1.5rem 1rem  1.5rem 3rem;
   position: relative;
   z-index: 5;
+  line-height: 1.2;
 }
+
 main .content-left .num{
   font-size: 2rem;
   padding-right: .5rem;
   position: absolute; /* .content-left h3に対して */
   transform: translate(-100%, 0);
 }
+
 main .content-left .name{
   font-size: 2.2rem;
-  white-space: pre-wrap;
 }
 
 
@@ -313,21 +336,26 @@ main .content-left .menu-img{
 }
 
 main .content-left .menu-name{
-  font-size: 1.5rem;
+  display: inline-block;
+  max-width: calc(50% - 6.25vw);
+  font-size: 20px;
   position: absolute; /* .content-left-innerに対して */
-  bottom: 0;
-  transform: translate(6.25vw, calc(-6vw + 100%));
+  left: 6.25vw;
+  bottom: 24px;
+  /*transform: translate(6.25vw, calc(-6vw + 100%));*/
   white-space: pre-wrap; /* 改行 */
   line-height: 1.4;
   transition: opacity .7s;
 }
 
 main .content-left .menu-price{
-  font-size: 1.5rem;
+  display: inline-block;
+  max-width: calc(50% - 6.25vw);
+  font-size: 20px;
   position: absolute; /* .content-leftに対して */
-  bottom: 0;
-  right: 0;
-  transform: translate(-6.25vw, calc(-6vw + 100%));
+  bottom: 24px;
+  right: 6.25vw;
+  /*transform: translate(-6.25vw, calc(-6vw + 100%));*/
   text-align: right; /* 右揃え */
   white-space: pre-wrap; /* 改行 */
   line-height: 1.4;
@@ -452,7 +480,7 @@ main .content-right.preparation p:first-child{
   }
 
   main .collabmenu-top .menu-wrapper{
-    width: calc(100% - 12rem);
+    /*width: calc(100% - 12rem);*/
     height: auto;
     margin: 6rem auto 0;
   }
@@ -460,14 +488,6 @@ main .content-right.preparation p:first-child{
   main .menu-wrapper h2{
     font-size: 5rem;
     transform: translate(5rem, calc(-100% + .8rem));
-  }
-
-  main .menu li .num{
-    font-size: 2.2rem;
-  }
-
-  main .menu li .name{
-    font-size: 1.5rem;
   }
 
   /* コンテンツ ------
@@ -498,14 +518,15 @@ main .content-right.preparation p:first-child{
 
   main .content-left .menu-name{
     font-size: 2rem;
-    bottom: 0;
-    transform: translate(15vw, calc(-12vw + 100%));
+    left: 15vw;
+    /*bottom: 0;
+    transform: translate(15vw, calc(-12vw + 100%));*/
   }
   main .content-left .menu-price{
     font-size: 2rem;
-    bottom: 0;
-    right: 0;
-    transform: translate(-15vw, calc(-12vw + 100%));
+    /*bottom: 0;*/
+    right: 15vw;
+    /*transform: translate(-15vw, calc(-12vw + 100%));*/
   }
 
   /* ---右(下)--- */
@@ -557,12 +578,8 @@ main .content-right.preparation p:first-child{
     position: static;
   }
 
-  main h1{
-    font-size: 1.5rem;
-  }
-
   main .collabmenu-top .menu-wrapper{
-    width: calc(100% - 4rem);
+    /*width: calc(100% - 4rem);*/
     height: auto;
     margin-top: 6.5rem;
   }
@@ -586,7 +603,6 @@ main .content-right.preparation p:first-child{
   main .menu li .name{
     display: block;
     font-size: 1.3rem;
-    white-space: pre-wrap;
   }
 
   /* コンテンツ ------
@@ -624,19 +640,21 @@ main .content-right.preparation p:first-child{
   }
 
   main .content-left .menu-name{
-    font-size: 1.2rem;
-    bottom: 0;
-    transform: translate(20vw, -10vw);
+    font-size: 1.5rem;
+    bottom: 56px;
+    left: 20vw;
+    /*transform: translateY(-10vw);*/
     white-space: nowrap;
   }
+
   main .content-left .menu-price{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: left;
-    bottom: 0;
+    bottom: 24px;
     right: auto;
-    left: 0;
-    transform: translate(20vw, calc(-10vw + 100%));
-    white-space: pre-wrap;
+    left: 20vw;
+    /*transform: translate(20vw, calc(-10vw + 100%));*/
+    white-space: nowrap;
   }
 
   /* ---右(下)--- */
@@ -661,173 +679,32 @@ main .content-right.preparation p:first-child{
   }
 }
 
+@media screen and (max-width: 576px){
+  main .menu li .name{
+    white-space: pre-wrap;
+  }
 
-/*headerのCSS*/
-header{
-  height: 70px;
-  margin: 0;
-  position: fixed;
-  z-index: 10;
-  width: 30%;
-  min-width: 300px;
-  right: 0;
-  background-color: #ffffff;
-  font-weight: 590;
-}
+  main .content-left h3 .name{
+    white-space: pre-wrap;
+  }
 
-header>nav>ul.pcmenu{
-  margin: 0;
-  display: flex;
-  padding: 0;
-  position: relative;
-}
+  main .content-left .menu-name{
+    font-size: 1.2rem;
+    bottom: 32px;
+    left: 20vw;
+    /*transform: translateY(-10vw);*/
+    white-space: nowrap;
+  }
 
-header>nav>ul.pcmenu>li{
-  list-style: none;
-  height: 70px;
-  line-height: 70px;
-  margin-right: 0px;
-  color: var(--color-darkpink);
-  position: relative;
-  width: 140px;
-  cursor: pointer;
-}
-
-header>nav>ul.pcmenu>li#logo{
-  width: calc( 100% - 200px );
-}
-
-header>nav>ul.pcmenu>li img{
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0,-50%);
-  margin-right: 50px;
-}
-
-header ul.pcmenu a{
-  display: block;
-}
-
-header ul.pcmenu li ul{
-  display: none;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-}
-
-
-header ul.pcmenu li:hover ul{
-  transition: 1.5s;/*transitionが付かない*/
-  display: block;
-  width: 150px;
-  left: -40%;
-}
-
-header ul.pcmenu li:hover ul li{
-  list-style: none;
-  height: 40px;
-  line-height: 40px;
-  font-size: 12px;
-  background-color: var(--color-darkpink);
-  color: var(--background-color);
-  text-align: center;
-}
-
-header ul.pcmenu li ul li a{
-  color: #ffffff;
-}
-
-header>.menu_bar , .menu_bar_close{
-  display: none;
-}
-
-/* スマホ表示 */
-header .phone-menu{
-  display: none;
-}
-
-header .phone-menu.active{
-  display: block;
-  margin: 5px auto 0 auto;
-  width: 100%;
-
-}
-
-header .phone-menu li img{
-  /*transform: translate(-50%,-50%);*/
-  height: 30px;
-  line-height: 30px;
-}
-
-
-
-header ul{
-  background-color: var(--color-lightpink);
-  width: 100%;
-  padding: 0;
-  color: #fff;
-  float: left;
-  margin: 0 auto;
-}
-
-header ul.active{
-  display: block;
-}
-
-header  li{
-  list-style: none;
-}
-
-header ul ul{
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  transition: .5s;
-  border-top: 1px solid #fff;
-  background-color: #fff;
-  color: var(--color-lightpink);
-  margin:0;
-}
-
-header ul li li{
-  border-bottom: 1px dotted var(--color-lightpink);
-  padding: 10px 0 10px 10px;
-  margin-left:15px;
-}
-
-header ul li li a {
-  color: var(--color-lightpink);
-}
-
-header ul:nth-of-type(1) li.active li:last-child{
-  border-bottom:1px solid #fff; 
-}
-
-header button{
-  position: relative;
-  border: none;
-  width: 100%;
-  background-color: inherit;
-  color: #fff;
-  cursor: pointer;
-  text-align: left;
-  padding: 15px 0 15px 20px;
-  font-size:1em;
-}
-header button:hover{
-  background-color: var(--color-darkpink);
-}
-
-header button::before,
-header button::after{
-  content:"";
-  position: absolute;
-  top: 20px;
-  width: 1.5px;
-  height: 8px;
-  background-color: #fff;
-  transition: .5s;
+  main .content-left .menu-price{
+    font-size: 1.2rem;
+    text-align: left;
+    bottom: 12px;
+    right: auto;
+    left: 20vw;
+    /*transform: translate(20vw, calc(-10vw + 100%));*/
+    white-space: nowrap;
+  }
 }
 
 button::before{
@@ -858,190 +735,9 @@ ul:nth-of-type(2) li.active li:last-child{ border-bottom:1px solid #5D9FA8; }
 
 ul.active{ overflow-y: auto; }
 
-header{
-  height: 0vh;
-}
-
-header.open{
-  height: 100vh;
-}
-
-.active{
-  display: block;
-}
-
-.unactive{
-  display: none;
-}
-
-header>div{
-  height: 50px;
-}
-/*
-header>.menu_bar>span,.menu_bar_close>span{
-  display: block;
-  width: 25px;
-  border-bottom: var(--color-lightpink) solid 2px;
-  line-height: 5px;
-  height: 4px;
-  margin: 0 auto;
-}
-
-header>.menu_bar>p.open{
-  margin-top: 4px;
-}*/
-
-header>.menu_bar{
-  display: block;
-  position: fixed;
-  right: 0;
-  z-index: 3;
-  cursor: pointer;
-  width: 50px;
-  height:50px;
-  border-radius: 5px;
-
-}
-
-header>.menu_bar span{
-  display: inline-block;
-  transition: all .2s;/*アニメーションの設定*/
-  position: absolute;
-  left: 14px;
-  height: 2px;
-  border-radius: 5px;
-  width: 45%;
-  background: var(--color-darkpink);
-}
-
-header>.menu_bar.unactive span{
-  background: var(--color-darkpink);
-}
-
-
-header>.menu_bar span:nth-of-type(1) {
-  top: 13px;
-}
-header>.menu_bar span:nth-of-type(2) {
-  top: 19px;
-}
-header>.menu_bar span:nth-of-type(3) {
-  top: 25px;
-}
-
-header>.menu_bar.unactive span:nth-of-type(1) {
-  top: 14px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
-}
-
-header>.menu_bar.unactive span:nth-of-type(2) {
-  opacity: 0;
-}
-header>.menu_bar.unactive span:nth-of-type(3) {
-  top: 26px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
-}
-
-
-header>.menu_bar_close{
-  position: absolute;
-  margin-top: 10px;
-  left: calc( 100% - 40px);
-  display: none;
-  height: 20px;
-  color: var(--color-lightpink);
-}
-
-header>.menu_bar_close.active{
-  display: block;
-}
-
-header>nav{
-  display: none;
-}
-
-header>nav>ul.pcmenu{
-  margin: 0;
-  display: block;
-  padding: 0;
-  position: static;
-}
-
-header>nav>ul.pcmenu>li{
-  margin: 0 auto;
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-}
-
-header>nav>ul.pcmenu>li.header-events{
-  display: block;
-  align-items: center;
-}
-
-header>nav>ul.pcmenu>li.header-about{
-  margin-top: 100px;
-  display: block;
-}
-
-header>nav>ul.pcmenu>li.header-info{
-  margin-top: 100px;
-}
-
-header>nav>ul.pcmenu>li img{
-  transform: translate(-50%,-50%);
-}
-
-header ul.pcmenu li ul{
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  opacity: 1;
-}
-
-header ul.pcmenu li ul li{
-  height: 40px;
-  line-height: 40px;
-  font-size: 12px;
-  list-style: none;
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-}
-
-header ul.pcmenu li ul li a{
-  color: var(--color-lightpink);
-  margin: 0  auto;
-  text-align: center;
-}
-
-
-
-
-/*
-header>nav>ul.pcmenu{
-  display: none;
-}
-
-header>nav>ul.smmenu{
-  display: block;
-}*/
-
 
 @media screen and (max-width: 550px) {
   main .main-title {
     width: calc(100% - 4rem);
-  }
-
-  header{
-    width: 100%;
-  }
-
-  header > .menu_bar {
-    left: auto;
   }
 }
