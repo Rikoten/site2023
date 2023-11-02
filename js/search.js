@@ -61,7 +61,7 @@ async function addSearchSection() {
     const html = `  <div class="keyword">
                         <h2>${searchSectionLang.keyword.h2[lang]}</h2>
                         <div class="input">
-                            <form>
+                            <form onsubmit="return false">
                                 <input type="search" id="search-text" placeholder="${searchSectionLang.keyword.placeholder[lang]}">
                             </form>
                             
@@ -440,32 +440,32 @@ async function keywordEvent(data) {
     const $searchData = await fetch('/data/dataForSearch_1028.json').then(res => res.json());
     const $searchText = document.getElementById("search-text");
     // ページ読み込み時にLocalStorageからキーワードを取得
-    const storedKeyword = localStorage.getItem("searchKeyword");
+    /*const storedKeyword = localStorage.getItem("searchKeyword");
     if (storedKeyword) {
         $searchText.value = storedKeyword;
         // フィルターを適用するために input イベントをトリガーします
         $searchText.dispatchEvent(new Event('input'));
-    }
+    }*/
     $searchText.addEventListener('input', (event) => {
         notSelectedProjectListByKW = [];
         for (const $sd of $searchData) {
-            if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
-                notSelectedProjectListByKW.push($sd.id)
+             if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+                 notSelectedProjectListByKW.push($sd.id)
             }
-            // if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
-            //     notSelectedProjectListByKW.push($sd.id)
-            // }
+            /*if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+                notSelectedProjectListByKW.push($sd.id)
+            }*/
         }
-        localStorage.setItem("searchKeyword", event.currentTarget.value);
+        /*localStorage.setItem("searchKeyword", event.currentTarget.value);*/
         updateProjectsByTag(data);
     });
 
     window.addEventListener('load', () => {
         const storedKeyword = localStorage.getItem("searchKeyword");
-        if (storedKeyword) {
+        /*if (storedKeyword) {
             $searchText.value = storedKeyword;
             // フィルターを適用するために input イベントをトリガーします
             $searchText.dispatchEvent(new Event('input'));
-        }
+        }*/
     });
 }
