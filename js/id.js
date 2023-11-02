@@ -251,20 +251,36 @@
     const li1_tag = document.getElementsByClassName("menu_name")[0];
     var menu_list = [];
     menu_list.push(`
-            <li>${data.mainArticle.bigHeadline[lang]}</li>
-            <ol class="child_ol"></ol>
-        `)
+    <li>${data.mainArticle.bigHeadline[lang]}</li>
+    <ol class="child_ol"></ol>
+`);
     li1_tag.insertAdjacentHTML("beforeend", menu_list);
+
     var ol_tag = document.querySelector(".child_ol");
 
     for (let j = 0; j < data.mainArticle.articles.length; j++) {
-        const mokuji_list = []
+        const mokuji_list = [];
         mokuji_list.push(`
-                <li>${data.mainArticle.articles[j].headline[lang]}</li>
-            `)
+        <li>${data.mainArticle.articles[j].headline[lang]}</li>
+    `);
         ol_tag.insertAdjacentHTML("beforeend", mokuji_list);
     }
 
+    const li2_tag = document.getElementsByClassName("menu_name")[0];
+    var submenu_list = [];
+    submenu_list.push(`
+    <li>${data.subArticles[0].bigHeadline[lang]}</li>
+    <ol class="subchild_ol"></ol>
+`);
+    li2_tag.insertAdjacentHTML("beforeend", submenu_list);
+    var subol_tag = li1_tag.querySelector(".subchild_ol");
+    for (let j = 0; j < data.subArticles[0].articles.length; j++) {
+        const submokuji_list = [];
+        submokuji_list.push(`
+        <li>${data.subArticles[0].articles[j].headline[lang]}</li>
+    `);
+        subol_tag.insertAdjacentHTML("beforeend", submokuji_list);
+    }
 
     /*****本文*****/
     const article_wrapper = document.getElementsByClassName("article_wrapper")[0];

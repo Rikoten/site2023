@@ -1,9 +1,9 @@
-main{
+main {
     padding: 100px 0 50px;
     background-size: cover;
 }
 
-#event{
+#event {
     margin: 0 auto;
     width: calc(100% - 200px);
     max-width: 1200px;
@@ -14,7 +14,7 @@ main{
     padding-left: 0;
 }
 
-#event .event-main{
+#event .event-main {
     padding: 30px;
     background-color: #ffffff;
     width: 100%;
@@ -23,13 +23,13 @@ main{
     margin-bottom: 30px;
 }
 
-#event .upup{
+#event .upup {
     display: flex;
     justify-content: left;
     /*flex-wrap: wrap;*/
 }
 
-#event .photo{
+#event .photo {
     display: inline-block;
     /*transform: scale(0.5);*/
     width: 250px;
@@ -37,14 +37,14 @@ main{
     border-radius: 25px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
     background-color: #ffffff;
-   
+
 }
 
-#event .rightside{
+#event .rightside {
     margin-left: 30px;
 }
 
-#event .event-main h1{
+#event .event-main h1 {
     font-family: var(--font-family);
     color: var(--color-brown);
     text-align: left;
@@ -57,7 +57,7 @@ main{
     font-weight: bold;
 }
 
-#event .event-main h2{
+#event .event-main h2 {
     color: var(--color-brown);
     text-align: left;
     margin-right: 10px;
@@ -75,7 +75,7 @@ main{
 #event .event-main h2:nth-of-type(1)::before {
     content: "";
     display: inline-block;
-    background-image:url('/img/event/Iconmaterial-group.png');
+    background-image: url('/img/event/Iconmaterial-group.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 20px;
@@ -83,10 +83,10 @@ main{
     transform: translate(-2px, 35%);
 }
 
-#event .event-main h2:nth-of-type(2)::before{
+#event .event-main h2:nth-of-type(2)::before {
     content: "";
     display: inline-block;
-    background-image:url('/img/event/pin.png');
+    background-image: url('/img/event/pin.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 20px;
@@ -94,19 +94,19 @@ main{
     transform: translateY(20%);
 }
 
-#event .event-main span{  
+#event .event-main span {
     color: var(--color-brown);
     text-align: center;
 }
 
 
-#event .tag{
+#event .tag {
     margin: 30px 0;
     margin-left: 0;
     color: var(--color-brown);
 }
 
-#event .event-main span{
+#event .event-main span {
     font-size: 14px;
     display: inline-block;
     border-radius: 25px;
@@ -116,8 +116,9 @@ main{
     margin-bottom: 15px;
     padding: 5px 15px;
 }
+
 #event .event-main ul li,
-#event .container ul li{
+#event .container ul li {
     padding-left: 10px;
     padding-right: 30px;
     border-left: 6px solid var(--color-gray);
@@ -126,14 +127,14 @@ main{
     font-size: 16px;
 }
 
-#event .ticket-narabi{
+#event .ticket-narabi {
     /* display: flex;
     justify-content: center;
     margin: 15px;
     flex-wrap: wrap; */
 }
 
-#event .ticket{
+#event .ticket {
     border-radius: 15px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
     background-color: azure;
@@ -147,10 +148,10 @@ main{
     padding-right: 20px;
 }
 
-#event .walk ::before{
+#event .walk ::before {
     content: "";
     display: inline-block;
-    background-image:url('/img/event/walk.png');
+    background-image: url('/img/event/walk.png');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -161,24 +162,24 @@ main{
     transform: translateY(-50%);
 }
 
-#event .walk{
+#event .walk {
     color: green;
     text-align: center;
     position: relative;
     margin-bottom: 10px;
 }
 
-#event .walk p{
+#event .walk p {
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
     border-radius: 15px;
     text-align: center;
     height: 50px;
     background-color: #F0FFF0;
     border: 1px solid green;
-    font-weight:2px
-} 
+    font-weight: 2px
+}
 
-#event .onlineticket{
+#event .onlineticket {
     border-radius: 25px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
     background-color: #FF5050;
@@ -189,24 +190,26 @@ main{
     margin-bottom: 10px;
 }
 
-#event .get-onlineticket{
+#event .get-onlineticket {
     border-radius: 25px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
     background-color: #FF5050;
     color: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;/*598px*/
+    width: 100%;
+    /*598px*/
     text-align: center;
     margin-bottom: 30px;
     text-align: center;
     margin-top: 10px;
-    display: table;/*block*/
+    display: table;
+    /*block*/
     margin-left: auto;
     margin-right: auto;
     height: 50px;
 }
- 
+
 #event .ticket,
 #event .onlineticket {
     height: 50px;
@@ -215,7 +218,7 @@ main{
 
 #event .ticket p,
 #event .onlineticket p {
-    display: table-cell;
+    /* display: table-cell; */
     vertical-align: middle;
 }
 
@@ -225,10 +228,10 @@ main{
     margin: 0 auto;
 }
 
-#event .get-onlineticket p::after{
+#event .get-onlineticket p::after {
     content: "";
     display: inline-block;
-    background-image:url('/img/event/Iconawesome-arrow-right.png');
+    background-image: url('/img/event/Iconawesome-arrow-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 20px;
@@ -238,22 +241,23 @@ main{
     right: -25px;
 }
 
-#event .ticket.inactive, 
-#event .walk.inactive, 
+#event .ticket.inactive,
+#event .walk.inactive,
 #event .onlineticket.inactive,
-#event .get-onlineticket.inactive{
+#event .get-onlineticket.inactive {
     display: none;
 }
 
 
 /* 目次 */
-#event .side{
+#event .side {
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
-    width: 27%;/*300px*/
-   /* max-width: 300px;*/
-	float:right;
+    width: 27%;
+    /*300px*/
+    /* max-width: 300px;*/
+    float: right;
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -269,7 +273,7 @@ main{
     padding-left: 35px;
 }
 
-#event .side p::before{
+#event .side p::before {
     content: "";
     display: inline-block;
     background-image: url(/img/event/Iconawesome-list-ul.png);
@@ -294,15 +298,16 @@ main{
     font-weight: normal;
 }
 
-#event .side .menu_name > li {
+#event .side .menu_name>li {
     margin-top: 15px;
 }
 
-#event .side .menu_name .child_ol {
+#event .side .menu_name .child_ol,
+#event .side .menu_name .subchild_ol {
     padding-left: 20px;
 }
 
-#event .introduce .article_sentence > li {
+#event .introduce .article_sentence>li {
     position: relative;
     padding: 5px 0 5px 10px;
     border-left: 6px solid var(--color-gray);
@@ -310,9 +315,10 @@ main{
 
 
 /* 記事 */
-#event .container{
+#event .container {
     margin-left: 0;
-    width: 70%;/*calc(100% - 320px)*/
+    width: 70%;
+    /*calc(100% - 320px)*/
 
 }
 
@@ -324,21 +330,21 @@ main{
 
     margin-bottom: 100px;
     padding: 30px;
-   
-    margin-bottom: 50px;    
+
+    margin-bottom: 50px;
 }
 
-#event .event-info h1{
+#event .event-info h1 {
     font-family: var(--font-family);
     font-size: 24px;
     position: relative;
     padding-left: 40px;
     line-height: 1.2;
     overflow-wrap: break-word;
-	word-break: keep-all;
+    word-break: keep-all;
 }
 
-#event .event-info h1::before{
+#event .event-info h1::before {
     content: "";
     display: inline-block;
     background-image: url(/img/event/Iconmaterial-group.png);
@@ -351,7 +357,8 @@ main{
     left: 0;
 }
 
-#event .introduce {
+#event .introduce,
+#event .subintroduce {
     background-color: #ffffff;
     width: 100%;
     border-radius: 25px;
@@ -361,8 +368,9 @@ main{
     padding-right: 40px;
     padding-top: 10px;
     line-height: 1.6;
-    padding-bottom: 10px;/*30px*/
-    
+    padding-bottom: 10px;
+    /*30px*/
+
 }
 
 #event .stage-info {
@@ -379,7 +387,8 @@ main{
     line-height: 1.6;
 }
 
-#event .introduce p {
+#event .introduce p,
+#event .subintroduce p {
     line-height: 1.6;
 }
 
@@ -391,13 +400,13 @@ main{
 }
 
 #event .upper a,
-#event .lower a{
+#event .lower a {
     height: 30px;
     margin-bottom: 10px;
 }
 
 #event .upper img,
-#event .lower img{
+#event .lower img {
     width: 200px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -406,7 +415,7 @@ main{
 #event img.hp.gray,
 #event img.twitter.gray,
 #event img.instagram.gray,
-#event img.facebook.gray{
+#event img.facebook.gray {
     filter: grayscale(100%);
 }
 
@@ -418,7 +427,8 @@ main{
 }
 
 #event .event-info ul,
-#event .introduce ul ,
+#event .introduce ul,
+#event .subintroduce ul,
 #event .stage-info ul {
     text-align: left;
     margin: 30px 0;
@@ -434,29 +444,33 @@ main{
 }*/
 
 
-#event .introduce h2 {
+#event .introduce h2,
+#event .subintroduce h2 {
     font-size: 24px;
 }
 
-#event .introduce .article_sentence > li{
+#event .introduce .article_sentence>li,
+#event .subintroduce .subarticle_sentence>li {
     font-size: 18px;
     font-weight: bold;
     margin-top: 50px;
 }
 
-
-#event .introduce .disp-img{             
-    position: center;  
-    width: 100%;                                            /* 横幅のサイズを指定    */
-    height: auto; 
-    margin: 30px 0;                                          /* 縦幅のサイズを指定    */
+#event .introduce .disp-img,
+#event .subintroduce .disp-img {
+    position: center;
+    width: 100%;
+    /* 横幅のサイズを指定    */
+    height: auto;
+    margin: 30px 0;
+    /* 縦幅のサイズを指定    */
 }
 
 #event .introduce .disp-img img {
     width: 100%;
 }
 
-#event .introduce .disp-video{
+#event .introduce .disp-video {
     width: 100%;
     position: relative;
     padding-top: 10%;
@@ -465,8 +479,8 @@ main{
 
 }
 
-#event .introduce .disp-video iframe{
-    position:relative;
+#event .introduce .disp-video iframe {
+    position: relative;
     top: 0;
     left: 0;
     bottom: 20;
@@ -475,7 +489,7 @@ main{
     aspect-ratio: 16/9;
 }
 
-/* PDF */ 
+/* PDF */
 #event .pdf-content {
     background-color: #ffffff;
     width: 100%;
@@ -486,9 +500,10 @@ main{
     padding-right: 40px;
     padding-top: 10px;
     line-height: 1.6;
-    padding-bottom: 10px;/*30px*/ 
-    padding:20px 40px 20px 40px;
-    height: 150px;   
+    padding-bottom: 10px;
+    /*30px*/
+    padding: 20px 40px 20px 40px;
+    height: 150px;
     vertical-align: middle;
     text-align: center;
 }
@@ -506,8 +521,8 @@ main{
     height: 50px;
     width: max-content;
     padding: 10px 60px 10px 70px;
-    display:table-cell;
-    vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
     margin: 0 auto;
     transition: .2s;
 }
@@ -525,12 +540,14 @@ main{
     transform: translateX(-10px);
     opacity: 1;
 }
+
 .caption {
     font-size: 14px;
     text-align: center;
     color: #333;
     margin-top: 5px;
 }
+
 #event .pdf-content .pdf-button a {
     color: var(--color-lightpink);
     width: 100%;
@@ -538,7 +555,8 @@ main{
 }
 
 #event .pdf-content .pdf-button:hover {
-    color: #ffffff;;
+    color: #ffffff;
+    ;
     background-color: var(--color-lightpink);
 }
 
@@ -556,10 +574,10 @@ main{
     height: auto;
     font-size: 14px;
     text-align: center;*/
-   
 
-    /* margin-bottom: 70px; */
-    /*padding: 20px 40px;
+
+/* margin-bottom: 70px; */
+/*padding: 20px 40px;
     line-height: 40px;
   
     
@@ -568,11 +586,12 @@ main{
 }*/
 
 /*新たに作ったメディアクエリ*/
-@media screen and (max-width:950px){
+@media screen and (max-width:950px) {
     #event {
         width: calc(100% - 100px);
     }
-    #event .photo{
+
+    #event .photo {
         display: inline-block;
         width: 20%;
         height: 40%;
@@ -582,32 +601,36 @@ main{
         box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
         background-color: #ffffff;
     }
-    
-    #event .event-main h2{
+
+    #event .event-main h2 {
         font-size: 1em;
         margin-right: 10px;
-    }    
+    }
 }
 
-@media screen and (max-width:768px){
-    #event{
+@media screen and (max-width:768px) {
+    #event {
         width: calc(100% - 50px);
     }
-    #event .introduce{
+
+    #event .introduce {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     #event .container-a {
         margin-left: 0;
         width: 100%;
-        
+
     }
-    #event .container{
+
+    #event .container {
         margin-left: 0;
-        width: 100%;/* calc(100% - 320px)*/
+        width: 100%;
+        /* calc(100% - 320px)*/
         flex-wrap: wrap;
     }
+
     #event .side {
         background-color: #ffffff;
         border-radius: 25px;
@@ -615,6 +638,7 @@ main{
         width: 100%;
         float: none;
     }
+
     .event-main .event-info {
         background-color: #ffffff;
         width: 100%;
@@ -624,17 +648,18 @@ main{
         /* margin-bottom: 70px; */
         padding: 50px 40px;
     }
-    #event .introduce .disp-video{
+
+    #event .introduce .disp-video {
         width: 100%;
         position: relative;
         padding-top: 10%;
         padding-bottom: 10%;
         justify-content: center;
-       /* padding-top: 56.25%;高さを指定（padding-bottomでも同様)*/
+        /* padding-top: 56.25%;高さを指定（padding-bottomでも同様)*/
     }
-    
-    #event .introduce .disp-video iframe{
-        position:relative;
+
+    #event .introduce .disp-video iframe {
+        position: relative;
         top: 0;
         left: 0;
         bottom: 20;
@@ -644,30 +669,31 @@ main{
     }
 
     #event .event-main ul li,
-    #event .container ul li{
+    #event .container ul li {
         font-size: 16px;
     }
 
     #event .pdf-content {
         padding: 20px;
     }
-    
-}
-    
 
-@media screen and (max-width:620px){
+}
+
+
+@media screen and (max-width:620px) {
+
     #event .event-main h1,
     #event .event-info h1,
-    #event .introduce h2{
+    #event .introduce h2 {
         font-size: 20px;
     }
 
-    #event .event-main h2{
+    #event .event-main h2 {
         font-size: 12px;
     }
 
     #event .event-main h2:nth-of-type(1)::before,
-    #event .event-main h2:nth-of-type(2)::before{
+    #event .event-main h2:nth-of-type(2)::before {
         height: 14px;
         width: 14px;
     }
@@ -676,30 +702,30 @@ main{
         margin: 20px 0;
     }
 
-    #event .event-main span{
+    #event .event-main span {
         font-size: 10px;
         border-radius: 15px;
         margin-left: 10px;
         margin-bottom: 10px;
         padding: 5px 15px;
     }
-    
-    #event .pass p{
+
+    #event .pass p {
         font-size: 12px;
     }
 
-    #event .rightside{
+    #event .rightside {
         margin-left: 15px;
     }
 }
 
 @media screen and (max-width:480px) {
-    #event{
+    #event {
         width: calc(100% - 20px);
     }
 
     #event .event-main h1,
-    #event .event-info h1{
+    #event .event-info h1 {
         font-size: 16px;
     }
 
@@ -717,6 +743,7 @@ main{
 }
 
 @media screen and (max-width:380px) {
+
     #event .walk,
     #event .onlineticket,
     #event .ticket {
@@ -724,5 +751,5 @@ main{
         margin-right: 0;
         font-size: 10px;
     }
-    
+
 }
