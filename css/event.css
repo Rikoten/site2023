@@ -433,6 +433,7 @@ main {
 #event img.instagram.gray,
 #event img.facebook.gray {
     filter: grayscale(100%);
+    display: none;
 }
 
 
