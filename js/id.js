@@ -219,11 +219,12 @@
     }
     //*********ウォークラリーの表示**********//
     const walkrally_tag = document.getElementById("walkrally");
-    const walk = [];
-    if (data.isWalkRally) {
-        walk.push(`ウォークラリー企画`);
-        walkrally_tag.insertAdjacentHTML("beforeend", walk);
-    }
+    // const walk = [];
+    // if (data.isWalkRally) {
+    //     walk.push(`ウォークラリー企画`);
+    //     walkrally_tag.insertAdjacentHTML("beforeend", walk);
+    // }
+    data.isWalkRally ? walkrally_tag.insertAdjacentHTML("beforeend", `<p>ウォークラリー対象企画</p>`) : walkrally_tag.classList.add("inactive")
 
     /****タグの追加 ****/
     const tag_tag = document.getElementsByClassName("tag")[0]
