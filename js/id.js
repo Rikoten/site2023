@@ -48,6 +48,7 @@
                         <div class="iconicon">                            
                             <h2>${data.groupName[lang]}</h2>
                             <h2 id="location"></h2>
+                            <h2 id="walkrally"></h2>
                         </div>
                     </div>
                 </div>
@@ -216,6 +217,13 @@
         place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.secondDayPlace[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
+    //*********ウォークラリーの表示**********//
+    const walkrally_tag = document.getElementById("walkrally");
+    const walk = [];
+    if (data.isWalkRally) {
+        walk.push(`ウォークラリー企画`);
+        walkrally_tag.insertAdjacentHTML("beforeend", walk);
+    }
 
     /****タグの追加 ****/
     const tag_tag = document.getElementsByClassName("tag")[0]
@@ -235,7 +243,6 @@
     const walk_tag = document.getElementsByClassName("walk")[0];
     const onlineticket_tag = document.getElementsByClassName("onlineticket")[0];
     data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p>整理券が必要です<br>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive")
-    data.isWalkRally ? walk_tag.insertAdjacentHTML("beforeend", `<p>ウォークラリー<br>対象企画</p>`) : walk_tag.classList.add("inactive")
     data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend", '<p>オンラインチケット<br>が必要です</p>') : onlineticket_tag.classList.add("inactive")
 
 
