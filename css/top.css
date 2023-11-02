@@ -75,7 +75,6 @@ div.textbox{
 div.button{
   width: 250px;
   height: 40px;
-  color: var(--color-font);
   background-color: #FFF;
   border: solid 1px;
   border-radius: 20px;
@@ -90,6 +89,10 @@ div.button{
 div.button:hover{
   font-size: 18px;
   border-color: #FFF;
+}
+
+div.button a{
+  color: var(--color-font);
 }
 
 /*******************************
