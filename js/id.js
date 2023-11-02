@@ -274,94 +274,73 @@
     }
 
     const li2_tag = document.getElementsByClassName("menu_name")[0];
-    var submenu_list = [];
-    submenu_list.push(`
-    <li>${data.subArticles[0].bigHeadline[lang]}</li>
-    <ol class="subchild_ol"></ol>
-`);
-    li2_tag.insertAdjacentHTML("beforeend", submenu_list);
-    var subol_tag = li1_tag.querySelector(".subchild_ol");
-    for (let j = 0; j < data.subArticles[0].articles.length; j++) {
-        const submokuji_list = [];
-        submokuji_list.push(`
-        <li>${data.subArticles[0].articles[j].headline[lang]}</li>
-    `);
-        subol_tag.insertAdjacentHTML("beforeend", submokuji_list);
+    if (data.subArticles.length > 0) {
+        for (let i = 0; i < data.subArticles.length; i++) {
+            const submenu_list = [];
+            submenu_list.push(`
+              <li>${data.subArticles[i].bigHeadline[lang]}</li>
+              <ol class="subchild_ol"></ol>
+            `);
+
+            li2_tag.insertAdjacentHTML("beforeend", submenu_list);
+            const subol_tag = li2_tag.querySelector(".subchild_ol:last-child"); // 最後のol要素を取得
+
+            for (let j = 0; j < data.subArticles[i].articles.length; j++) {
+                const submokuji_list = [];
+                submokuji_list.push(`
+                <li>${data.subArticles[i].articles[j].headline[lang]}</li>
+              `);
+                subol_tag.insertAdjacentHTML("beforeend", submokuji_list);
+            }
+        }
     }
 
     /*****本文*****/
     const article_wrapper = document.getElementsByClassName("article_wrapper")[0];
+    if (data.mainArticle.articles.length > 0) {
 
-    article_wrapper.insertAdjacentHTML("beforeend", `<div class="introduce"></div>`)
-    const article_tag = document.querySelector(".introduce");
-    const article = []
-    article.push(`
+        article_wrapper.insertAdjacentHTML("beforeend", `<div class="introduce"></div>`)
+        const article_tag = document.querySelector(".introduce");
+        const article = []
+        article.push(`
         <div>
             <h2 class="bighead">${data.mainArticle.bigHeadline[lang]}</h2>
             <ul class="article_sentence"></ul>
         </div>
 
         `)
-    article_tag.insertAdjacentHTML("beforeend", article);
+        article_tag.insertAdjacentHTML("beforeend", article);
 
-    /******画像の分岐 ******/
-    // const h2_bighead = document.getElementsByClassName("bighead")[i];
-    // if (data.detailContents[i].bigHeadlineImages != "") {
-    //     for (let j = 0; j < data.detailContents[i].bigHeadlineImages.length; j++) {
-    //         const big_img = [];
-    //         big_img.push(`
-    //         <div class="disp-img">
-    //             <img src="${data.detailContents[i].bigHeadlineImages[j].imagePath}">
-    //         </div>   
-    //         `)
-    //         h2_bighead.insertAdjacentHTML("beforeend", big_img);
-    //     }
-
-    // } else { }
-    // if (data.detailContents[i].bigHeadlineMovieLinks != "") {
-    //     for (let j = 0; j < data.detailContents[i].bigHeadlineMovieLinks.length; j++) {
-    //         const link = data.detailContents[i].bigHeadlineMovieLinks[j].split("/");
-    //         const big_mov = [];
-    //         big_mov.push(`
-    //         <div class="disp-video">
-    //         <iframe src="https://www.youtube.com/embed/${link[3]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    //         </div>   
-    //         `)
-    //         h2_bighead.insertAdjacentHTML("afterend", big_mov);
-    //     }
-
-    // } else { }
-
-
-    const ul_tag = document.querySelector(".article_sentence");
-    for (let j = 0; j < data.mainArticle.articles.length; j++) {
-        const ul_li = [];
-        ul_li.push(`
+        const ul_tag = document.querySelector(".article_sentence");
+        for (let j = 0; j < data.mainArticle.articles.length; j++) {
+            const ul_li = [];
+            ul_li.push(`
                 <li>${data.mainArticle.articles[j].headline[lang]}</li>
                 <p class="li_p">${data.mainArticle.articles[j].body[lang]}</p>
             `)
-        if (data.mainArticle.articles[j].images != "") {
-            for (let k = 0; k < data.mainArticle.articles[j].images.length; k++) {
-                ul_li.push(`
+            if (data.mainArticle.articles[j].images != "") {
+                for (let k = 0; k < data.mainArticle.articles[j].images.length; k++) {
+                    ul_li.push(`
                         <div class="disp-img">
                         <img src="${data.mainArticle.articles[j].images[k].imagePath}">
                         <div class="caption"> ${data.mainArticle.articles[j].images[k].caption[lang]}</div>
                         </div>   
                         `)
-            }
-        } else { }
-        if (data.mainArticle.articles[j].movies != "") {
-            for (let k = 0; k < data.mainArticle.articles[j].movies.length; k++) {
-                const link = data.mainArticle.articles[j].movies[k].moviePath.split("/");
-                console.log(link[3]);
-                ul_li.push(`
+                }
+            } else { }
+            if (data.mainArticle.articles[j].movies != "") {
+                for (let k = 0; k < data.mainArticle.articles[j].movies.length; k++) {
+                    const link = data.mainArticle.articles[j].movies[k].moviePath.split("/");
+                    console.log(link[3]);
+                    ul_li.push(`
                         <div class="disp-video">
                         <iframe src="https://www.youtube.com/embed/${link[3]}?si=iIQ7upbMzS5PySMi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>   
                         `)
-            }
-        } else { }
-        ul_tag.insertAdjacentHTML("beforeend", ul_li.join(''));
+                }
+            } else { }
+            ul_tag.insertAdjacentHTML("beforeend", ul_li.join(''));
+        }
     }
 
 
