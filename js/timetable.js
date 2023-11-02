@@ -169,7 +169,7 @@
   }
   function TimeCompare(year, month, date, startHour, startMinute, endHour, endMinute){
     /* 現在時刻取得 */
-    const currentTime = new Date();
+    const currentTime = new Date(2023,10,5,12,45);
 
     /* 開始時刻取得 */
     const startTime = new Date(year, month-1, date, startHour, startMinute);
