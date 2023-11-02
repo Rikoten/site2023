@@ -233,7 +233,7 @@
     const ticket_tag = document.getElementsByClassName("ticket")[0];
     const walk_tag = document.getElementsByClassName("walk")[0];
     const onlineticket_tag = document.getElementsByClassName("onlineticket")[0];
-    data.hasOfflineTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p>整理券が必要です</p>`) : ticket_tag.classList.add("inactive")
+    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p>整理券が必要です<br>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive")
     data.isWalkRally ? walk_tag.insertAdjacentHTML("beforeend", `<p>ウォークラリー<br>対象企画</p>`) : walk_tag.classList.add("inactive")
     data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend", '<p>オンラインチケット<br>が必要です</p>') : onlineticket_tag.classList.add("inactive")
 
@@ -338,20 +338,6 @@
                 }
             } else {}
             ul_tag.insertAdjacentHTML("beforeend", ul_li.join(''));
-            // if (data.mainArticle.articles[j].movies != "") {
-            //     const sm_mov = [];
-            //     const li_p = document.querySelector(`.li_p`);
-            //     for (let k = 0; k < data.mainArticle.articles[j].movies.length; k++) {
-            //         const link = data.mainArticle.articles[j].movies[k].split("/");
-            //         sm_mov.push(`
-            //         <div class="disp-video">
-            //         <iframe src="https://www.youtube.com/embed/${link[3]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            //         </div>   
-            //         `)
-            //     }
-            //     li_p.insertAdjacentHTML("afterend", sm_mov);
-
-            // } else { }  
         }
 
     

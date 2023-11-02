@@ -135,7 +135,7 @@ async function getProjectHtml(data, name) {
             const ticketText = lang == "ja" ? "オンラインチケットが必要です" : "Online Ticket";
             onlineTicketHtml = `<div class="ticket red">${ticketText}</div>`;
         }
-        if (data[name][i].hasOfflineTicket) {
+        if (data[name][i].hasTicket) {
             const ticketText = lang == "ja" ? "整理券が必要です" : "Offline Ticket";
             offlineTicketHtml = `<div class="ticket blue">${ticketText}</div>`;
         }
@@ -449,12 +449,12 @@ async function keywordEvent(data) {
     $searchText.addEventListener('input', (event) => {
         notSelectedProjectListByKW = [];
         for (const $sd of $searchData) {
-            // if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
-            //     notSelectedProjectListByKW.push($sd.id)
-            // }
-            if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+            if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
                 notSelectedProjectListByKW.push($sd.id)
             }
+            // if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+            //     notSelectedProjectListByKW.push($sd.id)
+            // }
         }
         localStorage.setItem("searchKeyword", event.currentTarget.value);
         updateProjectsByTag(data);
