@@ -49,6 +49,7 @@ main .collabmenu-top.show{
 
 main .main-title {
   width: calc(100% - 100px);
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 30px;
 }
