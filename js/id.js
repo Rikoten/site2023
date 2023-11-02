@@ -243,7 +243,7 @@
     const ticket_tag = document.getElementsByClassName("ticket")[0];
     const walk_tag = document.getElementsByClassName("walk")[0];
     const onlineticket_tag = document.getElementsByClassName("onlineticket")[0];
-    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p>整理券が必要です<br>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive")
+    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p class="ticket_anounce">整理券が必要です</p><br><p>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive")
     data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend", '<p>オンラインチケット<br>が必要です</p>') : onlineticket_tag.classList.add("inactive")
 
 
