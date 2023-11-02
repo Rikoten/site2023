@@ -32,6 +32,10 @@
 
       /* 動画 */
       const arrMovieHTML = [];
+      const MovieText = {
+        ja: "動画を見る",
+        en: "Movie"
+      }
       for (k=0; k<json[Object.keys(json)[i]][j].mainArticle.articles.length; k++){
         if (json[Object.keys(json)[i]][j].mainArticle.articles[k].movies.length > 0){
           arrMovieHTML.push(`<div class="movie">`);
@@ -39,7 +43,7 @@
             if (json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath !== ""){
               arrMovieHTML.push(`
                 <div>
-                  <a href="${json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath}" target=blank rel="noopener noreferrer">動画を見る</a>
+                  <a href="${json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath}" target=blank rel="noopener noreferrer">${MovieText[lang]}</a>
                 </div>
               `)
             }
