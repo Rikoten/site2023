@@ -94,52 +94,6 @@
   {
     "num": "03",
     "name": {
-      "ja": "近江熟成醤油ラーメン \n十二分屋 早稲田店",
-      "en": "Ramen Junibun-ya Waseda"
-    },
-    "adCopy": {
-      "ja": "地元滋賀県の醤油を引っさげて関東上陸したラーメン屋「十二分屋」です。",
-      "en": "Proudly landing in Kanto with our locally-sourced soy sauce from Shiga Prefecture, we are Ramen Junibun-ya."
-    },
-    "menuComment": {
-      "ja": "sparkにかけて、spicyなカレーまぜそばを開発しました。当店自慢の塩ダレと、食欲をそそるカレーのコラボレーションが実現しました。温泉玉子のまろやかさと、フライドオニオンの甘さが、カレーのスパイシーさとマッチした一杯です。",
-      "en": "In tribute to 'spark', we've developed a spicy curry mixed noodles. The collaboration between our signature salt sauce and the enticing curry has become a reality. The creaminess of the hot spring egg and the sweetness of fried onions perfectly complement the spiciness of the curry in this bowl."
-    },
-    "concept": {
-      "ja": "選りすぐりの近江醤油を使ったメニューを豊富にご用意して、多くの方々に普段遣いいただけるラーメン屋を目指しています。",
-      "en": "We have a wide selection of dishes made with carefully selected Omi soy sauce, aiming to be a ramen shop that everyone can enjoy on a regular basis."
-    },
-    "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.667281246812!2d139.71097287615518!3d35.70980442840322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dd8e6589be3%3A0xd3200b011f07c37e!2z6L-R5rGf54af5oiQ6Yak5rK544Op44O844Oh44OzIOWNgeS6jOWIhuWxiyDml6nnqLLnlLDlupc!5e0!3m2!1sja!2sjp!4v1698470831271!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
-    "time": {
-      "ja": "定休日なし(臨時休業はInstagramにてお知らせします): 11:00〜15:00, 17:00〜21:00",
-      "en": "No regular holidays (Temporary holidays will be notified through Instagram): 11:00~15:00, 17:00~21:00"
-    },
-    "rikoten": {
-      "ja": "両日とも営業",
-      "en": "Open for both days"
-    },
-    "period": {
-      "ja": "10月1日(日)〜11月5日(日)",
-      "en": "Sun. Oct. 1  ~ Sun. Nov. 5"
-    },
-    "menuName": {
-      "ja": "痺れる!\nspicyカレーまぜそば",
-      "en": "Tingle your tounge! Spicy curry mazesoba"
-    },
-    "menuPrice": {
-      "ja": "￥980",
-      "en": "￥980"
-    },
-    "menuImg": "/img/collabmenu/03-十二分屋.JPG",
-    "HP": null,
-    "Instagram": "https://instagram.com/junibun_ya.waseda?igshid=OGQ5ZDc2ODk2ZA==",
-    "X": null,
-    "LINE": null,
-    "release": true
-  },
-  {
-    "num": "04",
-    "name": {
       "ja": "つけ麺屋やすべえ \n高田馬場店",
       "en": "Tsukemen Yasubee Takadanobaba"
     },
@@ -153,7 +107,7 @@
     },
     "concept": {
       "ja": "こだわりの麺を、多彩な食べ方で。並、中、大盛り同一価格。無料のトッピング有",
-      "en": "A comfortable cafe in campus with open terrace seats. All customers are welcome!"
+      "en": "Savor special noodles in a variety of ways. Regular, medium, and large servings all at the same price, with free toppings available."
     },
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.634569961312!2d139.70186527525192!3d35.71060922836045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3bc823629f%3A0x6bd9fa016214f71!2z44Gk44GR6bq65bGL44KE44GZ44G544GIIOmrmOeUsOmmrOWgtOW6lw!5e0!3m2!1sja!2sjp!4v1698489131849!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
@@ -184,7 +138,7 @@
     "release": true
   },
   {
-    "num": "05",
+    "num": "04",
     "name": {
       "ja": "タリーズコーヒー\n早大理工店",
       "en": "Tully's Coffee So-dai Rikou"
@@ -204,11 +158,11 @@
     "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.820021644569!2d139.70598177615494!3d35.70604632860983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0xbe5798fedb2eea72!2z44K_44Oq44O844K644Kz44O844OS44O8IOaXqeWkp-eQhuW3peW6lw!5e0!3m2!1sja!2sjp!4v1698471330154!5m2!1sja!2sjp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
     "time": {
       "ja": "平日:8:00～20:00（LO 19:30）/ 土曜:9:00～18:00（LO 17:30） ※日曜・祝日休業",
-      "en": "Mon~Sat:10:30~21:00, Sun:10:30~15:00 ※Closed on Sundays and holidays"
+      "en": "Weekdays: 8:00~20:00 (LO 19:30), Sat: 9:00~18:00 (LO 17:30) ※Closed on Sundays and holidays"
     },
     "rikoten": {
       "ja": "2日間とも営業（日曜臨時営業）",
-      "en": "Weekdays:8:00~20:00 (LO 19:30), Sat:9:00~18:00 (LO 17:30)"
+      "en": "Open for both days (Temporarily open on Sunday)"
     },
     "period": {
       "ja": "10月9日(月)～11月5日(日)",
@@ -230,7 +184,7 @@
     "release": true
   },
   {
-    "num": "06",
+    "num": "05",
     "name": {
       "ja": "東京麺珍亭本舗 \n高田馬場店",
       "en": "Tokyo Menchintei-honpo Takadanobaba"

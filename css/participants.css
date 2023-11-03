@@ -206,22 +206,28 @@
   left: 1px;
 }
 
-/* 各企画のタグ */
-#participants .project .desc .project-tag ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
+#participants .project .desc .detail .movie{
+  text-align: right;
+  margin-top: 10px;
 }
 
-#participants .project .desc .project-tag ul li {
-  background-color: #ffffff;
+#participants .project .desc .detail .movie > div{
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  border: solid 1px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
   box-shadow: 1px 1px 5px var(--color-gray);
-  border-radius: 30px;
-  padding: 2px 15px;
-  margin: 5px;
-  margin-left: 0;
-  font-size: 10px;
-  color: var(--color-lightpink);
+  transition: .3s;
+}
+
+#participants .project .desc .detail .movie > div:hover{
+  border-color: #FFF;
+}
+#participants .project .desc .detail .movie a{
+  color: var(--color-font);
 }
 
 @media screen and (max-width: 550px) {

@@ -4,13 +4,13 @@
   
   /* DOM取得 (Part 1) --------
   -------------------*/
-  const menu = document.querySelector(".menu"); //MENUリスト
+  const menu = document.querySelector(".menu ul"); //MENUリスト
 
   const contentsWrapper = document.querySelector(".contents-wrapper"); //コンテンツ
 
   /* JSONデータ取得 --
   -------------------*/
-  const json = await fetch('/data/collabmenu.json?date=20231030').then(res => res.json());
+  const json = await fetch('/data/collabmenu.json?date=20231102').then(res => res.json());
 
   /* MENUリスト作成 --
   -------------------*/ 

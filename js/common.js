@@ -76,9 +76,9 @@ async function setHeaderFooter() {
                 <ul>
                   <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
                   <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
+                  <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
                   <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
                   <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-                  <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
                 </ul>
             </li>
             <li class="pulldown" id="header-about">${headerLang.about[lang]}
@@ -90,11 +90,11 @@ async function setHeaderFooter() {
             </li>
             <li class="pulldown" id="header-info">${headerLang.info[lang]}
                 <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
-                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
-                <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
-                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
+                  <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+                  <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
+                  <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+                  <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
+                  <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
                 </ul>
             </li>
             </ul>
@@ -111,29 +111,29 @@ async function setHeaderFooter() {
             <li>
             <button class="accordionBtn" type="button">${headerLang.projects[lang]}</button>
             <ul>
-            <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
-            <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
-            <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
-            <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
-            <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
+              <li><a href="/projects/participants">${headerLang.participants[lang]}</a></li>
+              <li><a href="/projects/search">${headerLang.search[lang]}</a></li>
+              <li><a href="/projects/timetable">${headerLang.timetable[lang]}</a></li>
+              <li><a href="/projects/specialguest">${headerLang.specialguest[lang]}</a></li>
+              <li><a href="/projects/collab">${headerLang.collab[lang]}</a></li>
             </ul>
             </li>
             <li>
             <button class="accordionBtn" type="button">${headerLang.about[lang]}</button>
             <ul>
-                <li><a href="/about/about">${headerLang.about[lang]}</a></li>
-                <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
-                <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
+              <li><a href="/about/about">${headerLang.about[lang]}</a></li>
+              <li><a href="/about/theme">${headerLang.theme[lang]}</a></li>
+              <li><a href="/about/lastyear">${headerLang.lastyear[lang]}</a></li>
             </ul>
             </li>
             <li>
             <button class="accordionBtn" type="button">${headerLang.info[lang]}</button>
             <ul>
-                <li><a href="/info/app">${headerLang.app[lang]}</a></li>
-                <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
-                <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
-                <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
-                <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
+              <li><a href="/info/app">${headerLang.app[lang]}</a></li>
+              <li><a href="/info/faq">${headerLang.faq[lang]}</a></li>
+              <li><a href="/info/sponsor">${headerLang.sponsor[lang]}</a></li>
+              <li><a href="/info/privacy">${headerLang.privacy[lang]}</a></li>
+              <li><a href="/info/contact">${headerLang.contact[lang]}</a></li>
             </ul>
             </li>
         </ul>

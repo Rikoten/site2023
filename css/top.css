@@ -1,8 +1,50 @@
-/* テーマページができるまでボタンを消す */
-#theme .hidden{
+/*******************************
+
+    Loading背景画面設定
+
+ *******************************/
+ #splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:var(--color-background);
+  text-align: center;
+  color: #fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
   opacity: 0;
-  position: relative;
-  z-index: -10;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*******************************
@@ -12,10 +54,12 @@
 *******************************/
 /*--- 左右の余白等 ---*/
 #participants,
+#movie,
 #notes,
 #theme,
 #specialguest,
-#access{
+#access,
+#sponsor{
   width: calc(100% - 100px);
   max-width: 1000px;
   margin: auto;
@@ -24,20 +68,24 @@
 
 @media screen and (max-width: 768px) {
   #participants,
+  #movie,
   #notes,
   #theme,
   #specialguest,
-  #access{
+  #access,
+  #sponsor{
     width: calc(100% - 50px);
   }
 }
 
 @media screen and (max-width: 480px) {
   #participants,
+  #movie,
   #notes,
   #theme,
   #specialguest,
-  #access{
+  #access,
+  #sponsor{
     width: calc(100% - 30px);
   }
 }
@@ -69,7 +117,6 @@ div.textbox{
 div.button{
   width: 250px;
   height: 40px;
-  color: var(--color-font);
   background-color: #FFF;
   border: solid 1px;
   border-radius: 20px;
@@ -84,6 +131,10 @@ div.button{
 div.button:hover{
   font-size: 18px;
   border-color: #FFF;
+}
+
+div.button a{
+  color: var(--color-font);
 }
 
 /*******************************
@@ -297,7 +348,6 @@ div.button:hover{
   align-self: center;
   background-color: #FFF;
   padding: 10px;
-  margin: 5px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   transition: .3s;
 }
@@ -375,15 +425,37 @@ div.button:hover{
   }
 }
 
+/* 英語のとき例外処理 */
+#participants[lang="en"] .experiment .container .inner-box .back-img p{
+  font-size: 18px;
+}
+
+#participants[lang="en"] .experiment .container:hover .inner-box .back-img p{
+  font-size: 20px;
+}
+
+/*******************************
+
+     出展団体
+
+ *******************************/
+#movie{
+  padding-top: 40px;
+}
+
+#movie iframe{
+  display: block;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
 /*******************************
 
      お願い
 
 *******************************/
-#notes{
-  padding-top: 40px;
-}
-
 #notes .textbox > div:not(:last-child){
   margin-bottom: 70px;
 }
@@ -706,6 +778,56 @@ div.button:hover{
 
 /*******************************
 
+     ご協賛
+
+*******************************/
+#sponsor div.gold,
+#sponsor div.silver {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#sponsor div.gold a {
+  width: calc((100% - 20px)/2);
+  aspect-ratio: 3 / 1;
+  margin-bottom: 15px;
+}
+
+#sponsor div.silver a,
+#sponsor div.silver div.inactive {
+  width: calc((100% - 40px)/3);
+  aspect-ratio: 2 / 1;
+  margin-bottom: 15px;
+}
+
+#sponsor img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-gray);
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width:600px) {
+  #sponsor div.gold {
+    margin-bottom: 20px;
+  }
+
+  #sponsor div.gold a {
+    width: calc((100% - 10px)/2);
+  }
+
+  #sponsor div.silver a,
+  #sponsor div.silver div.inactive {
+    width: calc((100% - 20px)/3);
+  }
+}
+
+/*******************************
+
      企画検索
 
  *******************************/
@@ -789,49 +911,3 @@ div.button:hover{
   transform: translateX(-50%);
   background-image: url(../img/search/search.svg);
  }
-
- 
-/* Loading背景画面設定　*/
-#splash {
-  /*fixedで全面に固定*/
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background:var(--color-background);
-  text-align: center;
-  color: #fff;
-}
-
-/* Loading画像中央配置　*/
-#splash_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Loading アイコンの大きさ設定　*/
-#splash_logo img {
-  width: 260px;
-}
-
-/* fadeUpをするアイコンの動き */
-.fadeUp {
-  animation-name: fadeUpAnime;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

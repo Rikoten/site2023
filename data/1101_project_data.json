@@ -2962,7 +2962,7 @@
       "isSecondDay": true,
       "isWalkRally": false,
       "hasTicket": true,
-      "ticketDetail": "両日とも朝10時から受付開始 / お申込みは<a href=\"https://forms.gle/2FBTh3yrEf28yZHt9\" target=\"blank\" rel=\"noopener noreferrer\">こちら</a>",
+      "ticketDetail": "https://forms.gle/2FBTh3yrEf28yZHt9",
       "groupName": {
         "ja": "西早稲田キャンパスツアーガイド",
         "en": "Nishiwaseda Campus Tour Guide"
@@ -3084,8 +3084,8 @@
         "en": "Rikoten exective committee, Public Relations Department, Restaurant Collaboration"
       },
       "projectName": {
-        "ja": "飲食店コラボ",
-        "en": "Restaurant Collaboration"
+        "ja": "飲食店コラボ・金券交換所",
+        "en": "Restaurant Collaboration・Gold Certificate Exchange"
       },
       "groupDetail": {
         "ja": "理工展とコラボをしている飲食店を紹介しています！期間限定のコラボメニューの販売や理工展アプリを用いたクーポン企画なども実施しているので、ぜひ足を運んでみてください！！",
