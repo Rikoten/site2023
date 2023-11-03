@@ -10,7 +10,8 @@ main{
 }*/
 
 #timetable h1{
-  color:#DD6BA3;
+  font-size: 32px;
+  color: --color-font;
   padding-left: 40px;
   line-height: 1;
   position: relative;
@@ -127,23 +128,25 @@ main{
 }
 
 #timetable .label{
-  color: #BEBEBE;
   font-weight: bold;
-  background-color:#FFFFFF;
+  background-color: #fbaf18;
   border-radius: 10px;
   margin-bottom: 10px;
   border-style: solid;
   border-width: thin;
+  border-color: #fbaf18;
   text-align: center;
   padding: 8px 0;
 }
 
 #timetable .label div:first-child{
   font-size: 20px;
+  color: #FFFFFF;
 }
 
 #timetable .label div:last-child{
   font-size: 16px;
+  color: #FFFFFF;
 }
 
 #timetable .project-block{
@@ -174,27 +177,51 @@ main{
 }
 
 #timetable .project-block::after{
+  color: #461100;
   content: "";
-  border-style: solid;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
+
+  background-color:#FFFFFF;
+  
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 10px;
+
+  margin-top: 5px;
+  margin-bottom: 2px;
+  box-shadow: 0 10px 10px -5px var(--color-gray);
+  overflow: hidden;
 }
 
 #timetable .project-block .time{
+  color: #461100;
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 8px;
+  padding-left: 5px;
   z-index: 5;
+
+  position: absolute;
+  display: inline-block;
+  top: -9px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 2;
+  background: #FFFFFF;
+  font-weight: bold;
 }
 
 #timetable .project-block .projectName{
-  font-size: 20px;
+  color: #461100;
+  font-size: 9px;
   font-weight: bold;
-  padding-left: 5px;
+  padding-top: 20px;
+  padding-left: 10px;
   line-height: 1.2;
   z-index: 5;
   width: 100%;
@@ -203,8 +230,14 @@ main{
   white-space: nowrap;
 }
 
+#timetable .project-block .projectName::first-letter{
+  color:#FBA518;
+}
+
 #timetable .project-block .groupName{
-  font-size: 12px;
+  color: #461100;
+  font-size: 10px;
+  padding: 8px 8px 8px 9px;
   font-weight: bold;
   padding: 10px 15px;
   z-index: 5;
@@ -330,8 +363,8 @@ main{
   }
 
   #timetable .project-block .time{
-    font-size: 1rem;
-    padding-bottom: 0.6rem;
+    font-size: 1.1rem;
+    padding-bottom: 0.3rem;
   }
   #timetable .project-block .projectName{
     font-size: 1.25rem;
