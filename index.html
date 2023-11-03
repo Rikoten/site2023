@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>第70回理工展 -Spark</title>
-  <meta name="description" content="早稲田理工の学園祭、理工展のホームページです。2023年度は11/4(土)・11/5(日)に早稲田大学西早稲田キャンパスで開催されます。理工展では、研究発表や講演会から参加型の実験企画まで幅広い企画を用意しています。みなさまのご来場、お待ちしております。">
+  <meta name="description"
+    content="早稲田理工の学園祭、理工展のホームページです。2023年度は11/4(土)・11/5(日)に早稲田大学西早稲田キャンパスで開催されます。理工展では、研究発表や講演会から参加型の実験企画まで幅広い企画を用意しています。みなさまのご来場、お待ちしております。">
   <link href="/css/common.css?date=20231002" rel="stylesheet">
   <link href="/css/top.css?date=20231102" rel="stylesheet">
   <link href="/css/swiper.min.css?date=20231001" rel="stylesheet">
@@ -34,7 +35,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-H43EHV2DHD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-H43EHV2DHD');
@@ -43,6 +44,9 @@
 
 <body>
   <header></header>
+  <div id="splash">
+    <div id="splash_logo"><img src="../../img/top/ロゴ正方形_背景透過.png" alt="" class="fadeUp"></div>
+  </div>
   <main>
     <section id="top">
       <div class="triangle"></div>
@@ -219,7 +223,8 @@
         <div class="textbox">
           <h2>～Request for Visitors～</h2>
           <h3><span>Regarding</span> entrance gate</h3>
-          <p>Due to reconstruction work on the Nishi-Waseda campus, the Main Gate is closed. Please come through the following gates.</p>
+          <p>Due to reconstruction work on the Nishi-Waseda campus, the Main Gate is closed. Please come through the
+            following gates.</p>
           <ul>
             <li>Those viewing Stage<br>→Meiji Gate・Subway Exit directly connecting to Nishi-Waseda Station</li>
             <li>Those viewing Special Guest<br>→West Gate</li>
@@ -228,7 +233,8 @@
           </ul>
           <img src="img/top/nishi-waseda.png" alt="Nishi-Waseda campus">
           <h3><span>Regarding</span> photography by the organizer</h3>
-          <p>Staff will be taking photos and videos on campus. Please note that photos, videos, audio, etc. taken may be published on the university's website, press announcements, public relations magazines, etc.</p>
+          <p>Staff will be taking photos and videos on campus. Please note that photos, videos, audio, etc. taken may be
+            published on the university's website, press announcements, public relations magazines, etc.</p>
         </div>
       </section>
 
@@ -436,9 +442,14 @@
         </div>
       </div>
     </section>
+
+    <a id="search" href="/projects/search">
+      <div>企画検索</div>
+    </a>
   </main>
   <footer></footer>
   <script src="/js/common.js?date=20231101"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!--<script src="/js/swiper-bundle.min.js?date=20231001" defer></script>-->
   <!--<script src="/js/visitors.js?date=20231001"></script>-->
   <script src="/js/top.js?date=20231030"></script>

@@ -1,8 +1,22 @@
 /* 全体 ------------------- 
 --------------------------*/
-main{
-  padding: 100px 20px 50px;
-  /*width: min-content;*/
+#timetable{
+  width: calc(100% - 100px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #timetable{
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #timetable{
+    width: calc(100% - 30px);
+  }
 }
 
 /*#timetable .page-header{
@@ -10,16 +24,16 @@ main{
 }*/
 
 #timetable h1{
-  color:#DD6BA3;
+  font-size: 32px;
   padding-left: 40px;
-  line-height: 1;
   position: relative;
+  margin-top: 0;
 }
 
 #timetable .title::before{
   content: "";
   display: inline-block;
-  background-image:url('../img/timetable/time.png');
+  background-image:url('../img/timetable/time.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -39,7 +53,7 @@ main{
 #timetable .nav .nav-line{
   display: inline-block;
   height: 2px;
-  background-color: #DD6BA3;
+  background-color: var(--color-font);
 }
 
 #timetable .date-button{
@@ -56,10 +70,10 @@ main{
 }
 
 #timetable .button{
-  color: #DD6BA3;
+  color: var(--color-font);
   background-color: #FFFFFF;
   border-style: solid;
-  border-color: #DD6BA3;
+  border-color: var(--color-font);
   border-width: 2px;
   padding: 8px 30px;
   line-height: 1;
@@ -73,12 +87,13 @@ main{
 
 #timetable .button:hover{
   color: #FFFFFF;
-  background-color: #DD6BA3;
+  background-color: var(--color-font);
+  transform: scale(110%);
 }
 
 #timetable .button.active{
   color: #FFFFFF;
-  background-color: #DD6BA3;
+  background-color: var(--color-font);
 }
 
 #timetable .button:last-child{
@@ -127,15 +142,13 @@ main{
 }
 
 #timetable .label{
-  color: #BEBEBE;
   font-weight: bold;
-  background-color:#FFFFFF;
+  background-color:var(--color-orange);
   border-radius: 10px;
   margin-bottom: 10px;
-  border-style: solid;
-  border-width: thin;
   text-align: center;
   padding: 8px 0;
+  color: #FFFFFF;
 }
 
 #timetable .label div:first-child{
@@ -148,51 +161,50 @@ main{
 
 #timetable .project-block{
   position: relative;
-  color: #FFFFFF;
-  width: 450px;
-  height: 120px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  color: #000;
+  width: 300px;
+  height: 80px;
+  margin-top: 20px;
   padding: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: white;
+  border-radius: 10px;
   overflow: hidden;
   z-index: 0;
 }
 
 #timetable .project-block::before{
   content: "";
-  background: inherit;
-  filter: blur(5px);
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -2;
-}
-
-#timetable .project-block::after{
-  content: "";
-  border-style: solid;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
   right: 0;
-  z-index: -1;
+  border: solid 3px var(--color-lightblue);
+  border-radius: 10px;
+  z-index: -2;
 }
 
 #timetable .project-block .time{
   font-size: 16px;
   font-weight: bold;
+  padding-left: 5px;
   padding-bottom: 8px;
   z-index: 5;
+  position: absolute;
+  display: inline-block;
+  top: -9px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 2;
+  background: #FFF;
+  font-weight: bold;
 }
 
 #timetable .project-block .projectName{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   padding-left: 5px;
   line-height: 1.2;
@@ -201,19 +213,16 @@ main{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 #timetable .project-block .groupName{
   font-size: 12px;
   font-weight: bold;
-  padding: 10px 15px;
-  z-index: 5;
-}
-
-#timetable .project-block .detail{
-  position: absolute;
-  bottom: 15px;
-  right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   z-index: 5;
 }
 
@@ -256,7 +265,7 @@ main{
   top: -1px;
   right: -1px;
   border-radius: 0 10px 0 10px;
-  padding: 5px 40px;
+  padding: 15px 20px 15px 40px;
 }
 
 #timetable .h-scroll{
@@ -307,6 +316,7 @@ main{
     width: 240px;
     margin: auto;
     margin-bottom: 10px;
+    font-size: 14px;
   }
 
   #timetable .project-type{
@@ -328,7 +338,9 @@ main{
     width: 100%;
     height: min-content;
   }
-
+  #timetable .project-block.now .now-playing{
+    padding:15px 40px;
+  }
   #timetable .project-block .time{
     font-size: 1rem;
     padding-bottom: 0.6rem;

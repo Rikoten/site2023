@@ -1,5 +1,5 @@
 /*--- 背景ベンツ ---*/
-main{
+main {
   height: 100%;
   background-image: url(../img/theme/background_benz.svg);
   background-repeat: no-repeat;
@@ -8,31 +8,31 @@ main{
 }
 
 @media screen and (max-width: 1024px) {
-  main{
+  main {
     background-position: top 0px left -100px;
   }
 }
 
 @media screen and (max-width: 920px) {
-  main{
+  main {
     background-size: 90% auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main{
+  main {
     background-size: auto 120%;
     background-position: top -200px left -300px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  main{
+  main {
     background-position: top -150px left -350px;
   }
 }
 
-#theme{
+#theme {
   width: calc(100% - 100px);
   max-width: 1000px;
   margin: 0 auto;
@@ -40,56 +40,56 @@ main{
 }
 
 @media screen and (max-width: 768px) {
-  #theme{
+  #theme {
     width: calc(100% - 50px);
   }
 }
 
 @media screen and (max-width: 480px) {
-  #theme{
+  #theme {
     width: calc(100% - 30px);
   }
 }
 
-#theme .container{
+#theme .container {
   max-width: 1000px;
-  margin:auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-#theme h1{
+#theme h1 {
   font-size: 32px;
-  margin:0;
+  margin: 0;
   color: --color-font;
 }
 
-#theme h3{
+#theme h3 {
   /*min-width:8em;
   max-width: 8em;*/
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-#theme .text{
-  padding:30px 0;
+#theme .text {
+  padding: 30px 0;
 }
 
-#theme img{
-  display:block;
+#theme img {
+  display: block;
   width: 300px;
   max-width: 100%;
   height: auto;
 }
 
-#theme .img img{
+#theme .img img {
   margin: 10px auto;
-} 
+}
 
-#theme h1{
+#theme h1 {
   font-size: 32px;
 }
 
-#theme h2{
+#theme h2 {
   font-size: 28px;
   font-weight: 800;
   text-align: center;
@@ -97,84 +97,134 @@ main{
   font-weight: 200;
 }
 
-#theme h3{
+#theme h3 {
   font-size: 24px;
   text-align: center;
   font-family: var(--font-serif);
-  margin-top:0;
+  margin-top: 0;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-#theme p{
+#theme p {
   text-align: center;
   font-size: 18px;
   font-family: var(--font-serif);
   font-weight: 100;
   /*min-width: 17em;
   max-width: 23em;*/
-  margin:auto;
+  margin: auto;
 }
 
-#theme h1::before{
-  content:"";
-  display:inline-block;
+#theme h1::before {
+  content: "";
+  display: inline-block;
   background-image: url(../../img/theme/theme_icon.svg);
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
   padding-right: 10px;
 }
 
-@media screen and (max-width:480px){
-  #theme h3{
+@media screen and (max-width:480px) {
+  #theme h3 {
     font-size: 20px;
   }
 
-  #theme p{
+  #theme p {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width:320px){
-  #theme h3{
+@media screen and (max-width:320px) {
+  #theme h3 {
     font-size: 18px;
   }
 
-  #theme p{
+  #theme p {
     font-size: 14px;
   }
 }
 
 /* 480px以上の時の設定 */
-@media screen and (min-width:480px){
-  #theme img{
+@media screen and (min-width:480px) {
+  #theme img {
     max-width: 400px;
   }
 }
+
 /* 768px以上の時の設定 */
-@media screen and (min-width:768px){
-  #theme .container{
-    flex-direction:row;
-    align-items:center;
-  }
-  #theme .container > .text{
-    flex:3;
-    min-width: 17em;
-  }
-  #theme .container > .img{
-    flex:2;
+@media screen and (min-width:768px) {
+  #theme .container {
+    flex-direction: row;
+    align-items: center;
   }
 
-  #theme img{
+  #theme .container>.text {
+    flex: 3;
+    min-width: 17em;
+  }
+
+  #theme .container>.img {
+    flex: 2;
+  }
+
+  #theme img {
     max-width: 100%;
   }
 
-  #theme .text{
-    padding-right:40px;
+  #theme .text {
+    padding-right: 40px;
   }
-  #theme p{
+
+  #theme p {
     padding-bottom: 50px;
+  }
+}
+
+
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background:var(--color-background);
+  text-align: center;
+  color: #fff;
+}
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px;
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

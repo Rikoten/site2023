@@ -103,13 +103,13 @@
         const nowLabel = lang=="ja"?"現在公演中":"LIVE";
         const detailLabel = lang=="ja"?"詳細を見る":"Detail";
         contents.push(`
-          <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}" style="background-image: url(${json[Object.keys(json)[i]][j].contents[k].imagePath});">
-            <div class="now-playing">${nowLabel}</div>
-            <div class="time">${json[Object.keys(json)[i]][j].contents[k].startTime.hour}:${startTimeMinute}-${json[Object.keys(json)[i]][j].contents[k].endTime.hour}:${endTimeMinute}</div>
-            <div class="projectName">${json[Object.keys(json)[i]][j].contents[k].eventName[lang]}</div>
-            <div class="groupName">${json[Object.keys(json)[i]][j].contents[k].groupName[lang]}</div>
-            <div class="detail"><a href="/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}">${detailLabel}</a></div>
-          </div>        
+        <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}"  onclick="window.location.href='/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}';">
+        <div class="now-playing"><img src="/img/timetable/label.png" alt="${nowLabel} width="50" height="25""></div>
+        <div class="time">${json[Object.keys(json)[i]][j].contents[k].startTime.hour}:${startTimeMinute}-${json[Object.keys(json)[i]][j].contents[k].endTime.hour}:${endTimeMinute}</div>
+        <div class="projectName">${json[Object.keys(json)[i]][j].contents[k].eventName[lang]}</div>
+        <div class="groupName">${json[Object.keys(json)[i]][j].contents[k].groupName[lang]}</div>
+        </div>
+            
         `)
       }
       
@@ -126,40 +126,27 @@
   const contentsJoin = contents.join(""); //配列の要素を連結して文字列とする
   contentsWrapper.insertAdjacentHTML("afterbegin", contentsJoin);
 
-  document.querySelector(".secondday").classList.add("active"); //はじめは2日目がactive
+  document.querySelector(".firstday").classList.add("active"); //はじめは1日目がactive
 
-  /* CSS 企画ボックスの色 ---
-  --------------------------*/
-  const styleSheet = document.styleSheets[1];
-  console.log("styleSheet", styleSheet);
-  for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
-    for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
-      const nowPlayings = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block.now .now-playing`);
-      for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-        const red = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(0, 2), 16);
-        const green = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(2, 4), 16);
-        const blue = parseInt(json[Object.keys(json)[i]][j].contents[k].color.slice(4, 6), 16);
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}::after { border-color: rgba(${red}, ${green}, ${blue}, 0.7); background-color: rgba(${red}, ${green}, ${blue}, 0.7)} 
-          `, styleSheet.cssRules.length
-        );
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now::after { border-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );  
-        styleSheet.insertRule(`
-          #timetable .${Object.keys(json)[i]} .project-block.${json[Object.keys(json)[i]][j].contents[k].id}.row${k}.now .now-playing { background-color: rgba(${red}, ${green}, ${blue}, 1) }
-          `,styleSheet.cssRules.length
-        );                       
-      }    
-    } /* 
-    */
-  }  
   
-
+  /* 日付切り替え -----------
+  --------------------------*/   
+  firstDayButton.addEventListener('click', function(){ //1日目のボタンが押されたら
+    document.querySelector(".firstday").classList.add("active"); //1日目を表示
+    document.querySelector(".secondday").classList.remove("active"); //2日目を非表示
+    firstDayButton.classList.add("active");
+    secondDayButton.classList.remove("active");
+  });
+  secondDayButton.addEventListener('click', function(){ //2日目のボタンが押されたら
+    document.querySelector(".firstday").classList.remove("active"); //1日目を非表示
+    document.querySelector(".secondday").classList.add("active"); //2日目を表示
+    firstDayButton.classList.remove("active");
+    secondDayButton.classList.add("active");
+  });
+  
   /* [E-09]シリコンの覚醒 ---
   --------------------------*/
-  if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
+  /*if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
     document.querySelector(".E-09 .projectName").style.fontSize = "16px"; //企画名のfont-sizeを小さく 
   }
 
@@ -172,13 +159,13 @@
     resizeBefore = resizeAfter;
     resizeAfter = window.innerWidth - 576;
     //console.log("resizeBefore: ", resizeBefore, "resizeAfter: ", resizeAfter);
-    if (resizeBefore * resizeAfter <= 0){
+  /*  if (resizeBefore * resizeAfter <= 0){
       if (window.innerWidth > 576){ //ウィンドウ幅が広いとき
         document.querySelector(".E-09 .projectName").style.fontSize = "16px"; //企画名のfont-sizeを小さく 
       } else{
         document.querySelector(".E-09 .projectName").style.fontSize = "1.25rem"; //ウィンドウ幅が狭いときは他と同じ
       }
-    }
+    }*/
   });  
 
   
@@ -203,26 +190,25 @@
   /* 企画終了 / 現在公演中 -- 
   --------------------------*/
   window.addEventListener("load", AddClassFinishedNow); //ロードされたら時間を確認してクラス付与/削除
-  setInterval(AddClassFinishedNow, 1000); //1秒ごとに時間を確認してクラス付与/削除
+  //setInterval(AddClassFinishedNow, 1000); //1秒ごとに時間を確認してクラス付与/削除
 
   function AddClassFinishedNow(){
     for (let i=0; i<Object.keys(json).length; i++){ //1日目・2日目をループ
       for(let j=0; j<json[Object.keys(json)[i]].length; j++){ //企画タイプをループ
         const projectBlocks = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block`);
-        //console.log(i, "projectBlocks", projectBlocks);
         for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-          if (i === 0){ //1日目は2022/11/5
-            if (TimeCompare(2022, 11, 5, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === -1){  
+          if (i === 0){ //1日目は2023/11/4
+            if (TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === -1){  
               projectBlocks[k].classList.remove("now");
               projectBlocks[k].classList.add("finished");  
-            } else if(TimeCompare(2022, 11, 5, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === 0){
+            } else if(TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === 0){
               projectBlocks[k].classList.add("now");
             } 
-          } else if (i === 1){ //2日目は2022/11/6
-            if (TimeCompare(2022, 11, 6, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === -1){  
+          } else if (i === 1){ //2日目は2023/11/5
+            if (TimeCompare(2023, 11, 5, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === -1){  
               projectBlocks[k].classList.remove("now");
               projectBlocks[k].classList.add("finished");  
-            } else if(TimeCompare(2022, 11, 6, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === 0){
+            } else if(TimeCompare(2023, 11, 5, json[Object.keys(json)[1]][j].contents[k].startTime.hour, json[Object.keys(json)[1]][j].contents[k].startTime.minute, json[Object.keys(json)[1]][j].contents[k].endTime.hour, json[Object.keys(json)[1]][j].contents[k].endTime.minute) === 0){
               projectBlocks[k].classList.add("now");
             }
           }
@@ -353,7 +339,6 @@
     projectTypeButton.push(`
       </div>
     `)
-    console.log("prohectTypeButton", projectTypeButton);
     const projectTypeButtonJoin = projectTypeButton.join(""); //配列の要素を連結して文字列とする
     document.querySelector(`.content-wrapper.${Object.keys(json)[i]}`).insertAdjacentHTML("afterbegin", projectTypeButtonJoin);      
   }

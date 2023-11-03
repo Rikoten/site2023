@@ -1,5 +1,5 @@
 (async () => {
-    const data = await fetch('/data/1014_project_data.json').then(res => res.json());
+    const data = await fetch('/data/1103_project_data.json').then(res => res.json());
     console.log(data);
     // すべての企画のHTMLを作成
     await addSearchSection();
@@ -29,14 +29,14 @@ let removeEventListenerNumList = [];
 const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
 
 const allTagList = ["サークル", "研究室", "インカレ", "理工展連絡会", "制作", "設計", "防災", "実験", "教育", "環境", "資源", "学生生活", "トークショー",
-    "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "アニメ", "上映会", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ",
-    "建築", "相談", "子ども向け", "クイズ", "化学", "パフォーマンス", "ゲーム", "eスポーツ", "数学", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
+    "参加型", "展示", "ファミリー向け", "謎解き", "ロケット", "ロボット", "天体観測", "スポーツ", "受験生向け", "グローバル", "プレゼン", "コンピュータ", "スマホ",
+    "建築", "相談", "子ども向け", "化学", "パフォーマンス", "ゲーム", "研究", "大学院", "生物", "SDGs", "飲食", "フード", "ドリンク", "スイーツ", "ダンス"];
 
 const allTagListEn = ["Circle", "Laboratory", "Intercollegiate", "Rikoten", "Production", "Design", "Disaster Prevention",
-    "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
-    "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
+    "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", " Robots", "Astronomy", "Sports", "For Students",
+    "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Chemistry", "Performance", "Games", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-const categoryNames = ["all", "general", "experiment", "stage", "shops"];
+const categoryNames = ["all", "general", "experiment", "stage", "shops", "online"];
 
 async function addSearchSection() {
     const searchSection = document.getElementsByClassName("search-section")[0];
@@ -51,7 +51,8 @@ async function addSearchSection() {
             "exhibition": { "ja": "展示企画", "en": "Exhibition" },
             "experiment": { "ja": "実験企画", "en": "Experiment" },
             "stage": { "ja": "ステージ企画", "en": "Stage" },
-            "booth": { "ja": "模擬店企画", "en": "Booth" }
+            "booth": { "ja": "模擬店企画", "en": "Booth" },
+            "online": { "ja": "オンライン企画", "en": "Online" },
         },
         "tag": {
             "h2": { "ja": "タグで絞り込む", "en": "By Tag" }
@@ -60,7 +61,7 @@ async function addSearchSection() {
     const html = `  <div class="keyword">
                         <h2>${searchSectionLang.keyword.h2[lang]}</h2>
                         <div class="input">
-                            <form>
+                            <form onsubmit="return false">
                                 <input type="search" id="search-text" placeholder="${searchSectionLang.keyword.placeholder[lang]}">
                             </form>
                             
@@ -74,6 +75,7 @@ async function addSearchSection() {
                             <li>${searchSectionLang.category.experiment[lang]}</li>
                             <li>${searchSectionLang.category.stage[lang]}</li>
                             <li>${searchSectionLang.category.booth[lang]}</li>
+                            <li>${searchSectionLang.category.online[lang]}</li>
                         </ul>
                     </div>
                     <div class="tag">
@@ -133,7 +135,7 @@ async function getProjectHtml(data, name) {
             const ticketText = lang == "ja" ? "オンラインチケットが必要です" : "Online Ticket";
             onlineTicketHtml = `<div class="ticket red">${ticketText}</div>`;
         }
-        if (data[name][i].hasOfflineTicket) {
+        if (data[name][i].hasTicket) {
             const ticketText = lang == "ja" ? "整理券が必要です" : "Offline Ticket";
             offlineTicketHtml = `<div class="ticket blue">${ticketText}</div>`;
         }
@@ -144,18 +146,18 @@ async function getProjectHtml(data, name) {
 
         /* 場所 */
         let placeText = "";
-        // if (data[name][i].placeFirstDay.ja == data[name][i].placeSecondDay.ja) {
-        //     placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].placeSecondDay[lang]}`;
-        // }
-        // else if ((data[name][i].placeFirstDay.ja != null && data[name][i].placeSecondDay.ja == null) || (data[name][i].placeFirstDay.ja == null && data[name][i].placeSecondDay.ja != null)) {
-        //     if (data[name][i].placeFirstDay.ja != null) {
-        //         placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}`;
-        //     } else {
-        //         placeText = `11/6 : ${data[name][i].placeSecondDay[lang]}`;
-        //     }
-        // } else {
-        //     placeText = `11/5 : ${data[name][i].placeFirstDay[lang]}<br>11/6 : ${data[name][i].placeSecondDay[lang]}`;
-        // }
+        if (data[name][i].firstDayPlace.ja == data[name][i].secondDayPlace.ja) {
+            placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].secondDayPlace[lang]}`;
+        }
+        else if ((data[name][i].firstDayPlace.ja != "-" && data[name][i].secondDayPlace.ja == "-") || (data[name][i].firstDayPlace.ja == "-" && data[name][i].secondDayPlace.ja != "-")) {
+            if (data[name][i].firstDayPlace.ja != "-") {
+                placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}`;
+            } else {
+                placeText = `11/6 : ${data[name][i].secondDayPlace[lang]}`;
+            }
+        } else {
+            placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}<br>11/6 : ${data[name][i].secondDayPlace[lang]}`;
+        }
 
         /* 企画構築 */
         let project = `<div class="project active ${data[name][i].id}">
@@ -166,7 +168,7 @@ async function getProjectHtml(data, name) {
                                     ${walkRallyHtml}
                                 </div>
                                 <div class="project-img">
-                                    <img src=${data[name][i].thumbnailPath} alt="">
+                                    <img src=${data[name][i].thumbnailPath.web} alt="">
                                 </div>
                                 <div class="desc">
                                     <div class="project-name">${data[name][i].projectName[lang]}</div>
@@ -195,10 +197,12 @@ async function addTagButton() {
 
 async function getProjectTagsHtml(tags) {
 
-    let tagsHtml = ""
+    let tagsHtml = "";
+
     for (let i = 0; i < tags.length; i++) {
         tagsHtml = tagsHtml.concat(`<li># ${tags[i]}</li>`);
     }
+
     return tagsHtml;
 }
 
@@ -433,15 +437,35 @@ function deleteAllActiveTags() {
 
 async function keywordEvent(data) {
 
-    const $searchData = await fetch('/data/dataForSearch.json').then(res => res.json());
+    const $searchData = await fetch('/data/dataForSearch_1028.json').then(res => res.json());
     const $searchText = document.getElementById("search-text");
+    // ページ読み込み時にLocalStorageからキーワードを取得
+    /*const storedKeyword = localStorage.getItem("searchKeyword");
+    if (storedKeyword) {
+        $searchText.value = storedKeyword;
+        // フィルターを適用するために input イベントをトリガーします
+        $searchText.dispatchEvent(new Event('input'));
+    }*/
     $searchText.addEventListener('input', (event) => {
         notSelectedProjectListByKW = [];
         for (const $sd of $searchData) {
-            if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
-                notSelectedProjectListByKW.push($sd.id)
+             if ($sd.dataForSearch_en.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+                 notSelectedProjectListByKW.push($sd.id)
             }
+            /*if ($sd.dataForSearch_hira.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kanji.indexOf(event.currentTarget.value) == -1 && $sd.dataForSearch_kata.indexOf(event.currentTarget.value) == -1) {
+                notSelectedProjectListByKW.push($sd.id)
+            }*/
         }
+        /*localStorage.setItem("searchKeyword", event.currentTarget.value);*/
         updateProjectsByTag(data);
+    });
+
+    window.addEventListener('load', () => {
+        const storedKeyword = localStorage.getItem("searchKeyword");
+        /*if (storedKeyword) {
+            $searchText.value = storedKeyword;
+            // フィルターを適用するために input イベントをトリガーします
+            $searchText.dispatchEvent(new Event('input'));
+        }*/
     });
 }

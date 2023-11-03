@@ -31,7 +31,7 @@
       }
 
       /* 動画 */
-      const arrMovieHTML = [];
+      /*const arrMovieHTML = [];
       const MovieText = {
         ja: "動画を見る",
         en: "Movie"
@@ -43,7 +43,7 @@
             if (json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath !== ""){
               arrMovieHTML.push(`
                 <div>
-                  <a href="${json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath}" target=blank rel="noopener noreferrer">${MovieText[lang]}</a>
+                  <object><a href="${json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath}" target=blank rel="noopener noreferrer">${MovieText[lang]}</a></object>
                 </div>
               `)
             }
@@ -53,20 +53,22 @@
       }
 
       const movieHTML = arrMovieHTML.join("");
-
+      */
+     
       contents.push(`
         <div class="project">
-          <div class="project-img">
-            <img src="/img/projects/${json[Object.keys(json)[i]][j].id}/${json[Object.keys(json)[i]][j].id}_web_thumbnail.jpg" alt="">
-          </div>
-          <div class="desc">
-            <div class="project-name">${json[Object.keys(json)[i]][j].projectName[lang]}</div>
-            <div class="detail">
-              <div class="group-name">${json[Object.keys(json)[i]][j].groupName[lang]}</div>
-              <div class="place">${placeText}</div>
-              ${movieHTML}
+          <a href="/projects/project/?id=${json[Object.keys(json)[i]][j].id}">
+            <div class="project-img">
+              <img src="/img/projects/${json[Object.keys(json)[i]][j].id}/${json[Object.keys(json)[i]][j].id}_web_thumbnail.jpg" alt="">
             </div>
-          </div>
+            <div class="desc">
+              <div class="project-name">${json[Object.keys(json)[i]][j].projectName[lang]}</div>
+              <div class="detail">
+                <div class="group-name">${json[Object.keys(json)[i]][j].groupName[lang]}</div>
+                <div class="place">${placeText}</div>
+              </div>
+            </div>
+          </a>
         </div>    
       `)
     }

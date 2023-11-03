@@ -1,5 +1,17 @@
 const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";
 
+//logoの表示
+$(window).on('load', function () {
+  $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+});
+
+
+/*******************************
+
+     背景グラデーション
+
+ *******************************/
 // 出展団体部分背景のグラデーションを設定する関数
 const setBackGrad = () => {
   const w = document.documentElement.clientWidth; //ウィンドウ幅  
@@ -26,3 +38,23 @@ const windowResize = () => {
 
 setBackGrad(); // 読み込み時に設定
 window.addEventListener("resize", windowResize); // ウインドウサイズ変更時に再設定
+
+/*******************************
+
+     企画検索ボタン
+
+ *******************************/
+const search = document.querySelector("#search");
+window.addEventListener("scroll", () =>{
+  const scroll_position = window.scrollY
+  if (scroll_position > 0){
+    search.classList.add("active");
+  } else {
+    search.style = "opacity: 0";
+    setTimeout((e) => { //  0.5秒後にクラスactiveを削除
+      search.classList.remove("active");
+      search.style = "opacity: 1";
+    }, 500);
+  }
+})
+
