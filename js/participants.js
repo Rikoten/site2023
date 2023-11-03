@@ -2,7 +2,7 @@
   /* 多言語切り替え */
   const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";  
 
-  const json = await fetch('/data/1025_project_data.json').then(res => res.json());
+  const json = await fetch('/data/1103_project_data.json').then(res => res.json());
 
   for (let i=0; i<Object.keys(json).length; i++){ // カテゴリをループ
     const categoryWrapper = document.querySelector(`#${Object.keys(json)[i]} > div > div`); // DOM取得
