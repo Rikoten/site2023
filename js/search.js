@@ -1,5 +1,5 @@
 (async () => {
-    const data = await fetch('/data/1103_project_data.json').then(res => res.json());
+    const data = await fetch('/data/1103_project_data.json?date=1103').then(res => res.json());
     console.log(data);
     // すべての企画のHTMLを作成
     await addSearchSection();
@@ -146,8 +146,14 @@ async function getProjectHtml(data, name) {
 
         /* 場所 */
         let placeText = "";
+        
+        const placeTextOnline = {
+          ja: "オンライン",
+          en: "Online"
+        }
+
         if (data[name][i].firstDayPlace.ja == data[name][i].secondDayPlace.ja) {
-            placeText = data[name][i].isOnline ? "オンライン" : `${data[name][i].secondDayPlace[lang]}`;
+            placeText = data[name][i].isOnline ? `${placeTextOnline[lang]}` : `${data[name][i].secondDayPlace[lang]}`;
         }
         else if ((data[name][i].firstDayPlace.ja != "-" && data[name][i].secondDayPlace.ja == "-") || (data[name][i].firstDayPlace.ja == "-" && data[name][i].secondDayPlace.ja != "-")) {
             if (data[name][i].firstDayPlace.ja != "-") {
