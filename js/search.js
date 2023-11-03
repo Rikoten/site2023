@@ -151,12 +151,12 @@ async function getProjectHtml(data, name) {
         }
         else if ((data[name][i].firstDayPlace.ja != "-" && data[name][i].secondDayPlace.ja == "-") || (data[name][i].firstDayPlace.ja == "-" && data[name][i].secondDayPlace.ja != "-")) {
             if (data[name][i].firstDayPlace.ja != "-") {
-                placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}`;
+                placeText = ` 11/4 : ${data[name][i].firstDayPlace[lang]}`;
             } else {
-                placeText = `11/6 : ${data[name][i].secondDayPlace[lang]}`;
+                placeText = ` 11/5 : ${data[name][i].secondDayPlace[lang]}`;
             }
         } else {
-            placeText = `11/5 : ${data[name][i].firstDayPlace[lang]}<br>11/6 : ${data[name][i].secondDayPlace[lang]}`;
+            placeText = ` 11/4 : ${data[name][i].firstDayPlace[lang]}<br> 11/5 : ${data[name][i].secondDayPlace[lang]}`;
         }
 
         /* 企画構築 */
