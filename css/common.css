@@ -347,14 +347,15 @@ header .jaen .en.active {
   header ul li li {
     border-bottom: 1px solid var(--color-font);
     background-color: var(--color-yellow);
-    padding: 10px 0 10px 10px;
     margin: 0 30px;
     color: var(--color-font);
   }
 
   header ul li li a {
-    text-decoration: none;
+    display: block;
     color: var(--color-font);
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
   }
 
   header ul:nth-of-type(1) li.active li:last-child {
