@@ -118,9 +118,9 @@
     const bool = true;
     if (bool) {
         maintag.insertAdjacentHTML("afterbegin", insert);
-    } else {
+    } /*else {
         maintag.insertAdjacentHTML("afterbegin", day_off);
-    }
+    }*/
 
     //*********SNSリンク**********//
     const hp_tag = document.getElementsByClassName("hp")[0];
@@ -136,58 +136,58 @@
     if (data.url.twitter != "") {
         const tw1 = [];
         tw1.push(`
-            <a href="${data.url.twitter}"><img class="twitter" src="/img/event/Twitter_tab.png"></a>
+            <a href="${data.url.twitter}" target=blank rel="noopener noreferrer"><img class="twitter" src="/img/event/Twitter_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw1)
-    } else {
+    } /*else {
         const tw2 = [];
         tw2.push(`
             <a><img class="twitter gray" src="/img/event/Twitter_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", tw2)
-    }
+    }*/
 
     if (data.url.hp != "") {
         const hp1 = [];
         hp1.push(`
-            <a href="${data.url.hp}"><img class="hp" src="/img/event/HP_tab.png"></a>
+            <a href="${data.url.hp}" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/HP_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp1)
-    } else {
+    } /*else {
         const hp2 = [];
         hp2.push(`
             <a><img class="hp gray" src="/img/event/HP_tab.png"></a>
         `)
         upper_class.insertAdjacentHTML("afterbegin", hp2)
-    }
+    }*/
 
     if (data.url.instagram != "") {
         const insta1 = [];
         insta1.push(`
-            <a href="${data.url.instagram}"><img class="instagram" src="/img/event/Instagram_tab.png"></a>
+            <a href="${data.url.instagram}" target=blank rel="noopener noreferrer"><img class="instagram" src="/img/event/Instagram_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta1)
-    } else {
+    } /*else {
         const insta2 = [];
         insta2.push(`
             <a><img class="instagram gray" src="/img/event/Instagram_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", insta2)
-    }
+    }*/
 
     if (data.url.facebook != "") {
         const face1 = [];
         face1.push(`
-            <a href="${data.url.facebook}"><img class="facebook" src="/img/event/facebook_tab.png"></a>
+            <a href="${data.url.facebook}" target=blank rel="noopener noreferrer"><img class="facebook" src="/img/event/facebook_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face1)
-    } else {
+    } /*else {
         const face2 = [];
         face2.push(`
             <a><img class="facebook gray" src="/img/event/facebook_tab.png"></a>
         `)
         lower_class.insertAdjacentHTML("afterbegin", face2)
-    }
+    }*/
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
     const place = [];
@@ -198,15 +198,15 @@
     }
     else if ((data.firstDayPlace.ja != "-" && data.secondDayPlace.ja == "-") || (data.firstDayPlace.ja == "-" && data.secondDayPlace.ja != "-")) {
         if (data.firstDayPlace.ja != "-") {
-            place.push(`11/5 : ${data.firstDayPlace[lang]}`);
+            place.push(`11/4 : ${data.firstDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         } else {
-            place.push(`11/6 : ${data.secondDayPlace[lang]}`);
+            place.push(`11/5 : ${data.secondDayPlace[lang]}`);
             place_tag.insertAdjacentHTML("beforeend", place);
         }
 
     } else {
-        place.push(`11/5 : ${data.firstDayPlace[lang]}<br>11/6 : ${data.secondDayPlace[lang]}`);
+        place.push(`11/4 : ${data.firstDayPlace[lang]}<br>11/5 : ${data.secondDayPlace[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
     //*********ウォークラリーの表示**********//
