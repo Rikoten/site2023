@@ -191,8 +191,14 @@
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
     const place = [];
+
+    const placeTextOnline = {
+      ja: "オンライン",
+      en: "Online"
+    }
+
     if (data.firstDayPlace.ja == data.secondDayPlace.ja) {
-        data.isOnline ? place.push(`オンライン`) :
+        data.isOnline ? place.push(`${placeTextOnline[lang]}`) :
             place.push(`${data.secondDayPlace[lang]}`);
         place_tag.insertAdjacentHTML("beforeend", place);
     }
