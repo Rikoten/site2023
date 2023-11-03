@@ -28,7 +28,7 @@
       },
       "groupDetail": {
         "ja": "ROBOSTEPはNHK学生ロボコン優勝を目標として活動している大学公認のロボコンサークルです。NHK学生ロボコン2015で優勝、2019年大会では準優勝を果たしました。機体の設計を行う「設計班」と、回路製作や制御の実装を行う「電装班」の2つの班に分かれ、協力してロボットの製作を行っています。",
-        "en": "ROBOSTEP is a university-recognized robotics club whose goal is to win the NHK Robot Contest. We won the NHK Robot Contest 2015 and finished second in the 2019 contest. We are divided into two groups: the Design Group, which designs the machine, and the Electrical Equipment Group, which manufactures circuits and implements controls, and works together to build the robot."
+        "en": "ROBOSTEP is a university-recognized robotics club whose goal is to win the NHK GAKUSEI ROBOCON(Student Robot Contest). We won the NHK GAKUSEI ROBOCON 2015 and finished second in the 2019 contest. We work together to build the robot, divided into two groups: the Design Group, which designs the machine, and the Electrical Equipment Group, which manufactures circuits and implements controls. "
       },
       "url": {
         "hp": "https://robostep.sakura.ne.jp/blog/",
@@ -41,7 +41,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "ロボットエキスポでは私たちROBOSTEPがロボコンに向けて製作したロボットの展示、紹介を行っています。ロボコン本番で使用した機体を実際に操縦できるブースもご用意してますので、ぜひ遊びに来てください！",
-        "en": "At the Robot Expo, we display and introduce the robots we have built for the Robocon. We also have a booth where you can actually pilot the robot that was used in the Robocon, so please come and visit us!"
+        "en": "At the Robot Expo, we display and introduce the robots we have built for the Robocon. We also have a booth where you can actually operate the robot that was used in the Robocon, so please come and visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-01/A-01_pamphlet_thumbnail.jpg",
@@ -79,7 +79,7 @@
             },
             "body": {
               "ja": "私たちROBOSTEPは毎年様々なロボコンに向けてロボットの製作を行っています。1年生はF3RC、2年生は関東春ロボコンという大会に出場して各々の技術力を磨き、3年生はNHK学生ロボコンに出場します。",
-              "en": "Every year, we ROBOSTEP are building robots for various robot contests: first-year students and second-year students hone their skills by participating in F3RC and the Kanto Spring Robot Contest respectively, and third-year students compete in the NHK Student Robot Contest."
+              "en": "Every year, we ROBOSTEP are building robots for various robot contests; first-year students and second-year students hone their skills by participating in F3RC and the Kanto Spring Robot Contest respectively, and third-year students compete in the NHK Student Robot Contest."
             },
             "images": [],
             "movies": [
@@ -132,7 +132,7 @@
       },
       "groupDetail": {
         "ja": "本研究室では、ライフサイクル評価(LCA)手法の開発と活用を通じて、環境情報を分かりやすく社会に提供し、企業の環境配慮経営の実現に貢献しています。気候変動、大気汚染や土地利用、資源消費など、さまざまな影響を網羅的に評価し、科学的なアプローチの実装を通して持続可能な社会の移行を支援しております。",
-        "en": "Through the development and application of Life Cycle Assessment (LCA) methods, we provide society with easy-to-understand environmental information and help companies achieve environmentally conscious management. We support the transition to a sustainable society through the implementation of scientific approaches by comprehensively assessing various impacts, such as climate change, air pollution and land use, and resource consumption."
+        "en": "Through the development and application of Life Cycle Assessment (LCA) methods, we provide society with easy-to-understand environmental information and help companies achieve environmentally conscious management. We support the transition to a sustainable society through the implementation of scientific approaches by comprehensively assessing various impacts such as climate change, air pollution, land use, and resource consumption."
       },
       "url": {
         "hp": "https://itsubo-lab.env.waseda.ac.jp/",
@@ -145,7 +145,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "脱炭素社会の実現を目指して様々な技術、製品が開発されています。本展示ではエネルギー、化学、食品など様々な分野で注目されるエコプロダクツを展示し、科学的なプロセスで評価した例について紹介します。\n",
-        "en": "Various technologies and products are being developed to realize a decarbonized society. This exhibit will showcase eco-products that are attracting attention in various fields such as energy, chemicals, and food, and will introduce examples of their evaluation through scientific processes."
+        "en": "Various technologies and products are being developed to achive the decarbonized society. Our exhibit will showcase eco-products attracting attention in various fields such as energy, chemicals, and food, and we will introduce examples of their evaluation through scientific processes."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-02/A-02_pamphlet_thumbnail.jpg",
@@ -182,7 +182,7 @@
             },
             "body": {
               "ja": "世の中には様々なエコプロダクツが開発されています。本展示では、再生コットンTシャツ、植物肉、オフィス内製紙機、ペロブスカイト型太陽電池などの新しい製品に加えて、エコリーフやカーボンフットプリントなどの環境ラベルについてご紹介します。ぜひ実際にプロダクツと環境情報に触れることで、これから注目される技術や製品を体感してみましょう！",
-              "en": "Various eco-products are being developed in the world. In this exhibit, we will introduce new products such as recycled cotton T-shirts, plant meat, in-office paper machine, perovskite solar cells, as well as environmental labels such as EcoLeaf and carbon footprint. We invite you to experience the technologies and products that will be the focus of attention in the future by actually coming into contact with the products and environmental information!"
+              "en": "Various eco-products are being developed in the world. In our exhibit, we will introduce new products such as recycled cotton T-shirts, plant meat, in-office paper machine, and perovskite solar cells as well as environmental labels such as EcoLeaf and carbon footprint. You can experience the technologies and products that will be the focus of attention in the future by actually coming into contact with learning the products and environmental information!"
             },
             "images": [],
             "movies": []
@@ -219,7 +219,7 @@
       },
       "groupDetail": {
         "ja": "私たち環境ロドリゲス Re-Coverは「環境 × 商品開発」をテーマに，捨てられてしまう廃材を商品化して再利用することを目標に活動しています！ 廃材を用いたレジンアクセサリーや箸置き，ブックカバーなどの開発・販売や，地域のイベントなどで子供向けの廃材を用いたアクセサリー工作体験の出展をしています！",
-        "en": "We, the Environment Rodrigues Re-Cover, aim to recycle discarded waste materials and turn them into products under the theme of \"Environment × Product development.\" We engage in the developments and sale of resin accessories, chopstick holders, book covers, and other items using waste materials. We also participate in local events, offering workshops for children to create accessories using waste materials."
+        "en": "We, the Environment Rodrigues Re-Cover, aim to recycle waste materials and turn them into products under the theme of \"Environment × Product development.\" We engage in the developments and sale of resin accessories, chopstick holders, book covers, and other items using waste materials. We also participate in local events, offering workshops for children to create accessories using waste materials."
       },
       "url": {
         "hp": "https://errecover.wixsite.com/recover",
@@ -232,7 +232,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "私たちは本来なら捨てられてしまう廃材を利用した商品の販売や工作体験をしています！工作では廃材とレジンを使用したアクセサリー作りが体験できます！商品を通して一緒に環境問題について考えてみませんか？",
-        "en": "We are involved in selling products made from waste materials that would typically be thrown away and offering craft workshops using these materials! In our workshop, you can experience making accessories using waste materials and resin! Why not join us in thinking about environmental issues together through our products?"
+        "en": "We are selling products made from waste materials that would have been thrown away and offering craft workshops using these materials! In our workshop, you can experience making accessories using waste materials and resin! Why not think about environmental issues with us through our products?"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-03/A-03_pamphlet_thumbnail.jpg",
@@ -350,7 +350,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "設計工学(佐藤靖彦)研究室",
-        "en": "Engineering Design　Sato.Lab"
+        "en": "Engineering Design: Sato.Lab"
       },
       "projectName": {
         "ja": "構造物から街を眺めよう",
@@ -371,7 +371,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "私たちの街には橋やトンネルなどのコンクリート構造物がたくさんあります。これらを身近に感じられるようなコンクリート小物づくり、最先端補強技術の体験や橋梁の特徴の紹介を行います。是非お越しください！",
-        "en": "Our cities are full of concrete structures such as bridges and tunnels. In order to feel close to them, you can experience concrete casting and reinforcement technologies and exhibit bridge models. We're looking forward to seeing you there."
+        "en": "There are full of concrete structures such as bridges and tunnels in our cities. In order to feel close to them, you can experience concrete casting and reinforcement technologies. We also  exhibit bridge models. We're looking forward to seeing you there."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-04/A-04_pamphlet_thumbnail.jpg",
@@ -409,7 +409,7 @@
             },
             "body": {
               "ja": "皆さん、コンクリートといえば建設現場で使われる頑丈な材料ですよね。でも、実際に自分たちの手でコンクリートを作ったことはありますか？本企画では小さな型枠にコンクリートを流して、自分だけのコンクリート作品を作ります。砂やセメント、水を混ぜてどのようにして固まるのか、実際に手を動かして体感し、その楽しさや面白さを感じてみましょう！",
-              "en": "Everyone thinks of concrete as a sturdy material used in construction sites. But have you ever actually made concrete with your own hands? In this project, we will pour concrete into small forms to create our own concrete works of art. Let's actually experience how sand, cement, and water are mixed together to harden, and feel the fun and excitement of this hands-on experience!"
+              "en": "Everyone thinks of concrete as a sturdy material used in construction sites. But have you ever actually made concrete by yourselves? In our project, we will pour concrete into small formworks to create our own concrete art. Let's actually experience how sand, cement, and water are mixed together to harden, and feel the fun and excitement of this hands-on experience!"
             },
             "images": [],
             "movies": []
@@ -417,11 +417,11 @@
           {
             "headline": {
               "ja": "補強技術を体験してみよう",
-              "en": "Experience Reinforcement Technology"
+              "en": "Let's Experience  Reinforcement Technology"
             },
             "body": {
               "ja": "古くなった構造物はどうなるのでしょうか。最近では、インフラの更新や補強によって構造物の長寿命化を図っています。本企画では、簡単に補強する技術として開発された炭素繊維（CFRP）を用いた方法をご紹介します。実際に、この補強技術の効果をご自身で体験してみましょう！",
-              "en": "What happens to old structures? Recently, infrastructure is being renewed and reinforced to extend the service life of structures. In this project, we will introduce a method using carbon fiber (CFRP), which has been developed as a simple reinforcement technique. In fact, you can experience the effectiveness of this reinforcement technology yourself!"
+              "en": "What happens to old structures? Recently, we are trying to extend the service life of structures by infrastructure renewal and reinforcement. In our project, we will introduce a method using carbon fiber (CFRP), which has been developed as reinforcement techniques easily. In fact, you can experience the effectiveness of this reinforcement technology yourself!"
             },
             "images": [
               {
@@ -441,7 +441,7 @@
             },
             "body": {
               "ja": "実はよく見ると様々な形がある橋梁。なぜそのような違いが生まれたのでしょうか。これは橋に働く力に起因しています。それぞれの構造における違いを簡単な模型を用いてご説明します！",
-              "en": "In fact, if you look closely, you will see that there are many different shapes of bridges. Why did such differences arise? This is due to the forces acting on bridges. We will explain the differences in each structure using a simple model!"
+              "en": "In looking bridges closely, you will see that there are many different shapes of bridges. Why did such differences arise? This is due to the forces acting on bridges. We will explain the differences in each structure using a simple model!"
             },
             "images": [],
             "movies": []
@@ -519,17 +519,17 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "「エレベーター山車」吉村靖孝研究室",
-          "en": "\"Elevator Floats\"\nYasutaka Yoshimura Laboratory"
+          "en": "\"Elevator Floats\" by Yasutaka Yoshimura Laboratory"
         },
         "articles": [
           {
             "headline": {
               "ja": "物を昇降する山車の実演",
-              "en": "Demonstration of a float that lifts and lowers objects"
+              "en": "Demonstration of a float that elevates objects"
             },
             "body": {
               "ja": "58号館3階にある吉村研究室の地上へのアクセスを改善するため、エレベーターに替わる昇降式山車を制作。3階から地上の展示場所へと展示物を昇降、移送し、そのまま展示台となる山車を実演する。",
-              "en": "To improve access to the ground level of Yoshimura Laboratory, located on the third floor of Building 58, an elevating float was created to replace the elevator, and a demonstration of a float that lifts and transfers exhibits from the third floor to the display area on the ground level and then becomes an exhibition platform as it is."
+              "en": "In order to improve access to the ground level of the Yoshimura Laboratory on the 3rd floor of Building No. 58, we created a lift-type float to replace the elevator. It is a float that lifts and transfers exhibits from the 3rd floor to the exhibition space on the ground level, and serves as an exhibition stand as it is."
             },
             "images": [],
             "movies": []
@@ -566,7 +566,7 @@
       },
       "groupDetail": {
         "ja": "マイクロマウスという自律型迷路探索ロボットを製作しています。個人戦なので、1人が1台のロボットを製作している点が特徴です。理工展では普段作っているロボットの実演を行います。",
-        "en": "We are building an autonomous maze-exploring robot called Micromouse. Since it is an individual competition, it is unique in that each person build one robot. At the Rikoten, we will demonstrate the robot we usually build."
+        "en": "We are building an autonomous maze-exploring robot called Micromouse. Since it is an individual competition, it is unique in that each person builds one robot. At the Rikoten, we will demonstrate the robot we are usually building."
       },
       "url": {
         "hp": "https://wmmc.jp/",
@@ -614,7 +614,7 @@
             },
             "body": {
               "ja": "マイクロマウスという自律型迷路探索ロボットを製作しています。個人戦なので、1人が1台のロボットを製作している点が特徴です。理工展では普段作っているロボットの実演を行います。",
-              "en": "We are building an autonomous maze-exploring robot called Micromouse. Since it is an individual competition,  it is unique in that each person build one robot. At the Rikoten, we will demonstrate the robot we usually build."
+              "en": "We are building an autonomous maze-exploring robot called Micromouse. Since it is an individual competition, it is unique in that each person builds one robot. At the Rikoten, we will demonstrate the robot we are usually building."
             },
             "images": [],
             "movies": []
@@ -651,7 +651,7 @@
       },
       "groupDetail": {
         "ja": "Witsは、｢つくりたいものをカタチに｣、ジャンルを問わず自由にものづくりを楽しむサークルです！日々の活動では、互いにやり方を教えあったり、各自で作品作りを楽しんだり…2018年には、国内最大級のハードウェアコンテストである「GUGEN2018」にてオムロン賞を頂きました！",
-        "en": "Wits is a circle that enjoys making things freely regardless of genre, under the motto \"giving shape to what we want to make\"! In our daily activities, we teach each other how to do things and enjoy creating our own works... In 2018, we received the Omron Prize at \"GUGEN2018\", one of the largest hardware contests in Japan!"
+        "en": "Wits is a circle that enjoys making things freely regardless of genre, under the motto \"giving shape to what we want to make\"! In our daily activities, we teach each other how to do things and enjoy creating our own works. In 2018, we received the Omron Prize at \"GUGEN2018\", one of the largest hardware contests in Japan!"
       },
       "url": {
         "hp": "http://wits-waseda.sakura.ne.jp/",
@@ -664,7 +664,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "Witsでは羊毛フェルトからプログラミングに至るまで、幅広い分野の｢ものづくり｣を扱っています。\"Spark\"をテーマとした作品の他に、日々の活動で制作した作品の展示をしています！",
-        "en": "At Wits, we deal with a wide range of \"creation\" from needle felting to programming. In addition to the works on the theme of \"Spark\", we also exhibit works created in our daily activities!"
+        "en": "At Wits, we deal with a wide range of \"creation\" from needle felting to programming. In addition to the works on the theme of \"Spark\", we will also exhibit works created in our daily activities!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-07/A-07_pamphlet_thumbnail.jpg",
@@ -697,11 +697,11 @@
           {
             "headline": {
               "ja": "羊毛フェルトからプログラミングまで",
-              "en": "from needle felting to programming"
+              "en": "From needle felting to programming"
             },
             "body": {
               "ja": "Witsは、ジャンルを問わず「ものづくり」を楽しみたい学生が集まるサークルです。その範囲は広く、UVレジンやソフトを用いた造形、3Dプリンター、プログラミングに至るまで…。「つくりたい」をカタチにするべく、互いに教え合い、助け合いながら、日々制作活動に励んでいます。会場では、日頃の活動成果を作品の展示・実演という形で行うので、ぜひ足を運んでください。",
-              "en": "Wits is a circle consisting of students who want to enjoy \"creation\" regardless of genre. We deal with a wide variety of genres, from modeling using UV resin and software to making objects from 3D printers and programming. We work hard every day, teaching and helping each other to accomplish our \"desire to create.\" We will exhibit and demonstrate our products from our daily activities, so please visit the exhibition hall."
+              "en": "Wits is a circle consisting of students who want to enjoy \"creation\" regardless of genre. We deal with a wide variety of genres, from modeling using UV resin and softwares to making objects with 3D printers and programming. We are working hard every day, teaching and helping each other to accomplish our \"desire to create.\" We will exhibit and demonstrate our products from our daily activities, so please visit the exhibition hall."
             },
             "images": [],
             "movies": []
@@ -738,7 +738,7 @@
       },
       "groupDetail": {
         "ja": "その名の通り、国内外での防災教育支援に取り組む団体です。具体的には小学校での防災授業や防災に関する絵本制作、防災イベントでの展示などを行っています。本団体は、土木を学び、防災に関心のある学生約50名で構成されており、土木系学生ならではの教育支援を目指し活動を続けています。",
-        "en": "As the name suggests, this organization is dedicated to supporting disaster education in Japan and abroad. Specifically, the group provides disaster education classes at elementary schools, produces picture books on disaster prevention, and holds exhibitions at disaster prevention events. The group consists of about 50 students who study civil engineering and are interested in disaster prevention."
+        "en": "As the name suggests, our organization is dedicated to supporting disaster education in Japan and abroad. Specifically, we provide disaster education classes at elementary schools, produces picture books on disaster prevention, and hold exhibitions at disaster prevention events. Our group consists of about 50 civil engineering students who are interested in disaster prevention. We continue our activities to support education as only civil engineering students can."
       },
       "url": {
         "hp": "http://wasend-blog.com/",
@@ -751,7 +751,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "身近な物を用いた災害時に役立つことを体験型や、豆知識として紹介する。また、サークルの普段の活動や、土木系学科ならではの液状化実験等についての紹介、作成している絵本の配布や読み聞かせ等も行う。",
-        "en": "Our club will introduce useful things to do in case of disasters using familiar objects in the form of hands-on activities and trivia. The Disaster Prevention Classroom will also introduce the club's usual activities, liquefaction experiments and other activities unique to a civil engineering department, as well as distribute and read picture books that the club is preparing."
+        "en": "Our club will introduce useful things to do in case of disasters using familiar objects in the form of hands-on activities and trivia. WASEND will also introduce the club's usual activities, liquefaction experiments and other activities unique to the civil engineering department, as well as distributions and reading picture books that we are preparing to children."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-08/A-08_pamphlet_thumbnail.jpg",
@@ -788,7 +788,7 @@
             },
             "body": {
               "ja": "実際に災害が起きた時にできることは何でしょう？逃げることができても、その先に待っているのは避難所生活。限られた物資で生活していくためにはどんなことが必要でしょうか？私たちが実際に実演して皆さんにも体験してもらうことで、そういった災害への対策を楽しく学んでいただきます！また、名前はよく聞くけどどういったものなのかよくわからない液状化についての実験、サークルメンバーが作成した防災絵本の配布や読み聞かせにより、どなたでも楽しめるコンテンツを用意しております！ぜひお越しください！",
-              "en": "What can you do when a disaster actually happens? Even if you can escape, what awaits you beyond that is life in a shelter. What is necessary to live with limited supplies? We will demonstrate and let you experience firsthand, so that you can enjoy learning how to prepare for such disasters! In addition, we will conduct an experiment on liquefaction, which we often hear about but are not sure what it is, and distribute disaster prevention picture books prepared by our circle members and read them out loud to everyone! Please come and join us!"
+              "en": "What can you do when a disaster actually happens? Even if you could escape, we would be forced to live in evacuation shelters. What is necessary to live with limited supplies? We will demonstrate and let you experience firsthand, so that you can enjoy learning how to prepare for such disasters! In addition, we will conduct an experiment on liquefaction, which we often hear about but are not sure what it is, and distributions and reading picture books that our club members prepared to children! Everyone can enjoy our all events, so please come and join us!"
             },
             "images": [],
             "movies": []
@@ -825,7 +825,7 @@
       },
       "groupDetail": {
         "ja": "本研究室では，最終的には知能というものを人工的に作り上げることを目標としている．私達は，現段階ではもっと基礎的なこと，具体的には情報を確率的なモデルに従って処理すること，特に高次元の分布を効率よく扱えるようになることが知能を実現する上で欠くべからざる土台であると考え，研究を進めている．\n",
-        "en": "The ultimate goal of our laboratory is to artificially create intelligence. At this stage, our research is more fundamental, specifically, we believe that processing information according to a probabilistic model, especially being able to efficiently handle high-dimensional distributions, is an indispensable foundation for the realization of intelligence."
+        "en": "The ultimate goal of our laboratory is to artificially create intelligence. We believe that more fundamental things such as processing information according to a probabilistic model, especially being able to efficiently handle high-dimensional distributions is an indispensable foundation for the realization of intelligence, and we are working on the study now."
       },
       "url": {
         "hp": "https://inouelab-waseda.github.io/",
@@ -838,7 +838,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "勇敢な忍者になって、可愛い動物たちと一緒に任務を達成して、悪い妖怪を倒し、平和を取り戻そう！ステージはどんどん難しくなるけど、忍法プログラミングの術を使うと楽かもよ？君ならきっとクリアできるよ！ ",
-        "en": "Become a brave ninja and join cute animals to accomplish missions, defeat bad monsters, and restore peace! The stages get harder and harder, but maybe using the ninja programming technique will make it easier. You'll be able to complete the game!"
+        "en": "Become a brave ninja, accomplish missions with cute animals, defeat bad monsters, and restore peace! The stages get harder and harder, but you will make it easier with the ninja programming technique. I hope that you'll be able to complete the game!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-10/A-10_pamphlet_thumbnail.jpg",
@@ -884,7 +884,7 @@
             },
             "body": {
               "ja": "勇敢な忍者になって、可愛い動物たちと一緒に任務を達成して、悪い妖怪を倒し、平和を取り戻そう！ステージはどんどん難しくなるけど、忍法プログラミングの術を使うと楽かもよ？君ならきっとクリアできるよ！ ",
-              "en": "Become a brave ninja and join cute animals to accomplish missions, defeat bad monsters, and restore peace! The stages get harder and harder, but maybe using the ninja programming technique will make it easier? You'll be able to complete the game!"
+              "en": "Become a brave ninja, accomplish missions with cute animals, defeat bad monsters, and restore peace! The stages get harder and harder, but you will make it easier with the ninja programming technique. I hope that you'll be able to complete the game!"
             },
             "images": [
               {
@@ -904,7 +904,7 @@
             },
             "body": {
               "ja": "本研究室では，最終的には知能というものを人工的に作り上げることを目標としています．これは，現時点でも限定的には可能なのですが，人間並みの汎用性を持たせるためには，まだまだ多くのハードルを越えねばなりません．\n私達は，現段階ではもっと基礎的なこと，具体的には情報を確率的なモデルに従って処理すること，特に高次元の分布を効率よく扱えるようになることが知能を実現する上で欠くべからざる土台であると考え，研究を進めています．\nこのような技術，知見は，知能の一部分である音声・画像処理などの情報処理分野のみならず，高度な階層構造を持つであろう遺伝子発現調節機構など，バイオインフォマティクス分野においても力を発揮するものと考えています。",
-              "en": "The ultimate goal of our laboratory is to artificially create intelligence. This is still possible to a limited extent, but there are still many hurdles to overcome in order to make it as versatile as a human being.\nAt this stage, we are conducting research on more fundamental issues, specifically, the processing of information according to probabilistic models, and in particular, the ability to efficiently handle high-dimensional distributions, which we believe is an indispensable foundation for the realization of intelligence.\nWe believe that such techniques and knowledge will be useful not only in the field of information processing, such as sound and image processing, which is a part of intelligence, but also in the field of bioinformatics, such as gene expression regulation mechanisms that may have a sophisticated hierarchical structure."
+              "en": "The ultimate goal of our laboratory is to artificially create intelligence. This is already possible to a limited extent, but there are still many problems to be resolved in order to make it as versatile as a human being.\nAt this stage, We believe that more fundamental things such as processing information according to a probabilistic model, especially being able to efficiently handle high-dimensional distributions is an indispensable foundation for the realization of intelligence, and we are working on the study now.\nWe consider that such techniques and knowledge will be useful not only in the field of information processing such as sound and image processing, which is a part of intelligence, but also in the field of bioinformatics such as gene expression regulation mechanisms that may have a sophisticated hierarchical structure."
             },
             "images": [],
             "movies": []
@@ -937,7 +937,7 @@
       },
       "projectName": {
         "ja": "応用化学科について知ろう！",
-        "en": "About the Department of applied Chemistry"
+        "en": "About the Department of Applied Chemistry"
       },
       "groupDetail": {
         "ja": "ここでは応用化学科、縮めて「応化」の学生生活や、研究室の詳細などについて紹介しています。将来の参考にするもよし、ただ興味本位で覗きに来るもよし、ぜひいらしてください。応化について分からないことがあったら現地の学生に聞いちゃおう！",
@@ -954,7 +954,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "「応用化学科ってどんなところ？」\n超大変な学科と聞いて近寄りがたくなっているそこのあなた、この機会にぜひ自分の目で実態を見てみませんか？？\n皆さんの抱いている疑問、現役学生にぶつけちゃってください！！",
-        "en": "\"What is Ouka like?\"\nMany people say that Ouka is very difficult department and hard to approach.　But how about looking at it with your eyes?\nPlease feel free to ask any questions you have to the local students!\n\n"
+        "en": "\"What is Ouka like?\"\nMany people say that Ouka is very difficult department and hard to approach. But how about looking at it with your own eyes?\nPlease feel free to ask any questions you have to the local students!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-11/A-11_pamphlet_thumbnail.jpg",
@@ -992,7 +992,7 @@
             },
             "body": {
               "ja": "実際に使用している教科書や時間割の例などを紹介します。応化に入ったら何を学ぶのか、勉強とサークルやバイトの両立はできるのかなど、気になることがあれば現地の学生に聞いてみるのも良いでしょう。",
-              "en": "We introduce some examples of textbooks we used and timetables textbooks we used and timetables. If you have any concerns such as what you will learn in the Department of Applied Chemistry, or whether you will able to balance your studies with clubs and part-time jobs, it is a good idea to ask local students. "
+              "en": "We will introduce some examples of textbooks we used and timetables textbooks we used and timetables. If you have any concerns such as what you will learn in the Department of Applied Chemistry, or whether you will able to balance your studies with clubs and part-time jobs, it is a good idea to ask local students. "
             },
             "images": [],
             "movies": []
@@ -1004,7 +1004,7 @@
             },
             "body": {
               "ja": "応化の学生がいずれ入ることになる研究室…この研究室って具体的に何をしているのか、気になる方も多いと思います。展示班では応化の研究室についても紹介しているので、特に受験生の方は進路を決めるうえでの参考としていただければ幸いです。",
-              "en": "The all students at Department of Applied Chemistry will eventually belong to the laboratory... We are sure many of you are wondering what exactly this laboratory does. Since we also introduces the laboratories of the Department of Applied Chemistry, we hope that this information will be helpful to students, especially to those who are preparing for examinations, in deciding their career paths."
+              "en": "All students at Department of Applied Chemistry will eventually belong to a laboratory... We are sure many of you are wondering what exactly this laboratory does. Since we also introduce the laboratories of the Department of Applied Chemistry, we hope that this information will be helpful to students, especially to those who are preparing for examinations, in deciding their career paths."
             },
             "images": [],
             "movies": []
@@ -1016,7 +1016,7 @@
             },
             "body": {
               "ja": "受験生や大人だけでなく小さなお子様にも楽しんでいただけるよう、本企画では演示実験も行い、身の周りにある化学に親しみを持っていただきたいと考えております。",
-              "en": "This project will also include demonstration experiments. We want you to familiarize participants with the chemistry around us. So, small children are also able to enjoy it! "
+              "en": "This project will also include demonstration experiments. We want you to familiarize chemistry around us, and small children are also able to enjoy it! "
             },
             "images": [],
             "movies": []
@@ -1094,7 +1094,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "君も今日からアースドクター",
-          "en": "Become an Earth Doctor today!"
+          "en": "Become an Earth Doctor Today!"
         },
         "articles": [
           {
@@ -1104,7 +1104,7 @@
             },
             "body": {
               "ja": "手軽な実験で，皆さんの目の前で雲を作り出します！この実験を通して私たちが普段見る雲は何でできているのか，分かりやすく当研究室の学生が解説します．また，当研究室で行っている雲が関わる研究についての様々なポスターも展示していますので，そちらも是非ご覧ください．",
-              "en": "With the simple experiment, we will create clouds in front of your eyes! Our students will explain clearly what the clouds we see in our daily lives are made of. We also display a variety of posters about our research on clouds. Please take a look at them as well!"
+              "en": "With a simple experiment, we will create clouds in front of your eyes! Our students will explain clearly what the clouds we see in our daily lives are made of. We also display a variety of posters about our research on clouds. Please take a look at them as well!"
             },
             "images": [],
             "movies": []
@@ -1142,7 +1142,7 @@
       },
       "groupDetail": {
         "ja": "\n「アントレプレナーシップを養成する」ことをミッションに掲げた早稲田発の学生団体です。私たちはアントレプレナーシップを、全人類が持ち合わせるべきゼロイチ力と捉えています。高校生から大学院生で構成されるメンバーは、イベント開催を通じて新しい価値を生み出し、社会全体としてイノベーションを創出し続けます。",
-        "en": "This is a student organization from Waseda with the mission of training entrepreneurship. We believe that entrepreneurship is the creative ability that people all over the world should have. Our members, consisting of high school, university, and graduate students, will have been creating new value through events and innovation for our society."
+        "en": "This is a student organization from Waseda with the mission of training entrepreneurship. We believe that entrepreneurship is the creativity that people all over the world should have. Our members, consisting of high school, university, and graduate students, will be creating new value through events and innovation for our society."
       },
       "url": {
         "hp": "https://beyond2020np.wordpress.com",
@@ -1155,7 +1155,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "「アントレプレナーとの出会い」「アントレプレナーシップを学ぶ」「自己実現」をキーワードに、「中学生・高校生でも理解できる」ことを重視して作成された、ビジネスモデル構築プログラムを実施します！",
-        "en": "With the keywords \"Meet Entrepreneurs\", \"Learn Entrepreneurship\", and \"Self-Accomplishment\",we will hold the construction of business model program that focuses on \"what even junior high and high school students can understand.\""
+        "en": "With the keywords \"Meet Entrepreneurs\", \"Learn Entrepreneurship\", and \"Self-Accomplishment\", we will hold the construction of business model program that focuses on \"what even junior high and high school students can understand.\""
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-13/A-13_pamphlet_thumbnail.jpg",
@@ -1192,7 +1192,7 @@
             },
             "body": {
               "ja": "　近年、社会やビジネスにとって未来の予測が難しくなるVUCA（Volatility・Uncertainty・Complexity・Ambiguity）の時代に突入したことで、「0から新しい何かを求められる力」であるアントレプレナーシップが世界的に求められるようになった。我々は、「感じてみようアントレプレナーシップ2023」を通して、アントレプレナーとして第一歩を踏み出すきっかけを提供する。 \n　「中学生・高校生でも理解できる」ことを重視して作成された、ビジネスモデル構築プログラムを実施する。「アントレプレナーとの出会い」「アントレプレナーシップを学ぶ」「自己実現」をキーワードにして、文部科学省EDGE及びEDGE NEXTプログラムで学んだ有志による「大学生による”中高大学生”のためのイベント」を開催する。 \n",
-              "en": "In recent years, we have entered an era of VUCA (Volatility, Uncertainty, Uncertainty, Complexity, Ambiguity), where it is increasingly difficult and complex to predict the future of society and business. So, entrepreneurship, \"the ability to seek something new from zero\" is now in demand worldwide. Through \"Let's Feel Entrepreneurship 2023\", we offer you the chance to take your first steps as an entrepreneur.\nWe will hold the construction of business model program that focuses on \"what even junior high and high school students an understand.\" With the keywords \"Meet Entrepreneurs\", \"Learn Entrepreneurship\", and \"Self-Accomplishment\", the event for \"middle, high school, and university students \" will be held by volunteers who studied in the EDGE and EDGE NEXT programs of Ministry of Education, Culture. Sports, Science and Technology."
+              "en": "In recent years, we have entered an era of VUCA (Volatility, Uncertainty, Uncertainty, Complexity, Ambiguity), where it is increasingly difficult and complex to predict the future of society and business. So, entrepreneurship, \"the ability to seek something new from zero\" is now in demand worldwide. Through \"Let's Feel Entrepreneurship 2023\", we will offer you the chance to take your first steps as an entrepreneur.\nWe will hold the construction of business model program that focuses on \"what even junior high and high school students an understand.\" With the keywords \"Meet Entrepreneurs\", \"Learn Entrepreneurship\", and \"Self-Accomplishment\", the event for \"middle, high school, and university students \" will be held by volunteers who studied in the EDGE and EDGE NEXT programs of Ministry of Education, Culture, Sports, Science and Technology."
             },
             "images": [],
             "movies": []
@@ -1229,7 +1229,7 @@
       },
       "groupDetail": {
         "ja": "早稲田レゴブロック研究会は昨年設立された新しいサークルです。普通の作品製作はもちろんのこと、レゴを使ったピタゴラスイッチのようなボール転がし装置や、パソコンを用いた製作など幅広い活動を行っています。インカレで大学問わずいつでも会員を募集しているので、興味があればSNSやHPをのぞいてみてください！",
-        "en": "Waseda LEGO Community, WLC is a new-born community that started last year. We enjoy LEGO variously by not only creating ordinary works, but also creating technical ball-bringing modules and creating works by PC. We welcome all members including international students, so check our website and social medias when you’re interested to WLC !!"
+        "en": "Waseda LEGO Community, WLC is a new-born community that started last year. We enjoy LEGO by not only creating ordinary works, but also creating technical ball-bringing modules and creating works by PC. We welcome all members including international students, so check our website and social medias if you’re interested in WLC !!"
       },
       "url": {
         "hp": "https://ethereal-alloy-571.notion.site/3ab667530cb7413291089b763df92feb",
@@ -1242,7 +1242,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "昨年大好評だったレゴ研による展示がパワーアップして今年も登場！ずっと見ていられる巨大ピタゴラ装置(GBC)やジオラマ作品、触れる展示など、部員たちが製作した驚きの作品の数々をぜひご覧ください。",
-        "en": "WLC’s exhibition, which was very popular last year, is back again with an even higher quality ! Why don’t you enjoy our amazing and interesting works including diorama works, hands-on exhibition, and huge connection of technical ball-bringing modules(GBC)? We're sure you would never get tired of it !"
+        "en": "WLC’s exhibition, which was very popular last year, is back again with an even higher quality ! Why don’t you enjoy our amazing and interesting works including diorama works, hands-on exhibition, and a huge connection of technical ball-bringing modules(GBC)? We're sure you would never get tired of it !"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/A-14/A-14_pamphlet_thumbnail.jpg",
@@ -1538,7 +1538,10 @@
       "isSecondDay": true,
       "isWalkRally": true,
       "hasTicket": true,
-      "ticketDetail": "両日とも朝10時ごろから配布開始 / 配布場所は60号館202教室の入り口",
+      "ticketDetail": {
+        "ja": "両日とも朝10時ごろから配布開始 / 配布場所は60号館202教室の入り口",
+        "en": "Starts from 10:00 a.m. of both days / At 60-202"
+      },
       "groupName": {
         "ja": "WASA早稲田大学宇宙航空研究会天文プロジェクト",
         "en": "Waseda university Aeronautics and Space Administration"
@@ -1882,7 +1885,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会総務局実研講(講演(草鹿先生))",
-        "en": "Rikoten executive committee general affairs laboratories"
+        "en": "The General Affairs Bureau of Rikoten Executive Committee: Laboratories"
       },
       "projectName": {
         "ja": "自動車のカーボンニュートラルとゼロエミッションについて",
@@ -1890,7 +1893,7 @@
       },
       "groupDetail": {
         "ja": "理工展連絡会総務局の実研講では実験・研究室・講演の3つを担当しています。実験に関しては主に実験を行う企画を総括しています。また研究室に関しては理工展当日に研究室見学ツアーを行っています。講演に関しては早稲田大学理工学術院の教授に講演を依頼し、講演のサポートをしています。",
-        "en": "We, Rikoten Executive Committee General Affairs laboratories, are responsible for three things: experiments, labs, and lectures. As for the experiments we mainly summarize the project to conduct the experiments. Regarding the laboratories, we hold laboratory tours on the day of Rikoten. In terms of lectures, we have requested professors from Faculty of Science and Engineering at Waseda University to give lectures and support them in their lectures."
+        "en": "We, Rikoten Executive Committee General Affairs laboratories, are responsible for three things: experiments, labs, and lectures. As for the experiments we mainly summarize the project to conduct the experiments. And as for the laboratories, we hold laboratory tours on the day of Rikoten. As for lectures, we have requested professors from Faculty of Science and Engineering at Waseda University to give lectures and support them in their lectures."
       },
       "url": {
         "hp": "",
@@ -1903,7 +1906,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "今回は創造理工学部総合機械工学科草鹿先生にご講演をお願いしました。自動車のカーボンニュートラルとゼロエミッションについてお話しいただきます。11月4日(土)に行いますので、ぜひお越しください！！",
-        "en": "This time, we asked Professor Kusaka of the Department who belongs to Modern Mechanical Engineering, School of Creative Science and Engineering, to give a lecture. He will talk about carbon neutrality and zero emissions in automobiles. This will be held on the first day of Rikoten, please feel free to visit us!"
+        "en": "This time, we asked Professor Kusaka of the Department of Modern Mechanical Engineering, School of Creative Science and Engineering, to give a lecture. He will talk about carbon neutrality and zero emissions in automobiles. This will be held on the first day of Rikoten, please feel free to visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-01/B-01_pamphlet_thumbnail.jpg",
@@ -1990,7 +1993,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会総務局実研講(講演(坂内先生))",
-        "en": "Rikoten executive committee general affairs laboratories"
+        "en": "The General Affairs Bureau of Rikoten Executive Committee: Laboratories"
       },
       "projectName": {
         "ja": "分子のふるまいから脳の仕組みを読み解く：記憶から脳神経疾患まで",
@@ -1998,7 +2001,7 @@
       },
       "groupDetail": {
         "ja": "理工展連絡会総務局の実研講では実験・研究室・講演の3つを担当しています。実験に関しては主に実験を行う企画を総括しています。また研究室に関しては理工展当日に研究室見学ツアーを行っています。講演に関しては早稲田大学理工学術院の教授に講演を依頼し、講演のサポートをしています。",
-        "en": "We, Rikoten Executive Committee General Affairs laboratories, are responsible for three things: experiments, labs, and lectures. As for the experiments we mainly summarize the project to conduct the experiments. Regarding laboratories, we hold laboratory tours on the day of Rikoten. In terms of lectures, we have requested professors from Faculty of Science and Engineering at Waseda University to give lectures and support them in their lectures."
+        "en": "We, Rikoten Executive Committee General Affairs laboratories, are responsible for three things: experiments, labs, and lectures. As for the experiments we mainly summarize the project to conduct the experiments. And as for the laboratories, we hold laboratory tours on the day of Rikoten. As for lectures, we have requested professors from Faculty of Science and Engineering at Waseda University to give lectures and support them in their lectures."
       },
       "url": {
         "hp": "",
@@ -2093,10 +2096,13 @@
       "isSecondDay": true,
       "isWalkRally": false,
       "hasTicket": true,
-      "ticketDetail": "配布場所は53号館B04教室 / 各ツアー開始の30分前から配布",
+      "ticketDetail": {
+        "ja": "配布場所は53号館B04教室 / 各ツアー開始の30分前から配布",
+        "en": "At 53-B04 / Starts 30 minutes prior to the start of each tour"
+      },
       "groupName": {
         "ja": "理工展連絡会総務局実研講(研究室ツアー)",
-        "en": "Rikoten executive committee general affairs laboratories"
+        "en": "The General Affairs Bureau of Rikoten Executive Committee: Laboratories"
       },
       "projectName": {
         "ja": "研究室紹介ツアー",
@@ -2104,7 +2110,7 @@
       },
       "groupDetail": {
         "ja": "理工展連絡会総務局の実研講では実験・研究室・講演の3つを担当しています。実験に関しては主に実験を行う企画を総括しています。また研究室に関しては理工展当日に研究室見学ツアーを行っています。講演に関しては早稲田大学理工学術院の教授に講演を依頼し、講演のサポートをしています。",
-        "en": "We, Rikoten Executive Committee General Affairs laboratories, are responsible for three things: experiments, labs, and lectures. As for the experiments we mainly summarize the project to conduct the experiments. Regarding laboratories, we hold laboratory tours on the day of Rikoten. In terms of lectures, we have requested professors from Faculty of Science and Engineering at Waseda University to give lectures and support them in their lectures."
+        "en": "We, Rikoten Executive Committee General Affairs laboratories, are responsible for three things: experiments, labs, and lectures. As for the experiments we mainly summarize the project to conduct the experiments. And as for the laboratories, we hold laboratory tours on the day of Rikoten. As for lectures, we have requested professors from Faculty of Science and Engineering at Waseda University to give lectures and support them in their lectures."
       },
       "url": {
         "hp": "",
@@ -2117,7 +2123,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "早稲田大学理工学術院で行われている研究や研究室の雰囲気を、ツアーを通して体験していただく企画です。\n早大理工の日々の研究内容やその成果を知り、理工学部ならではの体験をしてみてください！\n",
-        "en": "This is an event to experience the research which is being conducted at Faculty of Science and Engineering, Waseda University, and the atmosphere of the laboratories through this tour. Let's learn about the daily research and its results at Faculty of Science and Enginering, Waseda University, and experience something unique to the School of Science and Engineering!"
+        "en": "This is an event to experience the research being conducted at Waseda University and the atmosphere the laboratories through this tour. Learn about the daily research and its results at Faculty of Science and Enginering, Waseda University, and experience something unique to the School of Science and Engineering!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-03/B-03_pamphlet_thumbnail.jpg",
@@ -2280,11 +2286,11 @@
             {
               "headline": {
                 "ja": "総合機械工学科草鹿研究室の紹介",
-                "en": "Introduction of Kusaka Lab, Department of Comprehensive Mechanical Engineering"
+                "en": "Introduction of Kusaka Lab at the Department of Modern Mechanical Engineering"
               },
               "body": {
                 "ja": "草鹿研究室では、エンジンシステム、排ガス浄化触媒システム、ハイブリッドシステム、電気自動車を研究対象に、熱エネルギー変換・反応工学について研究を行っています。そして、最終的には熱エネルギー変換過程における反応と熱流体モデルによりエンジン、触媒内部、電池内部の輸送現象解明と具体的な数値目標として効率の向上や排出ガスの低減を実験により実証することを目指しています。\n",
-                "en": "\"Kusaka Laboratory conducts research on thermal energy conversion and reaction engineering by focusing on engine systems, catalyst systems for exhaust gas purification, hybrid systems, and electric vehicles. Ultimately, we aim to elucidate transport phenomena inside engines, catalysts, and batteries by means of reaction and thermo-fluid models during the thermal energy conversion process, and to demonstrate specific numerical goals of improved efficiency and reduced exhaust emissions through experiments.\n\"\n"
+                "en": "Kusaka laboratory is conducting research on the thermal energy conversion and reaction engineering as our research subjects: engine systems, exhaust gas purification catalyst systems, hybrid systems, and electric vehicles. Ultimately, we aim to demonstrate reactions in the thermal energy conversion process, elucidation of transport phenomena in engines, catalysts, and batteries through thermo-fluid modeling, and improved efficiency and reduced emissions as specific numerical targets."
               },
               "images": [],
               "movies": []
@@ -2292,11 +2298,11 @@
             {
               "headline": {
                 "ja": "草鹿教授の概要",
-                "en": "Introduction of Kusaka Lab, Department of Comprehensive Mechanical Engineering"
+                "en": "Introduction of Kusaka Lab at the Department of Modern Mechanical Engineering"
               },
               "body": {
                 "ja": "早稲田大学理工学部機械工学科卒業、同大学院修士課程、後期博士課程を修了し、同大学専任講師、助教授を経て現在、理工学術院創造理工学部総合機械工学科、創造理工学研究科総合機械工学専攻、環境・エネルギー研究科環境・エネルギー専攻の教授を務めています。また、早稲田大学 次世代自動車研究機構の機構長でもあります。主な受賞歴は自動車技術会優秀講演賞、米国自動車学会 STEC2003 優秀論文賞などです。",
-                "en": "\"Kusaka Laboratory conducts research on thermal energy conversion and reaction engineering by focusing on engine systems, catalyst systems for exhaust gas purification, hybrid systems, and electric vehicles. Ultimately, we aim to elucidate transport phenomena inside engines, catalysts, and batteries by means of reaction and thermo-fluid models during the thermal energy conversion process, and to demonstrate specific numerical goals of improved efficiency and reduced exhaust emissions through experiments.\n\"\n"
+                "en": "Kusaka laboratory is conducting research on the thermal energy conversion and reaction engineering as our research subjects: engine systems, exhaust gas purification catalyst systems, hybrid systems, and electric vehicles. Ultimately, we aim to demonstrate reactions in the thermal energy conversion process, elucidation of transport phenomena in engines, catalysts, and batteries through thermo-fluid modeling, and improved efficiency and reduced emissions as specific numerical targets."
               },
               "images": [
                 {
@@ -2312,11 +2318,11 @@
             {
               "headline": {
                 "ja": "経営システム工学科谷水研究室の紹介",
-                "en": "Introduction of Kusaka Lab, Department of Comprehensive Mechanical Engineering"
+                "en": "Introduction of Kusaka Lab at the Department of Modern Mechanical Engineering"
               },
               "body": {
                 "ja": "現代では、IoTやAIの技術を用いた第４次産業革命時代が到来しようとしている一方、SDGsやシェアリングエコノミーが世界的規模で注目されており、これまでのような大量生産・大量消費型の社会が崩壊しつつあります。これにより、物質的なものを表すフィジカル空間からその情報を吸い上げ、サイバー空間で同質のものを造り上げるサイバー・フィジカル・システムを構築する動きが活発になっています。\n谷水研究室では、このサイバー空間におけるデータに基づいて、数理最適化手法や進化型計算手法を用いた最適化戦略を構築することで、それをフィジカル空間にフィードバックすることを目的とした研究を行っています。\n",
-                "en": "\"Kusaka Laboratory conducts research on thermal energy conversion and reaction engineering by focusing on engine systems, catalyst systems for exhaust gas purification, hybrid systems, and electric vehicles. Ultimately, we aim to elucidate transport phenomena inside engines, catalysts, and batteries by means of reaction and thermo-fluid models during the thermal energy conversion process, and to demonstrate specific numerical goals of improved efficiency and reduced exhaust emissions through experiments.\n\"\n"
+                "en": "Kusaka laboratory is conducting research on the thermal energy conversion and reaction engineering as our research subjects: engine systems, exhaust gas purification catalyst systems, hybrid systems, and electric vehicles. Ultimately, we aim to demonstrate reactions in the thermal energy conversion process, elucidation of transport phenomena in engines, catalysts, and batteries through thermo-fluid modeling, and improved efficiency and reduced emissions as specific numerical targets."
               },
               "images": [],
               "movies": []
@@ -2324,11 +2330,11 @@
             {
               "headline": {
                 "ja": "谷水教授の紹介",
-                "en": "Introduction of Kusaka Lab, Department of Comprehensive Mechanical Engineering"
+                "en": "Introduction of Kusaka Lab at the Department of Modern Mechanical Engineering"
               },
               "body": {
                 "ja": "1994年大阪大学大学院工学研究科にて修士課程を修了後、1995年から大阪府立大学工学部機械システム工学科助手、講師、准教授、教授を経て、2018年に早稲田大学創造理工学部教授に就任しました。\n現在は主に、動的環境における生産スケジューリングやサプライチェーンマネジメントなどの研究に従事しており、次世代生産システムとして「高度変動適応型生産システム」の構築を目指しています。\n",
-                "en": "\"Kusaka Laboratory conducts research on thermal energy conversion and reaction engineering by focusing on engine systems, catalyst systems for exhaust gas purification, hybrid systems, and electric vehicles. Ultimately, we aim to elucidate transport phenomena inside engines, catalysts, and batteries by means of reaction and thermo-fluid models during the thermal energy conversion process, and to demonstrate specific numerical goals of improved efficiency and reduced exhaust emissions through experiments.\n\"\n"
+                "en": "Kusaka laboratory is conducting research on the thermal energy conversion and reaction engineering as our research subjects: engine systems, exhaust gas purification catalyst systems, hybrid systems, and electric vehicles. Ultimately, we aim to demonstrate reactions in the thermal energy conversion process, elucidation of transport phenomena in engines, catalysts, and batteries through thermo-fluid modeling, and improved efficiency and reduced emissions as specific numerical targets."
               },
               "images": [
                 {
@@ -2344,11 +2350,11 @@
             {
               "headline": {
                 "ja": "環境資源工学科古井研究室の紹介",
-                "en": "Introduction of Kusaka Lab, Department of Comprehensive Mechanical Engineering"
+                "en": "Introduction of Kusaka Lab at the Department of Modern Mechanical Engineering"
               },
               "body": {
                 "ja": "岩盤・石油生産工学研究室では、油ガス田の生産性向上に関する研究や、地下の安全・環境対策に関する研究、石油・天然ガスの開発技術をメタンハイドレートや地熱資源の開発、二酸化炭素地下貯留（CCS）へ応用する研究などを行っています。岩石の力学的挙動を調べるための応力ひずみ曲線の測定・解析や流体の生産・圧入に伴う岩盤の応力変化の解析をとおし、坑井破壊や出砂問題、地盤沈下、貯留層上位を覆う帽岩の破壊による孔隙流体の漏洩問題、断層の滑りや岩石のせん断破壊による誘発地震の発生リスク評価など、ジオメカニクス（岩盤力学）に関連した諸問題の解決に取り組んでいます。また、坑井刺激による坑井生産性増進手法の研究や、岩石の変形や破壊、孔隙流体の流動挙動といった複雑な物理現象をコンピュータで試行実験するための数値シミュレーションモデルの開発も行っています。地下資源の開発技術の発展、非在来型資源の経済的利用の促進によって、将来のエネルギー安定供給とCCSの経済性向上や社会実装に貢献し、ネットゼロ社会における持続的炭化水素資源利用システムを構築することを目指しています。\n",
-                "en": "\"Kusaka Laboratory conducts research on thermal energy conversion and reaction engineering by focusing on engine systems, catalyst systems for exhaust gas purification, hybrid systems, and electric vehicles. Ultimately, we aim to elucidate transport phenomena inside engines, catalysts, and batteries by means of reaction and thermo-fluid models during the thermal energy conversion process, and to demonstrate specific numerical goals of improved efficiency and reduced exhaust emissions through experiments.\n\"\n"
+                "en": "Kusaka laboratory is conducting research on the thermal energy conversion and reaction engineering as our research subjects: engine systems, exhaust gas purification catalyst systems, hybrid systems, and electric vehicles. Ultimately, we aim to demonstrate reactions in the thermal energy conversion process, elucidation of transport phenomena in engines, catalysts, and batteries through thermo-fluid modeling, and improved efficiency and reduced emissions as specific numerical targets."
               },
               "images": [],
               "movies": []
@@ -2356,11 +2362,11 @@
             {
               "headline": {
                 "ja": "古井教授の紹介",
-                "en": "Introduction of Kusaka Lab, Department of Comprehensive Mechanical Engineering"
+                "en": "Introduction of Kusaka Lab at the Department of Modern Mechanical Engineering"
               },
               "body": {
                 "ja": "1977年生まれ。1999年早稲田大学理工学部環境資源工学科卒。2001年テキサス大学大学院オースティン校石油工学科修士課程、2004年同大学院博士課程修了(Ph.D.)。米石油サービス会社Baker Oil Toolsや米石油メジャーのConocoPhillipsでの勤務を経て、2015年に早稲田大学理工学術院准教授に就任。2021年より現職。専門は、ジオメカニクス（岩盤工学）及び石油・天然ガス生産工学。",
-                "en": "\"Kusaka Laboratory conducts research on thermal energy conversion and reaction engineering by focusing on engine systems, catalyst systems for exhaust gas purification, hybrid systems, and electric vehicles. Ultimately, we aim to elucidate transport phenomena inside engines, catalysts, and batteries by means of reaction and thermo-fluid models during the thermal energy conversion process, and to demonstrate specific numerical goals of improved efficiency and reduced exhaust emissions through experiments.\n\"\n"
+                "en": "Kusaka laboratory is conducting research on the thermal energy conversion and reaction engineering as our research subjects: engine systems, exhaust gas purification catalyst systems, hybrid systems, and electric vehicles. Ultimately, we aim to demonstrate reactions in the thermal energy conversion process, elucidation of transport phenomena in engines, catalysts, and batteries through thermo-fluid modeling, and improved efficiency and reduced emissions as specific numerical targets."
               },
               "images": [
                 {
@@ -2388,7 +2394,7 @@
               },
               "body": {
                 "ja": "多くの情報を光信号に変換して通信を行うために、高機能な半導体レーザーや石英\nPLC(Planer Lightwave Circuit)、光ファイバー等の光デバイスが開発されてきました。そし\nて光デバイスの小型化・低消費電力化を実現するための切り札として期待されるのがシリ\nコンフォトニクスと呼ばれる、超小型の光デバイスを微小なシリコンチップ上に高密度に\n集積化する技術です。シリコンは地球上に豊富に存在し、CPU やメモリなどの電子デバイ\nスの原料として 20 世紀の科学技術の主役となってきました。21 世紀初頭より研究・開発が\n世界的に活発に行われているシリコンフォトニクスは、洗練された電子デバイスの作成技\n術を利用することで高精度・低製造コストに多数の光デバイスを集積させた光集積チップ\nの実現を可能にします。この研究室では、このようなシリコンフォトニクスを応用した集積\n光デバイスの研究を行っています。",
-                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \r\nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and in 2016, Associate Professor, and in 2022, Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
+                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and he was appinted Associate Professor there in 2016, and in 2022, he became Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
               },
               "images": [],
               "movies": []
@@ -2400,7 +2406,7 @@
               },
               "body": {
                 "ja": "1998 年に早稲田大学理工学部電気電子情報工学科を卒業、2003 年に北陸先端科学技術大学\n院大学材料科学研究科博士課程後期を修了の後、2007 年に東北大学工学研究科通信工学専\n攻・助教、2016 年に准教授、そして 2022 年に早稲田大学理工学術院・教授。現在では光工\n学、光量子科学 / 電子デバイス、電子機器 半導体工学などを専門とした研究を行ってい\nる。",
-                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \r\nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and in 2016, Associate Professor, and in 2022, Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
+                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and he was appinted Associate Professor there in 2016, and in 2022, he became Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
               },
               "images": [
                 {
@@ -2420,7 +2426,7 @@
               },
               "body": {
                 "ja": "野田・花田研究室は、化学工学という分野でナノ材料の合成方法の開発やエネルギー技術への応用について研究しています。化学では様々な分子、物質、材料や化学反応を研究しますが、化学工学はその成果を実用化して社会に還元することを目指す学問です。ナノ材料とは、ナノメートル(10億分の1m)サイズの小さな材料のことです。例えば炭素でできた材料でも、黒鉛やダイヤモンドなどの従来材料とは異なる様々な性質を、ナノチューブなどで実現することができます。ありふれた元素を用いてナノ材料を実用的に合成し、太陽電池、蓄電池、水素エネルギーなどの再生可能エネルギーの活用や低炭素化を目指した研究を行っています。\n",
-                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \r\nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and in 2016, Associate Professor, and in 2022, Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
+                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and he was appinted Associate Professor there in 2016, and in 2022, he became Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
               },
               "images": [
                 {
@@ -2440,7 +2446,7 @@
               },
               "body": {
                 "ja": "1994年に、東京大学工学部化学工学科卒業後、1999年に東京大学大学院工学系研究科化学システム工学専攻で博士課程を修了し、博士（工学）号を取得しました。東京大学の助手、助教、准教授を経て、2012年より早稲田大学理工学術院教授を務めています。2009年〜2013年にはJSTさきがけ研究員を兼任していました。 2005年に化学工学会奨励賞、2014年と2016年には早稲田大学ティーチングアワードを、2020年に早稲田大学大隈記念学術褒賞奨励賞を受賞し、早稲田大学次代の中核研究者に選ばれています。 ナノ材料と自己組織化を基礎的に研究テーマとし、カーボンナノチューブやシリコン材料の効率的な実用的な合成プロセスを開発し、太陽電池や二次電池への応用を展開、また、グラフェン、シリコンを低コストで合成する技術を開発しています。\n",
-                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \r\nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and in 2016, Associate Professor, and in 2022, Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
+                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and he was appinted Associate Professor there in 2016, and in 2022, he became Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
               },
               "images": [],
               "movies": []
@@ -2452,7 +2458,7 @@
               },
               "body": {
                 "ja": "2001年に、広島大学総合科学部総合科学科卒業後、2005年に広島大学大学院先端物質科学研究科量子物質科学専攻で博士課程を修了し、博士（学術）号を取得しました。その後、ドイツ・カールスルーエ研究所や上智大学で博士研究員として研究を行い、筑波大学での助教を経て、2017年より 早稲田大学先進理工学部応用化学科の講師、2021年より専任講師を務めています。2022年に日本学術振興会賞を受賞しました。\n水素貯蔵に関わる物質の開発を材料科学に基づいてナノスケールで制御することにより行っており、他にも、エネルギー効率の高い水素貯蔵・供給プロセスの提案やそのために必要な材料および貯蔵タンクの研究を行っています。\n",
-                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \r\nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and in 2016, Associate Professor, and in 2022, Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
+                "en": "He graduated from the Department of Electrical, Electronics and Computer Engineering, School of Science and Engineering, Waseda University in 1998, and completed his doctoral studies at the School of Materials Science, Japan Advanced Institute of Science and Technology in 2003. \nIn 2007, he was appointed Assistant Professor at the Department of Communications Engineering, Graduate School of Engineering, Tohoku University, and he was appinted Associate Professor there in 2016, and in 2022, he became Professor at the School of Science and Engineering, Waseda University. His current research focuses on optical engineering, photon science/electronic devices, and electronic devices and semiconductor engineering."
               },
               "images": [],
               "movies": []
@@ -2587,7 +2593,7 @@
       },
       "groupDetail": {
         "ja": "理工展を運営しているサークル「理工展連絡会」が早稲田グッズ抽選会を実施！　早稲田大学に来た記念として、早稲田グッズをゲットしよう！",
-        "en": "Rikoten Executive Committee, the circle that manages the Rikoten, is going to hold a drawing for Waseda goods! Let's get Waseda goods as a commemoration of your visit to Waseda University!"
+        "en": "Rikoten Executive Committee, the circle that manages Rikoten, holds a lottery for Waseda goods! Let's get Waseda goods as a commemoration of your visit to Waseda University!"
       },
       "url": {
         "hp": "",
@@ -2600,7 +2606,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "早稲田祭で配布されている理工展のビラについた抽選券を持って、早稲田グッズをゲットしよう！　抽選券を持っていなくても、抽選会場にあるクロスワードを解けば抽選可能！　ぜひ遊びに来てね！",
-        "en": "Take the raffle ticket attached to the leaflet of Rikoten distributed at the Waseda Festival to win Waseda goods!　Even if you don't have a raffle ticket, you can still participate in the raffle by solving the crossword puzzle at the raffle site!　Please come and visit us!"
+        "en": "Take the raffle ticket attached to the leaflet of Rikoten distributed at the Waseda Festival, and win Waseda goods! Even if you don't have a raffle ticket, you can still participate in the raffle by solving the crossword puzzle at the raffle site! Please come and visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-05/B-05_pamphlet_thumbnail.jpg",
@@ -2636,7 +2642,7 @@
             },
             "body": {
               "ja": "理工展と同日に開催している「早稲田祭」で配布されている理工展のビラについた抽選券をお持ちいただくと、早稲田グッズが当たる抽選会に参加できます！　抽選券を持っていなくても、抽選会場にあるクロスワードを解くことで抽選会に参加できます！　皆様のご参加をお待ちしております！",
-              "en": "You can participate in the lottery to win Waseda goods by bringing the raffle ticket attached to the leaflet of Rikoten distributed at the Waseda Festival, which is held on the same day as Rikoten!　Even if you do not have a raffle ticket, you can participate in the raffle by solving the crossword at the raffle site!　We are looking forward to your participation!"
+              "en": "You can participate in the lottery to win Waseda goods by bringing the raffle ticket attached to the leaflet of Rikoten distributed at the Waseda Festival, which is held on the same day as Rikoten! Even if you do not have a raffle ticket, you can participate in the raffle by solving the crossword at the raffle site! We are looking forward to your participation!"
             },
             "images": [],
             "movies": []
@@ -2665,7 +2671,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "情報局アプリ班",
-        "en": "Zyoho-kyoku App Team"
+        "en": " App Team of The Intelligence Bureau of Rikoten Executive Committee"
       },
       "projectName": {
         "ja": "アプリを使って景品をGET",
@@ -2673,7 +2679,7 @@
       },
       "groupDetail": {
         "ja": "私たちは理工展連絡会情報局のアプリ班です。普段はFlutterを用いて、パンフレットアプリ「アプリコ」作成とUnityを用いて3Dゲームアプリ「バーチャル理工展」の開発を行っています！是非、App Storeまたは、Google Playで検索してください！",
-        "en": "We are the App Team of the Intelligence Bureau of Rikoten Executive Committee. We usually use Flutter to create the pamphlet app \"Aprico\" and Unity to develop the 3D game app \"Virtual Rikoten\"! Please search for us on the App Store or Google Play!"
+        "en": "We are the App Team of The Intelligence Bureau of Rikoten Executive Committee. We usually use Flutter to create the pamphlet app \"App-Riko\" and Unity to develop the 3D game app \"Virtual Rikoten\"! Please search for us on the App Store or Google Play!"
       },
       "url": {
         "hp": "",
@@ -2686,7 +2692,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "アプリ班が作成した2つのアプリ「アプリコ」・「バーチャル理工展」をダウンロードして、隠し機能を見つけたり、ミニゲームをクリアしたりして、ミッションを達成し景品GETをしましょう！",
-        "en": "Download the two apps created by the App Team, \"Aprico\" and \"Virtual Rikoten\", and find hidden functions and complete mini-games to accomplish missions and get prizes!"
+        "en": "Download the two apps created by the App Team, \"App-Riko\" and \"Virtual Rikoten\", find hidden functions, complete mini-games to accomplish missions, and get prizes!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-06/B-06_pamphlet_thumbnail.jpg",
@@ -2743,17 +2749,17 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "情報局アプリ班の作るアプリとは？",
-          "en": "What kind of apps does the App Team of the Intelligence Bureau make?"
+          "en": "What kind of apps does the App Team of the Intelligence Bureau create?"
         },
         "articles": [
           {
             "headline": {
               "ja": "パンフレットアプリ「アプリコ」",
-              "en": "Pamphlet Application \"Aprico\""
+              "en": "Pamphlet Application \"App-Riko\""
             },
             "body": {
               "ja": "その名の通り電子版のパンフレットです！\n企画検索やタイムテーブルの確認等ができます。また、ウォークラリーや飲食店コラボといった、このアプリでしかできないイベントもあります！\n加えて、今年からはアプリをよりよく利用してもらう＋楽しんで使ってもらうために、隠し機能も用意しました！\n詳細は是非アプリコをダウンロードして確認してみてください！",
-              "en": "As the name implies, this is an electronic version of the pamphlet!\nYou can search for projects, check the timetable, etc. There are also events that you can take part in only with this app, such as walk rallies and restaurant collaborations!\nIn addition, this year we have prepared hidden functions to make the app even more useful and fun to use!\nPlease download the \"Aprico\" for more details!"
+              "en": "As the name implies, this is an electronic version of the pamphlet!\nYou can search for projects, check the timetable, etc. There are also events that you can take part in only with this app, such as walk rally and restaurant collaborations!\nIn addition, this year we have prepared hidden functions to make the app even more useful and fun to use!\nPlease download \"App-Riko\" for more details!"
             },
             "images": [],
             "movies": []
@@ -2765,7 +2771,7 @@
             },
             "body": {
               "ja": "早稲田大学西早稲田キャンパスをバーチャル世界で再現し、キャラクターを動かして西早稲田キャンパスを歩き回ることのできるゲームです！\nゲーム内にはミニゲームもあり、ゲームの達成度に応じて様々な特典を用意してあるので是非ダウンロードして遊んでみてください！",
-              "en": "This game is in the virtual world of the Nishi Waseda Campus of Waseda University, where you can move your character and walk around the Nishi Waseda Campus!\nThere are also mini-games in the game and various rewards depending on the achievement level of the game, so please download it and play!"
+              "en": "This game is in the virtual world of the Nishiwaseda Campus of Waseda University, where you can move your character and walk around the Nishiwaseda Campus!\nThere are also mini-games in the game and various rewards depending on the achievement level of the game, so please download it and play!"
             },
             "images": [],
             "movies": []
@@ -2802,7 +2808,7 @@
       },
       "groupDetail": {
         "ja": "理工展を運営しているサークル「理工展連絡会」がX（旧Twitter）キャンペーンを行います！　理工展公式X（旧Twitter）アカウントをフォローして、キャンペーン情報をリポストすれば、誰でも抽選会に参加できます！　詳しくは理工展公式アカウントをチェック！",
-        "en": "Rikoten Executive Committee, the circle that manages Rikoten, is going to run a X(Twitter) campaign!　Anyone can participate in the drawing by reposting certain posts from the official X(Twitter) of Rikoten!　For more details, check the official X(Twitter) of Rikoten!"
+        "en": "Rikoten Executive Committee, the circle that manages Rikoten, is going to hold a X(Twitter) campaign! Anyone can participate in the lottery by following the official X(Twitter) account of Rikoten and reposting certain posts from us! For more details, check the official X(Twitter) account of Rikoten!"
       },
       "url": {
         "hp": "",
@@ -2815,7 +2821,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "理工展公式X（旧Twitter）アカウントをフォロー＆キャンペーン情報をリポストして、抽選会に参加しよう！　豪華商品がゲットできるチャンスを見逃すな！　詳しくは理工展公式アカウントをチェック！",
-        "en": "Repost certain tweets from the official X(Twitter) of Rikoten to participate in the drawing!　Don't miss your chance to win gorgeous prizes!　For more details, check the official X(Twitter) of Rikoten!"
+        "en": "Follow the official X(Twitter) account of Rikoten and repost certain posts from to participate in the lottery! Don't miss your chance to win gorgeous prizes! For more details, check the official X(Twitter) account of Rikoten!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-07/B-07_pamphlet_thumbnail.jpg",
@@ -2851,7 +2857,7 @@
             },
             "body": {
               "ja": "理工展公式X（旧Twitter）アカウントをフォローし、キャンペーン情報をリポストすると、豪華賞品が当たる抽選会に参加できます！　詳しくは理工展公式アカウントをチェック！",
-              "en": "If you repost certain posts on the official X(Twitter) of Rikoten, you can participate in the drawing to win gorgeous prizes!　For more details, please visit the official X(Twitter) of Rikoten!"
+              "en": "If you follow the official X(Twitter) account and repost certain posts on our account, you can participate in the lottery to win gorgeous prizes! For more details, please visit the official X(Twitter) account of Rikoten!"
             },
             "images": [],
             "movies": []
@@ -2888,7 +2894,7 @@
       },
       "groupDetail": {
         "ja": "私たちは、理工展連絡会のマスコットキャラクター矢口くんと矢口ちゃんを幅広い方々に知ってもらうことを目的に活動している、理工展連絡会の有志団体です。理工展に興味を持っていただいた皆さんにぜひ矢口くん・矢口ちゃんの可愛さを知っていただきたいです！矢口くんや矢口ちゃんのHPやSNSをぜひご覧ください！",
-        "en": "We are a volunteer group of the Rikoten Executive Committee, whose purpose is to make Yaguchi-kun and Yaguchi-chan, the mascot characters of the Liaison Committee, known to many people. We want everyone who is interested in Rikoten to know how cute Yaguchi-kun and Yaguchi-chan are! Please visit Yaguchi-kun and Yaguchi-chan's website and SNS!"
+        "en": "We are a volunteer group of the Rikoten Executive Committee and work to make Yaguchi-kun and Yaguchi-chan, the mascot characters of the Rikoten Executive Committee, known to many people. We want everyone interested in Rikoten to know how cute Yaguchi-kun and Yaguchi-chan are! Please visit Yaguchi-kun and Yaguchi-chan's website and SNS!"
       },
       "url": {
         "hp": "https://circle.rikoten.com/yaguchi/",
@@ -2901,7 +2907,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "理工展公式マスコットの矢口くん・矢口ちゃん（矢口つむぎ）の限定グッズを絶賛販売中！矢口くんが実際に遊びに来たり、Vtuber矢口ちゃんとおしゃべりできちゃうコーナーもあるのでぜひ遊びに来てね！",
-        "en": "Goods of Yaguchi-kun and Yaguchi-chan (Tsumugi Yaguchi), the official mascots of Rikoten, which you can buy only there are now on sale! Yaguchi-kun will come to see you there, and also you can chat with Vtuber Yaguchi-chan in that place, so please call on us!"
+        "en": "Goods of Yaguchi-kun and Yaguchi-chan (Tsumugi Yaguchi), the official mascots of Rikoten, are now on sale. You can only buy them here! Not just this event, Yaguchi-kun will come to see you there, and you can chat with Vtuber Yaguchi-chan in our booth, so please feel free to visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-08/B-08_pamphlet_thumbnail.jpg",
@@ -2936,7 +2942,7 @@
             },
             "body": {
               "ja": "理工展公式マスコットの矢口くん・矢口ちゃん（矢口つむぎ）の限定グッズを絶賛販売中！矢口くんが実際に遊びに来たり、Vtuber矢口ちゃんとおしゃべりできちゃうコーナーもあるのでぜひ遊びに来てね！",
-              "en": "Goods of Yaguchi-kun and Yaguchi-chan (Tsumugi Yaguchi), the official mascots of Rikoten, which you can buy only there are now on sale! Yaguchi-kun will come to see you there, and also you can chat with Vtuber Yaguchi-chan in that place, so please call on us!"
+              "en": "Goods of Yaguchi-kun and Yaguchi-chan (Tsumugi Yaguchi), the official mascots of Rikoten, are now on sale. You can only buy them here! Not just this event, Yaguchi-kun will come to see you there, and you can chat with Vtuber Yaguchi-chan in our booth, so please feel free to visit us!"
             },
             "images": [],
             "movies": []
@@ -2962,7 +2968,10 @@
       "isSecondDay": true,
       "isWalkRally": false,
       "hasTicket": true,
-      "ticketDetail": "https://forms.gle/2FBTh3yrEf28yZHt9",
+      "ticketDetail": {
+        "ja": "両日とも朝10時から受付開始 / お申込みは<a href=\"https://forms.gle/2FBTh3yrEf28yZHt9\" target=\"blank\" rel=\"noopener noreferrer\">こちら</a>",
+        "en": "Starts at 10:00 a.m. on both days / Click <a href=\"https://forms.gle/2FBTh3yrEf28yZHt9\" target=\"blank\" rel=\"noopener noreferrer\">here</a> to apply"
+      },
       "groupName": {
         "ja": "西早稲田キャンパスツアーガイド",
         "en": "Nishiwaseda Campus Tour Guide"
@@ -2973,7 +2982,7 @@
       },
       "groupDetail": {
         "ja": "西早稲田キャンパスツアーガイドは，西早稲田キャンパスをぐるっと一周し様々な施設をご紹介するツアーを行っています．授業期間中には定期ツアーや団体ツアーのガイドを務めています．所属するガイドは全員理工3学部の学部生または大学院生で，学年も専攻も異なる個性豊かなメンバーが活躍しています！",
-        "en": "We are Nishiwaseda-campus tour guides. We give you the tours around the campus and introduce some facilities and buildings. During class periods, scheduled tours and group tours are conducted so far. The all guides attend science and engineering courses at Waseda univ or its graduate school, so we consist of members with rich personalities from different grades and majors."
+        "en": "We are Nishi-waseda campus tour guides. We tour around the campus with you and introduce some facilities and buildings. During class periods, scheduled tours and group tours are conducted so far. All of the guides attend science and engineering courses at Waseda univ or its graduate school, so we consist of members with rich personalities from different grades and majors."
       },
       "url": {
         "hp": "",
@@ -3081,10 +3090,10 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会　広報局　飲食店コラボ",
-        "en": "Rikoten exective committee, Public Relations Department, Restaurant Collaboration"
+        "en": "The Public Relations Bureau of Rikoten Executive Committee: Restaurant Collaboration"
       },
       "projectName": {
-        "ja": "飲食店コラボ・金券交換所",
+        "ja": "飲食店コラボ",
         "en": "Restaurant Collaboration・Gold Certificate Exchange"
       },
       "groupDetail": {
@@ -3166,7 +3175,10 @@
       "isSecondDay": true,
       "isWalkRally": true,
       "hasTicket": true,
-      "ticketDetail": "アプリコ内のページ",
+      "ticketDetail": {
+        "ja": "アプリコ内のページ / 両日とも当日朝9時から",
+        "en": "On Rikoten official pamphlet app / Starts at 9:00 a.m. on both days"
+      },
       "groupName": {
         "ja": "Labyrinth Factory",
         "en": "Labyrinth Factory"
@@ -3189,8 +3201,8 @@
       "isOnline": false,
       "category": "general",
       "projectDetail": {
-        "ja": "未知の惑星に取り残されたあなたたち。謎や暗号を解き、星からの脱出を目指せ！２０分で遊べる体験型謎解きゲーム！\nキャンパス内を巡って謎を解く周遊型ゲームも同時開催！\n",
-        "en": "You are stranded on an unknown planet. Escape from the stars by solving mysteries and codes. At the same time, we will also hold a touring game to explore aroud the campus and solve mysteries!"
+        "ja": "未知の惑星に取り残されたあなたたち。謎や暗号を解き、星からの脱出を目指せ！30分程度で遊べる体験型謎解きゲーム！\nキャンパス内を巡って謎を解く周遊型ゲームも同時開催！\n",
+        "en": "You are stranded on an unknown planet. Escape from the stars by solving mysteries and codes. This is a 30-minute experiential riddle solving game! At the same time, we will also hold a touring game to explore aroud the campus and solve mysteries!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-12/B-12_pamphlet_thumbnail.jpg",
@@ -3222,8 +3234,8 @@
         "articles": [
           {
             "headline": {
-              "ja": "20分で遊べる体験型謎解きゲーム",
-              "en": "The experiental escape game that can be played in 20 minutes"
+              "ja": "30分で遊べる体験型謎解きゲーム",
+              "en": "The experiental escape game that can be played in 30 minutes"
             },
             "body": {
               "ja": "”未知の惑星に取り残されたあなたたち。謎や暗号を解き、星からの脱出を目指せ！”\n子供から大人まで手軽に楽しめる体験型謎解きゲームを実施します。\nキャンパス内を巡って謎を解く周遊型ゲームも同時開催！",
@@ -3256,7 +3268,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会　企画局　ロボットフェスティバル",
-        "en": "Rikoten executive committee Kikaku kyoku Robot Festibal"
+        "en": "The Robot Festival maneged by The Project Bureau of Rikoten Executive Comimttee"
       },
       "projectName": {
         "ja": "ロボットフェスティバル１日目　ROBO-ONE認定大会",
@@ -3264,7 +3276,7 @@
       },
       "groupDetail": {
         "ja": "早稲田大学理工展連絡会企画局のロボットフェスティバルです。1日目は二足歩行ロボット大会、2日目はロボットの展示企画を行います。",
-        "en": "We are robot festival team involved in the Project Bureau of Rikoten Executive Committee.We organize a robot competition on Day1, and host a robot exhibition project on Day2."
+        "en": "We are the robot festival team in the Project Bureau of Rikoten Executive Committee. We will be holding a robots' competition on Day1, and a biped robot exhibition project on Day2."
       },
       "url": {
         "hp": "https://robobo2023.wixsite.com/robofes2023",
@@ -3277,7 +3289,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "ロボット達の祭典、今年も開幕！1日目はROBO-ONE公認の二足歩行ロボット大会を実施！学生たちが作ったロボット達の熱い闘いを間近でお楽しみいただけます！あの熱い戦いが今ここに！",
-        "en": "A Festival of robots will be held again! On Day 1, we organize a robots' competition. You can watch battle games of robots which are made by students. Enjoy the robot battle! "
+        "en": "A Festival of robots will be held again! On Day 1, we organize a biped robot competition officially recognized ROBO-ONE. You can watch battle games of robots made by students. Enjoy the robot battles! "
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-13-F/B-13-F_pamphlet_thumbnail.jpg",
@@ -3304,7 +3316,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "ロボット達の熱い戦いを見逃すな！",
-          "en": "Enjoy the robot battle! "
+          "en": "Don't miss out the robot battles!"
         },
         "articles": [
           {
@@ -3314,7 +3326,7 @@
             },
             "body": {
               "ja": "ロボット達の祭典、今年も開幕！1日目はROBO-ONE公認の二足歩行ロボット大会を実施！学生たちが作ったロボット達の熱い闘いを間近でお楽しみいただけます！あの熱い戦いが今ここに！",
-              "en": "A Festival of robots will be held again! On Day 1, we organize a robot competition. You can watch battle games of robots which are made by students. Enjoy the robot battle! "
+              "en": "A Festival of robots will be held again! On Day 1, we organize a biped robot competition officially recognized ROBO-ONE. You can watch battle games of robots made by students. Enjoy the robot battles! "
             },
             "images": [],
             "movies": []
@@ -3344,7 +3356,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会　企画局　ロボットフェスティバル",
-        "en": "Rikoten executive committee Kikaku kyoku Robot Festibal"
+        "en": "The Robot Festival managed by The Project Bureau of Rikoten Executive Comimttee"
       },
       "projectName": {
         "ja": "ロボットフェスティバル２日目　ロボット展示",
@@ -3352,7 +3364,7 @@
       },
       "groupDetail": {
         "ja": "早稲田大学理工展連絡会企画局のロボットフェスティバルです。1日目は二足歩行ロボット大会、2日目はロボットの展示企画を行います。",
-        "en": "We are robot festival team involved in the Project Bureau of Rikoten Executive Committee.We organize a robot competition on Day1, and host a robot exhibition project on Day2."
+        "en": "We are the robot festival team in the Project Bureau of Rikoten Executive Committee. We will be holding a biped robots' competition on Day1, and a robot exhibition project on Day2."
       },
       "url": {
         "hp": "https://robobo2023.wixsite.com/robofes2023",
@@ -3365,7 +3377,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "ロボットフェスティバル2日目はロボットの展示企画を実施！ユニークなロボットたちによる様々な展示をお楽しみいただけます！小さな子供から大人まで誰でもOK！ぜひご覧ください！",
-        "en": "On Day 2, we host a robot exhibition project. You can enjoy various exhibitions of unique and cool robots. Everyone can enjoy this program! Please come!"
+        "en": "On Day 2, we will be holding a robot exhibition project. You can watch various exhibitions of unique and cool robots, and everyone can enjoy this program! Please feel free to visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-13-S/B-13-S_pamphlet_thumbnail.jpg",
@@ -3392,7 +3404,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "ユニークなロボット達をご覧あれ！",
-          "en": "Meet cool and unique robots!"
+          "en": " Cool and unique robots in front of your eyes!"
         },
         "articles": [
           {
@@ -3402,7 +3414,7 @@
             },
             "body": {
               "ja": "ロボットフェスティバル2日目はロボットの展示企画を実施！ユニークなロボットたちによる様々な展示をお楽しみいただけます！小さな子供から大人まで誰でもOK！ぜひご覧ください！\n",
-              "en": "On Day 2, we host a robot exhibition project. You can enjoy various exhibitions of unique and cool robots. Everyone can enjoy this program! Please come!"
+              "en": "On Day 2, we will be holding a robot exhibition project. You can watch various exhibitions of unique and cool robots. We hope everyone can enjoy this exhibition! Please feel free to visit us!"
             },
             "images": [],
             "movies": []
@@ -3431,7 +3443,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会　企画局　理工縁日",
-        "en": "Rikoten exective committee Kikakukyoku  Riko Fair"
+        "en": "The Project Bureau of Rikoten Executive Committee: Riko Fair"
       },
       "projectName": {
         "ja": "理工縁日",
@@ -3439,7 +3451,7 @@
       },
       "groupDetail": {
         "ja": "試験的に行った企画が大好評とのことで近年新チームとして発足してしまいました！理工展連絡会で様々な企画案を出し当日を盛り上げる企画局のなかでも，既存のチームに負けないくらいの勢いで日々活動しております！なんてったって縁日ですから！ぜひ理工縁日にいらして我々のパワーを受け取ってください！",
-        "en": "Riko Fair is a project that adds an element of \nscience and engineering to the fair-like offerings!\n You can enjoy the event and learn how it works at the same time!\n It is sure to be fun for both children and adults!"
+        "en": "Riko Fair is a project that adds an element of science and engineering to the fair-like offerings! You can enjoy the event and learn how it works at the same time! It is sure to be fun for both children and adults!"
       },
       "url": {
         "hp": "",
@@ -3452,7 +3464,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "射的・ボールすくいなどの人気企画に引き続き，今年は新企画も用意！縁日を楽しむ＆理工の学びという最高の組合せ。お子様から大人の方まで楽しく参加可能で、高得点を取れば景品があるかも⁈ぜひ来てください！\n",
-        "en": "This year, you can enjoy target shooting,\n and ball games, and learn how they work.\n Children and adults alike are welcome to join in the fun,\n and there may be prizes for the highest score!"
+        "en": "This year, you can enjoy target shooting, and ball games, and learn how they work. Children and adults alike are welcome to join in the fun, and you may win a prize if you get the highest score!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-15/B-15_pamphlet_thumbnail.jpg",
@@ -3535,7 +3547,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会　広報局　学内",
-        "en": "Rikoten - Public Relations Office - Campus Team"
+        "en": "Campus Team in The Public Relations Bureau of Rikoten Executive Committee"
       },
       "projectName": {
         "ja": "早稲田生向け抽選会",
@@ -3622,7 +3634,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会総務局72期",
-        "en": "Rikoten Liaison Committee General Affairs Bureau 1st grade group"
+        "en": "1st grade students in The General Affairs Bureau of Rikoten Executive Committee"
       },
       "projectName": {
         "ja": "ワセリコセミナー",
@@ -3630,7 +3642,7 @@
       },
       "groupDetail": {
         "ja": "理工展連絡会の総務局1年(72期)です！普段は総務局内で様々な部署ごとに分かれて活動しています!理工展連絡会内での活動はみんなで協力して頑張っています!",
-        "en": "We are the 1st grade students of the General Affairs Bureau of Rikoten Executive Committee. We are usually divided into various departments within the General Affairs Bureau and are active. We are all working hard together within Rikoten executive committee!"
+        "en": "We are the 1st grade students of the General Affairs Bureau of Rikoten Executive Committee. We are usually divided into various departments within the General Affairs Bureau and are active. We are all working hard together within Rikoten Executive Committee!"
       },
       "url": {
         "hp": "",
@@ -3742,7 +3754,7 @@
       },
       "groupDetail": {
         "ja": "早稲田大学無線通信研究会は，早大唯一の「アマチュア無線」サークルです！\n電子工作や交流を行う定例部会，制限時間内に無線で交信した数を競う無線の大会「コンテスト」への参加，無線版オリエンテーリング「ARDF」，山地・高地などでの移動運用，遠征，災害時の非常通信に関する調査・実験などを行っています。\n",
-        "en": "Our main activity is amateur radio operation. Amateur radio is the hobby to enjoy radio communication and radio technology. We are also doing exhibitions at various events to show you the fun of amateur radio, electric engineering, and radio technology. Our establishment was in 2016, but the predecessor of our club dates back to 1971.　We inherit its history and DNA."
+        "en": "Our main activity is amateur radio operation. Amateur radio is the hobby to enjoy radio communication and radio technology. We are also doing exhibitions at various events to show you the fun of amateur radio, electric engineering, and radio technology. Our establishment was in 2016, but the predecessor of our club dates back to 1971. We inherit its history and DNA."
       },
       "url": {
         "hp": "https://jh1ydt.com/",
@@ -3755,7 +3767,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "「離れていてもつながる」が当たり前・不可欠となった今だからこそ、「つながる」ことの楽しさ、面白さを再発見してみませんか？　アマチュア無線の実際の交信を体験し、アマチュア無線のセカイについて知ろう！\n",
-        "en": "Now that \"being connected even when you are far away\" has become natural and indispensable, why don't you rediscover the fun and excitement of being \"connected\"?　Let's experience  amateur radio communication and learn about  amateur radio!"
+        "en": "Now that \"connecting even when you are far away\" has become natural and indispensable, why don't you rediscover the fun and interests of \"connecting\"? Let's experience amateur radio communication and learn about the truth of amateur radio!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/D-01/D-01_pamphlet_thumbnail.jpg",
@@ -3818,11 +3830,11 @@
           {
             "headline": {
               "ja": "テーマは「体験しよう！電波のセカイ」",
-              "en": "The theme is \"Let's try radio communication\"."
+              "en": "Our theme:  \"Let's try radio communication\"."
             },
             "body": {
               "ja": "スマホやパソコン、wifiなどでいつも使っている、この辺りにあるはずなのに触ることも見ることもできない不思議なモノ、それが「電波」。 そんな「電波」の不思議に答える・体験できる企画が盛りだくさん！\r",
-              "en": "There is a mysterious thing that we always use with our cell phones, PCs, wifi, etc., and that we cannot touch or see even though it should be around here. \nThat is \"radio wave\".\nThere are many programs to answer and experience the wonders of \"radio waves\"!"
+              "en": "There is a mysterious thing that we cannot touch or see even though it should be around here and we always use with our cell phones, PCs, wifi, and so on...  \nThat is \"radio wave\".\nIn our booth, there are many programs to answer and experience the wonders of \"radio waves\"!"
             },
             "images": [],
             "movies": []
@@ -3830,11 +3842,11 @@
           {
             "headline": {
               "ja": "アマチュア無線の交信を体験！",
-              "en": "Try amateur radio communication!"
+              "en": "Try amateur radio communications!"
             },
             "body": {
               "ja": "「アマチュア無線」という言葉を初めて聞いた方、科学雑誌などで「アマチュア無線」を見聞きしたことはあるけど、難しそうに感じて敬遠していた方、そんな方々にピッタリな「アマチュア無線交信体験」を行います。だれでも遠くのハム(無線家)と、実際のアマチュア無線の交信ができるチャンス！必要なのは興味だけ、資格や知識は全くいりません！昨年の理工展でも多くの方に体験して頂きました。ぜひ遊びに来てください！",
-              "en": " We conduct an \"amateur radio communication workshop\" for those who are interested. \nHave you heard the word of \"Amateur Radio\" ?\nSome of you have never heard.\n Others have heard the word ,but you feel hesitant because it seems difficult.\nThis is perfect for you!!\n Many people experienced this at Rikoten last year. Please come and visit us!"
+              "en": "We hold an \"amateur radio communication workshop\" for a wide variety of people: those who have never heard the term \"amateur radio\" and have avoided the amateur radio though you have seen and heard of it from some science magazines. Everyone can have chances to use real amateur radio communication with HAMs (radio operators) from far away. All you need is interest, no need for certifications and knowledge.\n Many people experienced our project at Rikoten last year. Please feel free to come and visit us!"
             },
             "images": [],
             "movies": []
@@ -3846,7 +3858,7 @@
             },
             "body": {
               "ja": "「趣味としての無線通信」とよく表現されるものです。\n試行錯誤をしながら世界中の無線局と音声やモールス信号、さらには画像や映像などを使った通信を行います。\nより遠く・正確に伝えるためにアンテナ製作をはじめとする電子工作をしたり，ロケーションの良いところへ遠征して無線運用を行ったりするなど，自分たちで工夫して交信を行うところにその楽しさの醍醐味があります。",
-              "en": "Amateur radio communication is often described as \"radio communication as a hobby.\"\nThrough trial and error, we communicate with radio stations around the world by using voice, Morse code, images, video, and so on. \nTo communicate further and more accurately, we make antennas and other electronic devices, and we go on expeditions to good locations to conduct radio operations.\"\nThe real fun comes from the ingenuity of our own efforts to communicate with each other."
+              "en": "Amateur radio communication is often described as \"radio communication for a hobby.\"\nThrough trial and error, we communicate with radio stations around the world by using voice, Morse code, images, video, and so on. \nTo communicate further and more accurately, we make electronic devices including antenna fabrication, and go on expeditions to better locations to conduct radio operations.\nIt is the real fun that is devising our own communication."
             },
             "images": [],
             "movies": []
@@ -3858,7 +3870,7 @@
             },
             "body": {
               "ja": "早稲田大学無線通信研究会は、早稲田大学で唯一の「アマチュア無線」サークルです！1971年に発足したサークルを起源として、2016年に再結成しました！普段は月に数回の部会のほか、制限時間内により多くの交信数を競う「コンテスト」というイベントや、年数回の遠征、電子工作会などを中心に活動しています。また，アマチュア無線の楽しさを広める場として，理工展にも毎年出展しています。コロナ禍の昨今でもリモート部会など工夫して楽しんでいます！活動の幅はとても広く，部員のやりたいことを尊重して柔軟にみんなでたのしく活動しています。\n",
-              "en": "The Waseda University Radio Communication Club is the only \"amateur radio\" club at Waseda University! \r\n\" Waseda University Radio Communication Club is originated from clubs established in 1971, and was reunited in 2016. Usually, in addition to monthly club meetings, we focus on \"contest\" events in which we compete for more contacts within a time limit, expeditions several times a year, and electronic craft sessions.\r\n We also participate in Rikoten every year as a place to spread the fun of amateur radio. Even in these days of the Corona Disaster, we are enjoying ourselves by devising new ways of doing things, such as remote club meetings! \r\nWe have a very wide range of activities and we respect the ideas of our club members and enjoy working together flexibly."
+              "en": "The Waseda University Radio Communication Club is the only \"amateur radio\" club at Waseda University! \n\"Waseda University Radio Communication Club\" was originated in 1971 and was reunited in 2016. Usually, we hold club meetings monthly, and we focus on \"contest\" events in which we compete for more communications within a time limit, expeditions several times a year, and electronic craft sessions.\n We also participate in Rikoten as a place to spread the fun of amateur radio  every year. Even in these days of the Corona Disaster, we are enjoying ourselves by devising new ways of doing things, such as remote club meetings! \nWe have a very wide range of activities, respect the ideas of our club members, and enjoy working together flexibly."
             },
             "images": [],
             "movies": []
@@ -3866,11 +3878,11 @@
           {
             "headline": {
               "ja": "非常通信プロジェクト",
-              "en": "Emergency Communications Project"
+              "en": "The Emergency Communications Project"
             },
             "body": {
               "ja": "新たな取り組みとして，アマチュア無線の防災への応用可能性を調査・研究する「非常通信プロジェクト」を2023年4月に立ち上げました。アマチュア無線は通信の堅牢性や独立性といった面でスマホや有線通信に秀でており，これを活かして地震などの災害時の通信レジリエンスに貢献できることが知られています。このプロジェクトでは，国内外におけるこれまでの活用事例を調査し，デジタル通信などの最新技術を研究しています。あわせて，アマチュア無線が防災に活用されていることを普段なじみのない方々に広報・周知する取り組みも行っていく予定です。\n同日開催の早稲田祭にも非常通信プロジェクトの出展がありますので、ぜひそちらもご覧ください。",
-              "en": "As a new initiative, we launched the Emergency Communications Project in April 2023 to investigate and research the practical applicability of amateur radio for disaster management. Amateur radio excels smartphones and wired communications in terms of robustness and independence of communication, and it is known that it can contribute to communication resilience in the event of earthquakes and other disasters.\nIn this project, we research the latest technologies for digital communications and investigate examples of their use in Japan and abroad. In addition, we plan to publicize and inform people who are not familiar with the use of amateur radio for disaster prevention.\nThe Emergency Communications Project will also have an exhibit at the Waseda Festival, which will be held on the same day, so please visit that as well.\""
+              "en": "In April, 2023, we launched \"The Emergency Communications Project\" to investigate and research the practical applicability of amateur radio for disaster management as our new attempts. Amateur radio excels smartphones and wired communications in terms of robustness and independence in communicating, and it is known that these qualities can contribute to communication resilience in the event of earthquakes and other disasters.\nIn this project, we investigate examples of their use around the world and research the latest technologies such as digital communications. In addition, we plan to publicize and inform people who are not familiar with amateur radio that it is used for disaster prevention.\nThe Emergency Communications Project will also have an exhibit at the Waseda Festival, which will be held on the same day, so please feel free to visit that as well!"
             },
             "images": [],
             "movies": []
@@ -3903,11 +3915,11 @@
       },
       "projectName": {
         "ja": "見て！乗って！学ぼう！～未来の街をつくる自動配送モビリティ～",
-        "en": "Let’s learn by looking and riding!~The next generation vehicles with urban development~"
+        "en": "Let’s learn by looking and riding! ~ The next generation vehicles with urban development ~"
       },
       "groupDetail": {
         "ja": "小野田研究室は日々使われている製品や技術に関して、3R・資源循環・省エネルギー等をキーワードとした循環型社会や低炭素社会の高度化に向けた研究を行っています。近年では街づくりと一体化した次世代モビリティの開発を中心として、新たな技術開発や先進的な社会システムの実践的な活動を行っています。",
-        "en": "Onoda Lab researches products and technologies used in our daily lives to advance a recycling- and low-carbon society by focusing on the 3Rs, resource recycling, energy conservation, and other keywords. In recent years, the laboratory has carried out practical activities for the development of new technologies and advanced social systems, with a focus on the development of next-generation mobility integrated with urban development."
+        "en": "Onoda Lab researches products and technologies used in our daily lives to advance a recycling- and low-carbon society by focusing on the 3Rs, resource recycling, energy conservation, and other keywords. In recent years, the laboratory has carried out practical activities for the development of new technologies and advanced social systems, with a focus on the development of next-generation vehicle integrated with urban development."
       },
       "url": {
         "hp": "http://www.f.waseda.jp/onoda/",
@@ -3947,7 +3959,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "小野田研究室での取組みをご紹介します！",
-          "en": "We introduce our efforts in Onoda Laboratory!"
+          "en": "Let us introduce our works in Onoda Laboratory!"
         },
         "articles": [
           {
@@ -3957,7 +3969,7 @@
             },
             "body": {
               "ja": "モビリティとは、本来は「動きやすさ」「移動性」などを意味する英単語ですが、それが転じて、交通領域では「人やもの、ことを空間的に移動させる能力、機構」のことを指すようになりました。本研究室では、自動運転や人追従など新しい技術を実装した自動配送ロボットや、高齢者の移動を支援する１人乗りの歩行補助車、１台で様々な社会課題の解決に貢献できるマルチベネフィット型モビリティなどの開発を通して、新たな街づくりに貢献しています。",
-              "en": "Mobility is an English word that originally meant \"ease of movement\" or \"mobility,\" but it has been turned to mean \"the ability or mechanism to move people, things, or things spatially\" in the transportation domain.\n We have developed a wide range of products that contribute to solving various social issues, such as automated delivery robots that implement new technologies such as automated driving and human following, one-person walking aids that assist the elderly, and multi-benefit vehicles that help solve various social problems."
+              "en": "Mobility originally meant \"ease of movement\", but it has been turned to mean \"the ability or mechanism to move people, things, or things spatially\" in the transportation domain.\n We have been contributing to a new community building by developing a wide range of products such as automated delivery robots that implement new technologies such as automated driving and human following, one-person walking aids that assist the elderly, and multi-benefit vehicles that help solve various social problems."
             },
             "images": [],
             "movies": []
@@ -3986,7 +3998,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "建築展",
-        "en": "KENCHIKUTEN"
+        "en": "The Architecture Exhibition"
       },
       "projectName": {
         "ja": "つむつるパビリオン",
@@ -4007,7 +4019,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "「積み上げる」と「吊り下げる」要素を使って、木製のパビリオンを作りました。学びの場としての大学に新たな“場”を生み出しています。そこに入ったときあなたは何を感じるでしょうか?ぜひ体感してみてください！",
-        "en": "Using the elements of \"stacking\" and \"hanging,\" we created a wooden pavilion. It creates a new \"place\" for the university as a place of learning. What will you feel when you enter? We invite you to experience it for yourself!"
+        "en": "Using the elements of \"stacking\" and \"hanging,\" we created a wooden pavilion. It gives you a new \"place\" for the university as a place of learning. What will you feel in entering our pavilion? We invite you to experience it for yourself!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/D-03/D-03_pamphlet_thumbnail.jpg",
@@ -4044,7 +4056,7 @@
             },
             "body": {
               "ja": "「積み上げる」と「吊り下げる」要素を使って、木製のパビリオンを作りました。学びの場としての大学に新たな“場”を生み出しています。そこに入ったときあなたは何を感じるでしょうか?中庭で展示を行っています、ぜひ体感してみてください！",
-              "en": "Using the elements of \"stacking\" and \"hanging,\" we created a wooden pavilion. It creates a new \"place\" for the university as a place of learning. What will you feel when you enter? We invite you to experience it for yourself!"
+              "en": "Using the elements of \"stacking\" and \"hanging,\" we created a wooden pavilion. It gives you a new \"place\" for the university as a place of learning. What will you feel in entering our pavilion? We invite you to experience it for yourself!"
             },
             "images": [],
             "movies": []
@@ -4081,7 +4093,7 @@
       },
       "groupDetail": {
         "ja": "早稲田大学芸術学校は、多様なバックグラウンドを持つ学生が共に建築芸術を学ぶ、日本で唯一の学校です。\n昼間は仕事をしている社会人や、他の教育機関で建築とは異なる分野を勉強しているダブルスクール生など、様々なキャリア・バックグラウンドを持つ、幅広い年齢層の学生が在籍しています。",
-        "en": "ART AND ARCHITECTURE SCHOOL WASEDA UNIVERSITY” is the only school in Japan where students from diverse backgrounds study architectural art together.\nWe have students of all ages from a wide range of careers and backgrounds, including daytime workers and double-school students who are studying different fields of architecture at other educational institutions."
+        "en": "\"ART AND ARCHITECTURE SCHOOL WASEDA UNIVERSITY” is the only school in Japan where students from diverse backgrounds study architectural art together.\nWe have students of all ages who have a variety of careers and backgrounds, including daytime workers and double-school students who are studying different fields of architecture at other educational institutions."
       },
       "url": {
         "hp": "https://www.waseda.jp/school/art/",
@@ -4094,7 +4106,7 @@
       "category": "general",
       "projectDetail": {
         "ja": "社会人やダブルスクール生など、様々なバックグラウンドを持つ芸術学校の学生による設計課題の作品展示会です。建築に興味がある方も、馴染みのない方も楽しめる展示空間です！ぜひお気軽に立ち寄りください。",
-        "en": "This is an exhibition of design assignments by students from ART AND ARCHITECTURE SCHOOL WASEDA UNIVERSITY with diverse backgrounds, including working professionals and double-school students.\r\n Both those interested in architecture and those unfamiliar with the field will enjoy this exhibition space! Please feel free to drop by."
+        "en": "This is an exhibition of design assignments by students from ART AND ARCHITECTURE SCHOOL WASEDA UNIVERSITY with diverse backgrounds, including working professionals and double-school students.\n Both those interested in architecture and those unfamiliar with our field will enjoy our exhibition space! Please feel free to drop by."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/D-04/D-04_pamphlet_thumbnail.jpg",
@@ -4132,7 +4144,7 @@
             },
             "body": {
               "ja": "早稲田大学芸術学校は、多様なバックグラウンドを持つ学生が共に建築芸術を学ぶ、日本で唯一の学校です。\n昼間は仕事をしている社会人や、他の教育機関で建築とは異なる分野を勉強しているダブルスクール生など、様々なキャリア・バックグラウンドを持つ、幅広い年齢層の学生が在籍しています。\n芸術学校は、早稲田大学理工展において芸術展を開催します。芸術展では、学校での学びを皆さんに広く知って頂くため、在籍する1～3年生が手掛けた作品を複数展示しています。\n建築に興味がある方はもちろん、普段は建築に親しみがない方でも楽しんでいただけるような展示を心がけました。\nぜひお気軽にお立ち寄りください。楽しみにお待ちしております。",
-              "en": "ART AND ARCHITECTURE SCHOOL WASEDA UNIVERSITY is the only school in Japan where students from diverse backgrounds study architectural art together.\r\nThe school has students of all ages and from a variety of careers and backgrounds, including adult  who work during the day and double-school students who are studying a different field of architecture at other educational institutions.\r\nThe school will hold ART AND ARCHITECTURE SCHOOL EXHIBITION at Rikoten .\r\nART AND ARCHITECTURE SCHOOL EXHIBITION displays several works created by the 1st through 3rd year students enrolled in the school in order to make their studies at the school widely known to everyone.\r\nWe have tried to make the exhibition enjoyable not only for those who are interested in architecture, but also for those who are not familiar with architecture in their daily lives.\r\nPlease feel free to drop by. We are looking forward to seeing you.\""
+              "en": "\"ART AND ARCHITECTURE SCHOOL WASEDA UNIVERSITY is the only school in Japan where students from diverse backgrounds study architectural art together.\nThe school has students of all ages and from a variety of careers and backgrounds, including adult  who work during the day and double-school students who are studying a different field of architecture at other educational institutions.\nOur school will hold ART AND ARCHITECTURE SCHOOL EXHIBITION at Rikoten.\nART AND ARCHITECTURE SCHOOL EXHIBITION displays several works created by the 1st through 3rd year students enrolled in the school in order to make you widely known our studies at the school.\nWe have focused on the exhibition enjoyable not only for those who are interested in architecture, but also for those who are not familiar with architecture in their daily lives.\nPlease feel free to drop by. We are looking forward to seeing you.\n"
             },
             "images": [],
             "movies": []
@@ -4247,7 +4259,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "キッズラボ",
-        "en": "Rikoten project team Kids Labo"
+        "en": "Kids Labo in Project Bureau of Rikoten Executive Committee"
       },
       "projectName": {
         "ja": "子供実験教室/クイズ！実験博士のお手伝い",
@@ -4296,7 +4308,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "キッズラボ",
-          "en": "Rikoten project team Kids Labo"
+          "en": "Kids Labo in Project Bureau of Rikoten Executive Committee"
         },
         "articles": [
           {
@@ -4344,7 +4356,10 @@
       "isSecondDay": true,
       "isWalkRally": false,
       "hasTicket": true,
-      "ticketDetail": "両日とも朝10時ごろから配布開始 / 配布場所は56号館502教室の入り口",
+      "ticketDetail": {
+        "ja": "両日とも朝10時ごろから配布開始 / 配布場所は56号館502教室の入り口",
+        "en": "Starts from 10:00 a.m. of both days / At 56-502"
+      },
       "groupName": {
         "ja": "応用化学学生委員会実験班芳香剤",
         "en": "Applied Chemistry Student Committee Science Show Group"
@@ -4456,7 +4471,7 @@
       "category": "experiment",
       "projectDetail": {
         "ja": "お祭りの屋台で売られている光る腕輪やライブで使われるサイリウムなど身近なところでもよくつかわれるケミカルライトを実験で作ります。化学の面白さを視覚的に、子供から大人まで楽しめるような企画です。",
-        "en": "In this experiment, participants will make chemical lights, which are often used in everyday life, such as glowing bangles sold at festivals and psyllium used at live concerts. This project is designed to visually show the fun of chemistry and to be enjoyed by both children and adults."
+        "en": "In this experiment, participants will make chemical lights, which are often used in everyday life, such as glowing bangles sold at festivals and psyllium used at live concerts. We design this project to visually show the fun of chemistry and to be enjoyed by both children and adults."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/E-02/E-02_pamphlet_thumbnail.jpg",
@@ -4487,11 +4502,11 @@
           {
             "headline": {
               "ja": "化学を身近に感じてもらう",
-              "en": "Making chemistry accessible to the public"
+              "en": "Let's feel chemistry closer!"
             },
             "body": {
               "ja": "化学の面白さを身近に感じてもらうことを目的として、サイリウムなど生活に用いられるケミカルライトを実験し、化学的に説明しようという演示実験企画です。色鮮やかに発光する様子を子供から大人まで幅広い人が視覚的に楽しめると考えています。今回の実験では4種類の色素を用いて4色の発光を演示するつもりです。",
-              "en": "The aim of this demonstrative experiment project is to make people become familiar with the fun of chemistry by experimenting with chemical lights used in daily life, such as psyllium, and explaining them chemically. We believe that a wide range of people, from children to adults, can visually enjoy the colorful luminescence. In this experiment, we intend to demonstrate four different colors of luminescence using four different dyes."
+              "en": "We hold the demonstrative experiment project for making you become familiar with the fun of chemistry. In this experiment, you learn about chemical lights used in daily life, such as psyllium, and we explain them chemically. We believe that a wide range of people, from children to adults, can visually enjoy the colorful luminescence. In this experiment, we intend to demonstrate four different colors of luminescence using four different dyes."
             },
             "images": [],
             "movies": []
@@ -4517,18 +4532,21 @@
       "isSecondDay": true,
       "isWalkRally": false,
       "hasTicket": true,
-      "ticketDetail": "両日とも朝10時ごろから配布開始 / 配布場所は56号館502教室の入り口",
+      "ticketDetail": {
+        "ja": "両日とも朝10時ごろから配布開始 / 配布場所は56号館502教室の入り口",
+        "en": "Starts from 10:00 a.m. of both days / At 56-502"
+      },
       "groupName": {
         "ja": "応化会学生委員会学部生部会",
         "en": "Oukakai Gakuseiinnkai Gakubuseibukai"
       },
       "projectName": {
         "ja": "人工いくらでスノードームを作ろう！",
-        "en": "Let's artificially make salmon roe!"
+        "en": "Let's make snow globes with artificial salmon roes!"
       },
       "groupDetail": {
         "ja": "私たちと一緒にいくらのようなつぶつぶを作りましょう！\n簡単な実験で作ったいくらはスノードームのようにして持ち帰れます。\n化学のことに興味がある人もない人もぜひお越しください！",
-        "en": "Lets make salmon roe-like pieces with us!\nYou can take home the salmon roe you made in this simple experiment in the form of a snow globe.\nWhether you are interested in chemistry or not, please come and join us!"
+        "en": "Lets make salmon roe-like balls with us!\nYou can take home the salmon roe you made in this simple experiment as the form of a snow globe.\nWhether you are interested in chemistry or not, please come and join us!"
       },
       "url": {
         "hp": "",
@@ -4541,7 +4559,7 @@
       "category": "experiment",
       "projectDetail": {
         "ja": "絵具で色をつけた液体を使っていくらのようなつぶつぶを作成します。\n作ったいくらはラメと一緒に小瓶に入れて持って帰ってもらえます。\n誰でも楽しめるような実験ですのでぜひお越しください！",
-        "en": "Participants will create salmon roe-like balls using liquid colored with paint.\nYou may take home the salmon roe you created in a small jar along with the lame.\nThis is an experiment that anyone can enjoy, so please come and join us!"
+        "en": "Participants will make salmon roe-like balls using liquid colored with paint.\nYou can take home the salmon roe you made in a small jar with the lame.\nThis is an experiment that anyone can enjoy, so please come and join us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/E-03/E-03_pamphlet_thumbnail.jpg",
@@ -4578,7 +4596,7 @@
             },
             "body": {
               "ja": "絵具を使っていくらのようなつぶつぶを作ります。\n作ったいくらはラメを入れた小瓶に入れてスノードームのようにして持ち帰れます。\n化学に興味が無い人でも楽しめる実験だと思います。ぜひ楽しんでください！",
-              "en": "Participants will create salmon roe-like balls using liquid colored with paint.\nYou may take home the salmon roe you created in a small jar along with the lame.\nEven people who are not interested in chemistry will enjoy this experiment. We hope you enjoy it!"
+              "en": "Participants will create salmon roe-like balls using liquid colored with paint.\nYou can take home the salmon roe you made in a small jar with the lame.\nEven people who are not interested in chemistry will enjoy this experiment. We hope you enjoy it!"
             },
             "images": [],
             "movies": []
@@ -4615,7 +4633,7 @@
       },
       "groupDetail": {
         "ja": "先進理工学部生命医科学科に所属する学生で構成されている学生団体です！",
-        "en": "This is the student organaization which is conposed of Department of Biomedical Sciences,School of Advanced Science and Engineering, Waseda Univercity."
+        "en": "This is the student organaization which is composed of Department of Life science and Medical Bioscience, School of Advanced Science and Engineering, Waseda University."
       },
       "url": {
         "hp": "",
@@ -4628,7 +4646,7 @@
       "category": "experiment",
       "projectDetail": {
         "ja": "酵素で飛び出すロケットや、蛍光で光るスライムの作成を体験実験として用意してお待ちしています！実験を通して、生体や医工学について一緒に学びましょう！！（スライムは持ち帰り可能です）",
-        "en": "We show an experiment of enzyme roket and an experiment of fluorescent slime. Let's learn Biology and medical engineering together!"
+        "en": "We will show an experiment of making rockets powered by enzymes and fluorescent slime. Let's learn Biology and Medical Engineering together with our experiments! (You can take your slime home!)"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/E-04/E-04_pamphlet_thumbnail.jpg",
@@ -4715,7 +4733,7 @@
       },
       "groupDetail": {
         "ja": "モーニング娘。だけではなく、ハロー！プロジェクト全体のアイドルを研究しています。普段はまったりと活動していますが、早稲田祭では本気を出します。",
-        "en": "Morning Musume． Project as a whole, not just Morning Musume! Project as a whole. Usually, we are very laid-back in our activities, but we really get serious at the Waseda Festival."
+        "en": "We study about not only the Morning Musume but also idol groups of all Hello! Project. Usually, we are very laid-back in our activities, but we really get serious at the Waseda Festival."
       },
       "url": {
         "hp": "",
@@ -4728,7 +4746,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "ハロー！プロジェクトを愛する学生たちが本気を出すイベントが今年もやってまいりました！新旧様々なハロプロ曲で皆さんを盛り上げますので是非楽しんでいってください！よろしくお願いします。",
-        "en": "Hello! Project students who love the project are going to get serious about this event again this year! We will be performing a variety of old and new Halo Pro songs, so please come out and enjoy the fun! We hope you will enjoy the event!"
+        "en": "This year, we will hold the event that students who love Hello! Project get serious again! We will be performing a variety of old and new Hello! Project's songs, so please feel free to visit us! We hope you will enjoy the event!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-01/S-01_pamphlet_thumbnail.jpg",
@@ -4765,7 +4783,7 @@
             },
             "body": {
               "ja": "ハロプロファンによるハロプロファンのためのダンスステージです！今年で21年目を迎えます早稲田モ研が全身全霊踊り狂います。一緒にオタクの血を騒がせましょう！！",
-              "en": "This is a dance stage by Hello Pro fans for Hello Pro fans! Now in its 21st year, Waseda Mo Lab will be dancing with all its might. Let's make your otaku blood boil together!"
+              "en": "This is our dance stage by Hello! Project fans for Hello! Project fans! Our group is now in its 21st year, and we will be dancing with all its might. Let's make your otaku blood boil together!"
             },
             "images": [],
             "movies": []
@@ -4851,7 +4869,7 @@
             },
             "body": {
               "ja": "“揺るがない信念を持って一生懸命生きる”\nこの演舞でやりたいことはただそれだけ。”信念”とは自分の信じる大切なもの。”信念”という武器を携え、踊り侍であるという誇りを胸に躍る。お前は今に本気か。何かのためじゃない、いつかのためじゃない、今を一生懸命に生きろ。",
-              "en": "\"Live hard with unwavering faith.\"\nThat's all I want to do with this performance.\" Belief\" means something important that I believe in.\" Armed with the weapon of \"belief\", I dance with the pride of being a dancing samurai. Are you serious now? Not for something, not for someday, but for now, live your life to the fullest."
+              "en": "\"Live hard with unwavering faith.\"\nThat's all I want to do with this performance. \"Belief\" means something important that I believe in\". Armed with the weapon of \"belief\", I dance with the pride of being a dancing samurai. Are you serious now? Not for something, not for someday, but for now, live your life to the fullest."
             },
             "images": [
               {
@@ -4887,11 +4905,11 @@
           {
             "headline": {
               "ja": "2021　＃らしさ",
-              "en": "2021 # Characteristics"
+              "en": "2021 #Characteristics"
             },
             "body": {
               "ja": "“さあおもうがままにらしくあれ”\n多くの現代人が抱える悩み”嫌われたくない\"。この現代、あなたはどう生きていますか？これは何者でもない一人の若者の物語。周りに合わせればきっとうまくいくはずなのに、突然聞こえた”このままでいいの？”　自分の人生は自分が主役なんだ。らしくあれ。\n",
-              "en": "\"Be as you are, be as you want to be.\"\nMany people today have a problem: \"I don't want to be hated. How do you live your life in this modern age? This is a story of a young man who is nobody. He is sure that he would get along just fine if he just went along with the people around him, but suddenly he hears the question, \"Is it okay if I just stay like this?　I am the master of my own life. Be yourself."
+              "en": "\"Be as you are, be as you want to be.\"\nMany people today have a problem: \"I don't want to be hated\". How do you spend your life in this modern age? This is a story of a characterless young man. He is sure that he would get along just fine if he just went along with people around him, but suddenly he hears the question, \"Is it okay if you just stay like this?\" I am the master of my own life. Be yourself."
             },
             "images": [
               {
@@ -4907,11 +4925,11 @@
           {
             "headline": {
               "ja": "2022　滾れ",
-              "en": "2022 Overheating"
+              "en": "2022 Overflow"
             },
             "body": {
               "ja": "“侍は祭りが好きでアツいのさ”\n侍は真のアツさを追求し続ける。我武者羅に突き進み、壁にぶち当たっても奮闘する。折れそうになっても歩んできた過去を糧に、「瞬間」に全力になるんだ。仲間のアツさを信じ、己のアツさは更に高まる。心は滾り、想い溢れ、照らされる先の「瞬間」を掴みとる。\n",
-              "en": "\"Samurai love festivals and they are hot.\"\nSamurai continue to pursue true hotness. They push forward with their own selflessness, and struggle even when they hit a wall. Even when they feel like they are about to break down, they use their past as a source of strength, and they give their all to the \"moment. Believing in the passion of our friends, our own passion grows even stronger. Our hearts are thrilled, our thoughts are overflowing, and we seize the \"moment\" that is illuminated ahead of us."
+              "en": "\"Samurai love festivals and they are passionate.\"\nSamurai continue to pursue true passion. They push forward with their own selflessness, and struggle even when they face difficulties. Also, even when they feel like breaking down, they use their past as a source of strength, and they give their all to the \"moment\". Believing in the passion of our friends, our own passion grow even stronger. Our hearts are boiling, our thoughts are overflowing, and we seize the \"moment\" that is illuminated ahead of us."
             },
             "images": [
               {
@@ -4931,7 +4949,7 @@
             },
             "body": {
               "ja": "“そのままのあなたを大切に、あなたの居場所を大切に”\n“仁”とは、広く大きな愛。愛はどんな形であれ誰もが持っているもの。いろんな状況に遭遇する中で人それぞれ感じることや大切にすることは違う。だがどんな感情や想いも間違いではない。元々持っている愛を大きくすることで、自分自身を大切にする。\n",
-              "en": "\"Cherish you as you are, cherish your place in the world.\"\r\nJin is a broad and great love. Love is something that everyone has, no matter what form it takes. Everyone feels and treasures differently in the various situations they encounter. But no feeling or thought is wrong. We cherish ourselves by enlarging the love we originally have."
+              "en": "\"Cherish you as you are, cherish the place just for you.\"\n\"Jin\" is a broad and great love. No matter what form it takes, everyone has their love. Each people is differnt from feeling and cherishing in the various situations they encounter. But It is right that you have no matter what felings or thoughts. We cherish ourselves by growing the love we originally have."
             },
             "images": [
               {
@@ -4976,7 +4994,7 @@
       },
       "groupDetail": {
         "ja": "三津巴は、津軽三味線の楽しさを伝えることを目的とする「早稲田で一番ロックな邦楽サークル」です。早稲田大学の学生だけでなく他大学の学生も在籍しています。和気あいあいとした雰囲気で練習をし、様々な施設やイベントで迫力ある演奏をしております。",
-        "en": "Mitsudomoe is \"Waseda's most rocking hogaku (traditional Japanese music) circle\" with the aim of conveying the joy of Tsugaru shamisen. Not only Waseda University students but also students from other universities are enrolled. We practice in a friendly atmosphere and give powerful performances at various facilities and events."
+        "en": "Mitsudomoe is \"Waseda's most rocking hogaku (traditional Japanese music) circle\" with the aim of conveying the joy of Tsugaru shamisen. Not only Waseda University students but also students from other universities are enrolled our circle. We practice in a friendly atmosphere and give powerful performances at various facilities and events."
       },
       "url": {
         "hp": "https://mitsudomoe.wixsite.com/mitsudome",
@@ -4989,7 +5007,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "私たち三津巴は津軽三味線で合奏を行います。懐かしい民謡から最新の現代曲まで十数名で演奏します！3本の弦が織りなす奇跡の音楽、バラエティ豊かな演奏をお楽しみください！",
-        "en": "Don't you think the shamisen is an instrument for playing old songs?\nThe shamisen can be used to play a wide range of music, from nostalgic folk songs to the latest contemporary tunes, and we hope you will enjoy the variety of music and miraculous music from its three strings!"
+        "en": "We, Mitsudomoe, play an ensemble with Tsugaru shamisen. We play variety songs from nostalgic folk songs to the latest modern songs. Please enjoy the variety of music and miraculous music from its three strings!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-03/S-03_pamphlet_thumbnail.jpg",
@@ -5026,7 +5044,7 @@
             },
             "body": {
               "ja": "皆さん、三味線って昔の曲を演奏する楽器だと思っていませんか？\n三味線は、民謡などのどこか懐かしさを感じる曲から現代曲のような速いテンポの曲まで、幅広く演奏できます！たった3本の弦から奏でられたとは思えないくらいです！ぜひ、曲のバラエティにも注目しながら、演奏をご覧ください！",
-              "en": "Do you think that the shamisen is an instrument for playing old songs?\nThe shamisen can be used to play a wide range of music, from folk songs and other nostalgic tunes to fast-paced modern tunes! It is hard to believe that it was played from only three strings! Please take note of the variety of songs as you watch them perform!"
+              "en": "Don't you think the shamisen is an instrument for playing old songs?\nThe shamisen can be used to play a wide range of music, from nostalgic folk songs to the latest contemporary tunes, and we hope you will enjoy the variety of music and miraculous music from its three strings!"
             },
             "images": [],
             "movies": []
@@ -5063,7 +5081,7 @@
       },
       "groupDetail": {
         "ja": "早稲田大学よさこいチーム東京花火は、学生チームでは珍しい高知系よさこいチームとして、150人で活動しています。男振りの力強さ、女振りの扇子を用いた華麗な舞が魅力の一つです。また、学生チームには珍しい纏も演舞に取り入れております。表情豊かなパフォーマンスにより多彩な世界観をお見せ致します。",
-        "en": "Waseda University Yosakoi Team Tokyo Hanabi is a 150-member Kochi-style Yosakoi team, which is rare among student teams. One of the attractions of the team is the powerful male dance and the elegant female dance using a sensu (Japanese folding fan). They also use Yosakoi robe, which is rare for a student team, in their performance. We will show you a diverse view of the world through our expressive performance."
+        "en": "Waseda University Yosakoi Team Tokyo Hanabi is a Kochi prefecture-styled Yosakoi team which is rare among student teams, and consists of 150 people. Our attractive points are the powerful male dance and the elegant female dance with a sensu (Japanese folding fan). We also use Yosakoi robes, which is rare for a student team, in our performance. We will show you diverse views of the world through our expressive performance."
       },
       "url": {
         "hp": "http://www.tokyohanabi.com",
@@ -5076,7 +5094,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "ハヰカラ・あそばせ・かみはかり・千斗星・うららの5つの過去演舞に加え、今年度の演舞「はれびより」を披露させていただきます。男女振りに分かれた優美なパフォーマンスをお楽しみください。",
-        "en": "In addition to the five traditional dances of \"Hawikara,\" \"Asobase,\" \"Kamihakari,\" \"Sento Sei,\" and \"Urara,\" this year's performance \"Harebiyori\" will be performed. \nPlease enjoy the graceful dance performance whose choreography is divided into men's and women's."
+        "en": "In addition to our past five performances \"Hawikara\", \"Asobase\", \"Kamihakari\", \"Sento Sei\", and \"Urara\", we will perform this year's performance \"Harebiyori\".\nPlease enjoy the graceful dance performance whose choreography is divided into men's and women's."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-04/S-04_pamphlet_thumbnail.jpg",
@@ -5113,7 +5131,7 @@
             },
             "body": {
               "ja": "私たち早稲田大学よさこいチーム東京花火は、鳴子を響かせる力強い演技や扇子を用いた艶やかな舞、煌びやかな衣装と振りによって生み出される世界観を重視した高知系よさこいチームです。本ステージ企画では過去5年間で制作した演舞に加え、今年度お披露目した演舞「はれびより」など、計6つの演舞を披露します。2023年をもって18代目を迎えた東京花火ですが、３代揃って臨む舞台はこの理工展が最後となります。この一年の集大成となる最高の演技をぜひその目でご覧ください。",
-              "en": "We,Waseda University Yosakoi Team Tokyo Hanabi are a Kochi-style Yosakoi team that emphasizes a worldview created by powerful performances that resonate with Naruko, glamorous dances that use fans, and glittering costumes and choreography.\r\nIn addition to the performances created over the past five years, this stage project will feature a total of six dances, including the \"Harebiyori\" which was unveiled this year.\r\nTokyo Hanabi will be in its 18th generation in 2023.\r\nAt this stage,  the three generations will perform together for the last time. We hope you will watch with your own eyes the culmination of the past year's best performances."
+              "en": "We, Waseda University Yosakoi Team Tokyo Hanabi are a Kochi prefecture-styled Yosakoi team that emphasizes a worldview created by powerful performances: resonating with Naruko, dancing glamorously with fans, and glittering costumes and choreography.\nIn addition to the performances created over the past five years, this stage project will feature a total of six dances, including the \"Harebiyori\" unveiled this year.\nTokyo Hanabi will be in its 18th generation in 2023.\nAt this stage, the three generations will perform together for the last time. We hope you will watch the culmination of the past year's best performances with your own eyes."
             },
             "images": [],
             "movies": []
@@ -5279,7 +5297,7 @@
       },
       "groupDetail": {
         "ja": "こんにちは、カラーガードサークル ワセガシラです！ワセガシラは旗とダンスを合わせたパフォーマンスを披露するインカレサークルです🏳カラーガードとはマーチングバンドをより華やかに演出するために行うパートのことで、私たちは主に旗を使ってパフォーマンスしています✨",
-        "en": "Hello, we are Color Guard club Wasegashira!\r\nWasegashira is an intercollege circle that performs dance using flags 🏳. Color guard is a part of marching band to make it more spectacular. We mainly use flags to perform Color Guard ✨."
+        "en": "Hello, we are Color Guard club Wasegashira!\nWasegashira is an intercollege circle that performs dance with flags 🏳. Color guard is a part to make marching band more spectacular. We perform Color Guard by using flags mainly  ✨."
       },
       "url": {
         "hp": "",
@@ -5292,7 +5310,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "ワセガシラ理工展ステージ2023では、色とりどりの旗やライフルを使い、様々な曲に合わせて皆様に楽しんでいただけるような大迫力のパフォーマンスをお届けします。ぜひご覧ください！",
-        "en": "At the Wasegashira performance at Rikoten 2023, we will show a very powerful and enjoyable performance using colorful flags and rifles to a variety of songs for everyone to enjoy. Please come and see the performance!"
+        "en": "At the Wasegashira performance in Rikoten 2023, we will show you very powerful and enjoyable performances using colorful flags and rifles to a variety of songs. Please come and see our performance!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-06/S-06_pamphlet_thumbnail.jpg",
@@ -5329,7 +5347,7 @@
             },
             "body": {
               "ja": "ワセガシラ初めての理工展ステージです！かわいい衣装を着ていますが、パフォーマンスはかわいいだけではありません。かわいい曲、かっこいい曲、感動的な曲…多様な曲に合わせて旗と共に華やかに舞います。ワセガシラの魅せる様々な姿をぜひご覧ください！",
-              "en": "In this stage , Wasegashira performs for the first time at Rikoten! Costumes are cute, but the performance is not just  cute. Cute songs, cool songs, moving songs... Wasegasira dances spectacularly with flags to a wide variety of songs. \nPlease come and see the various performances of Wasegashira!"
+              "en": "In this stage, Wasegashira performs for the first time at Rikoten! Costumes are cute, but our performances are not only cute! Cute songs, cool songs, moving songs..., Wasegasira dances spectacularly with flags to a wide variety of songs. \nPlease come and see the various performances of Wasegashira!"
             },
             "images": [],
             "movies": []
@@ -5379,7 +5397,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "私たちは早稲田大学唯一のジャグリングサークル~infinity~です。今年も理工展のステージにinfinityが登場します！最高にクールなパフォーマンスをぜひ一目ご覧あれ！",
-        "en": "We are the only juggling club at Waseda University: infinity! We will appear on stage at Rikoten this year. Please take a look at the our awesome and cool performance! "
+        "en": "We are the only juggling club at Waseda University: infinity! We will appear on stage at Rikoten this year again. Please take a look at the our awesome and cool performance! "
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-07/S-07_pamphlet_thumbnail.jpg",
@@ -5464,11 +5482,11 @@
       },
       "projectName": {
         "ja": "下駄っぱーず理工展ステージ2023",
-        "en": "Getappers'  Nishi-Waseda Campus Stage 2023"
+        "en": "Getappers'  Rikoten Stage 2023"
       },
       "groupDetail": {
         "ja": "下駄っぱーずは「下駄を履いて踊る」世界で唯一のダンスパフォーマンスサークルです。曲、衣装、振り付けのすべてを自分たちで作成しており、「和」のテイストを基調としたオリジナリティ溢れるパフォーマンスを披露させていただきます。笑顔はじける最高のパフォーマンスをぜひご覧ください！",
-        "en": "Hello！\nWe are \"Getappers\", the dance performance in Japanese wooden clogs group of Waseda university.\nWe hope to show you our best smile and dance with full passion."
+        "en": "Hello!\nWe are \"Getappers\", the dance performance group of Waseda university that dances with Japanese wooden clogs.\nWe hope to show you our best smiles and dance with full passion."
       },
       "url": {
         "hp": "https://getappers.wixsite.com/homepage",
@@ -5481,7 +5499,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "下駄っぱーずは「下駄を履いて踊る」世界で唯一のダンスパフォーマンスサークルです。「和」のテイストを基調としたオリジナリティ溢れるパフォーマンスを、最高の笑顔とともに皆様にお届けします！",
-        "en": "We are \"Getappers\", the dance performance in Japanese wooden clogs group of Waseda university.\n\nOn Nishi-Waseda Campus Stage, we will show you our dance performance with original songs we make every year."
+        "en": "We are \"Getappers\", the dance performance group of Waseda university that dances with Japanese wooden clogs.\n\nOn Rikoten Stage, we will show you our dance performance with original songs we make every year."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-08/S-08_pamphlet_thumbnail.jpg",
@@ -5554,11 +5572,7 @@
                 "imagePath": "/img/projects/S-08/S-08_main2_0.jpg"
               }
             ],
-            "movies": [
-              {
-                "moviePath": ""
-              }
-            ]
+            "movies": []
           },
           {
             "headline": {
@@ -5625,7 +5639,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "フリースタイルバスケットボールパフォーマンスを行います!!\n少人数で見せるキレのあるパフォーマンスが特徴です！\n理工展でしか見ることのできないステージをお見逃しなく！",
-        "en": "We perform freestyle basketball!\nOur characteristic is the sharp performance shown by a small group of people.\nDon't miss the stage that can only be seen at the Rikoten!"
+        "en": "We perform freestyle basketball!\nOur features are the sharp performances shown by a small group of people.\nDon't miss the stage that can only be seen at Rikoten!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-09/S-09_pamphlet_thumbnail.jpg",
@@ -5752,11 +5766,11 @@
       },
       "projectName": {
         "ja": "WEEDL@理工展企画",
-        "en": "WEEDL@Science and Engineering Exhibition Planning"
+        "en": "WEEDL@Rikoten Project"
       },
       "groupDetail": {
         "ja": "WEEDLは新設されてから2年、人数が69人にまで増え、明るく、楽しく活動しているKpopカバーサークルです。年に4回公演を行い、メンバーが一丸となって目標に向かっていきます。自分のできる範囲でのベストを尽くし、互いに協力し合い、共に更なる挑戦と成功へ羽ばたくことに重点を置いています。\n",
-        "en": "WEEDL is a K-POP dance cover group with now 69 members, established in 2021. Most members are Waseda students but some are from other universities. We plan 4 performance stages every year, pushing ourself to deliver excitements and impression. We welcome any students that are interested in K-POP dance!"
+        "en": "WEEDL is a K-POP dance cover group with now 69 members, established in 2021. Most members are Waseda students but some are from other universities. We plan 4 performance stages every year, pushing ourselves to deliver excitements and leave a lasting impression. We welcome any students that are interested in K-POP dance!"
       },
       "url": {
         "hp": "",
@@ -5769,7 +5783,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "昨年に加え、新たに3期生も加わり、この日に向けて懸命に練習を重ねてきました。\n更なる迫力と感動を皆様にお届けできればと思います。どうぞお楽しみください！！！！！",
-        "en": "Adding to last year's performance at Science and Engineering Exhibition, we welcomed 3rd generation members, and have been practicing hard for today. We hope you enjoy our performance!"
+        "en": "Adding to last year's performance at Rikoten, we welcomed 3rd generation members, and have been practicing hard for today. We hope you enjoy our performance!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-10/S-10_pamphlet_thumbnail.jpg",
@@ -5891,7 +5905,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "早稲田大学K-POPカバーダンスサークルParfum",
-        "en": "Waseda university K-pop cover dance Parfum"
+        "en": "Waseda University K-pop cover dance Parfum"
       },
       "projectName": {
         "ja": "Parfum Stage@理工展",
@@ -5899,7 +5913,7 @@
       },
       "groupDetail": {
         "ja": "こんにちは！早稲田大学K-POPカバーダンスサークルParfumです！サークル員はオール早稲女で構成されており、いつもほのぼのとした雰囲気で練習に取り組んでいます♪ 早稲田祭をはじめ、様々なステージで公演を行っています。ダンス経験や学年にかかわらず全員が仲良く活動できるのがParfumの魅力です♡ ",
-        "en": "Hello! We are Parfum, an all-Waseda girl's K-POP cover dance circle! We participate in school festivals as well as many outside stages. We are having fun in a friendly girls' atmosphere."
+        "en": "Hello! We are Parfum, an all-Waseda girl's K-POP cover dance circle! We perform at  Waseda Festival and various other stages. We all are enjoying a friendly girls' atmosphere."
       },
       "url": {
         "hp": "",
@@ -5912,7 +5926,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "早稲田大学K-POPカバーダンスサークルParfumです！最新曲から有名曲まで、さまざまなステージを披露します♪K-POPに詳しくない方でも楽しめる企画になっています！",
-        "en": "We are Parfum, an all-Waseda girl's K-POP cover dance circle! We will perform various dance to the K-POP from the latest to the famous songs. Even those unfamiliar with K-POP will enjoy our performance!"
+        "en": "We are Parfum, an all-Waseda girl's K-POP cover dance circle! We will perform various  K-POP dances from the latest hits to the most famous songs. Even those who are not familiar with K-POP will enjoy our performance!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-11/S-11_pamphlet_thumbnail.jpg",
@@ -5985,7 +5999,7 @@
       },
       "groupDetail": {
         "ja": "口笛はひとりで楽しむものだと思っていませんか？私たちは、口笛で「合奏」することを目的に活動しているサークルです！通常の合唱用の楽譜を使い、きれいなハーモニーを生み出せるよう日々練習しています！そんな私たちの口笛アンサンブル、ぜひお聴きください！",
-        "en": "Do you think whistle is something to be enjoyed alone? Cotolip is a club for playing \"ensemble\" with whistles! We practice daily to play beautiful harmonies with regular choral scores. Please listen to our whistle ensemble!"
+        "en": "Do you think whistle is something to be enjoyed alone? Cotolip is a club for playing \"ensemble\" with whistles! We practice daily to play beautiful harmonies using regular choral scores. Please listen to our whistle ensemble!"
       },
       "url": {
         "hp": "https://wkuchibue.wixsite.com/cotolip",
@@ -5998,7 +6012,7 @@
       "category": "stage",
       "projectDetail": {
         "ja": "私たちは、口笛で「合奏」することを目的に活動しているサークルです！通常の合唱用の楽譜を使い、きれいなハーモニーを生み出せるよう日々練習しています！そんな私たちの口笛アンサンブル、ぜひお聴きください！",
-        "en": "Cotolip is a club for playing \"ensemble\" with whistles! We practice daily to play beautiful harmonies with regular choral scores. Please listen to our whistle ensemble!"
+        "en": "Cotolip is a club for playing \"ensemble\" with whistles! We practice daily to play beautiful harmonies using regular choral scores. Please listen to our whistle ensemble!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/S-12/S-12_pamphlet_thumbnail.jpg",
@@ -6069,11 +6083,11 @@
       },
       "projectName": {
         "ja": "理系大学生の部屋",
-        "en": "Room for science college students"
+        "en": "Room for science university students"
       },
       "groupDetail": {
         "ja": "現役理系早大生による相談会やトークショー、展示会などの企画を行います！理系大学生のリアルな生活を覗いてみませんか？そこにはきっと素晴らしい出会いが待っているはず。「色の変わる不思議なドリンク」も販売するので、ドリンク片手にゆるりとお楽しみください！",
-        "en": "We will be holding consultations, talk shows, exhibitions, and other events by current Waseda University students in the science field! Would you like to take a peek into the real life of science students? There are sure to be wonderful encounters waiting for you there. We will also be selling \"mysterious color-changing drinks,\" so please enjoy them while relaxing with a drink in your hand!"
+        "en": "We will hold consultations, talk shows, exhibitions, and other events by current Waseda University students in the science field! Would you like to take a look at the real life of science students? There are sure to be wonderful encounters waiting for you there. We also sell \"mysterious color-changing drinks\" in the same room, so please relax and enjoy our projects with a drink in your hand!"
       },
       "url": {
         "hp": "",
@@ -6086,7 +6100,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "Mimi Edenではキャンパスライフの情報を発信しています。現役生による相談会やトークショー、展示会に加え、「色の変わるドリンク」も同教室で販売しておりますので、ゆるりと企画をお楽しみいただけます。",
-        "en": "Mimi Eden offers information about campus life. In addition to consultations, talk shows, and exhibitions by current students, \"color-changing drinks\" are sold in the same classroom so that you can enjoy the project in a relaxed atmosphere."
+        "en": "Mimi Eden offers information about our campus life. In addition to consultations, talk shows, and exhibitions by current students, we will also sell \"color-changing drinks\" in the same classroom so that you can enjoy our projects in a relaxed atmosphere."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-01/M-01_pamphlet_thumbnail.jpg",
@@ -6123,7 +6137,7 @@
             },
             "body": {
               "ja": "Mimi Edenでは早大理系大学生のキャンパスライフなどの情報を発信しています。現役生による相談会やトークショー、展示などの受験生向けの企画も盛りだくさんとなっております。さらも今年は同教室にて「色の変わる不思議なドリンク」も販売しておりますので、ドリンク片手にゆるりと企画をお楽しみいただけます。",
-              "en": "Mimi Eden provides information on campus life and other topics for Waseda University science students. There will also be a variety of events for students preparing for entrance exams, such as consultations with current students, talk shows, and exhibitions. In addition, this year, \"mysterious color-changing drinks\" will be available for purchase in the same classrooms, so you can relax and enjoy the event with a drink in your hand."
+              "en": "Mimi Eden offers information on campus life and other topics for Waseda University science students. There will also be a variety of events for students preparing for entrance exams, such as consultations with current students, talk shows, and exhibitions. In addition, this year, \"mysterious color-changing drinks\" will be available for purchase in the same classroom, so you can relax and enjoy our projects with a drink in your hand."
             },
             "images": [],
             "movies": []
@@ -6160,7 +6174,7 @@
       },
       "groupDetail": {
         "ja": "2011年に設立された男女インカレの卓球サークルです！初心者から経験者までみんなで楽しく卓球しています！卓球以外にもみんなでご飯に行ったり遊んだりと、和気藹々としたとても楽しいサークルです！",
-        "en": "We are a men's and women's intercollegiate table tennis club established in 2011! We have fun playing table tennis with everyone from beginners to experienced players! We are a very fun circle where everyone enjoys going out for dinner and having fun in a friendly atmosphere!"
+        "en": "We are a men's and women's intercollegiate table tennis club established in 2011! We enjoy playing table tennis with everyone from beginners to experienced players together!! We are a very fun circle where everyone enjoys going out for dinner and having fun in a friendly atmosphere!"
       },
       "url": {
         "hp": "https://cossackwaseda.wixsite.com/cossack",
@@ -6173,7 +6187,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "卓球サークルcossAckです！！今回、私たちは理工展でチュロスを販売することに決定しました！！\n外はカリカリ、中はもちもちのすごく美味しいチュロスにする予定なので是非食べにきてください！！",
-        "en": "\"We are the table tennis circle cossAck! We have decided to sell churros at the Science and Engineering Exhibition!\nWe are planning to make a very tasty churros with a crunchy outside and a sticky inside, so please come and try them!"
+        "en": "We are the table tennis circle cossAck! We have decided to sell churros at Rikoten!\nWe are planning to make a very tasty churros with a crunchy outside and a sticky inside, so please come and try them!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-02/M-02_pamphlet_thumbnail.jpg",
@@ -6239,7 +6253,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "応化2年有志",
-        "en": "Ouka Ninenn Yusi(Second-year students aspiring to study Applied Chemistry)"
+        "en": "Ouka Ninenn Yusi(Second-year volunteers from the Department of Applied Chemistry)"
       },
       "projectName": {
         "ja": "りこうどん",
@@ -6247,7 +6261,7 @@
       },
       "groupDetail": {
         "ja": "先進理工学部応用化学科の二年有志です。",
-        "en": "We are Second-year volunteers from the Department of Applied Chemistry, School of Advanced Science and Engineering."
+        "en": "We are second-year volunteers from the Department of Applied Chemistry, School of Advanced Science and Engineering."
       },
       "url": {
         "hp": "",
@@ -6260,7 +6274,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": " 先進理工学部応用化学科2年生の有志です。焼うどんの販売を行います！\n私たちは、こだわりの麺(市販)と、秘伝のタレ(市販)が自慢です。ぜひ、お楽しみください！\n私たちのブースに是非お立ち寄りください！",
-        "en": "We are Second-year volunteers from the Department of Applied Chemistry, School of Advanced Science and Engineering. Yakiudon will be on sale. We are proud of our special noodle (commercially available) and our secret sauce (also commercially available). We hope you will enjoy it! \nAdditionally, please stop by our booth!"
+        "en": "We are second-year volunteers from the Department of Applied Chemistry, School of Advanced Science and Engineering. Yakiudon will be on sale. We are proud of our special noodle (commercially available) and our secret sauce (also commercially available). We hope you will enjoy it! \nAlso, please stop by our booth!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-03/M-03_pamphlet_thumbnail.jpg",
@@ -6286,7 +6300,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "応化二年が作る焼うどん",
-          "en": "Yakiudon made by Second-year students aspiring to study Applied Chemistry"
+          "en": "Yakiudon made by second-year volunteers from the Department of Applied Chemistry"
         },
         "articles": [
           {
@@ -6296,7 +6310,7 @@
             },
             "body": {
               "ja": "焼うどんの味とと応化の関係は比例関係にあると最近の研究によって明らかになった(嘘)。実体験したい人はぜひお買い求めを！",
-              "en": "Recent studies have shown that the relationship between the taste of Yakiudon and its adaptation is proportional (That's a lie). Please buy our Yakiudon If you want to experience it for yourself!"
+              "en": "Recent studies have shown that the relationship between the taste of Yakiudon and Applied Chemistry is proportional (Just joking!). Please buy our Yakiudon If you want to experience it for yourself!"
             },
             "images": [],
             "movies": []
@@ -6333,7 +6347,7 @@
       },
       "groupDetail": {
         "ja": "電装プロジェクトはロボットやラジコンを制作しています。模擬店では早稲田大学宇宙航空研究会鳥人間プロジェクトの有志とともに焼き鳥を販売します。",
-        "en": "We, WASA electrical project, create robots and radio-controlled vehicles. In our food stand, we sell Yakitori with volunteers of WASA bird man project."
+        "en": "We, WASA electrical project, are creating robots and radio-controlled vehicles. In our food booth, we will sell yakitori with volunteers of WASA bird man project."
       },
       "url": {
         "hp": "",
@@ -6346,7 +6360,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "宇宙航空研究会の電装プロジェクトと鳥人間プロジェクトの有志メンバーが作る焼き鳥です！\n食べやすいサイズに焼き上げているので賑やかな雰囲気の中でも、手軽にお楽しみいただけます！\nぜひお越しください！",
-        "en": "This is Yakitori shop by WASA electrical project and volunteers of WASA bird man project.\nWe cook the chicken to an easy-to-eat size, so you can enjoy our Yakitori even in lively atmosphere!\nPlease feel free to come us!"
+        "en": "This is a yakitori shop by WASA electrical project and volunteers of WASA bird man project.\nWe will cook the chicken to an easy-to-eat size, so you can enjoy our yakitori even in a lively atmosphere!\nPlease feel free to come visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-04/M-04_pamphlet_thumbnail.jpg",
@@ -6379,11 +6393,11 @@
           {
             "headline": {
               "ja": "丁寧に焼き上げたこだわりの一品",
-              "en": "The elaborate dish baked carefully"
+              "en": "A special dish cooked carefully"
             },
             "body": {
               "ja": "もも串：もも串は、鳥もも肉を使用した焼き鳥です。外側はカリカリと香ばしく、中はしっとりとしたジューシーさが特徴です。もも肉ならではの旨味が濃厚に凝縮されており、塩味やたれと組み合わせてお召し上がりいただけます。焼き鳥の王道とも言えるもも串をぜひお楽しみください。\nつくね串：つくね串は、しっとりとした肉質が特長で、香り高い焼き鳥の風味と絶妙な調味料のバランスが絶品です。塩味やたれとの相性も抜群で、焼き鳥の中で独特の存在感を持つ、人気の高い一品です。",
-              "en": "Thigh Skewers: Thigh skewer is a yakitori made with chicken thigh. It is a crunchy and a roasting aroma outside and moist and juicy inside! The unique flavor of chicken thighs is concentrated richly. You can eat it combination with salt or sauces. Please enjoy our thigh skewers which is the royal road to a yakitori.\n\nTsukune Skewers: Tukune skewer is a moist and fleshy dish with the aromatic flavor of the grilled chicken and the perfect balance of seasonings. It is great with salt and sauces and a famous dish with a unique presence in a yakiori."
+              "en": "Thigh Skewers: Thigh skewer is a yakitori made with chicken thigh. It is crunchy and savoring outside, juicy and moist inside! The rich, unique flavor of chicken thighs combines with salt or sauce. Please enjoy our thigh skewers which is the classic yakitori.\n\nTsukune Skewers: Tukune skewer is a moist and fleshy dish with the aromatic flavor of the grilled chicken and the perfect balance of seasonings. It is great with salt and sauce, making it the most popular dish with a unique presence in a yakiori."
             },
             "images": [],
             "movies": []
@@ -6391,7 +6405,7 @@
           {
             "headline": {
               "ja": "メニュー",
-              "en": "Menus"
+              "en": "Menu"
             },
             "body": {
               "ja": "もも串(タレ)　¥150\nもも串(塩)　¥150\nつくね(タレ)　¥200",
@@ -6432,7 +6446,7 @@
       },
       "groupDetail": {
         "ja": "応化会学生委員会とは、早稲田応用化学会の学生組織です。 そもそも、早稲田応用化学会とは、早稲田大学先進理工学部応用化学科の教職員、OB/OG、学生が三位一体となって活動する組織です。 その中で、応化会学生委員会は、1年生から3年生の学生を主体としてオリエンテーションや理工展などの活動を行っています。",
-        "en": "The Ohkakai Student Committee is a student organization of the Waseda Society of Applied Chemistry. The Waseda Society for Applied Chemistry is an organization formed by faculty members, alumni, and students of the Department of Applied Chemistry, Faculty of Advanced Science and Engineering, Waseda University. Among them, the Oukakai Student Committee conducts activities such as orientations and science and engineering exhibitions mainly for students in the first to third years."
+        "en": "The Ohkakai Student Committee is part of a student organization of the Waseda Society of Applied Chemistry, an organization formed by faculty members, alumni, and students of the Department of Applied Chemistry, Faculty of Advanced Science and Engineering, Waseda University. Among them, the Ohkakai Student Committee conducts activities such as orientations and science and engineering exhibitions mainly for students from first to third year."
       },
       "url": {
         "hp": "https://waseda-oukakaip.sakura.ne.jp/gakusei/wp/",
@@ -6445,7 +6459,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "応用化学会では｢特大わたあめ｣を販売します!様々な味からお選びいただけます。応用化学科の展示実験に行くと割引券が入手できるとか…実験で疲れた頭に、甘いわたあめはいかがですか？お店でお待ちしております！",
-        "en": "Applied Chemistry Student Committee sells \"Extra Large Cotton Candy\"! You can choose from a variety of flavors! \nI hear you can get discount coupons if you go to the Department of Applied Chemistry's exhibit and experiment... How about some sweet cotton candy for the tired your body from experiments?"
+        "en": "Applied Chemistry Student Committee will sell an \"Extra Large Cotton Candy\"! You can choose from a variety of flavors! \nI've heard that you can get discount coupons if you go to the Department of Applied Chemistry's exhibition and experiment... How about some sweet cotton candy for your tired brain from experiments?"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-05/M-05_pamphlet_thumbnail.jpg",
@@ -6478,11 +6492,11 @@
           {
             "headline": {
               "ja": "お祭りと言えばわたあめ",
-              "en": "Speaking of festivals, Cotton Candy!"
+              "en": "Can't talk about festivals without mentioning Cotton Candies!"
             },
             "body": {
               "ja": "理工展というお祭りを盛り上げるためにも、\n甘くておいしい大きなわたあめを皆様に！\n実験で培った手際の良さで素早くわたあめをお届け！\nお店でお待ちしています！",
-              "en": "To make Rikoten more exciting, we will provide you with large, sweet and tasty cotton candy! \nWe will deliver cotton candy quickly with our deftness cultivated experiments.\nWe are waiting for you at our store!"
+              "en": "To make Rikoten more exciting, we will provide you with large, sweet and tasty cotton candy! \nWe will deliver cotton candy quickly with our deftness aqcuired by experiments.\nWe are waiting for you at our store!"
             },
             "images": [],
             "movies": []
@@ -6490,11 +6504,11 @@
           {
             "headline": {
               "ja": "メニュー",
-              "en": "Menus"
+              "en": "Menu"
             },
             "body": {
               "ja": "プレーン・・・250円\nイチゴ味・・・250円\nレモン味・・・250円\nメロン味・・・250円\n\n※応化の実験でもらった割引券で50円引き！",
-              "en": "Plane flavor is 250 yen.\nStrawberry flavor is 250 yen.\nLemon flavor is 250 yen.\nMelon flavor is 250 yen.\n\n※50 yen discount with a discount coupon given by the Ohka experiment!"
+              "en": "Plane flavor (250 yen)\nStrawberry flavor (250 yen)\nLemon flavor (250 yen)\nMelon flavor (250 yen)\n\n※50 yen discount with a discount coupon given by the Ohka experiment!"
             },
             "images": [],
             "movies": []
@@ -6523,7 +6537,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "理工展連絡会69thOBOG屋台",
-        "en": "Rikoten Alumni"
+        "en": "Rikoten Executive Committee 69th Alumni Food Stand"
       },
       "projectName": {
         "ja": "君の瞳にスパーク！タピオカエクスプロージョン！！！",
@@ -6531,7 +6545,7 @@
       },
       "groupDetail": {
         "ja": "理工展を運営するサークル「理工展連絡会」OBOGの有志で運営しています！",
-        "en": "This alumni is managed by OBOGs of Rikoten Executive Comimttee!"
+        "en": "This food stand is managed by the OBOGs of Rikoten Executive Committee!"
       },
       "url": {
         "hp": "",
@@ -6544,7 +6558,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "この企画では、ブームが過ぎて一周回った「タピオカドリンク」を提供します！せっかくのお祭り、久々にあの味を思い出してみませんか？\n厳選されたドリンクと共に飲むタピオカは絶品です！\nぜひご賞味ください！",
-        "en": "Our booth will offer the once popular \"tapioca drink\"! Since it's a school festival, why don't you recall  that taste after a long time?\nTapioca with a highly selected drink is a masterpiece!\nWe hope you will enjoy it!"
+        "en": "Our booth will offer the once popular \"tapioca drink\"! Since it's a school festival, why don't you recall that taste after a long time?\nTapioca with a highly selected drink is a masterpiece!\nWe hope you will enjoy it!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-06/M-06_pamphlet_thumbnail.jpg",
@@ -6577,7 +6591,7 @@
           {
             "headline": {
               "ja": "タピオカドリンクとは？",
-              "en": "What is Tapioca Drink?"
+              "en": "What is a Tapioca Drink?"
             },
             "body": {
               "ja": "タピオカドリンクは、ミルクティーや抹茶などのドリンクの中にタピオカが入った飲み物です。\r\nもちもちのタピオカと甘いドリンクは最強の組み合わせ！ぜひ立ち寄って楽しんでください！\r",
@@ -6618,7 +6632,7 @@
       },
       "groupDetail": {
         "ja": "理工漕艇部は筋トレ場が西早稲田キャンパス内にあるため、放課後はもちろん、空きコマで練習もできます！しかも、ボート競技は大学で始める方が多いスポーツであるため、大学から始めても上を目指せます。また、埼玉の戸田公園に合宿所も所持しており、長期休暇期間は合宿もできます。",
-        "en": "The Rikoh Rowing Club has a muscle training area in the Nishiwaseda campus, so students can practice after school and in their spare time! Moreover, since rowing is a sport that many students start at university, you can start at university and aim for higher levels. In addition, the club also has a training camp in Toda Park, Saitama, where students can stay and practice rowing during long vacations.\n\nTranslated with www.DeepL.com/Translator (free version)"
+        "en": "The Rikoh Rowing Club has a muscle training area in the Nishiwaseda Campus, so students can practice after school and in their spare time! Moreover, since rowing is a sport that many students start at university, you can aim for higher levels if you have never experienced rowing. In addition, our club also has a training camp in Toda Park, Saitama, and students can stay and practice rowing there during long vacations."
       },
       "url": {
         "hp": "",
@@ -6631,7 +6645,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "我々理工漕艇部はポップコーンを作り販売します。塩とキャラメルの2つの味を用意してあります。サイズは大小の2種類です。小腹がすいたとき、おやつタイムなどにぜひお越しください！",
-        "en": "We, the Science and Engineering Rowing Club, are going to make and sell popcorn. We have two flavors, salt and caramel. There will be two sizes, large and small. Please come and join us when you are hungry or just want a snack!"
+        "en": "We, rikoh rowing club, are going to make and sell popcorn. We have two flavors, salt and caramel, and two sizes, large and small. Please come and join us when you are hungry or just want a snack!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-07/M-07_pamphlet_thumbnail.jpg",
@@ -6713,11 +6727,11 @@
       },
       "projectName": {
         "ja": "フランクフルト屋台",
-        "en": "Frankfurt"
+        "en": "Frankfurt Food Stand"
       },
       "groupDetail": {
         "ja": "先進理工学部生命医科学科に所属する生徒で構成される生命医科委員会が屋台を運営するためのグループです。",
-        "en": "This is a food stands run by the Biomed Committee composed of students at the Department of Life science and Medical Bioscience, School of Advanced Science and Engineering. "
+        "en": "This is a food stand run by the Biomed Committee composed of the students at the Department of Life Science and Medical Bioscience, School of Advanced Science and Engineering. "
       },
       "url": {
         "hp": "",
@@ -6730,7 +6744,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "生命医科委員会に所属する生徒によるフランクフルトの販売を行います！価格は一本250円、2本400円です。当委員会の実験企画ブースでは割引券の配布も行っているのでそちらも併せて是非ご覧ください！",
-        "en": "We will sell frankurters by students of Biomed Committee! Frankfurters are 250 yen each, or 400 yen for two. We also distributes discount coupons in our committee's experimental project. We look forward to seeing you there as well! "
+        "en": "We will sell frankurts by students of the Biomed Committee! Frankfurts are 250 yen each, or 400 yen for two. We will also distribute discount coupons in our committee's experimental project. We look forward to seeing you there as well! "
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-08/M-08_pamphlet_thumbnail.jpg",
@@ -6755,7 +6769,7 @@
       "mainArticle": {
         "bigHeadline": {
           "ja": "フランクフルト屋台",
-          "en": "Frankfurt"
+          "en": "Frankfurt Food Stand"
         },
         "articles": [
           {
@@ -6765,7 +6779,7 @@
             },
             "body": {
               "ja": "当屋台では1本250円、2本で400円でフランクフルトの販売をしています。また、当委員会の実験企画「Bio with Human」にて50円引きの割引券を配布しているので、そちらも併せてご覧ください！",
-              "en": "In our food stand, we have frankfurters for 250 yen each, two for 400 yen. In our committee's experimental project \"Bio with Human\", we also distributes 50 yen discount coupons. So, please feel free to visit there as well!"
+              "en": "In our food stand, we have frankfurts for 250 yen each, two for 400 yen. In our committee's experimental project \"Bio with Human\", we will also distribute 50 yen discount coupons, so please visit there as well!"
             },
             "images": [],
             "movies": []
@@ -6802,7 +6816,7 @@
       },
       "groupDetail": {
         "ja": "理工展を運営するサークル、理工展連絡会の新入生の有志による模擬店団体「一年屋台」です。コロナウイルスの流行によりいったんは姿を消した一年生による模擬店が今年、ついに復活を遂げました！企画から仕入れ、調理や販売に至るまで、すべて一年生により行われます。",
-        "en": "This is the food booth \"Ichinenyatai\" run by first-year volunteers from Rikoten Executive Committee. Food booths by first-year students once disappeared due to the coronavirus pandemic, but it's finally back again with planning and purchasing to cooking and selling done by first-year students!"
+        "en": "This is the food booth \"Ichinenyatai\" run by first-year volunteers from the Rikoten Executive Committee. Food booths by first-year students once disappeared due to the coronavirus pandemic, but it's finally back again with planning and purchasing to cooking and selling all done by first-year students!"
       },
       "url": {
         "hp": "",
@@ -6815,7 +6829,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "キャンパス中を回って疲れた体に、暖かいスープはいかが？理工展連絡会の1年生のみで運営されている模擬店「早稲田スープラボ」です！心から暖まれるスープを用意して、皆さまのご来店をお待ちして\nおります！",
-        "en": "How about some warm soup for your tired body after a long day of walking around campus? This is the food booth \"Waseda Soup Labo\" run by first-year volunteers from Rikoten Executive Committee. We are ready for soup warming from the bottom of your heart and are looking forward to seeing you!"
+        "en": "How about some warm soup for your tired body after a long walk around the campus? This is the food booth \"Waseda Soup Labo\" run by first-year volunteers from Rikoten Executive Committee. We are ready for soup which will warm you from the bottom of your heart and are looking forward to seeing you!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-09/M-09_pamphlet_thumbnail.jpg",
@@ -6850,7 +6864,7 @@
             },
             "body": {
               "ja": "私たち早稲田スープラボはあたたかいスープを提供します！\nコンソメスープ・スープカレー・ポタージュの三種類のメニューを用意しています。\n楽しいイベントも体が冷えていたら熱くなれない！私たちのスープで心も体もあたためて理工展を楽しみましょう！\nたくさんの方のご来店をお待ちしております！",
-              "en": "We, Waseda Soup Labo, serve warm soup. There are three menus: consomme soup, soup curry and potage. You can't enjoy fun events when your body is cold! Let's enjoy Rikoten by warming your body and soul with our soup. We are looking forward to seeing you!"
+              "en": "We, Waseda Soup Labo, will serve some warm soup! There are three menus: consomme soup, soup curry and potage. You can't enjoy fun events when your body is cold! Let's enjoy Rikoten by warming your body and soul with our soup. We are looking forward to seeing you!"
             },
             "images": [],
             "movies": []
@@ -6960,7 +6974,7 @@
       "ticketDetail": "",
       "groupName": {
         "ja": "一年屋台焼き芋班",
-        "en": "Ichinennyatai"
+        "en": "Ichinennyatai Sweet Potato Team"
       },
       "projectName": {
         "ja": "リコいも",
@@ -6968,7 +6982,7 @@
       },
       "groupDetail": {
         "ja": "理工展運営サークル所属の早稲田大学理工学部1年生有志が出店する一年屋台です。第70回理工展では、焼き芋、スープ、チョコバナナを出店。私たちは理工展を屋台から盛り上げます。受験生、学生、大学院生、先生方、早大職員の方、ご家族の方々、ご友人、OBOGの方、地域の方々、様々な方のご来店お待ちしております！",
-        "en": "This is a food stand run by first-year volunteers from Waseda University's Faculty of Science and Technology.  We belong to the science and engineering exhibition management circle. At the 70th Rikoten, we opened three shops selling baked sweet potatoes, soup, and chocolate bananas. We set the mood for the 70th Rikoten from the food stand. We are looking forward to welcoming student preparing for the exam , undergraduate students, graduate students, teachers, Waseda University staff, family members, friends, alumnae and alumni, locals residents, and more!"
+        "en": "This is a food stand run by first-year volunteers from Waseda University's Faculty of Science and Technology.  We also belong to the Rikoten Executive Committee. At the 70th Rikoten, we opened three shops selling baked sweet potatoes, soup, and chocolate bananas. We will set the mood for the 70th Rikoten from the food stand. We are looking forward to welcoming preparatory students, undergraduate students, graduate students, teachers, Waseda University staff, family members, friends, alumnae and alumni, locals residents, and more!"
       },
       "url": {
         "hp": "",
@@ -6981,7 +6995,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "理工展運営サークル所属早大理工1年生有志が出店する焼き芋屋。第70回理工展２日間限定焼き芋を販売！受験生には合格祈願の合格焼き芋を、学生大学院生には単位焼き芋をご用意。お客様のご来店お待ちしています！",
-        "en": "This is a baked sweet potato shop run by first-year volunteers from Waseda University's Faculty of Science and Technology. We belong to the science and technology exhibition management circle. 2 types of baked sweet potatoes only for 2 days at the 70th Rikoten!  For students preparing for exams, we prepare baked sweet potatoes wishing for Success. For undergraduate students and graduate students, we prepare baked sweet potatoes for credit. If you purchase 126 credits, you will receive a diploma ! ? We are waiting for so many customers to visit us!"
+        "en": "This is a baked sweet potato shop run by first-year volunteers from Waseda University's Faculty of Science and Technology. We also belong to the Rikoten Executive Committee. 2 types of baked sweet potatoes only for 2 days at the 70th Rikoten!  For preparatory students, we have prepared baked sweet potatoes wishing for success. For undergraduate students and graduate students, we have prepared baked sweet potatoes for credit. If you purchase 126 credits, you will receive a diploma ! ? We are waiting for so many customers to visit us!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-11/M-11_pamphlet_thumbnail.jpg",
@@ -7019,7 +7033,7 @@
             },
             "body": {
               "ja": "一年屋台リコいもは、縁起の良い合格焼き芋と単位焼き芋を販売しています。本商品は、第70回理工展２日間限定品となっております。学祭といえば屋台！屋台といえば…焼き芋！ぜひ一度ご賞味ください。合格焼き芋1本から、単位焼き芋1単位からばら売りしています。ご注文の際、焼き芋の数え方にご注意を！受験生、学生、大学院生、先生方、早大職員の方、ご家族の方々、ご友人、OBOGの方、地域の方々、様々な方のご来店お待ちしております！",
-              "en": "We prepare two types of baked sweet potatoes: auspicious ones wishing for success and ones for credit. They are sold only for two days at the 70th Rikoten. Speaking of school festivals, food stands! Speaking of food stands, baked sweet potatoes! Please try it for yourself! We sell baked sweet potatoes wishing for success by the piece and baked sweet potatoes for credits by the credit. In ordering, please be careful how you count the baked sweet potatoes! Students preparing for exams, graduate students, teachers, Waseda University staff, family members, friends, OBOG members, and locals..., we are looking forward to serving a variety of people!"
+              "en": "We have prepared two types of baked sweet potatoes: auspicious ones wishing for success and ones for credit. They are sold only for two days at the 70th Rikoten. You can't talk about school festivals without mentioning food booths! You also can't talk about food booths without mentioning baked sweet potatoes! Please try it for yourself! We will sell baked sweet potatoes wishing for success by the piece and baked sweet potatoes for credits by the credit. In ordering, please be careful of how you count the baked sweet potatoes! Preparatory students, graduate students, teachers, Waseda University staff, family members, friends, OBOG members, and locals..., we are looking forward to serving a variety of people!"
             },
             "images": [],
             "movies": []
@@ -7056,7 +7070,7 @@
       },
       "groupDetail": {
         "ja": "移動式での販売となるため“伝統”“格式”といったイメージではなく元々郷土食であった部分を意識しカジュアルなイメージで販売しております。",
-        "en": "Because it is sold in a mobile store, it does not have a \"traditional\" or \"prestigious\" image, but is sold in a casual manner with an awareness of the part of the food that was originally local food."
+        "en": "Since we sell in a mobile store, we will sell crepes in casual manners with the element of the food that was originally local food, not \"traditional\" or \"prestifious\" manners."
       },
       "url": {
         "hp": "https://twitter.com/gogocrepe55?t=hiqAZsMlk",
@@ -7069,7 +7083,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "生地はサックサク！厳選された粉とホイップを使用し、オーダーを受けてから焼き上げるためいつでも焼きたてのクレープをお召し上がり頂けます。果実やチョコもたっぷり！満足のいくクレープに仕上げております。",
-        "en": "The dough is crispy! Using carefully selected flour and whipped cream, our crepes are baked to order, so you can enjoy a freshly baked crepe anytime. They are filled with fruits and chocolates! We make crepes that are sure to satisfy you."
+        "en": "The dough of crepes is crispy! Using carefully selected flour and whipped cream, our crepes are baked to order, so you can enjoy a freshly baked crepe anytime. They are filled with fruits and chocolates! We make crepes that are sure to satisfy you."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-12/M-12_pamphlet_thumbnail.jpg",
@@ -7139,7 +7153,7 @@
       "category": "shops",
       "projectDetail": {
         "ja": "やきそば日本一に輝いた富士宮やきそばを筆頭にご注文頂いてから焼き上げる牛たん串焼きをご賞味下さいませ♪\n今年度も富士宮やきそば、牛たんの串焼き等ご用意致しましたので、是非ご来店下さいませ♪",
-        "en": "Please enjoy \"Fujinomiya yakisoba\", which won the top Yakisoba in Japan, and our beef tongue skewers, which are grilled to order.\nWe prepared Fujinomiya yakisoba and beef tongue skewers for this year as well. Please come to Konamons♪.\n"
+        "en": "Please enjoy \"Fujinomiya yakisoba\", which won the top Yakisoba in Japan, and our beef tongue skewers, which are made on-order!\nWe prepared Fujinomiya yakisoba and beef tongue skewers for this year as well. Please come to Konamonzu♪."
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-13/M-13_pamphlet_thumbnail.jpg",
@@ -7211,7 +7225,7 @@
       "category": "online",
       "projectDetail": {
         "ja": "受験生および早稲田生のために理工学部に設置されている第二外国語についてまとめてみました！また、理工学部が設置された大正時代についても紹介します！日本と外国、どちらの文化も感じてみてください！",
-        "en": "We summarized the second foreign languages offered at the Faculty of Science and Engineering for prospective students and Waseda students! We will also introduce the Taisho Era when the Faculty of Science and Engineering was established! Please feel both Japanese and foreign cultures!"
+        "en": "We summarized the second foreign languages offered at the Faculty of Science and Engineering for prospective students and Waseda students! We will also introduce the Taisho Era when the Faculty of Science and Engineering was established at Waseda University! Please feel both Japanese and foreign cultures!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-10/B-10_pamphlet_thumbnail.jpg",
@@ -7372,7 +7386,7 @@
             },
             "body": {
               "ja": "文字は漢字に似た簡体字が用いられます。そのため、文字から意味を連想できるので単語の意味を覚えることはあまり難しくありません。しかし同じ意味でも一部異なることがあるため漢字との混同を避ける必要があります。 文法に関しては語順が英語と同じため、理解してしまえばとても簡単です。しかし同じ発音でも四声というアクセントの違いから四つの意味を持つため単語の意味とセットで発音を覚える必要があり、リスニングの難易度が高いです。また、文字への親しみと実用性の高さから人気で早稲田理工の二外履修者の中では一番選択者が多い科目です。履修人気の高さゆえに設置コマ数も多く必須科目と被って取れないという心配はほとんどありません。",
-              "en": "The characters used are simplified characters similar to Chinese characters. Therefore, it is not very difficult to memorize the meaning of a word because you can associate the meaning with the characters. However, it is necessary to avoid confusion with the Chinese characters because some of the meanings may be different. Grammar is very easy once you understand it, since the word order is the same as in English. However, even with the same pronunciation, there are four different meanings due to the difference in accent (shisei). Therefore, it is necessary to memorize the pronunciation together with the meaning of the word, which makes listening more difficult. Because of its familiarity with letters and practicality, it is the most popular course among Waseda Science and Engineering students who take foreign language lessons. Due to the popularity of this course, there are a large number of classes available, so there is little concern that students will not be able to take the course."
+              "en": "The characters used are simplified characters similar to Chinese characters. Therefore, it is not very difficult to memorize the meaning of a word because you can associate the meaning with the characters. However, it is necessary to avoid confusion with the Chinese characters because some of the meanings have differences between Chinese characters and simplified characters. Grammar is very easy once you understand it, since the word order is the same as in English. However, even with the same pronunciation, there are four different meanings due to the difference in accent (shisei). Therefore, it is necessary to memorize the pronunciation together with the meaning of the word, which makes listening more difficult. Because of its familiarity with letters and practicality, it is the most popular course among Waseda Science and Engineering students who take second foreign language lessons. Due to the popularity of this course, there are a large number of classes available, so there is little concern that students will not be able to take the course."
             },
             "images": [],
             "movies": []
@@ -7384,7 +7398,7 @@
             },
             "body": {
               "ja": "文字はほとんど英語と同じなので新しく覚えるものはほぼありません。動詞の活用が6個と多く、性別名詞という英語にはない概念があるため、文法に苦手意識を抱く人が多いです。 “r”の発音を除けば、日本語にはない発音はなく簡単なので発音に関する難易度は低いです。それに加えて発音のテストは課されないため、文法さえマスターすれば単位はかたいとの意見がありました。また楽単が多いとの声も…!　出席が命。ただ中国語やドイツ語と比べ設置コマ数が少ないことに注意する必要があります。",
-              "en": "The script is almost identical to English, so there is almost nothing new to learn. Many people have difficulty with grammar because of the 6 verb conjugations and the concept of gendered nouns, which is not found in English. Except for the pronunciation of \"r,\" there is no pronunciation that does not exist in Japanese, and it is easy to pronounce, so the degree of difficulty in pronunciation is low. In addition, since a pronunciation test is not required, some students said that as long as they master the grammar, they can easily earn credits. Also, some said that there are a lot of \"easy\" classes...!　Attendance is vital. However, it should be noted that the number of classes installed is less than that of Chinese and German."
+              "en": "The script is almost identical to English, so there is almost nothing new to learn. Many people have difficulty with grammar because of the 6 verb conjugations and the concept of gendered nouns, which is not found in English. Except for the pronunciation of \"r\", there is no pronunciation that does not exist in Japanese, and it is easy to pronounce, so the degree of difficulty in pronunciation is low. In addition, since a pronunciation test is not required, some students said that as long as they master the grammar, they can easily earn credits. Also, some said that there are a lot of \"easy\" classes...! Attendance is vital. However, it should be noted that the number of classes installed is less than that of Chinese and German."
             },
             "images": [],
             "movies": []
@@ -7408,7 +7422,7 @@
             },
             "body": {
               "ja": "スペイン語、ドイツ語同様文字はアルファベットとほぼ同じなので簡単です。上記2言語と同じく男性名詞、女性名詞があり、文法事項はとにかく覚えることが多いです。また“ｒ”の発音が日本語にも英語のない発音なので特に難しく、リエゾンという単語のつながりにより発音が変化するものがあるため、注意する必要があります。発音リスニングのテストも課されるため、しっかり対策が必要です。また優しい先生が多いとの声もありました。フランスへのおしゃれなイメージや憧れを理由に履修する学生が多いです。",
-              "en": "Like Spanish and German, the letters are almost the same as the alphabet, so it is easy. Like the above two languages, French has both masculine and feminine nouns, and there is a lot to learn in terms of grammar. The pronunciation of the letter \"r\" is particularly difficult because it is not found in either Japanese or English, and there are liaisons, in which the pronunciation changes depending on the connection between words. A pronunciation listening test is also required, so you need to be well-prepared for it. Some said that many of the teachers are kind. Many students take this course because of their fashionable image and admiration for France."
+              "en": "Like Spanish and German, the letters are almost the same as the alphabet, so it is easy. Like the above two languages, French has both masculine and feminine nouns, and there is a lot to learn in terms of grammar. The pronunciation of the letter \"r\" is particularly difficult because it is not found in either Japanese or English, and there are liaisons, in which the pronunciation changes depending on the connection between words. So you need to pay attention to that. A pronunciation listening test is also required, so you need to be well-prepared for it. Some said that many of the teachers are kind. Many students take this course because of their fashionable image and admiration for France."
             },
             "images": [],
             "movies": []
@@ -7589,7 +7603,7 @@
               },
               "body": {
                 "ja": "東京大学本郷の正門及び門衛所は、東京帝国大学第八代総長 濱尾新のもと、伊東忠太によって設計され、明治45年(1912)に建設されました。そして同年7月10日、卒業証書授与式での天皇陛下御行幸の際、初めて開門されました。現在は、門の造形の規範として、国の有形文化財に認定されています（平成10年10月9日）。東京大学本郷キャンパスに正門から入ると、銀杏並木が続き、その先に大講堂があるため、正門は大講堂とともに東京大学のイメージを作り上げています。大正時代は1912年7月30日から始まるため、およそ大正時代から現在まで東京大学の正門として機能しています。",
-                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Exhibition Hall\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
+                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Museum\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
               },
               "images": [
                 {
@@ -7616,7 +7630,7 @@
               },
               "body": {
                 "ja": "正門は冠木門形式（二本の門柱の上部に横木「冠木」をつけたもの）という伝統的な構造になっており、当時、冠木及び扉は鉄製、門柱は鉄骨と厚切りの花崗岩を組み合わせていました。しかし、現在の冠木及び扉はアルミ合金のレプリカに入れ替えられました（オリジナルは修復され、駒場に保存されています）。中央の扉が大きく設計されているのは、天皇の騎馬儀杖兵が槍を持ったまま通ることを考慮したからだといわれています。",
-                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Exhibition Hall\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
+                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Museum\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
               },
               "images": [
                 {
@@ -7636,7 +7650,7 @@
               },
               "body": {
                 "ja": "中央の扉の上部（冠木）には、吉兆を表す旭日（朝の太陽）が瑞雲（太陽で美しく色づいた雲）の間を昇る様子が描かれています。また扉には、青海波（永久に続く幸せと平安な暮らしへの願い）や唐草模様（繁栄や長寿を意味する）が描かれています。瑞雲の雲と青海波の水は天地を意味しています。当時の校舎は洋風のデザインでしたが、正門は和の嗜好、洋の技術を組み合わせた和魂洋才なデザインになっています。さらに当時の門には旭日の位置に十六葉の旭日鋳造紋章がつけられており、その中心は明かりが灯る赤色のガラスでできていましたが、現在のレプリカにはありません。",
-                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Exhibition Hall\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
+                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Museum\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
               },
               "images": [],
               "movies": []
@@ -7648,7 +7662,7 @@
               },
               "body": {
                 "ja": "当時の総長 濱尾は「正門を入ったら万人、自ら襟を正すような雰囲気にしたい」と考え、正門は「先づ日本的なもので、天地をあらはし、武士道の精神を示すべし」と注文したそうです。この意向をもとに建築学科の塚本靖、伊東忠太、関野貞、佐野利器など多くの人が図案を出しましたが、採用されませんでした。最終的に、濱尾が赤坂見附の閑院宮邸の冠木門を参考に、営繕課の山口孝吉が製図、伊東忠太が設計し、正門が完成しました。",
-                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Exhibition Hall\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
+                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Museum\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
               },
               "images": [],
               "movies": []
@@ -7660,7 +7674,7 @@
               },
               "body": {
                 "ja": "元来は赤門が正門でしたが、明治28年頃に現在の位置に木造の仮正門がおかれました。しかし腐朽が進んで大学の正門としてふさわしくないことから、明治45年に現在の正門が建設されました。また第二次世界大戦中、門は取り外されて隠されたため、戦時の金属回収は免れ、その後昭和25年に門は復旧されました。関東大震災と大戦を乗り越えた数少ない建築物です。そして昭和63年には、開閉が大変だったり、腐食が進んでいたりしたことから扉と冠木がアルミニウム合金のものに替えられ現在に至ります。",
-                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Exhibition Hall\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
+                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Museum\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
               },
               "images": [],
               "movies": []
@@ -7672,7 +7686,7 @@
               },
               "body": {
                 "ja": "門衛所とは、門に出入りする人を見張る建物で、煉瓦壁と白丁場石から作られています。屋根は日本の伝統的なむくり屋根（なだらかな凸状）でできています。むくり屋根は屋根の曲線を均一に保つため、高い技術が必要とされます。その滑らかな曲線から低姿勢、丁寧さが表現され、日本のおもてなしの心を表していると言われています。",
-                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Exhibition Hall\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
+                "en": "So far, we have explained the history of the old library. In what aspect can you feel the Taisho Romanticism? Let's take a look at its characteristics.\n\nThe exterior of the building is a Western-style brick structure, built in the Gothic style with red brick and white granite as the base material. When viewed from the front, it seems very majestic. Western-style architectures tend to be symmetric, and this building also seems so. However, the right side of the building looks like a cylindrical tower, while the left side has a triangular roof with semicircular arched windows, and a clock in the center. The main entrance differs from Japanese architecture in that a large door with lancet arches welcomes the visitors.\nThe Taisho Romantic atmosphere is not limited to the exterior. Although only the exterior of the building is usually open to visitors, the \"Fukuzawa Yukichi Memorial Keio History Museum\" is currently being held, allowing visitors to tour the interior as well.\n\nThe most famous feature of Keio University is the stained glass window with the inscription \"Calamus Gladio Fortior\" (The pen is mightier than the sword). The stained glass was restored after being lost in the war, and its composition symbolizes the spirit of Keio's founding. As you walk through the hall from the main entrance, you can see the brilliant stained glass illuminating the staircase.\nIn 2021, a cafe opened inside the octagonal tower, providing a spot where visitors can enjoy the atmosphere and have a cup of tea."
               },
               "images": [
                 {
