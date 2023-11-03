@@ -384,7 +384,8 @@ main {
 }
 
 #event .introduce,
-#event .subintroduce {
+#event .subintroduce,
+#event .link_wrapper {
     background-color: #ffffff;
     width: 100%;
     border-radius: 25px;
@@ -591,6 +592,19 @@ main {
     background-image: url(/img/event/pdf-white.svg);
 }
 
+/* 文末リンク */
+#event .link_wrapper ul{
+  padding-left: 20px;
+}
+#event .link_wrapper ul li{
+  border: none;
+  list-style-type: square;
+}
+#event .link_wrapper ul li a{
+  word-wrap: break-word;
+  color: var(--color-font);
+  text-decoration: underline;
+}
 
 /*もともとあったメディアクエリ*/
 /*@media screen and (max-width: 1200px){

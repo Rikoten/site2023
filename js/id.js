@@ -78,6 +78,7 @@
                 <div class = "article_wrapper"></div>
                 <div class = "subarticle_wrapper"></div>
                 <div class = "pdf_wrapper"></div>
+                <div class = "link_wrapper"></div>
             </div>
 
             
@@ -397,4 +398,18 @@
     //                                     </a>
     //                                 </div>`)
     // }
+
+    const link_wrapper = document.getElementsByClassName("link_wrapper")[0];
+    const linkHTML = [];
+    linkHTML.push(`<h3>文末リンク</h3><ul>`)
+    for (let i=0; i<data.endSentenceLink.length; i++){
+      linkHTML.push(`
+        <li>${data.endSentenceLink[i].pageName[lang]}：
+          <a href="${data.endSentenceLink[i].url}" target=blank rel="noopener noreferrer">${data.endSentenceLink[i].url}</a>    
+        </li>
+      `)
+    }
+    linkHTML.push(`</ul>`)
+    const linkHTMLjoin = linkHTML.join("")
+    link_wrapper.insertAdjacentHTML("beforeend", linkHTMLjoin);
 })()
