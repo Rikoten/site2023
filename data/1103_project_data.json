@@ -3201,8 +3201,8 @@
       "isOnline": false,
       "category": "general",
       "projectDetail": {
-        "ja": "未知の惑星に取り残されたあなたたち。謎や暗号を解き、星からの脱出を目指せ！２０分で遊べる体験型謎解きゲーム！\nキャンパス内を巡って謎を解く周遊型ゲームも同時開催！\n",
-        "en": "You are stranded on an unknown planet. Escape from the stars by solving mysteries and codes. At the same time, we will also hold a touring game to explore aroud the campus and solve mysteries!"
+        "ja": "未知の惑星に取り残されたあなたたち。謎や暗号を解き、星からの脱出を目指せ！30分程度で遊べる体験型謎解きゲーム！\nキャンパス内を巡って謎を解く周遊型ゲームも同時開催！\n",
+        "en": "You are stranded on an unknown planet. Escape from the stars by solving mysteries and codes. This is a 30-minute experiential riddle solving game! At the same time, we will also hold a touring game to explore aroud the campus and solve mysteries!"
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/B-12/B-12_pamphlet_thumbnail.jpg",
@@ -3234,7 +3234,7 @@
         "articles": [
           {
             "headline": {
-              "ja": "20分で遊べる体験型謎解きゲーム",
+              "ja": "30分で遊べる体験型謎解きゲーム",
               "en": "The experiental escape game that can be played in 20 minutes"
             },
             "body": {
@@ -3642,7 +3642,7 @@
       },
       "groupDetail": {
         "ja": "理工展連絡会の総務局1年(72期)です！普段は総務局内で様々な部署ごとに分かれて活動しています!理工展連絡会内での活動はみんなで協力して頑張っています!",
-        "en": "We are the 1st grade students of the General Affairs Bureau of Rikoten Executive Committee. We are usually divided into various departments within the General Affairs Bureau and are active. We are all working hard together within Rikoten executive committee!"
+        "en": "We are the 1st grade students of the General Affairs Bureau of Rikoten Executive Committee. We are usually divided into various departments within the General Affairs Bureau and are active. We are all working hard together within Rikoten Executive Committee!"
       },
       "url": {
         "hp": "",
