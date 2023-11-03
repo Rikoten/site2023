@@ -31,7 +31,7 @@
       }
 
       /* 動画 */
-      const arrMovieHTML = [];
+      /*const arrMovieHTML = [];
       const MovieText = {
         ja: "動画を見る",
         en: "Movie"
@@ -43,7 +43,7 @@
             if (json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath !== ""){
               arrMovieHTML.push(`
                 <div>
-                  <a href="${json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath}" target=blank rel="noopener noreferrer">${MovieText[lang]}</a>
+                  <object><a href="${json[Object.keys(json)[i]][j].mainArticle.articles[k].movies[l].moviePath}" target=blank rel="noopener noreferrer">${MovieText[lang]}</a></object>
                 </div>
               `)
             }
@@ -53,7 +53,8 @@
       }
 
       const movieHTML = arrMovieHTML.join("");
-  
+      */
+     
       contents.push(`
         <div class="project">
           <a href="/projects/project/?id=${json[Object.keys(json)[i]][j].id}">
@@ -65,7 +66,6 @@
               <div class="detail">
                 <div class="group-name">${json[Object.keys(json)[i]][j].groupName[lang]}</div>
                 <div class="place">${placeText}</div>
-                ${movieHTML}
               </div>
             </div>
           </a>
