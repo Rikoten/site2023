@@ -66,7 +66,7 @@
       `)
 
       for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
-        const startTimeMinute = json[Object.keys(json)[i]][j].contents[k].startTime.minute==0?"00":`${json[Object.keys(json)[i]][j].contents[k].startTime.minute}`;
+        const startTimeMinute = json[Object.keys(json)[i]][j].contents[k].startTime.minute==0 ? "00" : (json[Object.keys(json)[i]][j].contents[k].startTime.minute==5 ? "05" : `${json[Object.keys(json)[i]][j].contents[k].startTime.minute}`);
         const endTimeMinute = json[Object.keys(json)[i]][j].contents[k].endTime.minute==0?"00":`${json[Object.keys(json)[i]][j].contents[k].endTime.minute}`;
         const nowLabel = lang=="ja"?"現在公演中":"LIVE";
         const detailLabel = lang=="ja"?"詳細を見る":"Detail";
