@@ -9,7 +9,7 @@
         "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/1031_project_data.json').then(res => res.json());
+    const json = await fetch('/data/1101_project_data.json').then(res => res.json());
 
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
@@ -30,7 +30,6 @@
             }
         }
     }
-
     const data = json[`${category}`][number];
     console.log(data);
 
@@ -56,16 +55,9 @@
                 <ul>
                     <li>${data.projectDetail[lang]}</li>
                 </ul>
-
-                <div class="ticket-narabi">
-                    <div class="ticket"></div>
-                    <div class="walk"></div>
-                    <div class="onlineticket"></div>
-                </div>
+                <div class="ticket"></div>
             </div>
 
-            <a class="get-onlineticket" href="${data.ticketLink}" target="_blank">
-            <p>オンラインチケット取得ページ</p>
         </a>
             <div class="side">
                 <p>目次</p>
@@ -219,12 +211,16 @@
     }
     //*********ウォークラリーの表示**********//
     const walkrally_tag = document.getElementById("walkrally");
+    const walkrallyText = {
+      ja: "ウォークラリー対象企画",
+      en: "Walkrally Eligible Projects"
+    }
     // const walk = [];
     // if (data.isWalkRally) {
     //     walk.push(`ウォークラリー企画`);
     //     walkrally_tag.insertAdjacentHTML("beforeend", walk);
     // }
-    data.isWalkRally ? walkrally_tag.insertAdjacentHTML("beforeend", `<p>ウォークラリー対象企画</p>`) : walkrally_tag.classList.add("inactive")
+    data.isWalkRally ? walkrally_tag.insertAdjacentHTML("beforeend", `${walkrallyText[lang]}`) : walkrally_tag.classList.add("inactive")
 
     /****タグの追加 ****/
     const tag_tag = document.getElementsByClassName("tag")[0]
@@ -241,11 +237,11 @@
     }
     /****チケットの判別****/
     const ticket_tag = document.getElementsByClassName("ticket")[0];
-    const walk_tag = document.getElementsByClassName("walk")[0];
-    const onlineticket_tag = document.getElementsByClassName("onlineticket")[0];
-    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p class="ticket_anounce">整理券が必要です</p><br><p>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive")
-    data.hasOnlineTicket ? onlineticket_tag.insertAdjacentHTML("beforeend", '<p>オンラインチケット<br>が必要です</p>') : onlineticket_tag.classList.add("inactive")
-
+    const ticketText = {
+      ja: "整理券が必要です",
+      en: "Numbered tickets required"
+    }
+    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p class="ticket_anounce">${ticketText[lang]}</p><p>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive");
 
     /*****オンラインチケットゲットへのリンク *****/
     const ticketlink_tag = document.getElementsByClassName("get-onlineticket")[0];
