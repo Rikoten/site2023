@@ -9,7 +9,7 @@
         "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/1103_project_data.json').then(res => res.json());
+    const json = await fetch('/data/1103_project_data.json?date=20231103').then(res => res.json());
 
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);

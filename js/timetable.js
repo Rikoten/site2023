@@ -5,7 +5,7 @@
   
   /* JSONデータ取得 ---------
   --------------------------*/
-  const json = await fetch('/data/timetable_data_web.json').then(res => res.json());
+  const json = await fetch('/data/timetable_data_web.json?date=20231103').then(res => res.json());
   console.log("json:", json); 
 
   /* DOM取得 ---------------

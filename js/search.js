@@ -1,5 +1,5 @@
 (async () => {
-    const data = await fetch('/data/1103_project_data.json').then(res => res.json());
+    const data = await fetch('/data/1103_project_data.json?date=1103').then(res => res.json());
     console.log(data);
     // すべての企画のHTMLを作成
     await addSearchSection();
