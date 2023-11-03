@@ -9,7 +9,7 @@
         "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/1101_project_data.json').then(res => res.json());
+    const json = await fetch('/data/1103_project_data.json').then(res => res.json());
 
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
@@ -241,15 +241,7 @@
       ja: "整理券が必要です",
       en: "Numbered tickets required"
     }
-    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p class="ticket_anounce">${ticketText[lang]}</p><p>${data.ticketDetail}</p>`) : ticket_tag.classList.add("inactive");
-
-    /*****オンラインチケットゲットへのリンク *****/
-    const ticketlink_tag = document.getElementsByClassName("get-onlineticket")[0];
-    if (data.ticketLink == null) {
-        ticketlink_tag.classList.add("inactive")
-    } else {
-
-    }
+    data.hasTicket ? ticket_tag.insertAdjacentHTML("beforeend", `<p class="ticket_anounce">${ticketText[lang]}</p><p>${data.ticketDetail[lang]}</p>`) : ticket_tag.classList.add("inactive");
 
     /***目次***/
     const li1_tag = document.getElementsByClassName("menu_name")[0];
