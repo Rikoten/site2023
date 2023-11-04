@@ -149,7 +149,8 @@
         const projectBlocks = document.querySelectorAll(`.${Object.keys(json)[i]} .${json[Object.keys(json)[i]][j].label.en.replace(/ /g, '')} .project-block`);
         for (let k=0; k<json[Object.keys(json)[i]][j].contents.length; k++){ //各企画をループ
           if (i === 0){ //1日目は2023/11/4
-            if (TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === -1){  
+            if (TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === -1){
+              console.log(TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute))  
               projectBlocks[k].classList.remove("now");
               projectBlocks[k].classList.add("finished");  
             } else if(TimeCompare(2023, 11, 4, json[Object.keys(json)[0]][j].contents[k].startTime.hour, json[Object.keys(json)[0]][j].contents[k].startTime.minute, json[Object.keys(json)[0]][j].contents[k].endTime.hour, json[Object.keys(json)[0]][j].contents[k].endTime.minute) === 0){
