@@ -95,8 +95,7 @@
   const contentsJoin = contents.join(""); //配列の要素を連結して文字列とする
   contentsWrapper.insertAdjacentHTML("afterbegin", contentsJoin);
 
-  document.querySelector(".firstday").classList.add("active"); //はじめは1日目がactive
-
+  document.querySelector(".secondday").classList.add("active"); //はじめは2日目がactive
   
   /* 日付切り替え -----------
   --------------------------*/   
