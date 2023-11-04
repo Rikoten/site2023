@@ -9,7 +9,7 @@
         "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/1104_project_data.json?date=20231104').then(res => res.json());
+    const json = await fetch('/data/1104_2_project_data.json?date=20231104').then(res => res.json());
 
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
@@ -36,6 +36,11 @@
     const insert = [];
     const day_off = []
 
+    const sideText = {
+      ja: "目次",
+      en: "Contents"
+    }
+
     insert.push(
         `<section id = "event">
             <div class="event-main">
@@ -60,7 +65,7 @@
 
         </a>
             <div class="side">
-                <p>目次</p>
+                <p>${sideText[lang]}</p>
                 <ol>
                     <li class="menu_name">${data.groupName[lang]}</li>
                 </ol>
@@ -399,17 +404,25 @@
     //                                 </div>`)
     // }
 
-    const link_wrapper = document.getElementsByClassName("link_wrapper")[0];
-    const linkHTML = [];
-    linkHTML.push(`<h3>文末リンク</h3><ul>`)
-    for (let i=0; i<data.endSentenceLink.length; i++){
-      linkHTML.push(`
-        <li>${data.endSentenceLink[i].pageName[lang]}：
-          <a href="${data.endSentenceLink[i].url}" target=blank rel="noopener noreferrer">${data.endSentenceLink[i].url}</a>    
-        </li>
-      `)
+    if (data.endSentenceLink.length !== 0){
+      const link_wrapper = document.getElementsByClassName("link_wrapper")[0];
+      const linkText = {
+        ja: "文末リンク",
+        en: "Links"
+      }
+      const linkHTML = [];
+      linkHTML.push(`<div class="link-content"><h3>${linkText[lang]}</h3><ul>`)
+      for (let i=0; i<data.endSentenceLink.length; i++){
+        linkHTML.push(`
+          <li>${data.endSentenceLink[i].pageName[lang]}：
+            <a href="${data.endSentenceLink[i].url}" target=blank rel="noopener noreferrer">${data.endSentenceLink[i].url}</a>    
+          </li>
+        `)
+      }
+      linkHTML.push(`</ul></div>`)
+      const linkHTMLjoin = linkHTML.join("")
+      link_wrapper.insertAdjacentHTML("beforeend", linkHTMLjoin);
+
+      li2_tag.insertAdjacentHTML("beforeend", `<li>${linkText[lang]}</li>`)
     }
-    linkHTML.push(`</ul>`)
-    const linkHTMLjoin = linkHTML.join("")
-    link_wrapper.insertAdjacentHTML("beforeend", linkHTMLjoin);
 })()

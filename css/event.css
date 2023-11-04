@@ -384,8 +384,7 @@ main {
 }
 
 #event .introduce,
-#event .subintroduce,
-#event .link_wrapper {
+#event .subintroduce {
     background-color: #ffffff;
     width: 100%;
     border-radius: 25px;
@@ -486,7 +485,7 @@ main {
 
 #event .introduce .disp-img,
 #event .subintroduce .disp-img {
-    position: center;
+    text-align: center;
     width: 100%;
     /* 横幅のサイズを指定    */
     height: auto;
@@ -593,13 +592,29 @@ main {
 }
 
 /* 文末リンク */
+#event .link_wrapper .link-content{
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+  margin-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  line-height: 1.6;
+  padding-bottom: 10px;
+  /*30px*/
+}
+
 #event .link_wrapper ul{
   padding-left: 20px;
 }
+
 #event .link_wrapper ul li{
   border: none;
   list-style-type: square;
 }
+
 #event .link_wrapper ul li a{
   word-wrap: break-word;
   color: var(--color-font);
