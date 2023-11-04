@@ -9,7 +9,7 @@
         "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/1104_5_project_data.json?date=20231104').then(res => res.json());
+    const json = await fetch('/data/1104_6_project_data.json?date=20231104').then(res => res.json());
 
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
@@ -195,6 +195,19 @@
         `)
         lower_class.insertAdjacentHTML("afterbegin", face2)
     }*/
+
+    if (data.id === 'B-08') {
+      const hp_yaguchi = `<a href="https://circle.rikoten.com/yaguchi/" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/HP_tab.png"></a>`
+      const hp_tsumugi = `<a href="https://circle.rikoten.com/tsumugi/" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/HP_tab.png"></a>`
+      const x_yaguchi = `<a href="https://twitter.com/rikotenyaguchi" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/Twitter_tab.png"></a>`
+      const x_tsumugi = `<a href="https://twitter.com/waseda_tsumugi" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/Twitter_tab.png"></a>`
+      const insta_yaguchi = `<a href="https://www.instagram.com/yaguchi_fanclub/" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/Instagram_tab.png"></a>`
+      const insta_tsumugi = `<a href="https://www.instagram.com/waseda_tsumugi_yaguchi/" target=blank rel="noopener noreferrer"><img class="hp" src="/img/event/Instagram_tab.png"></a>`
+      
+      document.getElementsByClassName("upper")[0].innerHTML = `<div style="text-align: center">${hp_yaguchi}${hp_tsumugi}</div><div style="text-align: center">${x_yaguchi}${x_tsumugi}</div>`;
+      document.getElementsByClassName("lower")[0].innerHTML = `${insta_yaguchi}${insta_tsumugi}`;
+      console.log(document.getElementsByClassName("lower")[0])
+    }
 
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");

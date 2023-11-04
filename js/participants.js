@@ -2,7 +2,7 @@
   /* 多言語切り替え */
   const lang = (localStorage.getItem("lang") == "en") ? "en" : "ja";  
 
-  const json = await fetch('/data/1104_5_project_data.json?date=20231104').then(res => res.json());
+  const json = await fetch('/data/1104_6_project_data.json?date=20231104').then(res => res.json());
 
   const placeTextOnline = {
     ja: "オンライン",
