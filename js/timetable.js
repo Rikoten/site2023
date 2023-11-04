@@ -18,6 +18,7 @@
 
   /* 日付ボタン横の線の長さ --
   --------------------------*/
+  lineWidth();
   window.addEventListener("load", lineWidth); //ロードされたら設定
   window.addEventListener('resize', lineWidth); //ウィンドウ幅が変わったら調整  
 
@@ -140,6 +141,7 @@
   
   /* 企画終了 / 現在公演中 -- 
   --------------------------*/
+  AddClassFinishedNow()
   window.addEventListener("load", AddClassFinishedNow); //ロードされたら時間を確認してクラス付与/削除
   //setInterval(AddClassFinishedNow, 1000); //1秒ごとに時間を確認してクラス付与/削除
 
