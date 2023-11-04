@@ -1329,14 +1329,14 @@
         54
       ],
       "firstDayPlace": {
-        "ja": "54号館 304教室",
-        "en": "54-304"
+        "ja": "-",
+        "en": "-"
       },
       "secondDayPlace": {
         "ja": "54号館 304教室",
         "en": "54-304"
       },
-      "isFirstDay": true,
+      "isFirstDay": false,
       "isSecondDay": true,
       "isWalkRally": true,
       "hasTicket": false,
