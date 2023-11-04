@@ -69,10 +69,10 @@
         const startTimeMinute = json[Object.keys(json)[i]][j].contents[k].startTime.minute==0 ? "00" : (json[Object.keys(json)[i]][j].contents[k].startTime.minute==5 ? "05" : `${json[Object.keys(json)[i]][j].contents[k].startTime.minute}`);
         const endTimeMinute = json[Object.keys(json)[i]][j].contents[k].endTime.minute==0?"00":`${json[Object.keys(json)[i]][j].contents[k].endTime.minute}`;
         const nowLabel = lang=="ja"?"現在公演中":"LIVE";
-        const detailLabel = lang=="ja"?"詳細を見る":"Detail";
+        const nowImgPath = lang=="ja"?"/img/timetable/label.png":"/img/timetable/label_en.png";
         contents.push(`
         <div class="project-block ${json[Object.keys(json)[i]][j].contents[k].id} row${k}"  onclick="window.location.href='/projects/project/?id=${json[Object.keys(json)[i]][j].contents[k].id}';">
-        <div class="now-playing"><img src="/img/timetable/label.png" alt="${nowLabel} width="50" height="25""></div>
+        <div class="now-playing"><img src="${nowImgPath}" alt="${nowLabel} width="50" height="25""></div>
         <div class="time">${json[Object.keys(json)[i]][j].contents[k].startTime.hour}:${startTimeMinute}-${json[Object.keys(json)[i]][j].contents[k].endTime.hour}:${endTimeMinute}</div>
         <div class="projectName">${json[Object.keys(json)[i]][j].contents[k].eventName[lang]}</div>
         <div class="groupName">${json[Object.keys(json)[i]][j].contents[k].groupName[lang]}</div>

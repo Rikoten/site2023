@@ -190,7 +190,6 @@
 
 #timetable .project-block::after{
   content: "";
-  border-style: solid;
   position: absolute;
   top: 0;
   left: 0;
