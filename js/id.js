@@ -9,7 +9,7 @@
         "Experiment", "Education", "Environment", "Resources", "Student Life", "Talk Show", "Participatory", "Exhibition", "Family", "Riddle", "Rocket", "Anime", "Screening", " Robots", "Astronomy", "Sports", "For Students",
         "Global", "Presentations", "Computers", "Smartphones", "Architecture", "Consultation", "For Children", "Quiz", "Chemistry", "Performance", "Games", "eSports", "Mathematics", "Research", "Graduate", "Biology ", "SDGs", "Food & Beverage", "Food", "Drink", "Sweets", "Dance"];
 
-    const json = await fetch('/data/1104_3_project_data.json?date=20231104').then(res => res.json());
+    const json = await fetch('/data/1104_4_project_data.json?date=20231104').then(res => res.json());
 
     const maintag = document.getElementsByTagName("main")[0];
     var urlSearch = location.search.substring(1);
@@ -30,6 +30,7 @@
             }
         }
     }
+
     const data = json[`${category}`][number];
     console.log(data);
 
@@ -194,6 +195,7 @@
         `)
         lower_class.insertAdjacentHTML("afterbegin", face2)
     }*/
+
     //*********場所の表示**********//
     const place_tag = document.getElementById("location");
     const place = [];

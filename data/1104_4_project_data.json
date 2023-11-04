@@ -2898,8 +2898,8 @@
       },
       "url": {
         "hp": "https://circle.rikoten.com/yaguchi/",
-        "twitter": "矢口くん：https://twitter.com/rikotenyaguchi　矢口ちゃん：https://twitter.com/waseda_tsumugi",
-        "instagram": "矢口くん：https://www.instagram.com/yaguchi_fanclub/　矢口ちゃん：https://www.instagram.com/waseda_tsumugi_yaguchi/",
+        "twitter": "https://twitter.com/rikotenyaguchi",
+        "instagram": "https://www.instagram.com/yaguchi_fanclub/",
         "facebook": ""
       },
       "isOffline": true,
@@ -6743,8 +6743,8 @@
       "isOnline": false,
       "category": "shops",
       "projectDetail": {
-        "ja": "生命医科委員会に所属する生徒によるフランクフルトの販売を行います！価格は一本250円、2本400円です。当委員会の実験企画ブースでは割引券の配布も行っているのでそちらも併せて是非ご覧ください！",
-        "en": "We will sell frankurts by students of the Biomed Committee! Frankfurts are 250 yen each, or 400 yen for two. We will also distribute discount coupons in our committee's experimental project. We look forward to seeing you there as well! "
+        "ja": "生命医科委員会に所属する生徒によるフランクフルトの販売を行います！価格は一本250円。当委員会の実験企画ブースでは割引券の配布も行っているのでそちらも併せて是非ご覧ください！",
+        "en": "We will sell frankurts by students of the Biomed Committee! Frankfurts are 250 yen each. We will also distribute discount coupons in our committee's experimental project. We look forward to seeing you there as well! "
       },
       "thumbnailPath": {
         "pamphlet": "/img/projects/M-08/M-08_pamphlet_thumbnail.jpg",
