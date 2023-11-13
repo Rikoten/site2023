@@ -113,21 +113,21 @@
                 </ul>
 
             </div>
-            <div class="apporogize">
+            <div class="apologize">
                 <div class="pass langCng" lang="ja">
                     <p>公開終了いたしました。<br>ありがとうございました。</p>
                 </div>
                 <div class="yaguchi">
-                    <img src="../../img/event/bloom矢口.png">
+                    <img src="../../img/privacy/yaguchi_spark.png">
                 </div>
             </div>`)
 
-    const bool = true;
+    const bool = false;
     if (bool) {
         maintag.insertAdjacentHTML("afterbegin", insert);
-    } /*else {
+    } else {
         maintag.insertAdjacentHTML("afterbegin", day_off);
-    }*/
+    }
 
     //*********SNSリンク**********//
     const hp_tag = document.getElementsByClassName("hp")[0];
