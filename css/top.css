@@ -1,3 +1,16 @@
+.lastyear {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255);
+  z-index: 1000;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 20px;
+  border: solid;
+}
+
 /*******************************
 
     Loading背景画面設定
